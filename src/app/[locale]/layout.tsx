@@ -1,20 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Geist, Geist_Mono } from "next/font/google";
 import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -93,79 +82,75 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          {/* Schema.org structured data for SEO and AI search */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'EducationalOrganization',
-                '@id': 'https://www.dutchschool.co.ke',
-                name: 'Dutch School Nairobi',
-                alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
-                description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation.',
-                url: 'https://www.dutchschool.co.ke',
-                logo: 'https://www.dutchschool.co.ke/logo.png',
-                foundingDate: '1971',
-                address: {
-                  '@type': 'PostalAddress',
-                  streetAddress: 'Makindi Road',
-                  addressLocality: 'Nairobi',
-                  addressCountry: 'KE',
+    <NextIntlClientProvider messages={messages}>
+      {/* Schema.org structured data for SEO and AI search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'EducationalOrganization',
+            '@id': 'https://www.dutchschool.co.ke',
+            name: 'Dutch School Nairobi',
+            alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
+            description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation.',
+            url: 'https://www.dutchschool.co.ke',
+            logo: 'https://www.dutchschool.co.ke/logo-color.png',
+            foundingDate: '1971',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Makindi Road',
+              addressLocality: 'Nairobi',
+              addressCountry: 'KE',
+            },
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '+254-123-456-789',
+              contactType: 'admissions',
+              availableLanguage: ['English', 'Dutch'],
+            },
+            sameAs: [
+              'https://www.facebook.com/dutchschoolnairobi',
+              'https://www.linkedin.com/company/netherlands-school-society',
+            ],
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: 'Educational Programs',
+              itemListElement: [
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'EducationalOccupationalProgram',
+                    name: 'Toddler Group',
+                    description: 'Early childhood education for ages 1½-4',
+                  },
                 },
-                contactPoint: {
-                  '@type': 'ContactPoint',
-                  telephone: '+254-123-456-789',
-                  contactType: 'admissions',
-                  availableLanguage: ['English', 'Dutch'],
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'EducationalOccupationalProgram',
+                    name: 'Primary School',
+                    description: 'Bilingual education for ages 4-12 with IPC curriculum',
+                  },
                 },
-                sameAs: [
-                  'https://www.facebook.com/dutchschoolnairobi',
-                  'https://www.linkedin.com/company/netherlands-school-society',
-                ],
-                hasOfferCatalog: {
-                  '@type': 'OfferCatalog',
-                  name: 'Educational Programs',
-                  itemListElement: [
-                    {
-                      '@type': 'Offer',
-                      itemOffered: {
-                        '@type': 'EducationalOccupationalProgram',
-                        name: 'Toddler Group',
-                        description: 'Early childhood education for ages 1½-4',
-                      },
-                    },
-                    {
-                      '@type': 'Offer',
-                      itemOffered: {
-                        '@type': 'EducationalOccupationalProgram',
-                        name: 'Primary School',
-                        description: 'Bilingual education for ages 4-12 with IPC curriculum',
-                      },
-                    },
-                    {
-                      '@type': 'Offer',
-                      itemOffered: {
-                        '@type': 'EducationalOccupationalProgram',
-                        name: 'NTC Lessons',
-                        description: 'Dutch language and culture lessons for ages 3.5-18',
-                      },
-                    },
-                  ],
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'EducationalOccupationalProgram',
+                    name: 'NTC Lessons',
+                    description: 'Dutch language and culture lessons for ages 3.5-18',
+                  },
                 },
-              }),
-            }}
-          />
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+              ],
+            },
+          }),
+        }}
+      />
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
+    </NextIntlClientProvider>
   );
 }

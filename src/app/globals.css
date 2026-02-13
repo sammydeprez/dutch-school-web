@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  /* Primary Colors - Inspired by the tree logo */
-  --primary-green: #4CAF50;
-  --primary-green-dark: #388E3C;
-  --primary-green-light: #81C784;
+  /* Primary - Dutch Blue (60%) */
+  --dutch-blue: #21468B;
+  --dutch-blue-dark: #1a3a6f;
+  --dutch-blue-light: #3d5fa3;
 
-  /* Secondary Colors - From the logo */
-  --orange: #FF9800;
-  --orange-dark: #F57C00;
-  --orange-light: #FFB74D;
+  /* Secondary - Sunshine Yellow (30%) */
+  --sunshine-yellow: #FDDA26;
+  --sunshine-yellow-dark: #e5c520;
+  --sunshine-yellow-light: #feea7a;
 
-  --blue: #2196F3;
-  --blue-dark: #1976D2;
-  --blue-light: #64B5F6;
+  /* Secondary - Leaf Green */
+  --leaf-green: #4A9350;
+  --leaf-green-dark: #3d7a42;
+  --leaf-green-light: #6ab36f;
 
+  /* Accent - Red (keep for errors/accents) */
   --red: #E53935;
-  --yellow: #FDD835;
-  --purple: #7B1FA2;
 
   /* Neutrals */
   --background: #ffffff;
@@ -28,32 +28,31 @@
   --surface: #F9FAFB;
 
   /* Semantic Colors */
-  --success: #10B981;
-  --warning: #F59E0B;
+  --success: var(--leaf-green);
+  --warning: var(--sunshine-yellow);
   --error: #EF4444;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary-green);
-  --color-primary-dark: var(--primary-green-dark);
-  --color-primary-light: var(--primary-green-light);
-  --color-secondary: var(--orange);
-  --color-secondary-dark: var(--orange-dark);
-  --color-secondary-light: var(--orange-light);
-  --color-accent: var(--blue);
-  --color-accent-dark: var(--blue-dark);
-  --color-accent-light: var(--blue-light);
+  --color-primary: var(--dutch-blue);
+  --color-primary-dark: var(--dutch-blue-dark);
+  --color-primary-light: var(--dutch-blue-light);
+  --color-secondary: var(--sunshine-yellow);
+  --color-secondary-dark: var(--sunshine-yellow-dark);
+  --color-secondary-light: var(--sunshine-yellow-light);
+  --color-accent: var(--leaf-green);
+  --color-accent-dark: var(--leaf-green-dark);
+  --color-accent-light: var(--leaf-green-light);
   --color-muted: var(--muted);
   --color-muted-light: var(--muted-light);
   --color-border: var(--border);
   --color-surface: var(--surface);
   --color-red: var(--red);
-  --color-yellow: var(--yellow);
-  --color-purple: var(--purple);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-yellow: var(--sunshine-yellow);
+  --font-heading: var(--font-rubik);
+  --font-body: var(--font-archivo);
 }
 
 * {
@@ -73,11 +72,11 @@ body {
 
 /* Custom Utility Classes */
 .gradient-hero {
-  background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 50%, #fff8e1 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf3 50%, #fffef5 100%);
 }
 
 .gradient-cta {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
+  background: linear-gradient(135deg, var(--dutch-blue) 0%, var(--dutch-blue-dark) 100%);
 }
 
 .gradient-card {
@@ -93,9 +92,18 @@ p {
   text-wrap: pretty;
 }
 
+/* Typography - Brand fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+body, p, span, li, a, button, input, textarea {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid var(--primary-green);
+  outline: 2px solid var(--dutch-blue);
   outline-offset: 2px;
 }
 
@@ -107,6 +115,6 @@ img {
 
 /* Selection styling */
 ::selection {
-  background-color: var(--primary-green-light);
-  color: var(--foreground);
+  background-color: var(--dutch-blue-light);
+  color: white;
 }
