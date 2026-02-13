@@ -175,6 +175,7 @@ function ProcessSection() {
 
 function RequirementsSection() {
   const t = useTranslations('enrollment.requirements');
+  const te = useTranslations('enrollment');
 
   const requirements = [
     t('item1'),
@@ -190,10 +191,10 @@ function RequirementsSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              {t('title')}
+              {te('requirements.title')}
             </h2>
             <p className="text-muted mb-8">
-              Please prepare the following documents for your child's enrollment application.
+              {te('requirements.subtitle')}
             </p>
 
             <ul className="space-y-4">
@@ -209,14 +210,14 @@ function RequirementsSection() {
           </div>
 
           <div className="bg-white p-8 rounded-3xl shadow-sm">
-            <h3 className="text-xl font-bold text-foreground mb-6">Download Forms</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">{te('downloads.title')}</h3>
             <div className="space-y-4">
               <a href="#" className="flex items-center gap-4 p-4 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all group">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <FileText className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Application Form</p>
+                  <p className="font-semibold text-foreground">{te('downloads.applicationForm')}</p>
                   <p className="text-sm text-muted">PDF, 245 KB</p>
                 </div>
                 <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-primary transition-colors" />
@@ -226,7 +227,7 @@ function RequirementsSection() {
                   <FileText className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Medical Form</p>
+                  <p className="font-semibold text-foreground">{te('downloads.medicalForm')}</p>
                   <p className="text-sm text-muted">PDF, 180 KB</p>
                 </div>
                 <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-secondary transition-colors" />
@@ -236,7 +237,7 @@ function RequirementsSection() {
                   <FileText className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">School Information Pack</p>
+                  <p className="font-semibold text-foreground">{te('downloads.infoPack')}</p>
                   <p className="text-sm text-muted">PDF, 1.2 MB</p>
                 </div>
                 <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-accent transition-colors" />
@@ -251,6 +252,7 @@ function RequirementsSection() {
 
 function FeesSection() {
   const t = useTranslations('enrollment.fees');
+  const te = useTranslations('enrollment');
 
   const fees = [
     { program: 'Toddler Group (1½-4)', fee: 'Contact for fees', note: 'Per term' },
@@ -295,7 +297,7 @@ function FeesSection() {
 
           <div className="mt-8 p-6 bg-primary/5 rounded-2xl">
             <p className="text-sm text-muted">
-              <strong className="text-foreground">Note:</strong> Fees include all learning materials, lunch program, and most extracurricular activities. A registration fee applies for new students. Sibling discounts and payment plans are available.
+              <strong className="text-foreground">Note:</strong> {te('feesNote')}
             </p>
           </div>
         </div>
@@ -345,10 +347,10 @@ function CTASection() {
     <section className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Ready to Apply?
+          {t('readyToApply.title')}
         </h2>
         <p className="text-white/80 mb-8">
-          Start your application today or contact us for more information.
+          {t('readyToApply.subtitle')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
@@ -362,7 +364,7 @@ function CTASection() {
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-dark text-white font-semibold rounded-full hover:bg-foreground transition-colors"
           >
-            Schedule a Tour
+            {t('readyToApply.scheduleTour')}
           </Link>
         </div>
 

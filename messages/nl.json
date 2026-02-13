@@ -186,7 +186,23 @@
       "title": "Veelgestelde Vragen",
       "moreQuestions": "Heeft u meer vragen?",
       "contactLink": "Neem contact op met ons toelatings team"
-    }
+    },
+    "requirements": {
+      "title": "Vereisten",
+      "subtitle": "Bereid de volgende documenten voor voor de inschrijving van uw kind."
+    },
+    "downloads": {
+      "title": "Formulieren Downloaden",
+      "applicationForm": "Aanmeldingsformulier",
+      "medicalForm": "Medisch Formulier",
+      "infoPack": "School Informatiepakket"
+    },
+    "readyToApply": {
+      "title": "Klaar om Aan te Melden?",
+      "subtitle": "Start vandaag uw aanmelding of neem contact met ons op voor meer informatie.",
+      "scheduleTour": "Plan een Rondleiding"
+    },
+    "feesNote": "Schoolgeld omvat alle leermaterialen, lunchprogramma en de meeste buitenschoolse activiteiten. Voor nieuwe leerlingen geldt een inschrijfgeld. Korting voor broers/zussen en betalingsregelingen zijn beschikbaar."
   },
   "contact": {
     "title": "Contact",

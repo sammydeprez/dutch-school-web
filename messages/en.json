@@ -186,7 +186,23 @@
       "title": "Frequently Asked Questions",
       "moreQuestions": "Have more questions?",
       "contactLink": "Contact our admissions team"
-    }
+    },
+    "requirements": {
+      "title": "Requirements",
+      "subtitle": "Please prepare the following documents for your child's enrollment application."
+    },
+    "downloads": {
+      "title": "Download Forms",
+      "applicationForm": "Application Form",
+      "medicalForm": "Medical Form",
+      "infoPack": "School Information Pack"
+    },
+    "readyToApply": {
+      "title": "Ready to Apply?",
+      "subtitle": "Start your application today or contact us for more information.",
+      "scheduleTour": "Schedule a Tour"
+    },
+    "feesNote": "Fees include all learning materials, lunch program, and most extracurricular activities. A registration fee applies for new students. Sibling discounts and payment plans are available."
   },
   "contact": {
     "title": "Contact Us",
