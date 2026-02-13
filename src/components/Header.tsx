@@ -30,17 +30,17 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
             <Image
               src="/logo-icon.png"
               alt="Dutch School Nairobi"
               width={48}
               height={48}
-              className="w-12 h-12 object-contain"
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
-            <div className="hidden sm:block">
-              <span className="text-xl font-bold text-foreground">Dutch School</span>
-              <span className="block text-sm text-muted -mt-1">NAIROBI</span>
+            <div>
+              <span className="text-base sm:text-xl font-bold text-foreground">Dutch School</span>
+              <span className="block text-xs sm:text-sm text-muted -mt-0.5 sm:-mt-1">NAIROBI</span>
             </div>
           </Link>
 
