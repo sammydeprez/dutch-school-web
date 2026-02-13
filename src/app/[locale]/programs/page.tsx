@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { BookOpen, Users, Globe, Music, Palette, Calculator, Languages, ArrowRight, CheckCircle } from 'lucide-react';
+import { PageHero, PageCTA } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -116,18 +117,7 @@ export default async function ProgramsPage({ params }: { params: Promise<{ local
 function HeroSection() {
   const t = useTranslations('programsPage.hero');
 
-  return (
-    <section className="relative gradient-hero py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-          {t('title')}
-        </h1>
-        <p className="text-xl text-muted max-w-2xl mx-auto">
-          {t('subtitle')}
-        </p>
-      </div>
-    </section>
-  );
+  return <PageHero title={t('title')} subtitle={t('subtitle')} />;
 }
 
 function ProgramsGrid() {
@@ -319,30 +309,13 @@ function CTASection() {
   const t = useTranslations('programsPage.cta');
 
   return (
-    <section className="py-20 bg-primary">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          {t('title')}
-        </h2>
-        <p className="text-white/80 mb-8">
-          {t('subtitle')}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/enrollment"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-full hover:bg-surface transition-colors"
-          >
-            {t('applyButton')}
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-dark text-white font-semibold rounded-full hover:bg-foreground transition-colors"
-          >
-            {t('contactButton')}
-          </Link>
-        </div>
-      </div>
-    </section>
+    <PageCTA
+      title={t('title')}
+      subtitle={t('subtitle')}
+      buttons={[
+        { label: t('applyButton'), href: '/enrollment' },
+        { label: t('contactButton'), href: '/contact', variant: 'secondary' },
+      ]}
+    />
   );
 }
