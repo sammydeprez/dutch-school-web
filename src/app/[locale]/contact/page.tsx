@@ -4,14 +4,51 @@ import { useTranslations } from 'next-intl';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 export default function ContactPage() {
-  const t = useTranslations('contact');
-
   return (
     <>
+      <ContactPageSchema />
       <HeroSection />
       <ContactSection />
       <MapSection />
     </>
+  );
+}
+
+function ContactPageSchema() {
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    mainEntity: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      telephone: '+254-123-456-789',
+      email: 'info@dutchschool.co.ke',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Makindi Road',
+        addressLocality: 'Nairobi',
+        postalCode: '14997',
+        addressCountry: 'KE',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '-1.2921',
+        longitude: '36.8219',
+      },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '16:00',
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+    />
   );
 }
 
