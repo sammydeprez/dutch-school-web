@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="public/logo.png" alt="Dutch School Nairobi" width="200">
+</p>
 
-## Getting Started
+<h1 align="center">Dutch School Nairobi</h1>
 
-First, run the development server:
+<p align="center">
+  Bilingual Dutch-English education in the heart of Nairobi since 1971
+</p>
+
+<p align="center">
+  <a href="https://brave-meadow-005dea503.4.azurestaticapps.net">View Live Site</a> •
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#development">Development</a>
+</p>
+
+---
+
+## About
+
+The official website for Dutch School Nairobi (Netherlands School Society), offering bilingual Dutch and English education for children ages 1½-18 in Kenya. Recognized by the Dutch Education Abroad Foundation (Stichting NOB).
+
+## Features
+
+- 🌍 **Bilingual** - Full Dutch and English language support
+- 📱 **Responsive** - Mobile-first design
+- ⚡ **Fast** - Static site generation for optimal performance
+- 🔍 **SEO Optimized** - Schema.org structured data, meta tags, hreflang
+- ♿ **Accessible** - WCAG compliant with proper focus states
+
+## Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **i18n:** [next-intl](https://next-intl-docs.vercel.app/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Hosting:** [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static)
+
+## Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Run linting
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── messages/           # Translation files (nl.json, en.json)
+├── public/             # Static assets (logos, images)
+├── src/
+│   ├── app/            # Next.js App Router pages
+│   │   └── [locale]/   # Locale-specific routes
+│   ├── components/     # React components
+│   └── i18n/           # Internationalization config
+├── infra/              # Azure Bicep templates
+└── .github/workflows/  # CI/CD pipeline
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site automatically deploys to Azure Static Web Apps on push to `main` via GitHub Actions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 Dutch School Nairobi. All rights reserved.
