@@ -1,0 +1,227 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Over Ons",
+    "programs": "Programma's",
+    "enrollment": "Inschrijving",
+    "contact": "Contact",
+    "applyNow": "Inschrijven"
+  },
+  "hero": {
+    "title": "Waar Nederlands Onderwijs de Afrikaanse Geest Ontmoet",
+    "subtitle": "Het vormen van wereldburgers door tweetalig onderwijs in het hart van Nairobi sinds 1971",
+    "cta": "Ontdek Onze School",
+    "secondaryCta": "Plan een Bezoek"
+  },
+  "about": {
+    "title": "Over Dutch School Nairobi",
+    "subtitle": "Bijna 50 jaar onderwijsexcellentie",
+    "description": "De Nederlandse Schoolvereniging biedt al bijna 50 jaar Nederlands kleuter- en basisonderwijs in Nairobi. Onze kleine klassen richten zich op individuele leerbehoeften, terwijl ons grote, groene terrein een prachtige plek biedt om te leren en ontdekken.",
+    "mission": "Onze Missie",
+    "missionText": "Het bieden van uitzonderlijk tweetalig onderwijs dat het beste van Nederlandse onderwijstradities combineert met internationale perspectieven, en kinderen voorbereidt om te gedijen in een mondiale samenleving.",
+    "vision": "Onze Visie",
+    "visionText": "Een gemeenschap waar elk kind zijn unieke potentieel ontwikkelt door gepersonaliseerd leren, cultureel bewustzijn en een diepe verbinding met zowel het Nederlandse erfgoed als hun internationale omgeving.",
+    "stats": {
+      "years": "Jaren Excellentie",
+      "nationalities": "Nationaliteiten",
+      "ratio": "Leraar-Leerling Ratio",
+      "graduates": "Tevreden Afgestudeerden"
+    }
+  },
+  "features": {
+    "title": "Waarom Dutch School?",
+    "subtitle": "Een unieke onderwijservaring in Nairobi",
+    "bilingual": {
+      "title": "Tweetalig Onderwijs",
+      "description": "Volledig Nederlands en Engels curriculum voor naadloze overgang naar zowel Nederlandse als internationale schoolsystemen wereldwijd."
+    },
+    "curriculum": {
+      "title": "IPC Curriculum",
+      "description": "International Primary Curriculum met thematisch leren dat participatie en wereldburgerschap aanmoedigt."
+    },
+    "community": {
+      "title": "Kleine Gemeenschap",
+      "description": "Met 15+ nationaliteiten en kleine klassen krijgt elk kind persoonlijke aandacht en zorg."
+    },
+    "environment": {
+      "title": "Groene Campus",
+      "description": "Grote buitenruimtes en tuinen bieden de perfecte omgeving voor leren, spelen en ontdekken."
+    }
+  },
+  "programs": {
+    "title": "Onze Programma's",
+    "subtitle": "Onderwijs voor elke ontwikkelingsfase",
+    "toddler": {
+      "title": "Peutergroep",
+      "ages": "Leeftijd 1½ - 4",
+      "description": "Een koesterende introductie tot leren door spel, sociale interactie en vroege Nederlandse taalblootstelling."
+    },
+    "primary": {
+      "title": "Basisschool",
+      "ages": "Leeftijd 4 - 12",
+      "description": "Uitgebreid tweetalig onderwijs dat het Nederlandse curriculum combineert met het International Primary Curriculum (IPC)."
+    },
+    "ntc": {
+      "title": "NTC Lessen",
+      "ages": "Leeftijd 3,5 - 18",
+      "description": "Nederlands taal- en cultuuronderwijs voor kinderen op andere internationale scholen in Nairobi."
+    },
+    "adult": {
+      "title": "Nederlandse Les voor Volwassenen",
+      "ages": "Alle niveaus",
+      "description": "Nederlandse taalcursussen voor ouders en volwassenen die Nederlands willen leren of verbeteren."
+    },
+    "learnMore": "Meer Info"
+  },
+  "testimonials": {
+    "title": "Wat Ouders Zeggen",
+    "subtitle": "Hoor van onze gemeenschap",
+    "testimonial1": {
+      "quote": "De Dutch School is een tweede thuis voor onze kinderen. De tweetalige aanpak heeft hen vertrouwen gegeven in zowel Nederlands als Engels, en de kleine klassen zorgen ervoor dat ze echt gedijen.",
+      "author": "Maria van der Berg",
+      "role": "Moeder van twee"
+    },
+    "testimonial2": {
+      "quote": "Na onze verhuizing uit Nederland maakten we ons zorgen over het onderwijs van onze kinderen. De Dutch School overtrof alle verwachtingen - ze behouden hun Nederlands terwijl ze hun internationale ervaring omarmen.",
+      "author": "Peter & Anna Jansen",
+      "role": "Expat familie"
+    },
+    "testimonial3": {
+      "quote": "Het IPC-curriculum gecombineerd met Nederlandse tradities creëert een unieke leeromgeving. Onze dochter houdt van school en ontwikkelt zich tot een echte wereldburger.",
+      "author": "Sarah Okonkwo",
+      "role": "Ouder"
+    }
+  },
+  "cta": {
+    "title": "Begin de Reis van Uw Kind",
+    "subtitle": "Sluit u aan bij onze diverse leergemeenschap",
+    "description": "Ontdek hoe Dutch School Nairobi uw kind een tweetalig onderwijs van wereldklasse kan bieden in een koesterende omgeving.",
+    "button": "Plan een Schoolrondleiding",
+    "contact": "Of neem contact op via"
+  },
+  "footer": {
+    "description": "Nederlands en tweetalig onderwijs in Nairobi sinds 1971. Erkend door de Stichting Nederlands Onderwijs in het Buitenland.",
+    "quickLinks": "Snelle Links",
+    "programs": "Programma's",
+    "contact": "Contact",
+    "address": "Makindi Road, Nairobi, Kenia",
+    "hours": "Ma - Vr: 8:00 - 15:30",
+    "copyright": "© 2025 Dutch School Nairobi. Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene Voorwaarden"
+  },
+  "enrollment": {
+    "title": "Inschrijving",
+    "subtitle": "Word deel van de Dutch School familie",
+    "intro": "We verwelkomen aanmeldingen het hele jaar door. Ons toelatingsproces is ontworpen om eenvoudig en ondersteunend te zijn.",
+    "steps": {
+      "title": "Inschrijvingsstappen",
+      "step1": {
+        "title": "Aanvraag",
+        "description": "Neem contact met ons op om uw interesse kenbaar te maken en een schoolbezoek te plannen."
+      },
+      "step2": {
+        "title": "Schoolrondleiding",
+        "description": "Bezoek onze campus, ontmoet onze docenten en bekijk onze faciliteiten."
+      },
+      "step3": {
+        "title": "Aanmelding",
+        "description": "Vul het aanmeldformulier in en lever de vereiste documenten aan."
+      },
+      "step4": {
+        "title": "Kennismaking",
+        "description": "Een vriendelijke kennismaking om de behoeften en leerstijl van uw kind te begrijpen."
+      },
+      "step5": {
+        "title": "Inschrijving",
+        "description": "Ontvang uw aanbod en rond de inschrijving af om lid te worden van onze gemeenschap."
+      }
+    },
+    "requirements": {
+      "title": "Vereisten",
+      "item1": "Ingevuld aanmeldformulier",
+      "item2": "Kopie van het paspoort van het kind",
+      "item3": "Recente pasfoto's",
+      "item4": "Vorige schoolrapporten (indien van toepassing)",
+      "item5": "Vaccinatiegegevens"
+    },
+    "fees": {
+      "title": "Schoolgeld & Kosten",
+      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen, lunch en buitenschoolse activiteiten. Neem contact met ons op voor een gedetailleerd overzicht."
+    },
+    "cta": "Start Uw Aanmelding"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We horen graag van u",
+    "form": {
+      "name": "Uw Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "subject": "Onderwerp",
+      "message": "Uw Bericht",
+      "submit": "Verstuur Bericht"
+    },
+    "info": {
+      "title": "Neem Contact Op",
+      "address": "Adres",
+      "addressValue": "Makindi Road, Nairobi, Kenia",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "hours": "Kantooruren",
+      "hoursValue": "Maandag - Vrijdag: 8:00 - 16:00"
+    },
+    "map": "Vind Ons"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Over Dutch School Nairobi",
+      "subtitle": "Bijna 50 jaar het vormen van jonge geesten in Kenia"
+    },
+    "history": {
+      "title": "Onze Geschiedenis",
+      "content": "Opgericht in 1971, is de Nederlandse Schoolvereniging een hoeksteen van Nederlands onderwijs in Oost-Afrika. Wat begon als een klein initiatief van Nederlandse expatfamilies is uitgegroeid tot een bloeiende internationale gemeenschap, met trots erkend door de Stichting Nederlands Onderwijs in het Buitenland."
+    },
+    "approach": {
+      "title": "Onze Onderwijsaanpak",
+      "content": "Wij geloven in de kracht van tweetalig onderwijs. Onze unieke combinatie van het Nederlandse curriculum en het International Primary Curriculum (IPC) zorgt ervoor dat leerlingen goed voorbereid zijn op zowel Nederlandse als internationale onderwijstrajecten. Kleine klassen maken persoonlijke aandacht mogelijk, zodat elk kind zijn volledige potentieel bereikt."
+    },
+    "team": {
+      "title": "Ons Team",
+      "subtitle": "Toegewijde docenten gepassioneerd over het succes van uw kind"
+    },
+    "values": {
+      "title": "Onze Waarden",
+      "value1": {
+        "title": "Excellentie",
+        "description": "We streven naar de hoogste normen in onderwijs en persoonlijke ontwikkeling."
+      },
+      "value2": {
+        "title": "Gemeenschap",
+        "description": "We bevorderen een warme, inclusieve omgeving waar iedereen thuishoort."
+      },
+      "value3": {
+        "title": "Innovatie",
+        "description": "We omarmen nieuwe onderwijsmethoden terwijl we tradities eren."
+      },
+      "value4": {
+        "title": "Wereldburgerschap",
+        "description": "We bereiden kinderen voor om te gedijen in een verbonden wereld."
+      }
+    }
+  },
+  "programsPage": {
+    "hero": {
+      "title": "Onze Programma's",
+      "subtitle": "Uitgebreid onderwijs van peuters tot jongvolwassenen"
+    },
+    "daySchool": {
+      "title": "Dagschool",
+      "description": "Ons kernprogramma met volledig tweetalig onderwijs"
+    },
+    "ntcProgram": {
+      "title": "NTC Programma",
+      "description": "Nederlandse taal- en cultuurlessen voor leerlingen van andere scholen"
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs",
+    "enrollment": "Enrollment",
+    "contact": "Contact",
+    "applyNow": "Apply Now"
+  },
+  "hero": {
+    "title": "Where Dutch Education Meets African Spirit",
+    "subtitle": "Nurturing global citizens through bilingual education in the heart of Nairobi since 1971",
+    "cta": "Discover Our School",
+    "secondaryCta": "Schedule a Visit"
+  },
+  "about": {
+    "title": "About Dutch School Nairobi",
+    "subtitle": "Nearly 50 years of educational excellence",
+    "description": "The Netherlands School Society has been offering Dutch pre- and primary education in Nairobi for almost 50 years. Our small classrooms focus on individual learning needs, while our large, green compound provides a wonderful place to learn and discover.",
+    "mission": "Our Mission",
+    "missionText": "To provide exceptional bilingual education that combines the best of Dutch educational traditions with international perspectives, preparing children to thrive in a global society.",
+    "vision": "Our Vision",
+    "visionText": "A community where every child develops their unique potential through personalized learning, cultural awareness, and a deep connection to both Dutch heritage and their international environment.",
+    "stats": {
+      "years": "Years of Excellence",
+      "nationalities": "Nationalities",
+      "ratio": "Teacher-Student Ratio",
+      "graduates": "Happy Graduates"
+    }
+  },
+  "features": {
+    "title": "Why Choose Dutch School?",
+    "subtitle": "A unique educational experience in Nairobi",
+    "bilingual": {
+      "title": "Bilingual Education",
+      "description": "Full Dutch and English curriculum ensuring seamless transition to both Dutch and international school systems worldwide."
+    },
+    "curriculum": {
+      "title": "IPC Curriculum",
+      "description": "International Primary Curriculum with thematic learning that encourages participation and global citizenship."
+    },
+    "community": {
+      "title": "Small Community",
+      "description": "With 15+ nationalities and small class sizes, every child receives personalized attention and care."
+    },
+    "environment": {
+      "title": "Green Campus",
+      "description": "Large outdoor spaces and gardens provide the perfect environment for learning, play, and discovery."
+    }
+  },
+  "programs": {
+    "title": "Our Programs",
+    "subtitle": "Education for every stage of development",
+    "toddler": {
+      "title": "Toddler Group",
+      "ages": "Ages 1½ - 4",
+      "description": "A nurturing introduction to learning through play, social interaction, and early Dutch language exposure."
+    },
+    "primary": {
+      "title": "Primary School",
+      "ages": "Ages 4 - 12",
+      "description": "Comprehensive bilingual education combining Dutch curriculum with International Primary Curriculum (IPC)."
+    },
+    "ntc": {
+      "title": "NTC Lessons",
+      "ages": "Ages 3.5 - 18",
+      "description": "Dutch language and culture education for children attending other international schools in Nairobi."
+    },
+    "adult": {
+      "title": "Adult Dutch Lessons",
+      "ages": "All levels",
+      "description": "Dutch language courses for parents and adults wanting to learn or improve their Dutch."
+    },
+    "learnMore": "Learn More"
+  },
+  "testimonials": {
+    "title": "What Parents Say",
+    "subtitle": "Hear from our community",
+    "testimonial1": {
+      "quote": "The Dutch School has been a second home for our children. The bilingual approach has given them confidence in both Dutch and English, and the small class sizes mean they truly thrive.",
+      "author": "Maria van der Berg",
+      "role": "Parent of two"
+    },
+    "testimonial2": {
+      "quote": "Moving from the Netherlands, we were worried about our children's education. The Dutch School exceeded all expectations - they've maintained their Dutch while embracing their international experience.",
+      "author": "Peter & Anna Jansen",
+      "role": "Expat family"
+    },
+    "testimonial3": {
+      "quote": "The IPC curriculum combined with Dutch traditions creates a unique learning environment. Our daughter loves school and is developing into a true global citizen.",
+      "author": "Sarah Okonkwo",
+      "role": "Parent"
+    }
+  },
+  "cta": {
+    "title": "Begin Your Child's Journey",
+    "subtitle": "Join our diverse community of learners",
+    "description": "Discover how Dutch School Nairobi can provide your child with a world-class bilingual education in a nurturing environment.",
+    "button": "Schedule a School Tour",
+    "contact": "Or contact us at"
+  },
+  "footer": {
+    "description": "Providing Dutch and bilingual education in Nairobi since 1971. Recognized by the Dutch Education Abroad Foundation.",
+    "quickLinks": "Quick Links",
+    "programs": "Programs",
+    "contact": "Contact Us",
+    "address": "Makindi Road, Nairobi, Kenya",
+    "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+    "copyright": "© 2025 Dutch School Nairobi. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "enrollment": {
+    "title": "Enrollment",
+    "subtitle": "Join the Dutch School family",
+    "intro": "We welcome applications throughout the year. Our admissions process is designed to be straightforward and supportive.",
+    "steps": {
+      "title": "Enrollment Steps",
+      "step1": {
+        "title": "Inquiry",
+        "description": "Contact us to express your interest and schedule a school visit."
+      },
+      "step2": {
+        "title": "School Tour",
+        "description": "Visit our campus, meet our teachers, and see our facilities firsthand."
+      },
+      "step3": {
+        "title": "Application",
+        "description": "Complete the application form and submit required documents."
+      },
+      "step4": {
+        "title": "Assessment",
+        "description": "A friendly assessment to understand your child's needs and learning style."
+      },
+      "step5": {
+        "title": "Enrollment",
+        "description": "Receive your offer and complete enrollment to join our community."
+      }
+    },
+    "requirements": {
+      "title": "Requirements",
+      "item1": "Completed application form",
+      "item2": "Copy of child's passport",
+      "item3": "Recent passport-size photos",
+      "item4": "Previous school reports (if applicable)",
+      "item5": "Immunization records"
+    },
+    "fees": {
+      "title": "Tuition & Fees",
+      "description": "Our fees are competitive and include all learning materials, lunch, and extracurricular activities. Contact us for detailed fee structure."
+    },
+    "cta": "Start Your Application"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "address": "Address",
+      "addressValue": "Makindi Road, Nairobi, Kenya",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Office Hours",
+      "hoursValue": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    "map": "Find Us"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "About Dutch School Nairobi",
+      "subtitle": "Nearly 50 years of nurturing young minds in Kenya"
+    },
+    "history": {
+      "title": "Our History",
+      "content": "Founded in 1971, the Netherlands School Society has been a cornerstone of Dutch education in East Africa. What started as a small initiative by Dutch expatriate families has grown into a thriving international community, proudly recognized by the Dutch Education Abroad Foundation."
+    },
+    "approach": {
+      "title": "Our Educational Approach",
+      "content": "We believe in the power of bilingual education. Our unique combination of the Dutch curriculum and the International Primary Curriculum (IPC) ensures students are well-prepared for both Dutch and international educational pathways. Small class sizes allow for personalized attention, ensuring every child reaches their full potential."
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Dedicated educators passionate about your child's success"
+    },
+    "values": {
+      "title": "Our Values",
+      "value1": {
+        "title": "Excellence",
+        "description": "We strive for the highest standards in education and personal development."
+      },
+      "value2": {
+        "title": "Community",
+        "description": "We foster a warm, inclusive environment where everyone belongs."
+      },
+      "value3": {
+        "title": "Innovation",
+        "description": "We embrace new teaching methods while honoring educational traditions."
+      },
+      "value4": {
+        "title": "Global Citizenship",
+        "description": "We prepare children to thrive in an interconnected world."
+      }
+    }
+  },
+  "programsPage": {
+    "hero": {
+      "title": "Our Programs",
+      "subtitle": "Comprehensive education from toddlers to young adults"
+    },
+    "daySchool": {
+      "title": "Day School",
+      "description": "Our core program offering full bilingual education"
+    },
+    "ntcProgram": {
+      "title": "NTC Program",
+      "description": "Dutch language and culture lessons for students at other schools"
+    }
+  }
+}
