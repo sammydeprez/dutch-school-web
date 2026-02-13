@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { BookOpen, Users, Globe, Music, Palette, Calculator, Languages, ArrowRight, CheckCircle } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -127,39 +127,35 @@ function ProgramsGrid() {
   const programs = [
     {
       id: 'toddler',
-      icon: '👶',
+      image: '/images/toddler.png',
       title: t('toddler.title'),
       ages: t('toddler.ages'),
       description: t('toddler.description'),
       features: tp.raw('features.toddler') as string[],
-      color: 'from-yellow/30 to-secondary/30',
     },
     {
       id: 'primary',
-      icon: '📚',
+      image: '/images/primary.png',
       title: t('primary.title'),
       ages: t('primary.ages'),
       description: t('primary.description'),
       features: tp.raw('features.primary') as string[],
-      color: 'from-primary/30 to-primary-light/30',
     },
     {
       id: 'ntc',
-      icon: '🇳🇱',
+      image: '/images/ntc.png',
       title: t('ntc.title'),
       ages: t('ntc.ages'),
       description: t('ntc.description'),
       features: tp.raw('features.ntc') as string[],
-      color: 'from-accent/30 to-accent-light/30',
     },
     {
       id: 'adult',
-      icon: '🎓',
+      image: '/images/adult.png',
       title: t('adult.title'),
       ages: t('adult.ages'),
       description: t('adult.description'),
       features: tp.raw('features.adult') as string[],
-      color: 'from-purple/30 to-red/30',
     },
   ];
 
@@ -173,13 +169,16 @@ function ProgramsGrid() {
               id={program.id}
               className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
             >
-              {/* Image Placeholder */}
+              {/* Program Image */}
               <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className={`aspect-[4/3] bg-gradient-to-br ${program.color} rounded-3xl flex items-center justify-center`}>
-                  <div className="text-center">
-                    <span className="text-8xl">{program.icon}</span>
-                    <p className="text-muted mt-4 text-sm">{tp('imagePlaceholder')}</p>
-                  </div>
+                <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+                  <OptimizedImage
+                    src={program.image}
+                    alt={program.title}
+                    width={800}
+                    height={597}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -293,11 +292,14 @@ function ActivitiesSection() {
             </div>
           </div>
 
-          <div className="aspect-square bg-gradient-to-br from-secondary/20 to-primary/20 rounded-3xl flex items-center justify-center">
-            <div className="text-center">
-              <span className="text-8xl">🎨</span>
-              <p className="text-muted mt-4 text-sm">{t('imagePlaceholder')}</p>
-            </div>
+          <div className="aspect-square rounded-3xl overflow-hidden">
+            <OptimizedImage
+              src="/images/activities.png"
+              alt={t('title')}
+              width={800}
+              height={800}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

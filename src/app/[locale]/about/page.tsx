@@ -1,8 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
-import { Award, Heart, Lightbulb, Globe, Calendar, ArrowRight } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { Award, Heart, Lightbulb, Globe, Calendar } from 'lucide-react';
+import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -197,10 +196,10 @@ function TeamSection() {
   const t = useTranslations('aboutPage.team');
 
   const team = [
-    { name: t('members.director.name'), role: t('members.director.role'), initials: 'SD' },
-    { name: t('members.headPrimary.name'), role: t('members.headPrimary.role'), initials: 'MV' },
-    { name: t('members.headEarlyYears.name'), role: t('members.headEarlyYears.role'), initials: 'AB' },
-    { name: t('members.operations.name'), role: t('members.operations.role'), initials: 'JO' },
+    { name: t('members.director.name'), role: t('members.director.role'), image: '/images/team/director.png' },
+    { name: t('members.headPrimary.name'), role: t('members.headPrimary.role'), image: '/images/team/primary-head.png' },
+    { name: t('members.headEarlyYears.name'), role: t('members.headEarlyYears.role'), image: '/images/team/early-years-head.png' },
+    { name: t('members.operations.name'), role: t('members.operations.role'), image: '/images/team/operations.png' },
   ];
 
   return (
@@ -218,8 +217,14 @@ function TeamSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <div key={index} className="text-center group">
-              <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform">
-                <span className="text-3xl font-bold text-white">{member.initials}</span>
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden group-hover:scale-105 transition-transform">
+                <OptimizedImage
+                  src={member.image}
+                  alt={member.name}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
               <p className="text-muted text-sm">{member.role}</p>

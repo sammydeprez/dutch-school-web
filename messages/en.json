@@ -171,6 +171,7 @@
     },
     "requirements": {
       "title": "Requirements",
+      "subtitle": "Please prepare the following documents for your child's enrollment application.",
       "item1": "Completed application form",
       "item2": "Copy of child's passport",
       "item3": "Recent passport-size photos",
@@ -186,10 +187,6 @@
       "title": "Frequently Asked Questions",
       "moreQuestions": "Have more questions?",
       "contactLink": "Contact our admissions team"
-    },
-    "requirements": {
-      "title": "Requirements",
-      "subtitle": "Please prepare the following documents for your child's enrollment application."
     },
     "downloads": {
       "title": "Download Forms",

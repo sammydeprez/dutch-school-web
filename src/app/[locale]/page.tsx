@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import Image from 'next/image';
 import {
   Languages,
   BookOpen,
@@ -17,6 +16,7 @@ import {
   Mail,
   Phone
 } from 'lucide-react';
+import { OptimizedImage } from '@/components/ui';
 
 export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   return <HomePageContent params={params} />;
@@ -150,19 +150,15 @@ function HeroSection() {
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Image
-                    src="/logo.png"
-                    alt="Dutch School Nairobi"
-                    width={300}
-                    height={300}
-                    className="mx-auto object-contain"
-                    priority
-                  />
-                </div>
-              </div>
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+              <OptimizedImage
+                src="/images/hero-main.png"
+                alt="Children learning at Dutch School Nairobi"
+                width={1200}
+                height={896}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
 
             {/* Floating Cards */}
@@ -276,16 +272,14 @@ function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-white/50 rounded-full flex items-center justify-center">
-                    <Users className="w-12 h-12 text-primary" />
-                  </div>
-                  <p className="text-muted text-sm">Image Placeholder</p>
-                  <p className="text-muted-light text-xs">School community photo</p>
-                </div>
-              </div>
+            <div className="aspect-square rounded-3xl overflow-hidden">
+              <OptimizedImage
+                src="/images/community.png"
+                alt="Dutch School Nairobi community"
+                width={800}
+                height={800}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Experience Badge */}
@@ -351,32 +345,28 @@ function ProgramsSection() {
       title: t('toddler.title'),
       ages: t('toddler.ages'),
       description: t('toddler.description'),
-      color: 'from-yellow/20 to-secondary/20',
-      icon: '👶',
+      image: '/images/toddler.png',
     },
     {
       id: 'primary',
       title: t('primary.title'),
       ages: t('primary.ages'),
       description: t('primary.description'),
-      color: 'from-primary/20 to-primary-light/20',
-      icon: '📚',
+      image: '/images/primary.png',
     },
     {
       id: 'ntc',
       title: t('ntc.title'),
       ages: t('ntc.ages'),
       description: t('ntc.description'),
-      color: 'from-accent/20 to-accent-light/20',
-      icon: '🇳🇱',
+      image: '/images/ntc.png',
     },
     {
       id: 'adult',
       title: t('adult.title'),
       ages: t('adult.ages'),
       description: t('adult.description'),
-      color: 'from-purple/20 to-red/20',
-      icon: '🎓',
+      image: '/images/adult.png',
     },
   ];
 
@@ -396,13 +386,20 @@ function ProgramsSection() {
           {programs.map((program) => (
             <div
               key={program.id}
-              className="group relative bg-white border border-border rounded-3xl p-8 hover:shadow-xl transition-all duration-300 overflow-hidden"
+              className="group relative bg-white border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300"
             >
-              {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${program.color} opacity-0 group-hover:opacity-100 transition-opacity`} />
+              {/* Program Image */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <OptimizedImage
+                  src={program.image}
+                  alt={program.title}
+                  width={800}
+                  height={597}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
 
-              <div className="relative">
-                <div className="text-5xl mb-6">{program.icon}</div>
+              <div className="p-8">
                 <div className="inline-flex items-center px-3 py-1 bg-surface rounded-full text-sm text-muted mb-4">
                   {program.ages}
                 </div>
@@ -472,16 +469,19 @@ function TestimonialsSection() {
       quote: t('testimonial1.quote'),
       author: t('testimonial1.author'),
       role: t('testimonial1.role'),
+      image: '/images/testimonials/parent1.png',
     },
     {
       quote: t('testimonial2.quote'),
       author: t('testimonial2.author'),
       role: t('testimonial2.role'),
+      image: '/images/testimonials/parent2.png',
     },
     {
       quote: t('testimonial3.quote'),
       author: t('testimonial3.author'),
       role: t('testimonial3.role'),
+      image: '/images/testimonials/parent3.png',
     },
   ];
 
@@ -508,8 +508,14 @@ function TestimonialsSection() {
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white font-semibold">
-                  {testimonial.author.charAt(0)}
+                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <OptimizedImage
+                    src={testimonial.image}
+                    alt={testimonial.author}
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">{testimonial.author}</p>
