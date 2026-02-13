@@ -99,6 +99,25 @@
       "role": "Parent"
     }
   },
+  "quickFacts": {
+    "title": "Quick Facts About Dutch School Nairobi",
+    "q1": {
+      "question": "What is Dutch School Nairobi?",
+      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children ages 1½-18. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB), the school combines the Dutch national curriculum with the International Primary Curriculum (IPC)."
+    },
+    "q2": {
+      "question": "What curriculum does Dutch School Nairobi follow?",
+      "answer": "We follow a bilingual curriculum combining the official Dutch national education standards with the International Primary Curriculum (IPC). This ensures students can transition seamlessly to schools in the Netherlands or continue their international education pathway."
+    },
+    "q3": {
+      "question": "What are the school fees at Dutch School Nairobi?",
+      "answer": "Our fees are competitive with international schools in Nairobi and include all learning materials, lunch, and extracurricular activities. Contact our admissions team for the detailed fee structure, as rates vary by program (Toddler, Primary, NTC, Adult lessons)."
+    },
+    "q4": {
+      "question": "Do students need to speak Dutch to enroll?",
+      "answer": "No prior Dutch language knowledge is required. Our immersive bilingual program supports children at all language levels. Students typically become conversationally fluent in Dutch within their first year through daily exposure and dedicated language instruction."
+    }
+  },
   "cta": {
     "title": "Begin Your Child's Journey",
     "subtitle": "Join our diverse community of learners",

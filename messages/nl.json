@@ -99,6 +99,25 @@
       "role": "Ouder"
     }
   },
+  "quickFacts": {
+    "title": "Snelle Feiten over Dutch School Nairobi",
+    "q1": {
+      "question": "Wat is Dutch School Nairobi?",
+      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is een erkende tweetalige basisschool in Kenia, die Nederlands en Engels onderwijs biedt voor kinderen van 1½-18 jaar. Opgericht in 1971 en erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB), combineert de school het Nederlandse curriculum met het International Primary Curriculum (IPC)."
+    },
+    "q2": {
+      "question": "Welk curriculum volgt Dutch School Nairobi?",
+      "answer": "Wij volgen een tweetalig curriculum dat de officiële Nederlandse onderwijsstandaarden combineert met het International Primary Curriculum (IPC). Dit zorgt ervoor dat leerlingen naadloos kunnen doorstromen naar scholen in Nederland of hun internationale onderwijstraject kunnen voortzetten."
+    },
+    "q3": {
+      "question": "Wat zijn de schoolkosten bij Dutch School Nairobi?",
+      "answer": "Onze tarieven zijn concurrerend met internationale scholen in Nairobi en omvatten alle leermaterialen, lunch en buitenschoolse activiteiten. Neem contact op met ons toelatings team voor de gedetailleerde tariefstructuur, aangezien de tarieven variëren per programma (Peuter, Basis, NTC, Volwassenen lessen)."
+    },
+    "q4": {
+      "question": "Moeten leerlingen Nederlands spreken om zich in te schrijven?",
+      "answer": "Nee, voorkennis van de Nederlandse taal is niet vereist. Ons immersieve tweetalige programma ondersteunt kinderen op alle taalniveaus. Leerlingen worden doorgaans conversationeel vloeiend in het Nederlands binnen hun eerste jaar door dagelijkse blootstelling en gerichte taalinstructie."
+    }
+  },
   "cta": {
     "title": "Begin de Reis van Uw Kind",
     "subtitle": "Sluit u aan bij onze diverse leergemeenschap",

@@ -26,12 +26,55 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // FAQ Schema for homepage quick facts (AEO optimization)
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: locale === 'nl' ? 'Wat is Dutch School Nairobi?' : 'What is Dutch School Nairobi?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: locale === 'nl'
+            ? 'Dutch School Nairobi (Nederlandse Schoolvereniging) is een erkende tweetalige basisschool in Kenia, die Nederlands en Engels onderwijs biedt voor kinderen van 1½-18 jaar. Opgericht in 1971 en erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB).'
+            : 'Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children ages 1½-18. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: locale === 'nl' ? 'Welk curriculum volgt Dutch School Nairobi?' : 'What curriculum does Dutch School Nairobi follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: locale === 'nl'
+            ? 'Wij volgen een tweetalig curriculum dat de officiële Nederlandse onderwijsstandaarden combineert met het International Primary Curriculum (IPC).'
+            : 'We follow a bilingual curriculum combining the official Dutch national education standards with the International Primary Curriculum (IPC).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: locale === 'nl' ? 'Moeten leerlingen Nederlands spreken om zich in te schrijven?' : 'Do students need to speak Dutch to enroll?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: locale === 'nl'
+            ? 'Nee, voorkennis van de Nederlandse taal is niet vereist. Ons immersieve tweetalige programma ondersteunt kinderen op alle taalniveaus.'
+            : 'No prior Dutch language knowledge is required. Our immersive bilingual program supports children at all language levels.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSection />
       <FeaturesSection />
       <AboutSection />
       <ProgramsSection />
+      <QuickFactsSection />
       <TestimonialsSection />
       <StatsSection />
       <CTASection />
@@ -377,6 +420,42 @@ function ProgramsSection() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function QuickFactsSection() {
+  const t = useTranslations('quickFacts');
+
+  const questions = [
+    { question: t('q1.question'), answer: t('q1.answer') },
+    { question: t('q2.question'), answer: t('q2.answer') },
+    { question: t('q3.question'), answer: t('q3.answer') },
+    { question: t('q4.question'), answer: t('q4.answer') },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            {t('title')}
+          </h2>
+        </div>
+
+        <div className="space-y-8">
+          {questions.map((item, index) => (
+            <div key={index} className="bg-surface p-6 lg:p-8 rounded-2xl">
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                {item.question}
+              </h3>
+              <p className="text-muted leading-relaxed">
+                {item.answer}
+              </p>
             </div>
           ))}
         </div>
