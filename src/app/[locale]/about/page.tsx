@@ -18,8 +18,47 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // AboutPage schema for rich results
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: locale === 'nl' ? 'Over Dutch School Nairobi' : 'About Dutch School Nairobi',
+    description: locale === 'nl'
+      ? 'Leer meer over de geschiedenis, missie en waarden van Dutch School Nairobi - al meer dan 50 jaar tweetalig onderwijs in Kenia.'
+      : 'Learn about Dutch School Nairobi\'s history, mission, and values - over 50 years of bilingual education in Kenya.',
+    mainEntity: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
+      foundingDate: '1971',
+      foundingLocation: {
+        '@type': 'Place',
+        name: 'Nairobi, Kenya',
+      },
+      description: locale === 'nl'
+        ? 'De Nederlandse Schoolvereniging Nairobi is een erkende tweetalige basisschool in Kenia, opgericht in 1971. De school biedt Nederlands en Engels onderwijs voor kinderen van 1½-18 jaar en is erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB).'
+        : 'Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, founded in 1971. The school offers Dutch and English education for children ages 1½-18 and is recognized by the Dutch Education Abroad Foundation (NOB).',
+      knowsAbout: [
+        'Bilingual Education',
+        'Dutch Language Education',
+        'International Primary Curriculum (IPC)',
+        'Early Childhood Education',
+        'Dutch Culture Education',
+      ],
+      award: 'Recognized by Dutch Education Abroad Foundation (NOB)',
+      numberOfEmployees: {
+        '@type': 'QuantitativeValue',
+        value: 20,
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       <HeroSection />
       <HistorySection />
       <ValuesSection />

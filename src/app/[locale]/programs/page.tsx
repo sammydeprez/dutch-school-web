@@ -18,8 +18,92 @@ export default async function ProgramsPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Educational programs schema for rich results
+  const programsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: locale === 'nl' ? 'Onderwijsprogramma\'s Dutch School Nairobi' : 'Educational Programs at Dutch School Nairobi',
+    description: locale === 'nl'
+      ? 'Tweetalige onderwijsprogramma\'s van peutergroep tot volwassenenonderwijs'
+      : 'Bilingual educational programs from toddler group to adult education',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'Peutergroep' : 'Toddler Group',
+          description: locale === 'nl'
+            ? 'Vroegschoolse educatie voor kinderen van 1½ tot 4 jaar met speels leren en Nederlandse taalblootstelling'
+            : 'Early childhood education for children ages 1½-4 with play-based learning and Dutch language exposure',
+          timeToComplete: 'P3Y',
+          educationalProgramMode: 'full-time',
+          provider: {
+            '@type': 'EducationalOrganization',
+            name: 'Dutch School Nairobi',
+          },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'Basisschool' : 'Primary School',
+          description: locale === 'nl'
+            ? 'Tweetalig basisonderwijs voor kinderen van 4-12 jaar met Nederlands curriculum en IPC'
+            : 'Bilingual primary education for ages 4-12 combining Dutch curriculum with International Primary Curriculum (IPC)',
+          timeToComplete: 'P8Y',
+          educationalProgramMode: 'full-time',
+          educationalCredentialAwarded: 'Primary School Certificate',
+          provider: {
+            '@type': 'EducationalOrganization',
+            name: 'Dutch School Nairobi',
+          },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: 'NTC Lessons',
+          description: locale === 'nl'
+            ? 'Nederlandse Taal en Cultuur lessen voor kinderen van 3,5-18 jaar op andere internationale scholen'
+            : 'Dutch Language and Culture (NTC) lessons for children ages 3.5-18 attending other international schools',
+          timeToComplete: 'P1Y',
+          educationalProgramMode: 'part-time',
+          provider: {
+            '@type': 'EducationalOrganization',
+            name: 'Dutch School Nairobi',
+          },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'Nederlandse Les voor Volwassenen' : 'Adult Dutch Lessons',
+          description: locale === 'nl'
+            ? 'Nederlandse taalcursussen voor volwassenen op alle niveaus'
+            : 'Dutch language courses for adults at all proficiency levels',
+          educationalProgramMode: 'part-time',
+          provider: {
+            '@type': 'EducationalOrganization',
+            name: 'Dutch School Nairobi',
+          },
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programsSchema) }}
+      />
       <HeroSection />
       <ProgramsGrid />
       <CurriculumSection />
