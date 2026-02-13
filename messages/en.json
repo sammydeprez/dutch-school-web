@@ -185,7 +185,15 @@
     },
     "history": {
       "title": "Our History",
-      "content": "Founded in 1971, the Netherlands School Society has been a cornerstone of Dutch education in East Africa. What started as a small initiative by Dutch expatriate families has grown into a thriving international community, proudly recognized by the Dutch Education Abroad Foundation."
+      "content": "Founded in 1971, the Netherlands School Society has been a cornerstone of Dutch education in East Africa. What started as a small initiative by Dutch expatriate families has grown into a thriving international community, proudly recognized by the Dutch Education Abroad Foundation.",
+      "timeline": {
+        "1971": "School founded by Dutch expatriate families",
+        "1985": "Official recognition by Dutch government",
+        "2000": "Introduction of IPC curriculum",
+        "2010": "NTC program expansion across Nairobi",
+        "2020": "Digital learning integration",
+        "today": "50+ years of educational excellence"
+      }
     },
     "approach": {
       "title": "Our Educational Approach",
@@ -193,7 +201,13 @@
     },
     "team": {
       "title": "Our Team",
-      "subtitle": "Dedicated educators passionate about your child's success"
+      "subtitle": "Dedicated educators passionate about your child's success",
+      "members": {
+        "director": { "name": "Dr. Sarah van Dijk", "role": "School Director" },
+        "headPrimary": { "name": "Mark de Vries", "role": "Head of Primary" },
+        "headEarlyYears": { "name": "Anna Bakker", "role": "Head of Early Years" },
+        "operations": { "name": "James Ochieng", "role": "Operations Manager" }
+      }
     },
     "values": {
       "title": "Our Values",
@@ -213,6 +227,11 @@
         "title": "Global Citizenship",
         "description": "We prepare children to thrive in an interconnected world."
       }
+    },
+    "cta": {
+      "title": "Ready to Join Our Community?",
+      "subtitle": "Schedule a visit to experience our campus and meet our team.",
+      "button": "Schedule a Visit"
     }
   },
   "programsPage": {

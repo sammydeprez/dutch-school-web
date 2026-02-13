@@ -185,7 +185,15 @@
     },
     "history": {
       "title": "Onze Geschiedenis",
-      "content": "Opgericht in 1971, is de Nederlandse Schoolvereniging een hoeksteen van Nederlands onderwijs in Oost-Afrika. Wat begon als een klein initiatief van Nederlandse expatfamilies is uitgegroeid tot een bloeiende internationale gemeenschap, met trots erkend door de Stichting Nederlands Onderwijs in het Buitenland."
+      "content": "Opgericht in 1971, is de Nederlandse Schoolvereniging een hoeksteen van Nederlands onderwijs in Oost-Afrika. Wat begon als een klein initiatief van Nederlandse expatfamilies is uitgegroeid tot een bloeiende internationale gemeenschap, met trots erkend door de Stichting Nederlands Onderwijs in het Buitenland.",
+      "timeline": {
+        "1971": "School opgericht door Nederlandse expatfamilies",
+        "1985": "Officiële erkenning door de Nederlandse overheid",
+        "2000": "Introductie van IPC curriculum",
+        "2010": "Uitbreiding NTC-programma in heel Nairobi",
+        "2020": "Integratie van digitaal leren",
+        "today": "50+ jaar onderwijsexcellentie"
+      }
     },
     "approach": {
       "title": "Onze Onderwijsaanpak",
@@ -193,7 +201,13 @@
     },
     "team": {
       "title": "Ons Team",
-      "subtitle": "Toegewijde docenten gepassioneerd over het succes van uw kind"
+      "subtitle": "Toegewijde docenten gepassioneerd over het succes van uw kind",
+      "members": {
+        "director": { "name": "Dr. Sarah van Dijk", "role": "Schooldirecteur" },
+        "headPrimary": { "name": "Mark de Vries", "role": "Hoofd Basisschool" },
+        "headEarlyYears": { "name": "Anna Bakker", "role": "Hoofd Vroegschoolse Educatie" },
+        "operations": { "name": "James Ochieng", "role": "Operationeel Manager" }
+      }
     },
     "values": {
       "title": "Onze Waarden",
@@ -213,6 +227,11 @@
         "title": "Wereldburgerschap",
         "description": "We bereiden kinderen voor om te gedijen in een verbonden wereld."
       }
+    },
+    "cta": {
+      "title": "Klaar om Lid te Worden van Onze Gemeenschap?",
+      "subtitle": "Plan een bezoek om onze campus te ervaren en ons team te ontmoeten.",
+      "button": "Plan een Bezoek"
     }
   },
   "programsPage": {

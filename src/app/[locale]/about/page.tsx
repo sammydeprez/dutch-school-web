@@ -89,12 +89,12 @@ function HistorySection() {
   const t = useTranslations('aboutPage');
 
   const timeline = [
-    { year: '1971', event: 'School founded by Dutch expatriate families' },
-    { year: '1985', event: 'Official recognition by Dutch government' },
-    { year: '2000', event: 'Introduction of IPC curriculum' },
-    { year: '2010', event: 'NTC program expansion across Nairobi' },
-    { year: '2020', event: 'Digital learning integration' },
-    { year: 'Today', event: '50+ years of educational excellence' },
+    { year: '1971', event: t('history.timeline.1971') },
+    { year: '1985', event: t('history.timeline.1985') },
+    { year: '2000', event: t('history.timeline.2000') },
+    { year: '2010', event: t('history.timeline.2010') },
+    { year: '2020', event: t('history.timeline.2020') },
+    { year: t('history.timeline.today').split(' ')[0], event: t('history.timeline.today') },
   ];
 
   return (
@@ -207,10 +207,10 @@ function TeamSection() {
   const t = useTranslations('aboutPage.team');
 
   const team = [
-    { name: 'Dr. Sarah van Dijk', role: 'School Director', initials: 'SD' },
-    { name: 'Mark de Vries', role: 'Head of Primary', initials: 'MV' },
-    { name: 'Anna Bakker', role: 'Head of Early Years', initials: 'AB' },
-    { name: 'James Ochieng', role: 'Operations Manager', initials: 'JO' },
+    { name: t('members.director.name'), role: t('members.director.role'), initials: 'SD' },
+    { name: t('members.headPrimary.name'), role: t('members.headPrimary.role'), initials: 'MV' },
+    { name: t('members.headEarlyYears.name'), role: t('members.headEarlyYears.role'), initials: 'AB' },
+    { name: t('members.operations.name'), role: t('members.operations.role'), initials: 'JO' },
   ];
 
   return (
@@ -242,20 +242,22 @@ function TeamSection() {
 }
 
 function CTASection() {
+  const t = useTranslations('aboutPage.cta');
+
   return (
     <section className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Ready to Join Our Community?
+          {t('title')}
         </h2>
         <p className="text-white/80 mb-8">
-          Schedule a visit to experience our campus and meet our team.
+          {t('subtitle')}
         </p>
         <Link
           href="/contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-full hover:bg-surface transition-colors"
         >
-          Schedule a Visit
+          {t('button')}
           <ArrowRight className="w-5 h-5" />
         </Link>
       </div>
