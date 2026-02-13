@@ -18,13 +18,59 @@ export default async function EnrollmentPage({ params }: { params: Promise<{ loc
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // FAQ data for both display and schema
+  const faqs = [
+    {
+      question: locale === 'nl' ? 'Wanneer kan mijn kind beginnen?' : 'When can my child start?',
+      answer: locale === 'nl'
+        ? 'We accepteren het hele schooljaar door nieuwe leerlingen, afhankelijk van beschikbaarheid. De belangrijkste instroom is in augustus/september aan het begin van het schooljaar.'
+        : 'We accept new students throughout the school year, subject to availability. The main intake is in August/September at the start of the academic year.',
+    },
+    {
+      question: locale === 'nl' ? 'Moeten kinderen Nederlands spreken?' : 'Do children need to speak Dutch?',
+      answer: locale === 'nl'
+        ? 'Nee, voorkennis van de Nederlandse taal is niet vereist. Ons tweetalig programma is ontworpen om kinderen op alle taalniveaus te ondersteunen, en ze pikken snel Nederlands op door onderdompeling.'
+        : 'No prior Dutch language knowledge is required. Our bilingual program is designed to support children at all language levels, and they quickly pick up Dutch through immersion.',
+    },
+    {
+      question: locale === 'nl' ? 'Wat zijn de schooltijden?' : 'What is the school schedule?',
+      answer: locale === 'nl'
+        ? 'Schooltijden zijn maandag tot vrijdag, 8:00 tot 15:30. Verlengde opvang is beschikbaar tot 17:00 tegen extra kosten.'
+        : 'School hours are Monday to Friday, 8:00 AM to 3:30 PM. Extended care is available until 5:00 PM for an additional fee.',
+    },
+    {
+      question: locale === 'nl' ? 'Is er schoolvervoer beschikbaar?' : 'Is transportation available?',
+      answer: locale === 'nl'
+        ? 'We werken samen met goedgekeurde vervoersaanbieders die schoolbusdiensten aanbieden in de belangrijkste gebieden van Nairobi. Details worden verstrekt bij inschrijving.'
+        : 'We partner with approved transport providers who offer school bus services covering major areas of Nairobi. Details are provided upon enrollment.',
+    },
+  ];
+
+  // FAQ Schema for rich results
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSection />
       <ProcessSection />
       <RequirementsSection />
       <FeesSection />
-      <FAQSection />
+      <FAQSection faqs={faqs} />
       <CTASection />
     </>
   );
@@ -258,32 +304,15 @@ function FeesSection() {
   );
 }
 
-function FAQSection() {
-  const faqs = [
-    {
-      question: 'When can my child start?',
-      answer: 'We accept new students throughout the school year, subject to availability. The main intake is in August/September at the start of the academic year.',
-    },
-    {
-      question: 'Do children need to speak Dutch?',
-      answer: 'No prior Dutch language knowledge is required. Our bilingual program is designed to support children at all language levels, and they quickly pick up Dutch through immersion.',
-    },
-    {
-      question: 'What is the school schedule?',
-      answer: 'School hours are Monday to Friday, 8:00 AM to 3:30 PM. Extended care is available until 5:00 PM for an additional fee.',
-    },
-    {
-      question: 'Is transportation available?',
-      answer: 'We partner with approved transport providers who offer school bus services covering major areas of Nairobi. Details are provided upon enrollment.',
-    },
-  ];
+function FAQSection({ faqs }: { faqs: Array<{ question: string; answer: string }> }) {
+  const t = useTranslations('enrollment');
 
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
+            {t('faq.title')}
           </h2>
         </div>
 
@@ -298,9 +327,9 @@ function FAQSection() {
 
         <div className="mt-8 text-center">
           <p className="text-muted">
-            Have more questions?{' '}
+            {t('faq.moreQuestions')}{' '}
             <Link href="/contact" className="text-primary font-semibold hover:underline">
-              Contact our admissions team
+              {t('faq.contactLink')}
             </Link>
           </p>
         </div>

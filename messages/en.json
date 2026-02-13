@@ -149,7 +149,12 @@
       "title": "Tuition & Fees",
       "description": "Our fees are competitive and include all learning materials, lunch, and extracurricular activities. Contact us for detailed fee structure."
     },
-    "cta": "Start Your Application"
+    "cta": "Start Your Application",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "moreQuestions": "Have more questions?",
+      "contactLink": "Contact our admissions team"
+    }
   },
   "contact": {
     "title": "Contact Us",

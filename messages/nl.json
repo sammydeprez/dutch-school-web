@@ -149,7 +149,12 @@
       "title": "Schoolgeld & Kosten",
       "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen, lunch en buitenschoolse activiteiten. Neem contact met ons op voor een gedetailleerd overzicht."
     },
-    "cta": "Start Uw Aanmelding"
+    "cta": "Start Uw Aanmelding",
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "moreQuestions": "Heeft u meer vragen?",
+      "contactLink": "Neem contact op met ons toelatings team"
+    }
   },
   "contact": {
     "title": "Contact",
