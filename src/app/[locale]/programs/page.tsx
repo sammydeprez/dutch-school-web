@@ -132,6 +132,7 @@ function HeroSection() {
 
 function ProgramsGrid() {
   const t = useTranslations('programs');
+  const tp = useTranslations('programsPage');
 
   const programs = [
     {
@@ -140,13 +141,7 @@ function ProgramsGrid() {
       title: t('toddler.title'),
       ages: t('toddler.ages'),
       description: t('toddler.description'),
-      features: [
-        'Play-based learning',
-        'Early Dutch language exposure',
-        'Social skill development',
-        'Creative activities',
-        'Outdoor play time',
-      ],
+      features: tp.raw('features.toddler') as string[],
       color: 'from-yellow/30 to-secondary/30',
     },
     {
@@ -155,13 +150,7 @@ function ProgramsGrid() {
       title: t('primary.title'),
       ages: t('primary.ages'),
       description: t('primary.description'),
-      features: [
-        'Dutch curriculum',
-        'IPC (International Primary Curriculum)',
-        'Bilingual instruction',
-        'Small class sizes',
-        'Individual attention',
-      ],
+      features: tp.raw('features.primary') as string[],
       color: 'from-primary/30 to-primary-light/30',
     },
     {
@@ -170,13 +159,7 @@ function ProgramsGrid() {
       title: t('ntc.title'),
       ages: t('ntc.ages'),
       description: t('ntc.description'),
-      features: [
-        'Dutch language lessons',
-        'Dutch culture education',
-        'Multiple locations in Nairobi',
-        'After-school schedule',
-        'CNaVT exam preparation',
-      ],
+      features: tp.raw('features.ntc') as string[],
       color: 'from-accent/30 to-accent-light/30',
     },
     {
@@ -185,13 +168,7 @@ function ProgramsGrid() {
       title: t('adult.title'),
       ages: t('adult.ages'),
       description: t('adult.description'),
-      features: [
-        'Beginner to advanced levels',
-        'Flexible scheduling',
-        'Conversational focus',
-        'Business Dutch available',
-        'Small groups or private',
-      ],
+      features: tp.raw('features.adult') as string[],
       color: 'from-purple/30 to-red/30',
     },
   ];
@@ -211,7 +188,7 @@ function ProgramsGrid() {
                 <div className={`aspect-[4/3] bg-gradient-to-br ${program.color} rounded-3xl flex items-center justify-center`}>
                   <div className="text-center">
                     <span className="text-8xl">{program.icon}</span>
-                    <p className="text-muted mt-4 text-sm">Image Placeholder</p>
+                    <p className="text-muted mt-4 text-sm">{tp('imagePlaceholder')}</p>
                   </div>
                 </div>
               </div>
@@ -241,7 +218,7 @@ function ProgramsGrid() {
                   href="/enrollment"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-colors"
                 >
-                  Apply Now
+                  {tp('applyNow')}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -254,15 +231,17 @@ function ProgramsGrid() {
 }
 
 function CurriculumSection() {
+  const t = useTranslations('programsPage.curriculum');
+
   const subjects = [
-    { icon: Languages, name: 'Dutch Language', color: 'primary' },
-    { icon: Languages, name: 'English Language', color: 'accent' },
-    { icon: Calculator, name: 'Mathematics', color: 'secondary' },
-    { icon: Globe, name: 'World Studies', color: 'primary' },
-    { icon: BookOpen, name: 'Science', color: 'accent' },
-    { icon: Palette, name: 'Arts & Crafts', color: 'secondary' },
-    { icon: Music, name: 'Music', color: 'primary' },
-    { icon: Users, name: 'Physical Education', color: 'accent' },
+    { icon: Languages, name: t('subjects.dutchLanguage'), color: 'primary' },
+    { icon: Languages, name: t('subjects.englishLanguage'), color: 'accent' },
+    { icon: Calculator, name: t('subjects.mathematics'), color: 'secondary' },
+    { icon: Globe, name: t('subjects.worldStudies'), color: 'primary' },
+    { icon: BookOpen, name: t('subjects.science'), color: 'accent' },
+    { icon: Palette, name: t('subjects.arts'), color: 'secondary' },
+    { icon: Music, name: t('subjects.music'), color: 'primary' },
+    { icon: Users, name: t('subjects.pe'), color: 'accent' },
   ];
 
   const colorClasses = {
@@ -276,10 +255,10 @@ function CurriculumSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Curriculum Overview
+            {t('title')}
           </h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            Our curriculum combines the Dutch education system with the International Primary Curriculum (IPC) for a comprehensive learning experience.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -299,16 +278,8 @@ function CurriculumSection() {
 }
 
 function ActivitiesSection() {
-  const activities = [
-    'Swimming lessons',
-    'Football club',
-    'Art workshops',
-    'Music classes',
-    'Dutch cultural events',
-    'Field trips',
-    'Library time',
-    'Science experiments',
-  ];
+  const t = useTranslations('programsPage.activities');
+  const activities = t.raw('list') as string[];
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -316,10 +287,10 @@ function ActivitiesSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Extracurricular Activities
+              {t('title')}
             </h2>
             <p className="text-muted leading-relaxed mb-8">
-              Beyond academics, we offer a variety of activities that help children develop new skills, explore interests, and build lasting friendships.
+              {t('subtitle')}
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -335,7 +306,7 @@ function ActivitiesSection() {
           <div className="aspect-square bg-gradient-to-br from-secondary/20 to-primary/20 rounded-3xl flex items-center justify-center">
             <div className="text-center">
               <span className="text-8xl">🎨</span>
-              <p className="text-muted mt-4 text-sm">Activities Image Placeholder</p>
+              <p className="text-muted mt-4 text-sm">{t('imagePlaceholder')}</p>
             </div>
           </div>
         </div>
@@ -345,28 +316,30 @@ function ActivitiesSection() {
 }
 
 function CTASection() {
+  const t = useTranslations('programsPage.cta');
+
   return (
     <section className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Find the Right Program for Your Child
+          {t('title')}
         </h2>
         <p className="text-white/80 mb-8">
-          Contact us to learn more about our programs and schedule a visit.
+          {t('subtitle')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/enrollment"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-full hover:bg-surface transition-colors"
           >
-            Start Application
+            {t('applyButton')}
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-dark text-white font-semibold rounded-full hover:bg-foreground transition-colors"
           >
-            Contact Us
+            {t('contactButton')}
           </Link>
         </div>
       </div>

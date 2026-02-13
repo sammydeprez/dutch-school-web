@@ -246,6 +246,40 @@
     "ntcProgram": {
       "title": "NTC Program",
       "description": "Dutch language and culture lessons for students at other schools"
-    }
+    },
+    "features": {
+      "toddler": ["Play-based learning", "Early Dutch language exposure", "Social skill development", "Creative activities", "Outdoor play time"],
+      "primary": ["Dutch curriculum", "IPC (International Primary Curriculum)", "Bilingual instruction", "Small class sizes", "Individual attention"],
+      "ntc": ["Dutch language lessons", "Dutch culture education", "Multiple locations in Nairobi", "After-school schedule", "CNaVT exam preparation"],
+      "adult": ["Beginner to advanced levels", "Flexible scheduling", "Conversational focus", "Business Dutch available", "Small groups or private"]
+    },
+    "curriculum": {
+      "title": "Curriculum Overview",
+      "subtitle": "Our curriculum combines the Dutch education system with the International Primary Curriculum (IPC) for a comprehensive learning experience.",
+      "subjects": {
+        "dutchLanguage": "Dutch Language",
+        "englishLanguage": "English Language",
+        "mathematics": "Mathematics",
+        "worldStudies": "World Studies",
+        "science": "Science",
+        "arts": "Arts & Crafts",
+        "music": "Music",
+        "pe": "Physical Education"
+      }
+    },
+    "activities": {
+      "title": "Extracurricular Activities",
+      "subtitle": "Beyond academics, we offer a variety of activities that help children develop new skills, explore interests, and build lasting friendships.",
+      "list": ["Swimming lessons", "Football club", "Art workshops", "Music classes", "Dutch cultural events", "Field trips", "Library time", "Science experiments"],
+      "imagePlaceholder": "Activities Image Placeholder"
+    },
+    "cta": {
+      "title": "Find the Right Program for Your Child",
+      "subtitle": "Contact us to learn more about our programs and schedule a visit.",
+      "applyButton": "Start Application",
+      "contactButton": "Contact Us"
+    },
+    "applyNow": "Apply Now",
+    "imagePlaceholder": "Image Placeholder"
   }
 }

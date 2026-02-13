@@ -246,6 +246,40 @@
     "ntcProgram": {
       "title": "NTC Programma",
       "description": "Nederlandse taal- en cultuurlessen voor leerlingen van andere scholen"
-    }
+    },
+    "features": {
+      "toddler": ["Spelend leren", "Vroege Nederlandse taalblootstelling", "Sociale vaardigheden ontwikkeling", "Creatieve activiteiten", "Buitenspeeltijd"],
+      "primary": ["Nederlands curriculum", "IPC (International Primary Curriculum)", "Tweetalig onderwijs", "Kleine klassen", "Individuele aandacht"],
+      "ntc": ["Nederlandse taallessen", "Nederlandse cultuureducatie", "Meerdere locaties in Nairobi", "Naschools rooster", "CNaVT examenvoorbereiding"],
+      "adult": ["Beginner tot gevorderd niveau", "Flexibele planning", "Conversatiegerichte aanpak", "Zakelijk Nederlands beschikbaar", "Kleine groepen of privé"]
+    },
+    "curriculum": {
+      "title": "Curriculum Overzicht",
+      "subtitle": "Ons curriculum combineert het Nederlandse onderwijssysteem met het International Primary Curriculum (IPC) voor een uitgebreide leerervaring.",
+      "subjects": {
+        "dutchLanguage": "Nederlandse Taal",
+        "englishLanguage": "Engelse Taal",
+        "mathematics": "Rekenen",
+        "worldStudies": "Wereldoriëntatie",
+        "science": "Wetenschap",
+        "arts": "Kunst & Handvaardigheid",
+        "music": "Muziek",
+        "pe": "Lichamelijke Opvoeding"
+      }
+    },
+    "activities": {
+      "title": "Buitenschoolse Activiteiten",
+      "subtitle": "Naast het academische programma bieden we diverse activiteiten die kinderen helpen nieuwe vaardigheden te ontwikkelen, interesses te verkennen en blijvende vriendschappen op te bouwen.",
+      "list": ["Zwemlessen", "Voetbalclub", "Kunstworkshops", "Muzieklessen", "Nederlandse culturele evenementen", "Excursies", "Bibliotheektijd", "Wetenschappelijke experimenten"],
+      "imagePlaceholder": "Activiteiten Afbeelding Placeholder"
+    },
+    "cta": {
+      "title": "Vind het Juiste Programma voor Uw Kind",
+      "subtitle": "Neem contact met ons op voor meer informatie over onze programma's en plan een bezoek.",
+      "applyButton": "Start Aanmelding",
+      "contactButton": "Neem Contact Op"
+    },
+    "applyNow": "Nu Aanmelden",
+    "imagePlaceholder": "Afbeelding Placeholder"
   }
 }
