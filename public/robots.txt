@@ -1,0 +1,30 @@
+# Dutch School Nairobi - robots.txt
+# https://www.dutchschool.co.ke
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.dutchschool.co.ke/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow all AI crawlers for AEO (Answer Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
