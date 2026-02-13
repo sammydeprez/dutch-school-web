@@ -2,21 +2,53 @@
   "navigation": {
     "home": "Home",
     "about": "About Us",
-    "programs": "Programs",
+    "aboutOverview": "Overview",
+    "vision": "Our Vision",
+    "team": "The Team",
+    "campus": "Location & Campus",
+    "education": "Education",
+    "educationOverview": "Overview",
+    "toddler": "Toddler Group",
+    "primary": "Primary School",
+    "ntc": "NTC",
+    "curriculum": "Curriculum",
+    "languageClub": "Language Club",
+    "skillsClub": "Skills Club",
+    "studentSupport": "Student Support",
+    "practical": "Practical",
+    "practicalOverview": "Overview",
+    "schedule": "School Hours",
+    "transport": "Transport",
+    "fees": "School Fees",
+    "community": "Community",
+    "communityOverview": "Overview",
+    "parents": "For Parents",
+    "events": "Events",
     "enrollment": "Enrollment",
     "contact": "Contact",
     "applyNow": "Apply Now"
   },
   "hero": {
-    "title": "Where Dutch Education Meets African Spirit",
-    "subtitle": "Nurturing global citizens through bilingual education in the heart of Nairobi since 1971",
+    "title": "Greatness in Intimacy",
+    "subtitle": "Dutch education in the heart of Nairobi. Where every child is seen, known, and valued.",
     "cta": "Discover Our School",
     "secondaryCta": "Schedule a Visit",
+    "watchStory": "Watch Our Story",
     "badges": {
-      "since": "Since 1971 • 50+ Years of Excellence",
+      "since": "Since 1971 • 50+ Years",
       "nobRecognized": "NOB Recognized",
-      "nationalities": "18 Nationalities",
-      "smallClasses": "1:8 Teacher Ratio"
+      "nationalities": "10+ Nationalities",
+      "smallClasses": "Small Classes"
+    }
+  },
+  "brand": {
+    "tagline": "Greatness in Intimacy",
+    "taglineNl": "Groots in Kleinschaligheid",
+    "philosophy": "Small makes great",
+    "values": {
+      "connect": "Connect",
+      "inspire": "Inspire",
+      "move": "Move together"
     }
   },
   "about": {
@@ -37,22 +69,22 @@
   },
   "features": {
     "title": "Why Choose Dutch School?",
-    "subtitle": "A unique educational experience in Nairobi",
+    "subtitle": "Greatness in intimacy - where every child is seen",
     "bilingual": {
       "title": "Bilingual Education",
-      "description": "Full Dutch and English curriculum ensuring seamless transition to both Dutch and international school systems worldwide."
+      "description": "3 days Dutch, 2 days English in kindergarten. Fully bilingual curriculum for seamless transition."
     },
     "curriculum": {
-      "title": "IPC Curriculum",
-      "description": "International Primary Curriculum with thematic learning that encourages participation and global citizenship."
+      "title": "IEYC/IPC Curriculum",
+      "description": "International Early Years and Primary Curriculum with thematic learning that encourages participation and global citizenship."
     },
     "community": {
       "title": "Small Community",
-      "description": "With 15+ nationalities and small class sizes, every child receives personalized attention and care."
+      "description": "With 10+ nationalities and small class sizes, every child receives personalized attention and care."
     },
     "environment": {
       "title": "Green Campus",
-      "description": "Large outdoor spaces and gardens provide the perfect environment for learning, play, and discovery."
+      "description": "Beautiful green compound in Karen with space for outdoor learning, play, and discovery."
     }
   },
   "programs": {
@@ -60,23 +92,23 @@
     "subtitle": "Education for every stage of development",
     "toddler": {
       "title": "Toddler Group",
-      "ages": "Ages 1½ - 4",
-      "description": "A nurturing introduction to learning through play, social interaction, and early Dutch language exposure."
+      "ages": "From age 1.5",
+      "description": "A nurturing introduction to learning through play, with a maximum of 15 children and early Dutch language exposure."
     },
     "primary": {
       "title": "Primary School",
-      "ages": "Ages 4 - 12",
+      "ages": "Groups 1 - 8",
       "description": "Comprehensive bilingual education combining Dutch curriculum with International Primary Curriculum (IPC)."
     },
     "ntc": {
-      "title": "NTC Lessons",
-      "ages": "Ages 3.5 - 18",
+      "title": "NTC",
+      "ages": "Dutch Language & Culture",
       "description": "Dutch language and culture education for children attending other international schools in Nairobi."
     },
     "adult": {
       "title": "Adult Dutch Lessons",
-      "ages": "All levels",
-      "description": "Dutch language courses for parents and adults wanting to learn or improve their Dutch."
+      "ages": "For Adults",
+      "description": "Dutch language courses for adults at all proficiency levels. Perfect for parents, partners, or anyone interested in learning Dutch."
     },
     "learnMore": "Learn More"
   },
@@ -103,15 +135,15 @@
     "title": "Quick Facts About Dutch School Nairobi",
     "q1": {
       "question": "What is Dutch School Nairobi?",
-      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children ages 1½-18. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB), the school combines the Dutch national curriculum with the International Primary Curriculum (IPC)."
+      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children from age 1.5. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB), the school combines the Dutch national curriculum with the International Primary Curriculum (IPC)."
     },
     "q2": {
       "question": "What curriculum does Dutch School Nairobi follow?",
-      "answer": "We follow a bilingual curriculum combining the official Dutch national education standards with the International Primary Curriculum (IPC). This ensures students can transition seamlessly to schools in the Netherlands or continue their international education pathway."
+      "answer": "We follow a bilingual curriculum combining the official Dutch national education standards with the IEYC (International Early Years Curriculum) and IPC (International Primary Curriculum). This ensures students can transition seamlessly to schools in the Netherlands or continue their international education pathway."
     },
     "q3": {
       "question": "What are the school fees at Dutch School Nairobi?",
-      "answer": "Our fees are competitive with international schools in Nairobi and include all learning materials, lunch, and extracurricular activities. Contact our admissions team for the detailed fee structure, as rates vary by program (Toddler, Primary, NTC, Adult lessons)."
+      "answer": "Our fees are divided into two groups: Tariff A for families where the employer reimburses school fees, and Tariff B for families paying out of pocket. Contact our admissions team for the detailed fee structure."
     },
     "q4": {
       "question": "Do students need to speak Dutch to enroll?",
@@ -126,19 +158,19 @@
     "contact": "Or contact us at"
   },
   "footer": {
-    "description": "Providing Dutch and bilingual education in Nairobi since 1971. Recognized by the Dutch Education Abroad Foundation.",
+    "description": "Dutch and bilingual education in Nairobi since 1971. Recognized by the Dutch Education Abroad Foundation. Greatness in Intimacy.",
     "quickLinks": "Quick Links",
-    "programs": "Programs",
-    "programsList": {
+    "education": "Education",
+    "educationList": {
       "toddler": "Toddler Group",
       "primary": "Primary School",
-      "ntc": "NTC Lessons",
-      "adult": "Adult Dutch Lessons"
+      "ntc": "NTC",
+      "curriculum": "Curriculum"
     },
     "contact": "Contact Us",
-    "address": "Makindi Road, Nairobi, Kenya",
+    "address": "Karen, Nairobi, Kenya",
     "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-    "copyright": "© 2025 Dutch School Nairobi. All rights reserved.",
+    "copyright": "Dutch School Nairobi. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -180,7 +212,7 @@
     },
     "fees": {
       "title": "Tuition & Fees",
-      "description": "Our fees are competitive and include all learning materials, lunch, and extracurricular activities. Contact us for detailed fee structure."
+      "description": "Our fees are competitive and include all learning materials. We have two tariff groups: Tariff A (employer reimbursement) and Tariff B (self-pay)."
     },
     "cta": "Start Your Application",
     "faq": {
@@ -199,11 +231,12 @@
       "subtitle": "Start your application today or contact us for more information.",
       "scheduleTour": "Schedule a Tour"
     },
-    "feesNote": "Fees include all learning materials, lunch program, and most extracurricular activities. A registration fee applies for new students. Sibling discounts and payment plans are available."
+    "feesNote": "Tuition includes all learning materials. A registration fee applies for new students. Sibling discounts and payment plans are available.",
+    "feesLink": "View full fee details"
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "We'd love to hear from you",
+    "title": "Contact & Visit",
+    "subtitle": "We welcome you to our school",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
@@ -215,18 +248,22 @@
     "info": {
       "title": "Get in Touch",
       "address": "Address",
-      "addressValue": "Makindi Road, Nairobi, Kenya",
+      "addressValue": "Karen, Nairobi, Kenya",
       "phone": "Phone",
       "email": "Email",
       "hours": "Office Hours",
       "hoursValue": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    "visit": {
+      "title": "Schedule a Visit",
+      "description": "Come and experience our warm community. We'd love to give you a tour of our beautiful green campus in Karen."
     },
     "map": "Find Us"
   },
   "aboutPage": {
     "hero": {
       "title": "About Dutch School Nairobi",
-      "subtitle": "Nearly 50 years of nurturing young minds in Kenya"
+      "subtitle": "Greatness in intimacy - nearly 50 years of educational excellence in Kenya"
     },
     "history": {
       "title": "Our History",
@@ -235,38 +272,38 @@
         "1971": "School founded by Dutch expatriate families",
         "1985": "Official recognition by Dutch government",
         "2000": "Introduction of IPC curriculum",
-        "2010": "NTC program expansion across Nairobi",
+        "2010": "NTC program expansion",
         "2020": "Digital learning integration",
         "today": "50+ years of educational excellence"
       }
     },
     "approach": {
       "title": "Our Educational Approach",
-      "content": "We believe in the power of bilingual education. Our unique combination of the Dutch curriculum and the International Primary Curriculum (IPC) ensures students are well-prepared for both Dutch and international educational pathways. Small class sizes allow for personalized attention, ensuring every child reaches their full potential."
+      "content": "We believe in the power of small-scale education. Our unique combination of the Dutch curriculum and the International Primary Curriculum (IPC) ensures students are well-prepared for both Dutch and international educational pathways. Small class sizes allow for personalized attention, ensuring every child reaches their full potential."
     },
     "team": {
       "title": "Our Team",
       "subtitle": "Dedicated educators passionate about your child's success",
       "members": {
-        "director": { "name": "Dr. Sarah van Dijk", "role": "School Director" },
-        "headPrimary": { "name": "Mark de Vries", "role": "Head of Primary" },
-        "headEarlyYears": { "name": "Anna Bakker", "role": "Head of Early Years" },
-        "operations": { "name": "James Ochieng", "role": "Operations Manager" }
+        "director": { "name": "School Leader", "role": "Management" },
+        "headPrimary": { "name": "Class Teacher", "role": "Primary School" },
+        "headEarlyYears": { "name": "Pedagogical Staff", "role": "Toddler Group" },
+        "operations": { "name": "Support Staff", "role": "Administration" }
       }
     },
     "values": {
       "title": "Our Values",
       "value1": {
-        "title": "Excellence",
-        "description": "We strive for the highest standards in education and personal development."
+        "title": "Connect",
+        "description": "We create strong bonds between students, parents, and teachers in a close-knit community."
       },
       "value2": {
-        "title": "Community",
-        "description": "We foster a warm, inclusive environment where everyone belongs."
+        "title": "Inspire",
+        "description": "We spark curiosity and a lifelong love of learning."
       },
       "value3": {
-        "title": "Innovation",
-        "description": "We embrace new teaching methods while honoring educational traditions."
+        "title": "Move Together",
+        "description": "We adapt to the unique needs of each child and situation."
       },
       "value4": {
         "title": "Global Citizenship",
@@ -279,52 +316,806 @@
       "button": "Schedule a Visit"
     }
   },
-  "programsPage": {
+  "visionPage": {
     "hero": {
-      "title": "Our Programs",
-      "subtitle": "Comprehensive education from toddlers to young adults"
+      "title": "Our Vision & Mission",
+      "subtitle": "Greatness in Intimacy - where every child is seen, known, and valued"
     },
-    "daySchool": {
-      "title": "Day School",
-      "description": "Our core program offering full bilingual education"
+    "philosophy": {
+      "title": "Small Makes Great",
+      "content": "At Dutch School Nairobi, we believe that small makes great. In an intimate setting where every child is personally known, we can provide the best environment for development and growth.",
+      "quote": "Greatness in Intimacy means we are great in what we do, precisely because we are small in size."
     },
-    "ntcProgram": {
-      "title": "NTC Program",
-      "description": "Dutch language and culture lessons for students at other schools"
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide high-quality bilingual education in a small-scale, warm environment where every child can develop optimally and be prepared for an international future."
     },
-    "features": {
-      "toddler": ["Play-based learning", "Early Dutch language exposure", "Social skill development", "Creative activities", "Outdoor play time"],
-      "primary": ["Dutch curriculum", "IPC (International Primary Curriculum)", "Bilingual instruction", "Small class sizes", "Individual attention"],
-      "ntc": ["Dutch language lessons", "Dutch culture education", "Multiple locations in Nairobi", "After-school schedule", "CNaVT exam preparation"],
-      "adult": ["Beginner to advanced levels", "Flexible scheduling", "Conversational focus", "Business Dutch available", "Small groups or private"]
+    "vision": {
+      "title": "Our Vision",
+      "content": "A school where every child is seen, known, and valued. Where the Dutch language and culture form a solid foundation and children develop into confident global citizens."
     },
-    "curriculum": {
-      "title": "Curriculum Overview",
-      "subtitle": "Our curriculum combines the Dutch education system with the International Primary Curriculum (IPC) for a comprehensive learning experience.",
-      "subjects": {
-        "dutchLanguage": "Dutch Language",
-        "englishLanguage": "English Language",
-        "mathematics": "Mathematics",
-        "worldStudies": "World Studies",
-        "science": "Science",
-        "arts": "Arts & Crafts",
-        "music": "Music",
-        "pe": "Physical Education"
+    "values": {
+      "title": "Our Core Values",
+      "connect": {
+        "title": "Connect",
+        "description": "We build strong relationships between school, home, and community. Connection is the foundation of everything we do."
+      },
+      "inspire": {
+        "title": "Inspire",
+        "description": "We stimulate curiosity, creativity, and a lifelong love of learning in every child."
+      },
+      "move": {
+        "title": "Move Together",
+        "description": "We are flexible and adapt to the unique needs of each child and situation."
+      }
+    },
+    "cta": {
+      "title": "Experience Our Vision in Practice",
+      "subtitle": "Come for a tour and discover what small-scale education can mean for your child.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "title": "Our Team",
+      "subtitle": "Dedicated professionals who know every child personally"
+    },
+    "intro": {
+      "title": "The People Behind Our School",
+      "content": "Our small, close-knit team consists of experienced and passionate professionals. Due to our small scale, every staff member knows every child personally, ensuring optimal guidance and support."
+    },
+    "leadership": {
+      "title": "School Leadership",
+      "description": "Our school leader carries daily responsibility for education and the wellbeing of all students."
+    },
+    "teachers": {
+      "title": "Teachers",
+      "description": "Our qualified teachers combine Dutch educational experience with international expertise. They create a safe, stimulating learning environment."
+    },
+    "support": {
+      "title": "Support Staff",
+      "description": "From learning support coordinator to administration - our team works together to ensure the best experience for children and parents."
+    },
+    "cta": {
+      "title": "Meet Our Team",
+      "subtitle": "Schedule a visit and meet the people who will guide your child.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "campusPage": {
+    "hero": {
+      "title": "Location & Campus",
+      "subtitle": "A green oasis in the heart of Karen, Nairobi"
+    },
+    "location": {
+      "title": "Our Location",
+      "content": "Dutch School Nairobi is located in Karen, one of the greenest and most peaceful neighborhoods of Nairobi. Our spacious compound provides a safe, natural environment where children can learn, play, and discover.",
+      "features": {
+        "green": "Large green grounds with play areas",
+        "outdoor": "Outdoor education facilities",
+        "safe": "Safe, enclosed environment",
+        "nature": "Surrounded by nature"
+      }
+    },
+    "facilities": {
+      "title": "Our Facilities",
+      "classrooms": {
+        "title": "Classrooms",
+        "description": "Bright, modern classrooms designed for small-scale education with personal attention."
+      },
+      "outdoor": {
+        "title": "Outdoor Spaces",
+        "description": "Extensive playgrounds, a vegetable garden, and green spaces for outdoor activities and nature education."
+      },
+      "library": {
+        "title": "Library",
+        "description": "A rich collection of Dutch and English books to stimulate reading enjoyment."
+      },
+      "arts": {
+        "title": "Creative Spaces",
+        "description": "Spaces for art, music, cooking, and other creative activities."
+      }
+    },
+    "directions": {
+      "title": "Directions",
+      "content": "We are easily accessible from all parts of Nairobi. Our school also offers transport from various neighborhoods."
+    },
+    "cta": {
+      "title": "Visit Our Campus",
+      "subtitle": "Experience the peace and space of our green school grounds.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "educationPage": {
+    "hero": {
+      "title": "Education",
+      "subtitle": "Bilingual education from toddler group through grade 8"
+    },
+    "intro": {
+      "title": "Our Educational Offering",
+      "content": "Dutch School Nairobi offers a complete educational pathway for children from age 1.5. Our bilingual curriculum combines the best of the Dutch educational system with international curricula."
+    },
+    "programs": {
+      "toddler": {
+        "title": "Toddler Group",
+        "ages": "From age 1.5",
+        "description": "A warm, playful environment where toddlers take their first steps in their learning journey. Maximum 15 children, 2-5 mornings per week.",
+        "link": "More about Toddler Group"
+      },
+      "primary": {
+        "title": "Primary School",
+        "ages": "Groups 1 - 8",
+        "description": "Fully bilingual education with Dutch curriculum and IPC. Small classes, personal attention.",
+        "link": "More about Primary School"
+      },
+      "ntc": {
+        "title": "NTC",
+        "ages": "Dutch Language & Culture",
+        "description": "For children at other international schools who want to learn or maintain their Dutch.",
+        "link": "More about NTC"
+      }
+    },
+    "extras": {
+      "title": "Extra Programs",
+      "languageClub": {
+        "title": "Language Club",
+        "description": "French (groups 5-8) and Kiswahili (groups 1-8) as additional language offerings.",
+        "link": "More about Language Club"
+      },
+      "skillsClub": {
+        "title": "Skills Club",
+        "description": "After-school activities: art, music, woodworking, gardening, and sports.",
+        "link": "More about Skills Club"
+      }
+    },
+    "cta": {
+      "title": "Find the Right Program",
+      "subtitle": "We're happy to help you find the best pathway for your child.",
+      "button": "Contact Us"
+    }
+  },
+  "toddlerPage": {
+    "hero": {
+      "title": "Toddler Group",
+      "subtitle": "A warm start for our youngest learners, from age 1.5"
+    },
+    "intro": {
+      "title": "Learning Through Play",
+      "content": "Our toddler group provides a safe, stimulating environment where children from age 1.5 playfully become familiar with the Dutch language and culture. In a small group of maximum 15 children, every child receives the attention and care they deserve."
+    },
+    "program": {
+      "title": "The Program",
+      "schedule": {
+        "title": "Flexible Care",
+        "description": "Choose 2, 3, 4, or 5 mornings per week, depending on your family's needs."
+      },
+      "language": {
+        "title": "Language Exposure",
+        "description": "Natural introduction to Dutch through songs, stories, and daily interactions."
+      },
+      "play": {
+        "title": "Learning Through Play",
+        "description": "Development through play, creativity, and social interaction with peers."
+      },
+      "observation": {
+        "title": "KIJK! Observation System",
+        "description": "We track each child's development with the KIJK! observation system."
       }
     },
     "activities": {
-      "title": "Extracurricular Activities",
-      "subtitle": "Beyond academics, we offer a variety of activities that help children develop new skills, explore interests, and build lasting friendships.",
-      "list": ["Swimming lessons", "Football club", "Art workshops", "Music classes", "Dutch cultural events", "Field trips", "Library time", "Science experiments"],
-      "imagePlaceholder": "Activities Image Placeholder"
+      "title": "Daily Activities",
+      "list": [
+        "Circle time with songs and stories",
+        "Free play indoors and outdoors",
+        "Creative activities",
+        "Movement activities",
+        "Nature and outdoor play",
+        "Music and dance"
+      ]
+    },
+    "practical": {
+      "title": "Practical Information",
+      "hours": "Opening hours: 8:30 AM - 12:30 PM",
+      "group": "Group size: maximum 15 children",
+      "staff": "Supervision: experienced pedagogical staff"
     },
     "cta": {
-      "title": "Find the Right Program for Your Child",
-      "subtitle": "Contact us to learn more about our programs and schedule a visit.",
-      "applyButton": "Start Application",
-      "contactButton": "Contact Us"
+      "title": "Want to Learn More?",
+      "subtitle": "Schedule a visit to experience our toddler group.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "primaryPage": {
+    "hero": {
+      "title": "Primary School",
+      "subtitle": "Bilingual education from groups 1 through 8"
     },
-    "applyNow": "Apply Now",
-    "imagePlaceholder": "Image Placeholder"
+    "intro": {
+      "title": "The Best of Both Worlds",
+      "content": "Our primary school combines the Dutch curriculum with the International Primary Curriculum (IPC). Children receive education in both Dutch and English, preparing them optimally for either return to the Netherlands or continuation of international education."
+    },
+    "bilingual": {
+      "title": "Bilingual Education",
+      "kindergarten": {
+        "title": "Groups 1-2 (Kindergarten)",
+        "description": "3 days Dutch, 2 days English. Learning through play with the IEYC curriculum."
+      },
+      "lower": {
+        "title": "Groups 3-5 (Lower Primary)",
+        "description": "Fundamental skills in language, mathematics, and world studies in both languages."
+      },
+      "upper": {
+        "title": "Groups 6-8 (Upper Primary)",
+        "description": "Deepening knowledge and preparation for secondary education. Transition test in group 8."
+      }
+    },
+    "curriculum": {
+      "title": "Curriculum",
+      "dutch": {
+        "title": "Dutch Curriculum",
+        "subjects": ["Dutch language", "Mathematics", "Reading comprehension", "Spelling", "Writing"]
+      },
+      "ipc": {
+        "title": "IPC (International Primary Curriculum)",
+        "subjects": ["Thematic learning", "Science", "History", "Geography", "Arts & Culture"]
+      }
+    },
+    "assessment": {
+      "title": "Assessment & Tracking",
+      "content": "We use the CITO student monitoring system to track each child's progress. In group 8, students take the official transition test.",
+      "items": [
+        "CITO tests for comparison with Netherlands",
+        "Transition test in group 8",
+        "Pearson Young Learners English Benchmark",
+        "Regular progress reports to parents"
+      ]
+    },
+    "cta": {
+      "title": "Want to Know More?",
+      "subtitle": "Discover how our bilingual education can prepare your child for the future.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "ntcPage": {
+    "hero": {
+      "title": "NTC - Dutch Language and Culture",
+      "subtitle": "For Dutch-speaking children at other international schools"
+    },
+    "intro": {
+      "title": "Maintain and Develop Dutch",
+      "content": "The NTC program is specially designed for children who attend another international school but want to maintain and develop their Dutch language and culture. Perfect for expat families who will later return to the Netherlands or Belgium."
+    },
+    "forWhom": {
+      "title": "For Whom?",
+      "content": "The NTC program is intended for children of Dutch or Belgian families who:",
+      "items": [
+        "Attend another international school in Nairobi",
+        "Want to maintain or improve their Dutch",
+        "Want to prepare for return to the Netherlands/Belgium",
+        "Want to stay connected to Dutch culture and traditions"
+      ]
+    },
+    "program": {
+      "title": "The Program",
+      "language": {
+        "title": "Dutch Language",
+        "description": "Lessons focused on reading, writing, speaking, and listening at level."
+      },
+      "culture": {
+        "title": "Dutch Culture",
+        "description": "Attention to Dutch traditions, holidays, and current events."
+      },
+      "levels": {
+        "title": "Level Groups",
+        "description": "Education tailored to the child's level and age."
+      },
+      "schedule": {
+        "title": "Flexible Schedule",
+        "description": "Lessons after school or on Wednesday afternoon."
+      }
+    },
+    "benefits": {
+      "title": "NTC Benefits",
+      "items": [
+        "Maintain Dutch language proficiency",
+        "Smooth return to Dutch education",
+        "Connection with Dutch community",
+        "Official recognition by NOB",
+        "Qualified Dutch teachers"
+      ]
+    },
+    "cta": {
+      "title": "Interested in NTC?",
+      "subtitle": "Contact us for more information about our NTC program.",
+      "button": "Contact Us"
+    }
+  },
+  "curriculumPage": {
+    "hero": {
+      "title": "Curriculum",
+      "subtitle": "A balanced bilingual education program"
+    },
+    "intro": {
+      "title": "The Best of Both Systems",
+      "content": "Our curriculum combines the strengths of the Dutch educational system with the internationally recognized IEYC and IPC. This ensures broad, balanced development of every child."
+    },
+    "dutch": {
+      "title": "Dutch Curriculum",
+      "content": "The core of our education is based on Dutch core objectives and reference levels.",
+      "subjects": {
+        "language": {
+          "title": "Dutch Language",
+          "description": "Reading, writing, speaking, and listening according to Dutch standards."
+        },
+        "math": {
+          "title": "Mathematics",
+          "description": "Mathematical skills and problem-solving thinking."
+        },
+        "reading": {
+          "title": "Reading Comprehension",
+          "description": "Development of reading strategies and text understanding."
+        }
+      }
+    },
+    "ieyc": {
+      "title": "IEYC (Early Years)",
+      "content": "For our youngest learners, we use the International Early Years Curriculum.",
+      "features": [
+        "Learning through play",
+        "Personal, social, and emotional development",
+        "Communication and language",
+        "Physical development"
+      ]
+    },
+    "ipc": {
+      "title": "IPC (Primary Curriculum)",
+      "content": "The International Primary Curriculum offers thematic, inquiry-based learning.",
+      "features": [
+        "Thematic units",
+        "International focus",
+        "Personal goals",
+        "Inquiry-based learning"
+      ]
+    },
+    "assessment": {
+      "title": "Assessment",
+      "content": "We monitor student progress with recognized assessment instruments.",
+      "tools": [
+        "CITO Student Monitoring System",
+        "KIJK! for toddlers and kindergarten",
+        "Pearson English Benchmark",
+        "Transition test grade 8"
+      ]
+    },
+    "cta": {
+      "title": "More Information?",
+      "subtitle": "We'd be happy to tell you more about our curriculum.",
+      "button": "Contact Us"
+    }
+  },
+  "languageClubPage": {
+    "hero": {
+      "title": "Language Club",
+      "subtitle": "Learn additional languages beyond Dutch and English"
+    },
+    "intro": {
+      "title": "Expand Language Skills",
+      "content": "In addition to our bilingual Dutch-English program, we offer extra language lessons. Children can learn French or Kiswahili, perfect for their international future and local integration."
+    },
+    "french": {
+      "title": "French",
+      "ages": "Groups 5-8",
+      "content": "French lessons as preparation for secondary education and international communication.",
+      "features": [
+        "Basic conversation and vocabulary",
+        "French culture",
+        "Preparation for secondary education"
+      ]
+    },
+    "kiswahili": {
+      "title": "Kiswahili",
+      "ages": "Groups 1-8",
+      "content": "Kiswahili lessons for connection with the local community and culture.",
+      "features": [
+        "Basic communication",
+        "Kenyan culture and traditions",
+        "Local integration"
+      ]
+    },
+    "schedule": {
+      "title": "Schedule",
+      "content": "Language lessons are given during or after school, integrated into the weekly schedule."
+    },
+    "cta": {
+      "title": "Interested in Extra Languages?",
+      "subtitle": "Ask about the possibilities for your child.",
+      "button": "Contact Us"
+    }
+  },
+  "skillsClubPage": {
+    "hero": {
+      "title": "Skills Club",
+      "subtitle": "After-school activities for broad development"
+    },
+    "intro": {
+      "title": "More Than Just Books",
+      "content": "The Skills Club offers a rich variety of after-school activities. Children develop practical skills, creativity, and social competencies in a relaxed atmosphere."
+    },
+    "activities": {
+      "title": "Activities",
+      "art": {
+        "title": "Art & Crafts",
+        "description": "Drawing, painting, crafting, and other creative expressions."
+      },
+      "music": {
+        "title": "Music",
+        "description": "Instruments, singing, and musical expression."
+      },
+      "woodwork": {
+        "title": "Woodworking",
+        "description": "Practical skills with wood and tools."
+      },
+      "gardening": {
+        "title": "Gardening",
+        "description": "Working in the school garden, learning about nature and food."
+      },
+      "sports": {
+        "title": "Sports & Movement",
+        "description": "Various sports and movement activities."
+      },
+      "cooking": {
+        "title": "Cooking",
+        "description": "Simple recipes and healthy eating."
+      }
+    },
+    "schedule": {
+      "title": "When?",
+      "content": "Skills Club activities take place after school. The offering varies per term."
+    },
+    "cta": {
+      "title": "What Activities Are Available Now?",
+      "subtitle": "Ask about the current Skills Club offerings.",
+      "button": "Contact Us"
+    }
+  },
+  "studentSupportPage": {
+    "hero": {
+      "title": "Student Support",
+      "subtitle": "Personal guidance for every child"
+    },
+    "intro": {
+      "title": "Every Child is Unique",
+      "content": "In our small-scale school, we know every child personally. Our student support is focused on supporting each child's development, with extra attention for those who need it."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "ib": {
+        "title": "Learning Support Coordinator",
+        "description": "Our learning support coordinator coordinates student support, assists teachers, and guides children who need extra help."
+      },
+      "observation": {
+        "title": "Observation & Signaling",
+        "description": "We systematically observe children to identify early when extra support is needed."
+      },
+      "support": {
+        "title": "Appropriate Support",
+        "description": "From extra instruction to classroom adaptations - we look for solutions that work for each child."
+      },
+      "parents": {
+        "title": "Partnership with Parents",
+        "description": "Parents are partners in guiding their child. We share observations and align approaches."
+      }
+    },
+    "assessment": {
+      "title": "Tracking Systems",
+      "content": "We use recognized systems to track children's development and compare with Dutch standards.",
+      "systems": {
+        "kijk": {
+          "title": "KIJK!",
+          "description": "Observation system for toddlers and kindergarteners that maps broad development."
+        },
+        "cito": {
+          "title": "CITO LVS",
+          "description": "The Dutch student monitoring system for testing language and mathematics, comparable to schools in the Netherlands."
+        },
+        "doorstroom": {
+          "title": "Transition Test",
+          "description": "Official Dutch test in group 8 for advice toward secondary education."
+        },
+        "pearson": {
+          "title": "Pearson English Benchmark",
+          "description": "International test for measuring English language proficiency."
+        }
+      }
+    },
+    "gifted": {
+      "title": "Giftedness",
+      "content": "Children who need more challenge also receive appropriate attention from us. We offer enrichment and deepening where needed."
+    },
+    "cta": {
+      "title": "Questions About Student Support?",
+      "subtitle": "We'd be happy to tell you more about how we guide children.",
+      "button": "Contact Us"
+    }
+  },
+  "practicalPage": {
+    "hero": {
+      "title": "Practical Information",
+      "subtitle": "Everything you need to know about school life"
+    },
+    "intro": {
+      "title": "Well Prepared",
+      "content": "On these pages, you'll find all practical information about school hours, transport, and tuition. Have questions? Feel free to contact us."
+    },
+    "sections": {
+      "schedule": {
+        "title": "School Hours",
+        "description": "Information about lesson times, breaks, and holidays.",
+        "link": "View School Hours"
+      },
+      "transport": {
+        "title": "Transport",
+        "description": "Our school buses run various routes through Nairobi.",
+        "link": "View Transport"
+      },
+      "fees": {
+        "title": "School Fees",
+        "description": "Information about fees and payment arrangements.",
+        "link": "View School Fees"
+      }
+    },
+    "contact": {
+      "title": "Questions?",
+      "content": "For practical questions, you can contact our office.",
+      "button": "Contact Us"
+    }
+  },
+  "schedulePage": {
+    "hero": {
+      "title": "School Hours",
+      "subtitle": "Lesson times and annual calendar"
+    },
+    "daily": {
+      "title": "Daily Schedule",
+      "toddler": {
+        "title": "Toddler Group",
+        "hours": "8:30 AM - 12:30 PM",
+        "note": "2-5 mornings per week of choice"
+      },
+      "primary": {
+        "title": "Primary School",
+        "hours": "8:00 AM - 3:00 PM (Mon-Thu), 8:00 AM - 12:30 PM (Fri)",
+        "note": "Lunch at school"
+      }
+    },
+    "breaks": {
+      "title": "Breaks",
+      "morning": "Morning break: 10:15 AM - 10:30 AM",
+      "lunch": "Lunch break: 12:00 PM - 12:45 PM"
+    },
+    "calendar": {
+      "title": "School Calendar",
+      "content": "Our school year largely follows the Dutch school year, with adjustments for Kenyan holidays. The annual calendar is shared at the beginning of each school year."
+    },
+    "afterSchool": {
+      "title": "After School",
+      "content": "After regular school hours, we offer Skills Club activities. Children can also use after-school care until 5:00 PM."
+    },
+    "cta": {
+      "title": "Questions About School Hours?",
+      "subtitle": "Contact us for more information.",
+      "button": "Contact Us"
+    }
+  },
+  "transportPage": {
+    "hero": {
+      "title": "School Transport",
+      "subtitle": "Safe transportation to and from school"
+    },
+    "intro": {
+      "title": "Our School Buses",
+      "content": "Dutch School Nairobi offers school bus transport from various parts of Nairobi. Our two routes cover the main areas where our families live."
+    },
+    "routes": {
+      "title": "Routes",
+      "route1": {
+        "title": "Route 1: Lavington / Kilimani",
+        "description": "This route serves the Lavington, Kilimani, and surrounding areas.",
+        "areas": ["Lavington", "Kilimani", "Kileleshwa", "Hurlingham"]
+      },
+      "route2": {
+        "title": "Route 2: Loresho / Kitisuru",
+        "description": "This route serves the Loresho, Kitisuru, and surrounding areas.",
+        "areas": ["Loresho", "Kitisuru", "Spring Valley", "Westlands"]
+      }
+    },
+    "safety": {
+      "title": "Safety",
+      "content": "Your child's safety is our priority. Our buses are equipped with seat belts and driven by experienced drivers. A supervisor is present during every trip."
+    },
+    "practical": {
+      "title": "Practical Information",
+      "items": [
+        "Pick-up and drop-off times are communicated at the beginning of the school year",
+        "Registration for bus transport goes through the school office",
+        "Bus transport is optional and separately priced"
+      ]
+    },
+    "cta": {
+      "title": "Interested in School Transport?",
+      "subtitle": "Contact us for availability and rates.",
+      "button": "Contact Us"
+    }
+  },
+  "feesPage": {
+    "hero": {
+      "title": "School Fees",
+      "subtitle": "Transparent fee structure"
+    },
+    "intro": {
+      "title": "Two Tariff Groups",
+      "content": "Dutch School Nairobi uses two tariff groups to keep education accessible for different family situations."
+    },
+    "tariffs": {
+      "title": "Tariff Groups",
+      "tariffA": {
+        "title": "Tariff A",
+        "description": "For families where the employer fully or partially reimburses school fees.",
+        "note": "Full rate"
+      },
+      "tariffB": {
+        "title": "Tariff B",
+        "description": "For families paying school fees themselves without employer reimbursement.",
+        "note": "Reduced rate"
+      }
+    },
+    "included": {
+      "title": "Included",
+      "items": [
+        "All learning materials and books",
+        "Educational activities and field trips",
+        "Access to basic Skills Club activities"
+      ]
+    },
+    "additional": {
+      "title": "Additional Costs",
+      "items": [
+        "Registration fee (one-time for new students)",
+        "School bus (optional)",
+        "Lunch (optional)",
+        "Specific Skills Club activities"
+      ]
+    },
+    "payment": {
+      "title": "Payment",
+      "content": "Tuition can be paid per term or per year. Payment arrangements can be discussed."
+    },
+    "siblings": {
+      "title": "Discount",
+      "content": "A discount applies for the second and subsequent children from the same family."
+    },
+    "cta": {
+      "title": "Request Rates",
+      "subtitle": "Contact us for current rates and a personal conversation.",
+      "button": "Contact Us"
+    }
+  },
+  "communityPage": {
+    "hero": {
+      "title": "Community",
+      "subtitle": "A close-knit, international school family"
+    },
+    "intro": {
+      "title": "Stronger Together",
+      "content": "Dutch School Nairobi is more than a school - it's a community. Parents, students, and staff together form a close-knit group where everyone knows and supports each other."
+    },
+    "sections": {
+      "parents": {
+        "title": "For Parents",
+        "description": "Parent involvement, communication, and how you can contribute to our school.",
+        "link": "More about Parent Participation"
+      },
+      "events": {
+        "title": "Events",
+        "description": "Dutch traditions, school celebrations, and social activities.",
+        "link": "View Events"
+      }
+    },
+    "cta": {
+      "title": "Become Part of Our Community",
+      "subtitle": "Come by and experience the warm atmosphere of our school.",
+      "button": "Schedule a Visit"
+    }
+  },
+  "parentsPage": {
+    "hero": {
+      "title": "For Parents",
+      "subtitle": "Partners in your child's education"
+    },
+    "intro": {
+      "title": "Parent Involvement",
+      "content": "At Dutch School Nairobi, parents are important partners. We believe in open communication and active parent involvement in school life."
+    },
+    "communication": {
+      "title": "Communication",
+      "items": [
+        "Weekly newsletter",
+        "Parent portal for practical information",
+        "Regular parent meetings",
+        "Direct communication with teachers"
+      ]
+    },
+    "involvement": {
+      "title": "Get Involved",
+      "content": "There are many ways to be involved:",
+      "items": [
+        "Help at school events",
+        "Become a class parent",
+        "Contribute to the library",
+        "Share expertise or hobbies"
+      ]
+    },
+    "parentCommittee": {
+      "title": "Parent Association",
+      "content": "The parent association organizes events and represents parent interests. New members are always welcome."
+    },
+    "cta": {
+      "title": "Questions About Parent Involvement?",
+      "subtitle": "We'd be happy to tell you more.",
+      "button": "Contact Us"
+    }
+  },
+  "eventsPage": {
+    "hero": {
+      "title": "Events",
+      "subtitle": "Dutch traditions and international celebrations"
+    },
+    "intro": {
+      "title": "A Year Full of Events",
+      "content": "At Dutch School Nairobi, we celebrate both Dutch traditions and international holidays. These events strengthen our community and connect children with their cultural background."
+    },
+    "dutch": {
+      "title": "Dutch Traditions",
+      "events": {
+        "sinterklaas": {
+          "title": "Sinterklaas",
+          "description": "In early December, the whole school celebrates Sinterklaas with songs, surprises, and pepernoten."
+        },
+        "koningsdag": {
+          "title": "King's Day",
+          "description": "An orange celebration with games, flea market, and Dutch gezelligheid."
+        },
+        "kerst": {
+          "title": "Christmas Celebration",
+          "description": "A joint Christmas celebration with performances by the children."
+        }
+      }
+    },
+    "school": {
+      "title": "School Events",
+      "events": {
+        "openDay": {
+          "title": "Open Day",
+          "description": "Getting to know our school for interested families."
+        },
+        "sportsDay": {
+          "title": "Sports Day",
+          "description": "A day full of sports and games for all students."
+        },
+        "endOfYear": {
+          "title": "End of Year Celebration",
+          "description": "Celebrating the end of the school year with performances and farewell to group 8."
+        }
+      }
+    },
+    "calendar": {
+      "title": "Events Calendar",
+      "content": "The full events calendar is shared at the beginning of each school year. Parents receive timely invitations for all events."
+    },
+    "cta": {
+      "title": "Come to Our Events",
+      "subtitle": "Experience the warmth of our community.",
+      "button": "Schedule a Visit"
+    }
   }
 }

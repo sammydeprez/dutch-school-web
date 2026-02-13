@@ -2,21 +2,53 @@
   "navigation": {
     "home": "Home",
     "about": "Over Ons",
-    "programs": "Programma's",
+    "aboutOverview": "Overzicht",
+    "vision": "Onze Visie",
+    "team": "Het Team",
+    "campus": "Locatie & Campus",
+    "education": "Onderwijs",
+    "educationOverview": "Overzicht",
+    "toddler": "Peuterspeelzaal",
+    "primary": "Basisschool",
+    "ntc": "NTC",
+    "curriculum": "Curriculum",
+    "languageClub": "Talenclub",
+    "skillsClub": "Skills Club",
+    "studentSupport": "Leerlingenzorg",
+    "practical": "Praktisch",
+    "practicalOverview": "Overzicht",
+    "schedule": "Schooltijden",
+    "transport": "Transport",
+    "fees": "Schoolgeld",
+    "community": "Gemeenschap",
+    "communityOverview": "Overzicht",
+    "parents": "Voor Ouders",
+    "events": "Evenementen",
     "enrollment": "Inschrijving",
     "contact": "Contact",
     "applyNow": "Inschrijven"
   },
   "hero": {
-    "title": "Waar Nederlands Onderwijs de Afrikaanse Geest Ontmoet",
-    "subtitle": "Het vormen van wereldburgers door tweetalig onderwijs in het hart van Nairobi sinds 1971",
+    "title": "Groots in Kleinschaligheid",
+    "subtitle": "Nederlands onderwijs in het hart van Nairobi. Waar elk kind gezien, gekend en gewaardeerd wordt.",
     "cta": "Ontdek Onze School",
     "secondaryCta": "Plan een Bezoek",
+    "watchStory": "Bekijk Ons Verhaal",
     "badges": {
-      "since": "Sinds 1971 • 50+ Jaar Excellentie",
+      "since": "Sinds 1971 • 50+ Jaar",
       "nobRecognized": "NOB Erkend",
-      "nationalities": "18 Nationaliteiten",
-      "smallClasses": "1:8 Leraar Ratio"
+      "nationalities": "10+ Nationaliteiten",
+      "smallClasses": "Kleine Klassen"
+    }
+  },
+  "brand": {
+    "tagline": "Groots in Kleinschaligheid",
+    "taglineEn": "Greatness in Intimacy",
+    "philosophy": "Klein maakt groots",
+    "values": {
+      "connect": "Verbinden",
+      "inspire": "Inspireren",
+      "move": "Meebewegen"
     }
   },
   "about": {
@@ -37,46 +69,46 @@
   },
   "features": {
     "title": "Waarom Dutch School?",
-    "subtitle": "Een unieke onderwijservaring in Nairobi",
+    "subtitle": "Groots in kleinschaligheid - waar elk kind gezien wordt",
     "bilingual": {
       "title": "Tweetalig Onderwijs",
-      "description": "Volledig Nederlands en Engels curriculum voor naadloze overgang naar zowel Nederlandse als internationale schoolsystemen wereldwijd."
+      "description": "3 dagen Nederlands, 2 dagen Engels in de kleuterklas. Volledig tweetalig curriculum voor naadloze doorstroom."
     },
     "curriculum": {
-      "title": "IPC Curriculum",
-      "description": "International Primary Curriculum met thematisch leren dat participatie en wereldburgerschap aanmoedigt."
+      "title": "IEYC/IPC Curriculum",
+      "description": "International Early Years en Primary Curriculum met thematisch leren dat participatie en wereldburgerschap aanmoedigt."
     },
     "community": {
       "title": "Kleine Gemeenschap",
-      "description": "Met 15+ nationaliteiten en kleine klassen krijgt elk kind persoonlijke aandacht en zorg."
+      "description": "Met 10+ nationaliteiten en kleine klassen krijgt elk kind persoonlijke aandacht en zorg."
     },
     "environment": {
       "title": "Groene Campus",
-      "description": "Grote buitenruimtes en tuinen bieden de perfecte omgeving voor leren, spelen en ontdekken."
+      "description": "Prachtig groen compound in Karen met ruimte voor buitenonderwijs, spelen en ontdekken."
     }
   },
   "programs": {
     "title": "Onze Programma's",
     "subtitle": "Onderwijs voor elke ontwikkelingsfase",
     "toddler": {
-      "title": "Peutergroep",
-      "ages": "Leeftijd 1½ - 4",
-      "description": "Een koesterende introductie tot leren door spel, sociale interactie en vroege Nederlandse taalblootstelling."
+      "title": "Peuterspeelzaal",
+      "ages": "Vanaf 1,5 jaar",
+      "description": "Een koesterende introductie tot leren door spel, met maximaal 15 kinderen en vroege Nederlandse taalblootstelling."
     },
     "primary": {
       "title": "Basisschool",
-      "ages": "Leeftijd 4 - 12",
+      "ages": "Groep 1 - 8",
       "description": "Uitgebreid tweetalig onderwijs dat het Nederlandse curriculum combineert met het International Primary Curriculum (IPC)."
     },
     "ntc": {
-      "title": "NTC Lessen",
-      "ages": "Leeftijd 3,5 - 18",
+      "title": "NTC",
+      "ages": "Nederlands Taal & Cultuur",
       "description": "Nederlands taal- en cultuuronderwijs voor kinderen op andere internationale scholen in Nairobi."
     },
     "adult": {
-      "title": "Nederlandse Les voor Volwassenen",
-      "ages": "Alle niveaus",
-      "description": "Nederlandse taalcursussen voor ouders en volwassenen die Nederlands willen leren of verbeteren."
+      "title": "Nederlandse Les Volwassenen",
+      "ages": "Voor Volwassenen",
+      "description": "Nederlandse taalcursussen voor volwassenen op alle niveaus. Perfect voor ouders, partners, of iedereen die Nederlands wil leren."
     },
     "learnMore": "Meer Info"
   },
@@ -103,15 +135,15 @@
     "title": "Snelle Feiten over Dutch School Nairobi",
     "q1": {
       "question": "Wat is Dutch School Nairobi?",
-      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is een erkende tweetalige basisschool in Kenia, die Nederlands en Engels onderwijs biedt voor kinderen van 1½-18 jaar. Opgericht in 1971 en erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB), combineert de school het Nederlandse curriculum met het International Primary Curriculum (IPC)."
+      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is een erkende tweetalige basisschool in Kenia, die Nederlands en Engels onderwijs biedt voor kinderen vanaf 1,5 jaar. Opgericht in 1971 en erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB), combineert de school het Nederlandse curriculum met het International Primary Curriculum (IPC)."
     },
     "q2": {
       "question": "Welk curriculum volgt Dutch School Nairobi?",
-      "answer": "Wij volgen een tweetalig curriculum dat de officiële Nederlandse onderwijsstandaarden combineert met het International Primary Curriculum (IPC). Dit zorgt ervoor dat leerlingen naadloos kunnen doorstromen naar scholen in Nederland of hun internationale onderwijstraject kunnen voortzetten."
+      "answer": "Wij volgen een tweetalig curriculum dat de officiële Nederlandse onderwijsstandaarden combineert met het IEYC (International Early Years Curriculum) en IPC (International Primary Curriculum). Dit zorgt ervoor dat leerlingen naadloos kunnen doorstromen naar scholen in Nederland of hun internationale onderwijstraject kunnen voortzetten."
     },
     "q3": {
       "question": "Wat zijn de schoolkosten bij Dutch School Nairobi?",
-      "answer": "Onze tarieven zijn concurrerend met internationale scholen in Nairobi en omvatten alle leermaterialen, lunch en buitenschoolse activiteiten. Neem contact op met ons toelatings team voor de gedetailleerde tariefstructuur, aangezien de tarieven variëren per programma (Peuter, Basis, NTC, Volwassenen lessen)."
+      "answer": "Onze tarieven zijn verdeeld in twee groepen: Tarief A voor gezinnen waarbij de werkgever het schoolgeld vergoedt, en Tarief B voor gezinnen die zelf betalen. Neem contact op met ons toelatings team voor de gedetailleerde tariefstructuur."
     },
     "q4": {
       "question": "Moeten leerlingen Nederlands spreken om zich in te schrijven?",
@@ -126,19 +158,19 @@
     "contact": "Of neem contact op via"
   },
   "footer": {
-    "description": "Nederlands en tweetalig onderwijs in Nairobi sinds 1971. Erkend door de Stichting Nederlands Onderwijs in het Buitenland.",
+    "description": "Nederlands en tweetalig onderwijs in Nairobi sinds 1971. Erkend door de Stichting Nederlands Onderwijs in het Buitenland. Groots in Kleinschaligheid.",
     "quickLinks": "Snelle Links",
-    "programs": "Programma's",
-    "programsList": {
-      "toddler": "Peutergroep",
+    "education": "Onderwijs",
+    "educationList": {
+      "toddler": "Peuterspeelzaal",
       "primary": "Basisschool",
-      "ntc": "NTC Lessen",
-      "adult": "Nederlandse Les voor Volwassenen"
+      "ntc": "NTC",
+      "curriculum": "Curriculum"
     },
     "contact": "Contact",
-    "address": "Makindi Road, Nairobi, Kenia",
+    "address": "Karen, Nairobi, Kenia",
     "hours": "Ma - Vr: 8:00 - 15:30",
-    "copyright": "© 2025 Dutch School Nairobi. Alle rechten voorbehouden.",
+    "copyright": "Dutch School Nairobi. Alle rechten voorbehouden.",
     "privacy": "Privacybeleid",
     "terms": "Algemene Voorwaarden"
   },
@@ -180,7 +212,7 @@
     },
     "fees": {
       "title": "Schoolgeld & Kosten",
-      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen, lunch en buitenschoolse activiteiten. Neem contact met ons op voor een gedetailleerd overzicht."
+      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen. We hanteren twee tariefgroepen: Tarief A (werkgeververgoeding) en Tarief B (eigen betaling)."
     },
     "cta": "Start Uw Aanmelding",
     "faq": {
@@ -199,11 +231,12 @@
       "subtitle": "Start vandaag uw aanmelding of neem contact met ons op voor meer informatie.",
       "scheduleTour": "Plan een Rondleiding"
     },
-    "feesNote": "Schoolgeld omvat alle leermaterialen, lunchprogramma en de meeste buitenschoolse activiteiten. Voor nieuwe leerlingen geldt een inschrijfgeld. Korting voor broers/zussen en betalingsregelingen zijn beschikbaar."
+    "feesNote": "Schoolgeld omvat alle leermaterialen. Voor nieuwe leerlingen geldt een inschrijfgeld. Korting voor broers/zussen en betalingsregelingen zijn beschikbaar.",
+    "feesLink": "Bekijk volledige tariefinformatie"
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "We horen graag van u",
+    "title": "Contact & Bezoek",
+    "subtitle": "We verwelkomen u graag op onze school",
     "form": {
       "name": "Uw Naam",
       "email": "E-mailadres",
@@ -215,18 +248,22 @@
     "info": {
       "title": "Neem Contact Op",
       "address": "Adres",
-      "addressValue": "Makindi Road, Nairobi, Kenia",
+      "addressValue": "Karen, Nairobi, Kenia",
       "phone": "Telefoon",
       "email": "E-mail",
       "hours": "Kantooruren",
       "hoursValue": "Maandag - Vrijdag: 8:00 - 16:00"
+    },
+    "visit": {
+      "title": "Plan een Bezoek",
+      "description": "Kom langs en ervaar onze warme gemeenschap. We geven u graag een rondleiding over ons prachtige groene terrein in Karen."
     },
     "map": "Vind Ons"
   },
   "aboutPage": {
     "hero": {
       "title": "Over Dutch School Nairobi",
-      "subtitle": "Bijna 50 jaar het vormen van jonge geesten in Kenia"
+      "subtitle": "Groots in kleinschaligheid - bijna 50 jaar onderwijsexcellentie in Kenia"
     },
     "history": {
       "title": "Onze Geschiedenis",
@@ -235,38 +272,38 @@
         "1971": "School opgericht door Nederlandse expatfamilies",
         "1985": "Officiële erkenning door de Nederlandse overheid",
         "2000": "Introductie van IPC curriculum",
-        "2010": "Uitbreiding NTC-programma in heel Nairobi",
+        "2010": "Uitbreiding NTC-programma",
         "2020": "Integratie van digitaal leren",
         "today": "50+ jaar onderwijsexcellentie"
       }
     },
     "approach": {
       "title": "Onze Onderwijsaanpak",
-      "content": "Wij geloven in de kracht van tweetalig onderwijs. Onze unieke combinatie van het Nederlandse curriculum en het International Primary Curriculum (IPC) zorgt ervoor dat leerlingen goed voorbereid zijn op zowel Nederlandse als internationale onderwijstrajecten. Kleine klassen maken persoonlijke aandacht mogelijk, zodat elk kind zijn volledige potentieel bereikt."
+      "content": "Wij geloven in de kracht van kleinschalig onderwijs. Onze unieke combinatie van het Nederlandse curriculum en het International Primary Curriculum (IPC) zorgt ervoor dat leerlingen goed voorbereid zijn op zowel Nederlandse als internationale onderwijstrajecten. Kleine klassen maken persoonlijke aandacht mogelijk, zodat elk kind zijn volledige potentieel bereikt."
     },
     "team": {
       "title": "Ons Team",
       "subtitle": "Toegewijde docenten gepassioneerd over het succes van uw kind",
       "members": {
-        "director": { "name": "Dr. Sarah van Dijk", "role": "Schooldirecteur" },
-        "headPrimary": { "name": "Mark de Vries", "role": "Hoofd Basisschool" },
-        "headEarlyYears": { "name": "Anna Bakker", "role": "Hoofd Vroegschoolse Educatie" },
-        "operations": { "name": "James Ochieng", "role": "Operationeel Manager" }
+        "director": { "name": "Schoolleider", "role": "Directie" },
+        "headPrimary": { "name": "Groepsleerkracht", "role": "Basisschool" },
+        "headEarlyYears": { "name": "Pedagogisch Medewerker", "role": "Peuterspeelzaal" },
+        "operations": { "name": "Ondersteunend", "role": "Administratie" }
       }
     },
     "values": {
       "title": "Onze Waarden",
       "value1": {
-        "title": "Excellentie",
-        "description": "We streven naar de hoogste normen in onderwijs en persoonlijke ontwikkeling."
+        "title": "Verbinden",
+        "description": "We creëren sterke banden tussen leerlingen, ouders en leerkrachten in een hechte gemeenschap."
       },
       "value2": {
-        "title": "Gemeenschap",
-        "description": "We bevorderen een warme, inclusieve omgeving waar iedereen thuishoort."
+        "title": "Inspireren",
+        "description": "We wekken nieuwsgierigheid en levenslange liefde voor leren op."
       },
       "value3": {
-        "title": "Innovatie",
-        "description": "We omarmen nieuwe onderwijsmethoden terwijl we tradities eren."
+        "title": "Meebewegen",
+        "description": "We passen ons aan de unieke behoeften van elk kind en elke situatie aan."
       },
       "value4": {
         "title": "Wereldburgerschap",
@@ -279,52 +316,806 @@
       "button": "Plan een Bezoek"
     }
   },
-  "programsPage": {
+  "visionPage": {
     "hero": {
-      "title": "Onze Programma's",
-      "subtitle": "Uitgebreid onderwijs van peuters tot jongvolwassenen"
+      "title": "Onze Visie & Missie",
+      "subtitle": "Groots in Kleinschaligheid - waar elk kind gezien, gekend en gewaardeerd wordt"
     },
-    "daySchool": {
-      "title": "Dagschool",
-      "description": "Ons kernprogramma met volledig tweetalig onderwijs"
+    "philosophy": {
+      "title": "Klein Maakt Groots",
+      "content": "Bij Dutch School Nairobi geloven we dat klein maakt groots. In een intieme setting waar elk kind persoonlijk gekend wordt, kunnen we de beste omgeving bieden voor ontwikkeling en groei.",
+      "quote": "Groots in Kleinschaligheid betekent dat we groot zijn in wat we doen, juist omdat we klein zijn in omvang."
     },
-    "ntcProgram": {
-      "title": "NTC Programma",
-      "description": "Nederlandse taal- en cultuurlessen voor leerlingen van andere scholen"
+    "mission": {
+      "title": "Onze Missie",
+      "content": "Het bieden van hoogwaardig tweetalig onderwijs in een kleinschalige, warme omgeving waar elk kind zich optimaal kan ontwikkelen en voorbereid wordt op een internationale toekomst."
     },
-    "features": {
-      "toddler": ["Spelend leren", "Vroege Nederlandse taalblootstelling", "Sociale vaardigheden ontwikkeling", "Creatieve activiteiten", "Buitenspeeltijd"],
-      "primary": ["Nederlands curriculum", "IPC (International Primary Curriculum)", "Tweetalig onderwijs", "Kleine klassen", "Individuele aandacht"],
-      "ntc": ["Nederlandse taallessen", "Nederlandse cultuureducatie", "Meerdere locaties in Nairobi", "Naschools rooster", "CNaVT examenvoorbereiding"],
-      "adult": ["Beginner tot gevorderd niveau", "Flexibele planning", "Conversatiegerichte aanpak", "Zakelijk Nederlands beschikbaar", "Kleine groepen of privé"]
+    "vision": {
+      "title": "Onze Visie",
+      "content": "Een school waar elk kind gezien, gekend en gewaardeerd wordt. Waar de Nederlandse taal en cultuur een stevige basis vormen en kinderen zich ontwikkelen tot zelfverzekerde wereldburgers."
     },
-    "curriculum": {
-      "title": "Curriculum Overzicht",
-      "subtitle": "Ons curriculum combineert het Nederlandse onderwijssysteem met het International Primary Curriculum (IPC) voor een uitgebreide leerervaring.",
-      "subjects": {
-        "dutchLanguage": "Nederlandse Taal",
-        "englishLanguage": "Engelse Taal",
-        "mathematics": "Rekenen",
-        "worldStudies": "Wereldoriëntatie",
-        "science": "Wetenschap",
-        "arts": "Kunst & Handvaardigheid",
-        "music": "Muziek",
-        "pe": "Lichamelijke Opvoeding"
+    "values": {
+      "title": "Onze Kernwaarden",
+      "connect": {
+        "title": "Verbinden",
+        "description": "We bouwen sterke relaties tussen school, thuis en gemeenschap. Verbinding is de basis van alles wat we doen."
+      },
+      "inspire": {
+        "title": "Inspireren",
+        "description": "We stimuleren nieuwsgierigheid, creativiteit en een levenslange liefde voor leren bij elk kind."
+      },
+      "move": {
+        "title": "Meebewegen",
+        "description": "We zijn flexibel en passen ons aan de unieke behoeften van elk kind en elke situatie aan."
+      }
+    },
+    "cta": {
+      "title": "Ervaar Onze Visie in de Praktijk",
+      "subtitle": "Kom langs voor een rondleiding en ontdek wat kleinschalig onderwijs voor uw kind kan betekenen.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "title": "Ons Team",
+      "subtitle": "Toegewijde professionals die elk kind persoonlijk kennen"
+    },
+    "intro": {
+      "title": "De Mensen Achter Onze School",
+      "content": "Ons kleine, hechte team bestaat uit ervaren en gepassioneerde professionals. Door onze kleinschaligheid kent elke medewerker elk kind persoonlijk, wat zorgt voor optimale begeleiding en ondersteuning."
+    },
+    "leadership": {
+      "title": "Schoolleiding",
+      "description": "Onze schoolleider draagt de dagelijkse verantwoordelijkheid voor het onderwijs en het welzijn van alle leerlingen."
+    },
+    "teachers": {
+      "title": "Leerkrachten",
+      "description": "Onze bevoegde leerkrachten combineren Nederlandse onderwijservaring met internationale expertise. Ze creëren een veilige, stimulerende leeromgeving."
+    },
+    "support": {
+      "title": "Ondersteunend Personeel",
+      "description": "Van intern begeleider tot administratie - ons team werkt samen om de beste ervaring voor kinderen en ouders te garanderen."
+    },
+    "cta": {
+      "title": "Maak Kennis met Ons Team",
+      "subtitle": "Plan een bezoek en ontmoet de mensen die uw kind zullen begeleiden.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "campusPage": {
+    "hero": {
+      "title": "Locatie & Campus",
+      "subtitle": "Een groene oase in het hart van Karen, Nairobi"
+    },
+    "location": {
+      "title": "Onze Locatie",
+      "content": "Dutch School Nairobi is gevestigd in Karen, een van de groenste en rustigste wijken van Nairobi. Ons ruime compound biedt een veilige, natuurlijke omgeving waar kinderen kunnen leren, spelen en ontdekken.",
+      "features": {
+        "green": "Groot groen terrein met speelruimtes",
+        "outdoor": "Faciliteiten voor buitenonderwijs",
+        "safe": "Veilige, besloten omgeving",
+        "nature": "Omringd door natuur"
+      }
+    },
+    "facilities": {
+      "title": "Onze Faciliteiten",
+      "classrooms": {
+        "title": "Klaslokalen",
+        "description": "Lichte, moderne klaslokalen ingericht voor kleinschalig onderwijs met persoonlijke aandacht."
+      },
+      "outdoor": {
+        "title": "Buitenruimtes",
+        "description": "Uitgebreide speelplaatsen, een moestuin en groene ruimtes voor buitenactiviteiten en natuur educatie."
+      },
+      "library": {
+        "title": "Bibliotheek",
+        "description": "Een rijke collectie Nederlandse en Engelse boeken om leesplezier te stimuleren."
+      },
+      "arts": {
+        "title": "Creatieve Ruimtes",
+        "description": "Ruimtes voor kunst, muziek, koken en andere creatieve activiteiten."
+      }
+    },
+    "directions": {
+      "title": "Routebeschrijving",
+      "content": "Wij zijn gemakkelijk bereikbaar vanuit alle delen van Nairobi. Onze school biedt ook transport aan vanuit verschillende wijken."
+    },
+    "cta": {
+      "title": "Bezoek Onze Campus",
+      "subtitle": "Ervaar de rust en ruimte van ons groene schoolterrein.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "educationPage": {
+    "hero": {
+      "title": "Onderwijs",
+      "subtitle": "Tweetalig onderwijs van peuterspeelzaal tot en met groep 8"
+    },
+    "intro": {
+      "title": "Ons Onderwijsaanbod",
+      "content": "Dutch School Nairobi biedt een compleet onderwijstraject voor kinderen vanaf 1,5 jaar. Ons tweetalige curriculum combineert het beste van het Nederlandse onderwijssysteem met internationale curricula."
+    },
+    "programs": {
+      "toddler": {
+        "title": "Peuterspeelzaal",
+        "ages": "Vanaf 1,5 jaar",
+        "description": "Een warme, speelse omgeving waar peuters de eerste stappen in hun leerreis zetten. Maximaal 15 kinderen, 2-5 ochtenden per week.",
+        "link": "Meer over Peuterspeelzaal"
+      },
+      "primary": {
+        "title": "Basisschool",
+        "ages": "Groep 1 - 8",
+        "description": "Volledig tweetalig onderwijs met het Nederlandse curriculum en IPC. Kleine klassen, persoonlijke aandacht.",
+        "link": "Meer over Basisschool"
+      },
+      "ntc": {
+        "title": "NTC",
+        "ages": "Nederlands Taal & Cultuur",
+        "description": "Voor kinderen op andere internationale scholen die Nederlands willen leren of onderhouden.",
+        "link": "Meer over NTC"
+      }
+    },
+    "extras": {
+      "title": "Extra Programma's",
+      "languageClub": {
+        "title": "Talenclub",
+        "description": "Frans (groep 5-8) en Kiswahili (groep 1-8) als extra taalaanbod.",
+        "link": "Meer over Talenclub"
+      },
+      "skillsClub": {
+        "title": "Skills Club",
+        "description": "Naschoolse activiteiten: kunst, muziek, houtbewerking, tuinieren en sport.",
+        "link": "Meer over Skills Club"
+      }
+    },
+    "cta": {
+      "title": "Ontdek het Juiste Programma",
+      "subtitle": "We helpen u graag om het beste traject voor uw kind te vinden.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "toddlerPage": {
+    "hero": {
+      "title": "Peuterspeelzaal",
+      "subtitle": "Een warme start voor de jongste leerlingen, vanaf 1,5 jaar"
+    },
+    "intro": {
+      "title": "Spelend Leren",
+      "content": "Onze peuterspeelzaal biedt een veilige, stimulerende omgeving waar kinderen vanaf 1,5 jaar op een speelse manier kennismaken met de Nederlandse taal en cultuur. In een kleine groep van maximaal 15 kinderen krijgt elk kind de aandacht en zorg die het verdient."
+    },
+    "program": {
+      "title": "Het Programma",
+      "schedule": {
+        "title": "Flexibele Opvang",
+        "description": "Kies voor 2, 3, 4 of 5 ochtenden per week, afhankelijk van de behoeften van uw gezin."
+      },
+      "language": {
+        "title": "Taalblootstelling",
+        "description": "Natuurlijke introductie tot het Nederlands door liedjes, verhalen en dagelijkse interacties."
+      },
+      "play": {
+        "title": "Spelend Leren",
+        "description": "Ontwikkeling door spel, creativiteit en sociale interactie met leeftijdsgenoten."
+      },
+      "observation": {
+        "title": "KIJK! Observatiesysteem",
+        "description": "We volgen de ontwikkeling van elk kind met het KIJK! observatiesysteem."
       }
     },
     "activities": {
-      "title": "Buitenschoolse Activiteiten",
-      "subtitle": "Naast het academische programma bieden we diverse activiteiten die kinderen helpen nieuwe vaardigheden te ontwikkelen, interesses te verkennen en blijvende vriendschappen op te bouwen.",
-      "list": ["Zwemlessen", "Voetbalclub", "Kunstworkshops", "Muzieklessen", "Nederlandse culturele evenementen", "Excursies", "Bibliotheektijd", "Wetenschappelijke experimenten"],
-      "imagePlaceholder": "Activiteiten Afbeelding Placeholder"
+      "title": "Dagelijkse Activiteiten",
+      "list": [
+        "Kringtijd met liedjes en verhalen",
+        "Vrij spel binnen en buiten",
+        "Creatieve activiteiten",
+        "Bewegingsactiviteiten",
+        "Natuur en buitenspel",
+        "Muziek en dans"
+      ]
+    },
+    "practical": {
+      "title": "Praktische Informatie",
+      "hours": "Openingstijden: 8:30 - 12:30",
+      "group": "Groepsgrootte: maximaal 15 kinderen",
+      "staff": "Begeleiding: ervaren pedagogisch medewerkers"
     },
     "cta": {
-      "title": "Vind het Juiste Programma voor Uw Kind",
-      "subtitle": "Neem contact met ons op voor meer informatie over onze programma's en plan een bezoek.",
-      "applyButton": "Start Aanmelding",
-      "contactButton": "Neem Contact Op"
+      "title": "Kennismaken?",
+      "subtitle": "Plan een bezoek om onze peuterspeelzaal te ervaren.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "primaryPage": {
+    "hero": {
+      "title": "Basisschool",
+      "subtitle": "Tweetalig onderwijs van groep 1 tot en met groep 8"
     },
-    "applyNow": "Nu Aanmelden",
-    "imagePlaceholder": "Afbeelding Placeholder"
+    "intro": {
+      "title": "Het Beste van Twee Werelden",
+      "content": "Onze basisschool combineert het Nederlandse curriculum met het International Primary Curriculum (IPC). Kinderen krijgen onderwijs in zowel Nederlands als Engels, waardoor ze optimaal voorbereid zijn op zowel terugkeer naar Nederland als voortzetting van internationaal onderwijs."
+    },
+    "bilingual": {
+      "title": "Tweetalig Onderwijs",
+      "kindergarten": {
+        "title": "Groep 1-2 (Kleuterklas)",
+        "description": "3 dagen Nederlands, 2 dagen Engels. Spelend leren met het IEYC curriculum."
+      },
+      "lower": {
+        "title": "Groep 3-5 (Onderbouw)",
+        "description": "Fundamentele vaardigheden in taal, rekenen en wereldoriëntatie in beide talen."
+      },
+      "upper": {
+        "title": "Groep 6-8 (Bovenbouw)",
+        "description": "Verdieping en voorbereiding op voortgezet onderwijs. Doorstroomtoets in groep 8."
+      }
+    },
+    "curriculum": {
+      "title": "Curriculum",
+      "dutch": {
+        "title": "Nederlands Curriculum",
+        "subjects": ["Nederlandse taal", "Rekenen/Wiskunde", "Begrijpend lezen", "Spelling", "Schrijven"]
+      },
+      "ipc": {
+        "title": "IPC (International Primary Curriculum)",
+        "subjects": ["Thematisch leren", "Wetenschap", "Geschiedenis", "Aardrijkskunde", "Kunst & Cultuur"]
+      }
+    },
+    "assessment": {
+      "title": "Toetsing & Volgsysteem",
+      "content": "We gebruiken het CITO leerlingvolgsysteem om de voortgang van elk kind te monitoren. In groep 8 maken leerlingen de officiële doorstroomtoets.",
+      "items": [
+        "CITO toetsen voor vergelijking met Nederland",
+        "Doorstroomtoets in groep 8",
+        "Pearson Young Learners English Benchmark",
+        "Regelmatige rapportages aan ouders"
+      ]
+    },
+    "cta": {
+      "title": "Meer Weten?",
+      "subtitle": "Ontdek hoe ons tweetalig onderwijs uw kind kan voorbereiden op de toekomst.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "ntcPage": {
+    "hero": {
+      "title": "NTC - Nederlands Taal en Cultuur",
+      "subtitle": "Voor Nederlandstalige kinderen op andere internationale scholen"
+    },
+    "intro": {
+      "title": "Behoud en Ontwikkel het Nederlands",
+      "content": "Het NTC-programma is speciaal ontworpen voor kinderen die naar een andere internationale school gaan, maar wel hun Nederlandse taal en cultuur willen onderhouden en ontwikkelen. Perfect voor expat-gezinnen die later terugkeren naar Nederland of Vlaanderen."
+    },
+    "forWhom": {
+      "title": "Voor Wie?",
+      "content": "Het NTC-programma is bedoeld voor kinderen van Nederlandse of Vlaamse families die:",
+      "items": [
+        "Naar een andere internationale school in Nairobi gaan",
+        "Hun Nederlands willen behouden of verbeteren",
+        "Zich willen voorbereiden op terugkeer naar Nederland/België",
+        "Verbonden willen blijven met Nederlandse cultuur en tradities"
+      ]
+    },
+    "program": {
+      "title": "Het Programma",
+      "language": {
+        "title": "Nederlandse Taal",
+        "description": "Lessen gericht op lezen, schrijven, spreken en luisteren op niveau."
+      },
+      "culture": {
+        "title": "Nederlandse Cultuur",
+        "description": "Aandacht voor Nederlandse tradities, feestdagen en actualiteit."
+      },
+      "levels": {
+        "title": "Niveaugroepen",
+        "description": "Onderwijs afgestemd op het niveau en de leeftijd van het kind."
+      },
+      "schedule": {
+        "title": "Flexibel Rooster",
+        "description": "Lessen na schooltijd of op woensdagmiddag."
+      }
+    },
+    "benefits": {
+      "title": "Voordelen NTC",
+      "items": [
+        "Behoud van Nederlandse taalvaardigheid",
+        "Soepele terugkeer naar Nederlands onderwijs",
+        "Verbinding met Nederlandse gemeenschap",
+        "Officiële erkenning door NOB",
+        "Gekwalificeerde Nederlandse docenten"
+      ]
+    },
+    "cta": {
+      "title": "Interesse in NTC?",
+      "subtitle": "Neem contact op voor meer informatie over ons NTC-programma.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "curriculumPage": {
+    "hero": {
+      "title": "Curriculum",
+      "subtitle": "Een uitgebalanceerd tweetalig onderwijsprogramma"
+    },
+    "intro": {
+      "title": "Het Beste van Twee Systemen",
+      "content": "Ons curriculum combineert de sterke punten van het Nederlandse onderwijssysteem met het internationaal erkende IEYC en IPC. Dit zorgt voor een brede, evenwichtige ontwikkeling van elk kind."
+    },
+    "dutch": {
+      "title": "Nederlands Curriculum",
+      "content": "De kern van ons onderwijs is gebaseerd op de Nederlandse kerndoelen en referentieniveaus.",
+      "subjects": {
+        "language": {
+          "title": "Nederlandse Taal",
+          "description": "Lezen, schrijven, spreken en luisteren volgens Nederlandse normen."
+        },
+        "math": {
+          "title": "Rekenen & Wiskunde",
+          "description": "Wiskundige vaardigheden en probleemoplossend denken."
+        },
+        "reading": {
+          "title": "Begrijpend Lezen",
+          "description": "Ontwikkeling van leesstrategieën en tekstbegrip."
+        }
+      }
+    },
+    "ieyc": {
+      "title": "IEYC (Early Years)",
+      "content": "Voor onze jongste leerlingen gebruiken we het International Early Years Curriculum.",
+      "features": [
+        "Spelend leren",
+        "Persoonlijke, sociale en emotionele ontwikkeling",
+        "Communicatie en taal",
+        "Fysieke ontwikkeling"
+      ]
+    },
+    "ipc": {
+      "title": "IPC (Primary Curriculum)",
+      "content": "Het International Primary Curriculum biedt thematisch, onderzoekend leren.",
+      "features": [
+        "Thematische units",
+        "Internationale gerichtheid",
+        "Persoonlijke doelen",
+        "Onderzoekend leren"
+      ]
+    },
+    "assessment": {
+      "title": "Toetsing",
+      "content": "We monitoren de voortgang van leerlingen met erkende toetsinstrumenten.",
+      "tools": [
+        "CITO Leerlingvolgsysteem",
+        "KIJK! voor kleuters en peuters",
+        "Pearson English Benchmark",
+        "Doorstroomtoets groep 8"
+      ]
+    },
+    "cta": {
+      "title": "Meer Informatie?",
+      "subtitle": "We vertellen u graag meer over ons curriculum.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "languageClubPage": {
+    "hero": {
+      "title": "Talenclub",
+      "subtitle": "Extra talen leren naast Nederlands en Engels"
+    },
+    "intro": {
+      "title": "Verbreed de Talenkennis",
+      "content": "Naast ons tweetalig Nederlands-Engels programma bieden we extra talenlessen aan. Kinderen kunnen Frans of Kiswahili leren, perfect voor hun internationale toekomst en lokale integratie."
+    },
+    "french": {
+      "title": "Frans",
+      "ages": "Groep 5-8",
+      "content": "Franse les als voorbereiding op het voortgezet onderwijs en internationale communicatie.",
+      "features": [
+        "Basis conversatie en vocabulaire",
+        "Franse cultuur",
+        "Voorbereiding op secundair onderwijs"
+      ]
+    },
+    "kiswahili": {
+      "title": "Kiswahili",
+      "ages": "Groep 1-8",
+      "content": "Kiswahili-lessen voor verbinding met de lokale gemeenschap en cultuur.",
+      "features": [
+        "Basis communicatie",
+        "Keniaanse cultuur en tradities",
+        "Lokale integratie"
+      ]
+    },
+    "schedule": {
+      "title": "Rooster",
+      "content": "Talenlessen worden gegeven tijdens of na schooltijd, geïntegreerd in het weekrooster."
+    },
+    "cta": {
+      "title": "Interesse in Extra Talen?",
+      "subtitle": "Vraag naar de mogelijkheden voor uw kind.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "skillsClubPage": {
+    "hero": {
+      "title": "Skills Club",
+      "subtitle": "Naschoolse activiteiten voor brede ontwikkeling"
+    },
+    "intro": {
+      "title": "Meer dan Alleen Boeken",
+      "content": "De Skills Club biedt een rijke variëteit aan naschoolse activiteiten. Kinderen ontwikkelen praktische vaardigheden, creativiteit en sociale competenties in een ontspannen sfeer."
+    },
+    "activities": {
+      "title": "Activiteiten",
+      "art": {
+        "title": "Kunst & Handvaardigheid",
+        "description": "Tekenen, schilderen, knutselen en andere creatieve uitingen."
+      },
+      "music": {
+        "title": "Muziek",
+        "description": "Instrumenten, zang en muzikale expressie."
+      },
+      "woodwork": {
+        "title": "Houtbewerking",
+        "description": "Praktische vaardigheden met hout en gereedschap."
+      },
+      "gardening": {
+        "title": "Tuinieren",
+        "description": "Werken in de schooltuin, leren over natuur en voedsel."
+      },
+      "sports": {
+        "title": "Sport & Beweging",
+        "description": "Verschillende sporten en bewegingsactiviteiten."
+      },
+      "cooking": {
+        "title": "Koken",
+        "description": "Eenvoudige recepten en gezonde voeding."
+      }
+    },
+    "schedule": {
+      "title": "Wanneer?",
+      "content": "Skills Club activiteiten vinden plaats na schooltijd. Het aanbod wisselt per trimester."
+    },
+    "cta": {
+      "title": "Welke Activiteiten Zijn er Nu?",
+      "subtitle": "Vraag naar het huidige Skills Club aanbod.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "studentSupportPage": {
+    "hero": {
+      "title": "Leerlingenzorg",
+      "subtitle": "Persoonlijke begeleiding voor elk kind"
+    },
+    "intro": {
+      "title": "Elk Kind is Uniek",
+      "content": "In onze kleinschalige school kennen we elk kind persoonlijk. Onze leerlingenzorg is gericht op het ondersteunen van de ontwikkeling van elk kind, met extra aandacht voor wie dat nodig heeft."
+    },
+    "approach": {
+      "title": "Onze Aanpak",
+      "ib": {
+        "title": "Intern Begeleider",
+        "description": "Onze intern begeleider coördineert de leerlingenzorg, ondersteunt leerkrachten en begeleidt kinderen die extra hulp nodig hebben."
+      },
+      "observation": {
+        "title": "Observatie & Signalering",
+        "description": "We observeren kinderen systematisch om vroegtijdig te signaleren wanneer extra ondersteuning nodig is."
+      },
+      "support": {
+        "title": "Passende Ondersteuning",
+        "description": "Van extra instructie tot aanpassingen in de klas - we zoeken naar oplossingen die werken voor elk kind."
+      },
+      "parents": {
+        "title": "Samenwerking met Ouders",
+        "description": "Ouders zijn partners in de begeleiding van hun kind. We delen observaties en stemmen aanpak af."
+      }
+    },
+    "assessment": {
+      "title": "Volgsystemen",
+      "content": "We gebruiken erkende systemen om de ontwikkeling van kinderen te volgen en te vergelijken met Nederlandse normen.",
+      "systems": {
+        "kijk": {
+          "title": "KIJK!",
+          "description": "Observatiesysteem voor peuters en kleuters dat de brede ontwikkeling in kaart brengt."
+        },
+        "cito": {
+          "title": "CITO LVS",
+          "description": "Het Nederlandse leerlingvolgsysteem voor toetsing van taal en rekenen, vergelijkbaar met scholen in Nederland."
+        },
+        "doorstroom": {
+          "title": "Doorstroomtoets",
+          "description": "Officiële Nederlandse toets in groep 8 voor advies richting voortgezet onderwijs."
+        },
+        "pearson": {
+          "title": "Pearson English Benchmark",
+          "description": "Internationale toets voor het meten van de Engelse taalvaardigheid."
+        }
+      }
+    },
+    "gifted": {
+      "title": "Meer- en Hoogbegaafdheid",
+      "content": "Ook kinderen die meer uitdaging nodig hebben, krijgen bij ons passende aandacht. We bieden verrijking en verdieping waar nodig."
+    },
+    "cta": {
+      "title": "Vragen over Leerlingenzorg?",
+      "subtitle": "We vertellen u graag meer over hoe we kinderen begeleiden.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "practicalPage": {
+    "hero": {
+      "title": "Praktische Informatie",
+      "subtitle": "Alles wat u moet weten over het schoolleven"
+    },
+    "intro": {
+      "title": "Goed Voorbereid",
+      "content": "Op deze pagina's vindt u alle praktische informatie over schooltijden, transport en schoolgeld. Heeft u vragen? Neem gerust contact op."
+    },
+    "sections": {
+      "schedule": {
+        "title": "Schooltijden",
+        "description": "Informatie over lestijden, pauzes en vakanties.",
+        "link": "Bekijk Schooltijden"
+      },
+      "transport": {
+        "title": "Transport",
+        "description": "Onze schoolbussen rijden verschillende routes door Nairobi.",
+        "link": "Bekijk Transport"
+      },
+      "fees": {
+        "title": "Schoolgeld",
+        "description": "Informatie over tarieven en betalingsregelingen.",
+        "link": "Bekijk Schoolgeld"
+      }
+    },
+    "contact": {
+      "title": "Vragen?",
+      "content": "Voor praktische vragen kunt u contact opnemen met ons kantoor.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "schedulePage": {
+    "hero": {
+      "title": "Schooltijden",
+      "subtitle": "Lestijden en jaarrooster"
+    },
+    "daily": {
+      "title": "Dagelijks Rooster",
+      "toddler": {
+        "title": "Peuterspeelzaal",
+        "hours": "8:30 - 12:30",
+        "note": "2-5 ochtenden per week naar keuze"
+      },
+      "primary": {
+        "title": "Basisschool",
+        "hours": "8:00 - 15:00 (ma-do), 8:00 - 12:30 (vr)",
+        "note": "Lunch op school"
+      }
+    },
+    "breaks": {
+      "title": "Pauzes",
+      "morning": "Ochtendpauze: 10:15 - 10:30",
+      "lunch": "Lunchpauze: 12:00 - 12:45"
+    },
+    "calendar": {
+      "title": "Schoolkalender",
+      "content": "Ons schooljaar volgt grotendeels het Nederlandse schooljaar, met aanpassingen voor Keniaanse feestdagen. De jaarkalender wordt aan het begin van elk schooljaar gedeeld."
+    },
+    "afterSchool": {
+      "title": "Na Schooltijd",
+      "content": "Na de reguliere schooltijd bieden we Skills Club activiteiten aan. Kinderen kunnen ook gebruik maken van de BSO tot 17:00."
+    },
+    "cta": {
+      "title": "Vragen over de Schooltijden?",
+      "subtitle": "Neem contact op voor meer informatie.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "transportPage": {
+    "hero": {
+      "title": "Schooltransport",
+      "subtitle": "Veilig vervoer van en naar school"
+    },
+    "intro": {
+      "title": "Onze Schoolbussen",
+      "content": "Dutch School Nairobi biedt schoolbusvervoer aan vanuit verschillende delen van Nairobi. Onze twee routes dekken de belangrijkste gebieden waar onze families wonen."
+    },
+    "routes": {
+      "title": "Routes",
+      "route1": {
+        "title": "Route 1: Lavington / Kilimani",
+        "description": "Deze route bedient de gebieden Lavington, Kilimani en omgeving.",
+        "areas": ["Lavington", "Kilimani", "Kileleshwa", "Hurlingham"]
+      },
+      "route2": {
+        "title": "Route 2: Loresho / Kitisuru",
+        "description": "Deze route bedient de gebieden Loresho, Kitisuru en omgeving.",
+        "areas": ["Loresho", "Kitisuru", "Spring Valley", "Westlands"]
+      }
+    },
+    "safety": {
+      "title": "Veiligheid",
+      "content": "De veiligheid van uw kind is onze prioriteit. Onze bussen zijn uitgerust met veiligheidsgordels en worden bestuurd door ervaren chauffeurs. Een begeleider is aanwezig tijdens elke rit."
+    },
+    "practical": {
+      "title": "Praktische Informatie",
+      "items": [
+        "Ophaal- en afzettijden worden aan het begin van het schooljaar gecommuniceerd",
+        "Aanmelding voor busvervoer loopt via het schoolkantoor",
+        "Busvervoer is optioneel en apart geprijsd"
+      ]
+    },
+    "cta": {
+      "title": "Interesse in Schoolvervoer?",
+      "subtitle": "Neem contact op voor beschikbaarheid en tarieven.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "feesPage": {
+    "hero": {
+      "title": "Schoolgeld",
+      "subtitle": "Transparante tariefstructuur"
+    },
+    "intro": {
+      "title": "Twee Tariefgroepen",
+      "content": "Dutch School Nairobi hanteert twee tariefgroepen om het onderwijs toegankelijk te houden voor verschillende gezinssituaties."
+    },
+    "tariffs": {
+      "title": "Tariefgroepen",
+      "tariffA": {
+        "title": "Tarief A",
+        "description": "Voor gezinnen waarbij de werkgever het schoolgeld geheel of gedeeltelijk vergoedt.",
+        "note": "Volledig tarief"
+      },
+      "tariffB": {
+        "title": "Tarief B",
+        "description": "Voor gezinnen die het schoolgeld zelf betalen zonder werkgeververgoeding.",
+        "note": "Gereduceerd tarief"
+      }
+    },
+    "included": {
+      "title": "Inbegrepen",
+      "items": [
+        "Alle lesmaterialen en boeken",
+        "Onderwijsactiviteiten en excursies",
+        "Toegang tot Skills Club basis-activiteiten"
+      ]
+    },
+    "additional": {
+      "title": "Aanvullende Kosten",
+      "items": [
+        "Inschrijfgeld (eenmalig voor nieuwe leerlingen)",
+        "Schoolbus (optioneel)",
+        "Lunch (optioneel)",
+        "Specifieke Skills Club activiteiten"
+      ]
+    },
+    "payment": {
+      "title": "Betaling",
+      "content": "Schoolgeld kan per trimester of per jaar worden betaald. Betalingsregelingen zijn bespreekbaar."
+    },
+    "siblings": {
+      "title": "Korting",
+      "content": "Er geldt een korting voor het tweede en volgende kind uit hetzelfde gezin."
+    },
+    "cta": {
+      "title": "Tarieven Opvragen",
+      "subtitle": "Neem contact op voor de actuele tarieven en een persoonlijk gesprek.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "communityPage": {
+    "hero": {
+      "title": "Gemeenschap",
+      "subtitle": "Een hechte, internationale schoolfamilie"
+    },
+    "intro": {
+      "title": "Samen Sterk",
+      "content": "Dutch School Nairobi is meer dan een school - het is een gemeenschap. Ouders, leerlingen en medewerkers vormen samen een hechte groep waarin iedereen elkaar kent en ondersteunt."
+    },
+    "sections": {
+      "parents": {
+        "title": "Voor Ouders",
+        "description": "Ouderbetrokkenheid, communicatie en hoe u kunt bijdragen aan onze school.",
+        "link": "Meer over Ouderparticipatie"
+      },
+      "events": {
+        "title": "Evenementen",
+        "description": "Nederlandse tradities, schoolfeesten en sociale activiteiten.",
+        "link": "Bekijk Evenementen"
+      }
+    },
+    "cta": {
+      "title": "Word Deel van Onze Gemeenschap",
+      "subtitle": "Kom langs en ervaar de warme sfeer van onze school.",
+      "button": "Plan een Bezoek"
+    }
+  },
+  "parentsPage": {
+    "hero": {
+      "title": "Voor Ouders",
+      "subtitle": "Partners in het onderwijs van uw kind"
+    },
+    "intro": {
+      "title": "Ouderbetrokkenheid",
+      "content": "Op Dutch School Nairobi zijn ouders belangrijke partners. We geloven in open communicatie en actieve betrokkenheid van ouders bij het schoolleven."
+    },
+    "communication": {
+      "title": "Communicatie",
+      "items": [
+        "Wekelijkse nieuwsbrief",
+        "Ouderportaal voor praktische informatie",
+        "Regelmatige oudergesprekken",
+        "Directe communicatie met leerkrachten"
+      ]
+    },
+    "involvement": {
+      "title": "Meedoen",
+      "content": "Er zijn veel manieren om betrokken te zijn:",
+      "items": [
+        "Helpen bij schoolevenementen",
+        "Klassenouder worden",
+        "Bijdragen aan de bibliotheek",
+        "Delen van expertise of hobby's"
+      ]
+    },
+    "parentCommittee": {
+      "title": "Oudervereniging",
+      "content": "De oudervereniging organiseert evenementen en behartigt de belangen van ouders. Nieuwe leden zijn altijd welkom."
+    },
+    "cta": {
+      "title": "Vragen over Ouderbetrokkenheid?",
+      "subtitle": "We vertellen u graag meer.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "eventsPage": {
+    "hero": {
+      "title": "Evenementen",
+      "subtitle": "Nederlandse tradities en internationale vieringen"
+    },
+    "intro": {
+      "title": "Een Jaar Vol Evenementen",
+      "content": "Bij Dutch School Nairobi vieren we zowel Nederlandse tradities als internationale feestdagen. Deze evenementen versterken onze gemeenschap en verbinden kinderen met hun culturele achtergrond."
+    },
+    "dutch": {
+      "title": "Nederlandse Tradities",
+      "events": {
+        "sinterklaas": {
+          "title": "Sinterklaas",
+          "description": "Begin december viert de hele school het Sinterklaasfeest met liedjes, surprises en pepernoten."
+        },
+        "koningsdag": {
+          "title": "Koningsdag",
+          "description": "Een oranje feest met spelletjes, rommelmarkt en Nederlandse gezelligheid."
+        },
+        "kerst": {
+          "title": "Kerstviering",
+          "description": "Een gezamenlijke kerstviering met optredens van de kinderen."
+        }
+      }
+    },
+    "school": {
+      "title": "Schoolevenementen",
+      "events": {
+        "openDay": {
+          "title": "Open Dag",
+          "description": "Kennismaken met onze school voor geïnteresseerde families."
+        },
+        "sportsDay": {
+          "title": "Sportdag",
+          "description": "Een dag vol sporten en spelletjes voor alle leerlingen."
+        },
+        "endOfYear": {
+          "title": "Eindfeest",
+          "description": "Viering van het einde van het schooljaar met optredens en afscheid van groep 8."
+        }
+      }
+    },
+    "calendar": {
+      "title": "Evenementenkalender",
+      "content": "De volledige evenementenkalender wordt aan het begin van elk schooljaar gedeeld. Ouders ontvangen tijdig uitnodigingen voor alle evenementen."
+    },
+    "cta": {
+      "title": "Kom naar Onze Evenementen",
+      "subtitle": "Ervaar de warmte van onze gemeenschap.",
+      "button": "Plan een Bezoek"
+    }
   }
 }

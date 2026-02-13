@@ -346,6 +346,7 @@ function ProgramsSection() {
       ages: t('toddler.ages'),
       description: t('toddler.description'),
       image: '/images/toddler.png',
+      href: '/education/toddler',
     },
     {
       id: 'primary',
@@ -353,6 +354,7 @@ function ProgramsSection() {
       ages: t('primary.ages'),
       description: t('primary.description'),
       image: '/images/primary.png',
+      href: '/education/primary',
     },
     {
       id: 'ntc',
@@ -360,6 +362,7 @@ function ProgramsSection() {
       ages: t('ntc.ages'),
       description: t('ntc.description'),
       image: '/images/ntc.png',
+      href: '/education/ntc',
     },
     {
       id: 'adult',
@@ -367,6 +370,7 @@ function ProgramsSection() {
       ages: t('adult.ages'),
       description: t('adult.description'),
       image: '/images/adult.png',
+      href: '/contact',
     },
   ];
 
@@ -410,7 +414,7 @@ function ProgramsSection() {
                   {program.description}
                 </p>
                 <Link
-                  href={`/programs#${program.id}`}
+                  href={program.href}
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                 >
                   {t('learnMore')}
@@ -505,7 +509,7 @@ function TestimonialsSection() {
             >
               <Quote className="w-10 h-10 text-primary/20 mb-4" />
               <p className="text-foreground leading-relaxed mb-6">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">

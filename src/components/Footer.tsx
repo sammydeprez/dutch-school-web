@@ -62,8 +62,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-white/70 hover:text-white transition-colors">
-                  {nav('programs')}
+                <Link href="/education" className="text-white/70 hover:text-white transition-colors">
+                  {nav('education')}
                 </Link>
               </li>
               <li>
@@ -79,28 +79,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Programs */}
+          {/* Education */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">{t('programs')}</h3>
+            <h3 className="text-lg font-semibold mb-6">{t('education')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/programs#toddler" className="text-white/70 hover:text-white transition-colors">
-                  {t('programsList.toddler')}
+                <Link href="/education/toddler" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.toddler')}
                 </Link>
               </li>
               <li>
-                <Link href="/programs#primary" className="text-white/70 hover:text-white transition-colors">
-                  {t('programsList.primary')}
+                <Link href="/education/primary" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.primary')}
                 </Link>
               </li>
               <li>
-                <Link href="/programs#ntc" className="text-white/70 hover:text-white transition-colors">
-                  {t('programsList.ntc')}
+                <Link href="/education/ntc" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.ntc')}
                 </Link>
               </li>
               <li>
-                <Link href="/programs#adult" className="text-white/70 hover:text-white transition-colors">
-                  {t('programsList.adult')}
+                <Link href="/education/curriculum" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.curriculum')}
                 </Link>
               </li>
             </ul>

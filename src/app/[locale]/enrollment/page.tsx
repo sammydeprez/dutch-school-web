@@ -295,10 +295,17 @@ function FeesSection() {
             </table>
           </div>
 
-          <div className="mt-8 p-6 bg-primary/5 rounded-2xl">
+          <div className="mt-8 p-6 bg-primary/5 rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <p className="text-sm text-muted">
               <strong className="text-foreground">Note:</strong> {te('feesNote')}
             </p>
+            <Link
+              href="/practical/fees"
+              className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+            >
+              {te('feesLink')}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </div>

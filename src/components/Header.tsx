@@ -6,23 +6,65 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
+import { NavigationDropdown, type NavDropdown } from './ui';
 
 export default function Header() {
   const t = useTranslations('navigation');
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
+  const aboutDropdown: NavDropdown = {
+    label: t('about'),
+    items: [
+      { href: '/about', label: t('aboutOverview') },
+      { href: '/about/vision', label: t('vision') },
+      { href: '/about/team', label: t('team') },
+      { href: '/about/campus', label: t('campus') },
+    ],
+  };
+
+  const educationDropdown: NavDropdown = {
+    label: t('education'),
+    items: [
+      { href: '/education', label: t('educationOverview') },
+      { href: '/education/toddler', label: t('toddler') },
+      { href: '/education/primary', label: t('primary') },
+      { href: '/education/ntc', label: t('ntc') },
+      { href: '/education/curriculum', label: t('curriculum') },
+      { href: '/education/language-club', label: t('languageClub') },
+      { href: '/education/skills-club', label: t('skillsClub') },
+    ],
+  };
+
+  const practicalDropdown: NavDropdown = {
+    label: t('practical'),
+    items: [
+      { href: '/practical', label: t('practicalOverview') },
+      { href: '/practical/schedule', label: t('schedule') },
+      { href: '/practical/transport', label: t('transport') },
+      { href: '/practical/fees', label: t('fees') },
+    ],
+  };
+
+  const communityDropdown: NavDropdown = {
+    label: t('community'),
+    items: [
+      { href: '/community', label: t('communityOverview') },
+      { href: '/community/parents', label: t('parents') },
+      { href: '/community/events', label: t('events') },
+    ],
+  };
+
+  const singleLinks = [
     { href: '/', label: t('home') },
-    { href: '/about', label: t('about') },
-    { href: '/programs', label: t('programs') },
-    { href: '/enrollment', label: t('enrollment') },
-    { href: '/contact', label: t('contact') },
   ];
+
+  const studentSupportLink = { href: '/student-support', label: t('studentSupport') };
+  const contactLink = { href: '/contact', label: t('contact') };
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/';
-    return pathname.startsWith(href);
+    return pathname === href || pathname.startsWith(href + '/');
   };
 
   return (
@@ -45,20 +87,46 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
+          <div className="hidden lg:flex items-center gap-6">
+            {/* Home link */}
+            {singleLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.href)
-                    ? 'text-primary'
-                    : 'text-foreground'
+                  isActive(link.href) ? 'text-primary' : 'text-foreground'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
+
+            {/* Dropdown menus */}
+            <NavigationDropdown dropdown={aboutDropdown} />
+            <NavigationDropdown dropdown={educationDropdown} />
+
+            {/* Student Support single link */}
+            <Link
+              href={studentSupportLink.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive(studentSupportLink.href) ? 'text-primary' : 'text-foreground'
+              }`}
+            >
+              {studentSupportLink.label}
+            </Link>
+
+            <NavigationDropdown dropdown={practicalDropdown} />
+            <NavigationDropdown dropdown={communityDropdown} />
+
+            {/* Contact link */}
+            <Link
+              href={contactLink.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive(contactLink.href) ? 'text-primary' : 'text-foreground'
+              }`}
+            >
+              {contactLink.label}
+            </Link>
           </div>
 
           {/* Right Side Actions */}
@@ -87,7 +155,8 @@ export default function Header() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
+              {/* Home link */}
+              {singleLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -101,6 +170,56 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+
+              {/* Dropdown menus as accordions */}
+              <NavigationDropdown
+                dropdown={aboutDropdown}
+                mobile
+                onItemClick={() => setIsMenuOpen(false)}
+              />
+              <NavigationDropdown
+                dropdown={educationDropdown}
+                mobile
+                onItemClick={() => setIsMenuOpen(false)}
+              />
+
+              {/* Student Support single link */}
+              <Link
+                href={studentSupportLink.href}
+                onClick={() => setIsMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  isActive(studentSupportLink.href)
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-foreground hover:bg-surface'
+                }`}
+              >
+                {studentSupportLink.label}
+              </Link>
+
+              <NavigationDropdown
+                dropdown={practicalDropdown}
+                mobile
+                onItemClick={() => setIsMenuOpen(false)}
+              />
+              <NavigationDropdown
+                dropdown={communityDropdown}
+                mobile
+                onItemClick={() => setIsMenuOpen(false)}
+              />
+
+              {/* Contact link */}
+              <Link
+                href={contactLink.href}
+                onClick={() => setIsMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  isActive(contactLink.href)
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-foreground hover:bg-surface'
+                }`}
+              >
+                {contactLink.label}
+              </Link>
+
               <Link
                 href="/enrollment"
                 onClick={() => setIsMenuOpen(false)}
