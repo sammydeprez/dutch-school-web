@@ -79,28 +79,44 @@ function ContactSection() {
           {/* Contact Form */}
           <div className="bg-surface p-8 lg:p-10 rounded-3xl">
             <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              onSubmit={(e) => {
+                e.preventDefault();
+                // Form would typically be handled by a form service (Formspree, Netlify Forms, etc.)
+                // For now, open email client as fallback
+                const form = e.currentTarget;
+                const name = (form.elements.namedItem('name') as HTMLInputElement)?.value;
+                const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
+                const subject = (form.elements.namedItem('subject') as HTMLSelectElement)?.value;
+                const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
+
+                window.location.href = `mailto:info@dutchschool.co.ke?subject=${encodeURIComponent(subject || 'Contact Form')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+              }}
+            >
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.name')}
+                    {t('form.name')} <span className="text-red">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
+                    required
                     className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.email')}
+                    {t('form.email')} <span className="text-red">*</span>
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
+                    required
                     className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="john@example.com"
                   />
@@ -115,6 +131,7 @@ function ContactSection() {
                   type="tel"
                   id="phone"
                   name="phone"
+                  pattern="[+]?[0-9\s\-]+"
                   className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="+254 700 000 000"
                 />
@@ -122,11 +139,12 @@ function ContactSection() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.subject')}
+                  {t('form.subject')} <span className="text-red">*</span>
                 </label>
                 <select
                   id="subject"
                   name="subject"
+                  required
                   className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
                 >
                   <option value="">Select a subject</option>
@@ -140,12 +158,14 @@ function ContactSection() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.message')}
+                  {t('form.message')} <span className="text-red">*</span>
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
+                  required
+                  minLength={10}
                   className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                   placeholder="How can we help you?"
                 />
