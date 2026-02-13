@@ -1,0 +1,123 @@
+{
+  "schoolYear": "2024-2025",
+  "terms": [
+    {
+      "name": "Term 1",
+      "nameNl": "Trimester 1",
+      "start": "2024-09-02",
+      "end": "2024-12-13"
+    },
+    {
+      "name": "Term 2",
+      "nameNl": "Trimester 2",
+      "start": "2025-01-06",
+      "end": "2025-03-28"
+    },
+    {
+      "name": "Term 3",
+      "nameNl": "Trimester 3",
+      "start": "2025-04-14",
+      "end": "2025-07-04"
+    }
+  ],
+  "holidays": [
+    {
+      "name": "Autumn Break",
+      "nameNl": "Herfstvakantie",
+      "start": "2024-10-21",
+      "end": "2024-10-25",
+      "type": "holiday"
+    },
+    {
+      "name": "Christmas Break",
+      "nameNl": "Kerstvakantie",
+      "start": "2024-12-16",
+      "end": "2025-01-03",
+      "type": "holiday"
+    },
+    {
+      "name": "February Break",
+      "nameNl": "Voorjaarsvakantie",
+      "start": "2025-02-17",
+      "end": "2025-02-21",
+      "type": "holiday"
+    },
+    {
+      "name": "Easter Break",
+      "nameNl": "Paasvakantie",
+      "start": "2025-03-31",
+      "end": "2025-04-11",
+      "type": "holiday"
+    },
+    {
+      "name": "May Break",
+      "nameNl": "Meivakantie",
+      "start": "2025-04-28",
+      "end": "2025-05-02",
+      "type": "holiday"
+    },
+    {
+      "name": "Summer Break",
+      "nameNl": "Zomervakantie",
+      "start": "2025-07-07",
+      "end": "2025-08-29",
+      "type": "holiday"
+    }
+  ],
+  "specialDays": [
+    {
+      "name": "Mashujaa Day",
+      "nameNl": "Mashujaa Dag",
+      "date": "2024-10-20",
+      "type": "public"
+    },
+    {
+      "name": "Jamhuri Day",
+      "nameNl": "Jamhuri Dag",
+      "date": "2024-12-12",
+      "type": "public"
+    },
+    {
+      "name": "Christmas Day",
+      "nameNl": "Eerste Kerstdag",
+      "date": "2024-12-25",
+      "type": "public"
+    },
+    {
+      "name": "Boxing Day",
+      "nameNl": "Tweede Kerstdag",
+      "date": "2024-12-26",
+      "type": "public"
+    },
+    {
+      "name": "New Year's Day",
+      "nameNl": "Nieuwjaarsdag",
+      "date": "2025-01-01",
+      "type": "public"
+    },
+    {
+      "name": "Good Friday",
+      "nameNl": "Goede Vrijdag",
+      "date": "2025-04-18",
+      "type": "public"
+    },
+    {
+      "name": "Easter Monday",
+      "nameNl": "Tweede Paasdag",
+      "date": "2025-04-21",
+      "type": "public"
+    },
+    {
+      "name": "Labour Day",
+      "nameNl": "Dag van de Arbeid",
+      "date": "2025-05-01",
+      "type": "public"
+    },
+    {
+      "name": "Madaraka Day",
+      "nameNl": "Madaraka Dag",
+      "date": "2025-06-01",
+      "type": "public"
+    }
+  ]
+}

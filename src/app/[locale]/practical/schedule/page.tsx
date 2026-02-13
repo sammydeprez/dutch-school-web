@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Clock, Coffee, Calendar } from 'lucide-react';
+import { Clock, Coffee } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import YearCalendar from '@/components/YearCalendar';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -116,18 +117,14 @@ function CalendarSection() {
 
   return (
     <section className="py-20 lg:py-28 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-surface p-8 lg:p-12 rounded-3xl text-center">
-          <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-            <Calendar className="w-8 h-8 text-primary" />
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            {t('title')}
-          </h2>
-          <p className="text-muted leading-relaxed">
-            {t('content')}
-          </p>
-        </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+          {t('title')}
+        </h2>
+        <p className="text-muted leading-relaxed text-center mb-10 max-w-2xl mx-auto">
+          {t('content')}
+        </p>
+        <YearCalendar />
       </div>
     </section>
   );

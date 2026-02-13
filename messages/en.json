@@ -959,13 +959,13 @@
     "tariffs": {
       "title": "Tariff Groups",
       "tariffA": {
-        "title": "Tariff A",
-        "description": "For families where the employer fully or partially reimburses school fees.",
+        "title": "Tariff 1",
+        "description": "For families where 75% or more of the school fees are paid by the employer.",
         "note": "Full rate"
       },
       "tariffB": {
-        "title": "Tariff B",
-        "description": "For families paying school fees themselves without employer reimbursement.",
+        "title": "Tariff 2",
+        "description": "For families where less than 75% of the school fees are paid by the employer. Discounts apply for second and third children.",
         "note": "Reduced rate"
       }
     },
@@ -993,6 +993,23 @@
     "siblings": {
       "title": "Discount",
       "content": "A discount applies for the second and subsequent children from the same family."
+    },
+    "table": {
+      "ages": "Ages",
+      "feeType": "Fee Type",
+      "categoryA": "Category A",
+      "categoryB": "Category B",
+      "deposit": "Registration Deposit",
+      "oneTime": "one-time, refundable",
+      "tuition": "Tuition",
+      "perMonth": "per month",
+      "annual": "Annual Total",
+      "tuitionOnly": "tuition only",
+      "additionalFees": "Additional Fees",
+      "service": "Service",
+      "amount": "Amount",
+      "note": "Note",
+      "schoolYear": "School Year"
     },
     "cta": {
       "title": "Request Rates",

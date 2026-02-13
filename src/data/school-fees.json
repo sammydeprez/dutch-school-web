@@ -1,0 +1,84 @@
+{
+  "schoolYear": "2025-2026",
+  "currency": "EUR",
+  "oneTimeFees": {
+    "entryFee": {
+      "amount": 615,
+      "name": "Entry Fee",
+      "nameNl": "Inschrijfgeld",
+      "note": "per child, non-refundable",
+      "noteNl": "per kind, niet-restitueerbaar"
+    },
+    "deposit": {
+      "name": "Caution and Security Deposit",
+      "nameNl": "Borg",
+      "tariff1": 750,
+      "tariff2": 500,
+      "note": "per child, refundable",
+      "noteNl": "per kind, restitueerbaar"
+    }
+  },
+  "terms": [
+    { "name": "Term 1", "nameNl": "Trimester 1", "weeks": 15 },
+    { "name": "Term 2", "nameNl": "Trimester 2", "weeks": 12 },
+    { "name": "Term 3", "nameNl": "Trimester 3", "weeks": 10 }
+  ],
+  "programs": [
+    {
+      "id": "toddler",
+      "name": "Toddler Group",
+      "nameNl": "Peutergroep",
+      "groups": "1-2",
+      "ageRange": "2.5-4",
+      "tariefgroep1": {
+        "term1": 4023,
+        "term2": 3218,
+        "term3": 2682,
+        "annual": 9923
+      },
+      "tariefgroep2": {
+        "child1": { "term1": 2878, "term2": 2302, "term3": 1918, "annual": 7098 },
+        "child2": { "term1": 2606, "term2": 2072, "term3": 1710, "annual": 6388 },
+        "child3": { "term1": 2352, "term2": 1842, "term3": 1534, "annual": 5678 }
+      }
+    },
+    {
+      "id": "primary",
+      "name": "Primary School",
+      "nameNl": "Basisschool",
+      "groups": "3-8",
+      "ageRange": "4-12",
+      "tariefgroep1": {
+        "term1": 6062,
+        "term2": 4886,
+        "term3": 4098,
+        "annual": 16236
+      },
+      "tariefgroep2": {
+        "child1": { "term1": 4206, "term2": 3365, "term3": 2803, "annual": 10374 },
+        "child2": { "term1": 3785, "term2": 3028, "term3": 2524, "annual": 9337 },
+        "child3": { "term1": 3364, "term2": 2092, "term3": 2243, "annual": 8299 }
+      }
+    }
+  ],
+  "tariffNotes": {
+    "tariefgroep1": {
+      "name": "Tariff 1",
+      "nameNl": "Tariefgroep 1",
+      "description": "Applies to families where 75% or more of the school fees are paid by the employer",
+      "descriptionNl": "Geldt voor gezinnen waarbij 75% of meer van het schoolgeld door de werkgever wordt betaald"
+    },
+    "tariefgroep2": {
+      "name": "Tariff 2",
+      "nameNl": "Tariefgroep 2",
+      "description": "Applies to families where less than 75% of the school fees are paid by the employer",
+      "descriptionNl": "Geldt voor gezinnen waarbij minder dan 75% van het schoolgeld door de werkgever wordt betaald"
+    }
+  },
+  "notes": {
+    "review": "School fees are reviewed annually at the general members' meeting with member approval.",
+    "reviewNl": "De schoolgelden worden elk jaar herzien in de algemene ledenvergadering met toestemming van de leden.",
+    "deposit": "The security deposit is refunded when leaving the school, provided the school has a positive cashflow position.",
+    "depositNl": "De borg wordt terugbetaald bij het verlaten van de school, mits de school een positieve cashflowpositie heeft."
+  }
+}

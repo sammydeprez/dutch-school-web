@@ -959,13 +959,13 @@
     "tariffs": {
       "title": "Tariefgroepen",
       "tariffA": {
-        "title": "Tarief A",
-        "description": "Voor gezinnen waarbij de werkgever het schoolgeld geheel of gedeeltelijk vergoedt.",
+        "title": "Tariefgroep 1",
+        "description": "Voor gezinnen waarbij 75% of meer van het schoolgeld door de werkgever wordt betaald.",
         "note": "Volledig tarief"
       },
       "tariffB": {
-        "title": "Tarief B",
-        "description": "Voor gezinnen die het schoolgeld zelf betalen zonder werkgeververgoeding.",
+        "title": "Tariefgroep 2",
+        "description": "Voor gezinnen waarbij minder dan 75% van het schoolgeld door de werkgever wordt betaald. Korting voor tweede en derde kind.",
         "note": "Gereduceerd tarief"
       }
     },
@@ -993,6 +993,23 @@
     "siblings": {
       "title": "Korting",
       "content": "Er geldt een korting voor het tweede en volgende kind uit hetzelfde gezin."
+    },
+    "table": {
+      "ages": "Leeftijd",
+      "feeType": "Kostensoort",
+      "categoryA": "Categorie A",
+      "categoryB": "Categorie B",
+      "deposit": "Inschrijfborg",
+      "oneTime": "eenmalig, restitueerbaar",
+      "tuition": "Schoolgeld",
+      "perMonth": "per maand",
+      "annual": "Jaartotaal",
+      "tuitionOnly": "alleen schoolgeld",
+      "additionalFees": "Aanvullende Kosten",
+      "service": "Dienst",
+      "amount": "Bedrag",
+      "note": "Opmerking",
+      "schoolYear": "Schooljaar"
     },
     "cta": {
       "title": "Tarieven Opvragen",
