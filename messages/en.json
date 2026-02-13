@@ -11,7 +11,13 @@
     "title": "Where Dutch Education Meets African Spirit",
     "subtitle": "Nurturing global citizens through bilingual education in the heart of Nairobi since 1971",
     "cta": "Discover Our School",
-    "secondaryCta": "Schedule a Visit"
+    "secondaryCta": "Schedule a Visit",
+    "badges": {
+      "since": "Since 1971 • 50+ Years of Excellence",
+      "nobRecognized": "NOB Recognized",
+      "nationalities": "18 Nationalities",
+      "smallClasses": "1:8 Teacher Ratio"
+    }
   },
   "about": {
     "title": "About Dutch School Nairobi",

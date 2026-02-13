@@ -11,7 +11,13 @@
     "title": "Waar Nederlands Onderwijs de Afrikaanse Geest Ontmoet",
     "subtitle": "Het vormen van wereldburgers door tweetalig onderwijs in het hart van Nairobi sinds 1971",
     "cta": "Ontdek Onze School",
-    "secondaryCta": "Plan een Bezoek"
+    "secondaryCta": "Plan een Bezoek",
+    "badges": {
+      "since": "Sinds 1971 • 50+ Jaar Excellentie",
+      "nobRecognized": "NOB Erkend",
+      "nationalities": "18 Nationaliteiten",
+      "smallClasses": "1:8 Leraar Ratio"
+    }
   },
   "about": {
     "title": "Over Dutch School Nairobi",

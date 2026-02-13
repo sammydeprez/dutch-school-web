@@ -55,7 +55,7 @@ function HeroSection() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-primary mb-6">
               <Star className="w-4 h-4 fill-secondary text-secondary" />
-              <span>Since 1971 • 50+ Years of Excellence</span>
+              <span>{t('badges.since')}</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
@@ -88,19 +88,19 @@ function HeroSection() {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                   <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
-                <span>NOB Recognized</span>
+                <span>{t('badges.nobRecognized')}</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                   <Globe className="w-5 h-5 text-accent" />
                 </div>
-                <span>15+ Nationalities</span>
+                <span>{t('badges.nationalities')}</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                   <Heart className="w-5 h-5 text-red" />
                 </div>
-                <span>Small Classes</span>
+                <span>{t('badges.smallClasses')}</span>
               </div>
             </div>
           </div>
@@ -449,10 +449,10 @@ function StatsSection() {
   const t = useTranslations('about.stats');
 
   const stats = [
-    { value: '50+', label: t('years') },
-    { value: '15+', label: t('nationalities') },
+    { value: '53', label: t('years') },
+    { value: '18', label: t('nationalities') },
     { value: '1:8', label: t('ratio') },
-    { value: '500+', label: t('graduates') },
+    { value: '1,200+', label: t('graduates') },
   ];
 
   return (
