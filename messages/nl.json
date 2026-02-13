@@ -21,6 +21,7 @@
     "missionText": "Het bieden van uitzonderlijk tweetalig onderwijs dat het beste van Nederlandse onderwijstradities combineert met internationale perspectieven, en kinderen voorbereidt om te gedijen in een mondiale samenleving.",
     "vision": "Onze Visie",
     "visionText": "Een gemeenschap waar elk kind zijn unieke potentieel ontwikkelt door gepersonaliseerd leren, cultureel bewustzijn en een diepe verbinding met zowel het Nederlandse erfgoed als hun internationale omgeving.",
+    "learnMore": "Meer over ons",
     "stats": {
       "years": "Jaren Excellentie",
       "nationalities": "Nationaliteiten",
@@ -103,6 +104,12 @@
     "description": "Nederlands en tweetalig onderwijs in Nairobi sinds 1971. Erkend door de Stichting Nederlands Onderwijs in het Buitenland.",
     "quickLinks": "Snelle Links",
     "programs": "Programma's",
+    "programsList": {
+      "toddler": "Peutergroep",
+      "primary": "Basisschool",
+      "ntc": "NTC Lessen",
+      "adult": "Nederlandse Les voor Volwassenen"
+    },
     "contact": "Contact",
     "address": "Makindi Road, Nairobi, Kenia",
     "hours": "Ma - Vr: 8:00 - 15:30",

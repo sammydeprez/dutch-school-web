@@ -21,6 +21,7 @@
     "missionText": "To provide exceptional bilingual education that combines the best of Dutch educational traditions with international perspectives, preparing children to thrive in a global society.",
     "vision": "Our Vision",
     "visionText": "A community where every child develops their unique potential through personalized learning, cultural awareness, and a deep connection to both Dutch heritage and their international environment.",
+    "learnMore": "Learn more about us",
     "stats": {
       "years": "Years of Excellence",
       "nationalities": "Nationalities",
@@ -103,6 +104,12 @@
     "description": "Providing Dutch and bilingual education in Nairobi since 1971. Recognized by the Dutch Education Abroad Foundation.",
     "quickLinks": "Quick Links",
     "programs": "Programs",
+    "programsList": {
+      "toddler": "Toddler Group",
+      "primary": "Primary School",
+      "ntc": "NTC Lessons",
+      "adult": "Adult Dutch Lessons"
+    },
     "contact": "Contact Us",
     "address": "Makindi Road, Nairobi, Kenya",
     "hours": "Mon - Fri: 8:00 AM - 3:30 PM",

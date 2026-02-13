@@ -85,22 +85,22 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/programs#toddler" className="text-white/70 hover:text-white transition-colors">
-                  Toddler Group
+                  {t('programsList.toddler')}
                 </Link>
               </li>
               <li>
                 <Link href="/programs#primary" className="text-white/70 hover:text-white transition-colors">
-                  Primary School
+                  {t('programsList.primary')}
                 </Link>
               </li>
               <li>
                 <Link href="/programs#ntc" className="text-white/70 hover:text-white transition-colors">
-                  NTC Lessons
+                  {t('programsList.ntc')}
                 </Link>
               </li>
               <li>
                 <Link href="/programs#adult" className="text-white/70 hover:text-white transition-colors">
-                  Adult Dutch Lessons
+                  {t('programsList.adult')}
                 </Link>
               </li>
             </ul>

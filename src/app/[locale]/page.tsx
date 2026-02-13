@@ -289,7 +289,7 @@ function AboutSection() {
               href="/about"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
             >
-              Learn more about us
+              {t('learnMore')}
               <ChevronRight className="w-5 h-5" />
             </Link>
           </div>
