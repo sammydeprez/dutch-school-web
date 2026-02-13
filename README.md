@@ -26,7 +26,9 @@ The official website for Dutch School Nairobi (Netherlands School Society), offe
 - 🌍 **Bilingual** - Full Dutch and English language support
 - 📱 **Responsive** - Mobile-first design
 - ⚡ **Fast** - Static site generation for optimal performance
-- 🔍 **SEO Optimized** - Schema.org structured data, meta tags, hreflang
+- 🔍 **SEO Optimized** - Schema.org structured data, meta tags, sitemap, hreflang
+- 🤖 **AI Search Ready** - FAQ schema, question-based content for ChatGPT/Perplexity
+- 🔒 **Secure** - CSP, XSS protection, and security headers
 - ♿ **Accessible** - WCAG compliant with proper focus states
 
 ## Tech Stack
@@ -60,11 +62,12 @@ Open [http://localhost:3000](http://localhost:3000) to view the site locally.
 
 ```
 ├── messages/           # Translation files (nl.json, en.json)
-├── public/             # Static assets (logos, images)
+├── public/             # Static assets, sitemap.xml, robots.txt
 ├── src/
 │   ├── app/            # Next.js App Router pages
 │   │   └── [locale]/   # Locale-specific routes
 │   ├── components/     # React components
+│   │   └── ui/         # Reusable UI components (PageHero, PageCTA, etc.)
 │   └── i18n/           # Internationalization config
 ├── infra/              # Azure Bicep templates
 └── .github/workflows/  # CI/CD pipeline

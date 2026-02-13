@@ -28,15 +28,31 @@ npm run lint     # Run ESLint
 
 ```
 src/app/
-├── layout.tsx              # Root layout (html/body tags)
+├── layout.tsx              # Root layout (passes children only)
 ├── page.tsx                # Root redirect to /nl/
 └── [locale]/
-    ├── layout.tsx          # Locale layout with Header/Footer + NextIntlClientProvider
+    ├── layout.tsx          # Locale layout with html/body, Header/Footer, NextIntlClientProvider
     ├── page.tsx            # Homepage
     ├── about/page.tsx
     ├── programs/page.tsx
     ├── enrollment/page.tsx
-    └── contact/page.tsx
+    └── contact/
+        ├── layout.tsx      # Contact page metadata
+        └── page.tsx
+```
+
+### Reusable Components
+
+```
+src/components/
+├── ui/
+│   ├── PageHero.tsx        # Consistent page headers
+│   ├── PageCTA.tsx         # Call-to-action sections
+│   ├── FeatureCard.tsx     # Feature cards with color variants
+│   └── index.ts            # Barrel export
+├── Header.tsx
+├── Footer.tsx
+└── LanguageSwitcher.tsx
 ```
 
 ### Key Patterns
@@ -52,11 +68,20 @@ src/app/
 - Custom color variables: `--primary-green`, `--secondary` (orange), `--accent` (blue)
 - Icons from `lucide-react`
 
+### SEO & Structured Data
+
+- **Schema.org JSON-LD** on all pages (EducationalOrganization, FAQPage, AboutPage, etc.)
+- **FAQ Schema** on homepage and enrollment page for rich search results
+- **Sitemap** at `public/sitemap.xml` with hreflang alternates
+- **robots.txt** at `public/robots.txt` allowing AI crawlers (GPTBot, PerplexityBot, etc.)
+- **Metadata** via `generateMetadata()` in page/layout files with OpenGraph and Twitter cards
+
 ### Deployment
 
 - Deployed to Azure Static Web Apps (Free tier)
 - GitHub Actions workflow in `.github/workflows/ci-cd.yml`
-- Azure config in `staticwebapp.config.json` (handles redirects and headers)
+- Azure config in `staticwebapp.config.json` (handles redirects and security headers)
+- Security headers: CSP, X-Frame-Options, X-XSS-Protection, Permissions-Policy
 - Infrastructure-as-code in `infra/main.bicep`
 
 ## Adding Content
