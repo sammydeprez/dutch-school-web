@@ -238,12 +238,27 @@
     "title": "Contact & Visit",
     "subtitle": "We welcome you to our school",
     "form": {
+      "title": "Send us a Message",
       "name": "Your Name",
       "email": "Email Address",
       "phone": "Phone Number",
       "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "subjects": {
+        "enrollment": "Enrollment Inquiry",
+        "tour": "Schedule a Tour",
+        "programs": "Program Information",
+        "fees": "Fees & Payment",
+        "other": "Other"
+      },
       "message": "Your Message",
-      "submit": "Send Message"
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for your message. We will get back to you as soon as possible.",
+      "sendAnother": "Send another message",
+      "errorTitle": "Error sending message"
     },
     "info": {
       "title": "Get in Touch",

@@ -238,12 +238,27 @@
     "title": "Contact & Bezoek",
     "subtitle": "We verwelkomen u graag op onze school",
     "form": {
+      "title": "Stuur ons een Bericht",
       "name": "Uw Naam",
       "email": "E-mailadres",
       "phone": "Telefoonnummer",
       "subject": "Onderwerp",
+      "selectSubject": "Selecteer een onderwerp",
+      "subjects": {
+        "enrollment": "Inschrijving",
+        "tour": "Rondleiding Plannen",
+        "programs": "Programma Informatie",
+        "fees": "Tarieven & Betaling",
+        "other": "Anders"
+      },
       "message": "Uw Bericht",
-      "submit": "Verstuur Bericht"
+      "messagePlaceholder": "Hoe kunnen we u helpen?",
+      "submit": "Verstuur Bericht",
+      "sending": "Verzenden...",
+      "successTitle": "Bericht Verzonden!",
+      "successMessage": "Bedankt voor uw bericht. We nemen zo snel mogelijk contact met u op.",
+      "sendAnother": "Nog een bericht sturen",
+      "errorTitle": "Fout bij verzenden"
     },
     "info": {
       "title": "Neem Contact Op",

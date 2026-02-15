@@ -1,8 +1,11 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { OptimizedImage } from '@/components/ui';
+
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function ContactPage() {
   return (
@@ -72,6 +75,58 @@ function HeroSection() {
 
 function ContactSection() {
   const t = useTranslations('contact');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
+  const [status, setStatus] = useState<FormStatus>('idle');
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('submitting');
+    setErrorMessage(null);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      setStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'An error occurred');
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -79,107 +134,143 @@ function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           <div className="bg-surface p-8 lg:p-10 rounded-3xl">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-            <form
-              className="space-y-6"
-              onSubmit={(e) => {
-                e.preventDefault();
-                // Form would typically be handled by a form service (Formspree, Netlify Forms, etc.)
-                // For now, open email client as fallback
-                const form = e.currentTarget;
-                const name = (form.elements.namedItem('name') as HTMLInputElement)?.value;
-                const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
-                const subject = (form.elements.namedItem('subject') as HTMLSelectElement)?.value;
-                const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
+            <h2 className="text-2xl font-bold text-foreground mb-6">{t('form.title')}</h2>
 
-                window.location.href = `mailto:info@dutchschool.co.ke?subject=${encodeURIComponent(subject || 'Contact Form')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-              }}
-            >
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.name')} <span className="text-red">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="John Doe"
-                  />
+            {status === 'success' ? (
+              <div className="text-center py-8">
+                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <CheckCircle className="w-8 h-8 text-primary" />
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.email')} <span className="text-red">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.phone')}
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  pattern="[+]?[0-9\s\-]+"
-                  className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                  placeholder="+254 700 000 000"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.subject')} <span className="text-red">*</span>
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
+                <h3 className="text-xl font-bold text-foreground mb-2">
+                  {t('form.successTitle')}
+                </h3>
+                <p className="text-muted mb-6">
+                  {t('form.successMessage')}
+                </p>
+                <button
+                  onClick={() => setStatus('idle')}
+                  className="px-6 py-2 bg-primary text-white rounded-full hover:bg-primary-dark transition-colors"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="enrollment">Enrollment Inquiry</option>
-                  <option value="tour">Schedule a Tour</option>
-                  <option value="programs">Program Information</option>
-                  <option value="fees">Fees & Payment</option>
-                  <option value="other">Other</option>
-                </select>
+                  {t('form.sendAnother')}
+                </button>
               </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {status === 'error' && (
+                  <div className="p-4 bg-red/10 border border-red/20 rounded-xl flex items-start gap-3">
+                    <AlertCircle className="w-5 h-5 text-red flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-red">{t('form.errorTitle')}</p>
+                      <p className="text-sm text-red/80">{errorMessage}</p>
+                    </div>
+                  </div>
+                )}
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.message')} <span className="text-red">*</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  required
-                  minLength={10}
-                  className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
-                  placeholder="How can we help you?"
-                />
-              </div>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                      {t('form.name')} <span className="text-red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      placeholder="John Doe"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      {t('form.email')} <span className="text-red">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+                </div>
 
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-colors"
-              >
-                {t('form.submit')}
-                <Send className="w-5 h-5" />
-              </button>
-            </form>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                    {t('form.phone')}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                    placeholder="+254 700 000 000"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                    {t('form.subject')} <span className="text-red">*</span>
+                  </label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
+                  >
+                    <option value="">{t('form.selectSubject')}</option>
+                    <option value="enrollment">{t('form.subjects.enrollment')}</option>
+                    <option value="tour">{t('form.subjects.tour')}</option>
+                    <option value="programs">{t('form.subjects.programs')}</option>
+                    <option value="fees">{t('form.subjects.fees')}</option>
+                    <option value="other">{t('form.subjects.other')}</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    {t('form.message')} <span className="text-red">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    required
+                    minLength={10}
+                    className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                    placeholder={t('form.messagePlaceholder')}
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={status === 'submitting'}
+                  className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {status === 'submitting' ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      {t('form.sending')}
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5" />
+                      {t('form.submit')}
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
           </div>
 
           {/* Contact Information */}
