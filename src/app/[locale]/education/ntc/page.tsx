@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { BookOpen, Globe, Users, Calendar, Check } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -18,8 +19,51 @@ export default async function NTCPage({ params }: { params: Promise<{ locale: st
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Structured data for NTC program
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: locale === 'nl' ? 'NTC - Nederlandse Taal en Cultuur' : 'NTC - Dutch Language and Culture',
+    description: locale === 'nl'
+      ? 'NTC-programma voor Nederlandstalige kinderen van 3,5 tot 18 jaar die andere internationale scholen bezoeken. Behoud en ontwikkel het Nederlands.'
+      : 'NTC program for Dutch-speaking children ages 3.5-18 attending other international schools. Maintain and develop Dutch language skills.',
+    provider: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      url: 'https://www.dutchschool.co.ke',
+    },
+    educationalProgramMode: 'part-time',
+    programPrerequisites: locale === 'nl'
+      ? 'Nederlandstalige achtergrond, 3,5 tot 18 jaar'
+      : 'Dutch-speaking background, ages 3.5 to 18',
+    occupationalCategory: 'Language Education',
+    teaches: [
+      locale === 'nl' ? 'Nederlandse taal (lezen, schrijven, spreken)' : 'Dutch language (reading, writing, speaking)',
+      locale === 'nl' ? 'Nederlandse cultuur en tradities' : 'Dutch culture and traditions',
+      locale === 'nl' ? 'Nederlandse geschiedenis en geografie' : 'Dutch history and geography',
+    ],
+    offers: {
+      '@type': 'Offer',
+      category: locale === 'nl' ? 'Parttime onderwijs' : 'Part-time education',
+      availableAtOrFrom: {
+        '@type': 'Place',
+        name: 'Dutch School Nairobi',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Nairobi',
+          addressCountry: 'KE',
+        },
+      },
+    },
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/ntc" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <ForWhomSection />

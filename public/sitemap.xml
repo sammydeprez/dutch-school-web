@@ -2,86 +2,386 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Dutch (default) pages -->
+  <!-- Homepage -->
   <url>
     <loc>https://www.dutchschool.co.ke/nl/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dutchschool.co.ke/nl/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://www.dutchschool.co.ke/nl/about/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dutchschool.co.ke/nl/programs/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/programs/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/programs/" />
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dutchschool.co.ke/nl/enrollment/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/enrollment/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/enrollment/" />
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dutchschool.co.ke/nl/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/contact/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/contact/" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- English pages -->
   <url>
     <loc>https://www.dutchschool.co.ke/en/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dutchschool.co.ke/nl/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- About Section -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/about/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.dutchschool.co.ke/en/about/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.dutchschool.co.ke/en/programs/</loc>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/programs/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/programs/" />
+    <loc>https://www.dutchschool.co.ke/nl/about/vision/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/vision/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/vision/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/about/vision/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/vision/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/vision/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/about/team/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/team/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/team/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/about/team/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/team/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/team/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/about/campus/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/campus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/campus/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/about/campus/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/about/campus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/about/campus/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Education Section -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/toddler/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/toddler/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/toddler/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/toddler/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/toddler/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/toddler/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/primary/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/primary/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/primary/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/primary/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/primary/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/primary/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/ntc/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/ntc/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/ntc/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/ntc/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/ntc/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/ntc/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/curriculum/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/curriculum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/curriculum/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/curriculum/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/curriculum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/curriculum/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/language-club/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/language-club/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/language-club/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/language-club/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/language-club/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/language-club/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/skills-club/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/skills-club/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/skills-club/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/skills-club/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/skills-club/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/skills-club/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Enrollment -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/enrollment/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/enrollment/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/enrollment/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://www.dutchschool.co.ke/en/enrollment/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/enrollment/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/enrollment/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Practical Section -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/practical/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/practical/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/practical/fees/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/fees/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/fees/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/practical/fees/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/fees/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/fees/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/practical/schedule/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/schedule/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/schedule/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/practical/schedule/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/schedule/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/schedule/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/practical/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/transport/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/transport/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/practical/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/practical/transport/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/practical/transport/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Student Support -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/student-support/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/student-support/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/student-support/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/student-support/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/student-support/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/student-support/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Community Section -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/community/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/community/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/community/parents/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/parents/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/parents/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/community/parents/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/parents/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/parents/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/community/events/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/events/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/events/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/community/events/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/community/events/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/community/events/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/contact/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.dutchschool.co.ke/en/contact/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/contact/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/contact/" />
+    <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

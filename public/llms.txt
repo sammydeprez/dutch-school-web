@@ -1,0 +1,101 @@
+# Dutch School Nairobi - AI Information File
+# https://www.dutchschool.co.ke
+# Last updated: 2026-02-15
+
+## About This Organization
+
+Dutch School Nairobi (Nederlandse Schoolvereniging Nairobi) is an accredited bilingual primary school in Nairobi, Kenya, established in 1971. The school is recognized by the Dutch Education Abroad Foundation (Stichting Nederlands Onderwijs in het Buitenland - NOB).
+
+## Key Facts
+
+- **Founded:** 1971
+- **Location:** Makindi Road, Nairobi, Kenya
+- **Languages:** Dutch and English (bilingual education)
+- **Ages served:** 1.5 to 18 years
+- **Curriculum:** Dutch national standards combined with International Primary Curriculum (IPC)
+- **Recognition:** NOB-accredited (Dutch Education Abroad Foundation)
+- **Class sizes:** Small, approximately 1:8 teacher-student ratio
+- **Student body:** 15+ nationalities represented
+
+## Educational Programs
+
+### 1. Toddler Group (Peuterspeelzaal)
+- Ages: 1.5 to 4 years
+- Focus: Early childhood development through play-based learning
+- Languages: Dutch immersion with English support
+
+### 2. Primary School (Basisschool)
+- Ages: 4 to 12 years (Groups 1-8)
+- Curriculum: Dutch national curriculum + International Primary Curriculum (IPC)
+- Bilingual instruction in Dutch and English
+
+### 3. NTC Lessons (Nederlandse Taal en Cultuur)
+- Ages: 3.5 to 18 years
+- Focus: Dutch language and culture education
+- For Dutch-speaking children attending other schools
+- Offered on Wednesday afternoons and Saturday mornings
+
+### 4. Extra Programs
+- Language Club: Additional language learning opportunities
+- Skills Club: Creative and practical skills development
+- Adult Dutch lessons available
+
+## Enrollment Information
+
+- Admissions open year-round, subject to availability
+- Main intake: August/September
+- No prior Dutch language knowledge required
+- Trial days available before enrollment
+- Documentation required: Birth certificate, passport photos, previous school records, immunization records
+
+## Contact Information
+
+- **Address:** Makindi Road, P.O. Box 14997, Nairobi, Kenya
+- **Email:** info@dutchschool.co.ke
+- **Admissions:** admissions@dutchschool.co.ke
+- **Phone:** +254 123 456 789
+- **Office hours:** Monday-Friday, 8:00 AM - 4:00 PM
+
+## Website Structure
+
+The website is available in two languages:
+- Dutch: https://www.dutchschool.co.ke/nl/
+- English: https://www.dutchschool.co.ke/en/
+
+### Main Sections:
+- /about/ - School history, mission, values, team, campus
+- /education/ - Programs overview, toddler, primary, NTC, curriculum, clubs
+- /enrollment/ - Admissions process, requirements, fees
+- /practical/ - Schedule, fees, transportation
+- /student-support/ - Learning support services
+- /community/ - Parent involvement, school events
+- /contact/ - Contact form, location, office hours
+
+## Frequently Asked Questions
+
+**Q: Do students need to speak Dutch to enroll?**
+A: No, prior Dutch language knowledge is not required. The immersive bilingual program supports children at all language levels.
+
+**Q: What curriculum does the school follow?**
+A: The school follows a bilingual curriculum combining official Dutch national education standards with the International Primary Curriculum (IPC).
+
+**Q: What are the school hours?**
+A: Monday to Friday, 8:00 AM to 3:30 PM. Extended care is available until 5:00 PM.
+
+**Q: Is transportation available?**
+A: Yes, the school partners with approved transport providers offering bus services covering major areas of Nairobi.
+
+**Q: What is NTC?**
+A: NTC (Nederlandse Taal en Cultuur) provides Dutch language and culture lessons for Dutch-speaking children ages 3.5-18 who attend other international schools.
+
+## Social Media & External Links
+
+- Facebook: https://www.facebook.com/dutchschoolnairobi
+- LinkedIn: https://www.linkedin.com/company/netherlands-school-society
+
+## Technical Information
+
+- Website built with Next.js
+- Static site hosted on Azure Static Web Apps
+- Bilingual content management via next-intl
+- Schema.org structured data implemented for rich search results

@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { ArrowRight, Users, GraduationCap, Globe, Palette, Languages } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -19,8 +20,55 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Structured data for education overview
+  const educationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: locale === 'nl' ? 'Onderwijsprogramma\'s Dutch School Nairobi' : 'Educational Programs at Dutch School Nairobi',
+    description: locale === 'nl'
+      ? 'Overzicht van alle onderwijsprogramma\'s bij Dutch School Nairobi - van peuterspeelzaal tot basisschool en NTC.'
+      : 'Overview of all educational programs at Dutch School Nairobi - from toddler group to primary school and NTC.',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'Peuterspeelzaal' : 'Toddler Group',
+          description: locale === 'nl' ? 'Voor kinderen vanaf 1,5 jaar' : 'For children from age 1.5',
+          url: `https://www.dutchschool.co.ke/${locale}/education/toddler/`,
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'Basisschool' : 'Primary School',
+          description: locale === 'nl' ? 'Groep 1 t/m 8, voor kinderen van 4-12 jaar' : 'Groups 1-8, for children ages 4-12',
+          url: `https://www.dutchschool.co.ke/${locale}/education/primary/`,
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'EducationalOccupationalProgram',
+          name: locale === 'nl' ? 'NTC - Nederlandse Taal en Cultuur' : 'NTC - Dutch Language and Culture',
+          description: locale === 'nl' ? 'Voor kinderen van 3,5-18 jaar' : 'For children ages 3.5-18',
+          url: `https://www.dutchschool.co.ke/${locale}/education/ntc/`,
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(educationSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <ProgramsSection />

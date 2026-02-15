@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { FileText, Calendar, ClipboardCheck, UserCheck, GraduationCap, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -62,6 +63,7 @@ export default async function EnrollmentPage({ params }: { params: Promise<{ loc
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/enrollment" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

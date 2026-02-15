@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Check } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -18,8 +19,40 @@ export default async function PrimaryPage({ params }: { params: Promise<{ locale
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Structured data for primary school program
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: locale === 'nl' ? 'Basisschool' : 'Primary School',
+    description: locale === 'nl'
+      ? 'Tweetalig basisonderwijs van groep 1 tot en met groep 8, met Nederlands curriculum gecombineerd met International Primary Curriculum (IPC).'
+      : 'Bilingual primary education from groups 1 through 8, combining Dutch curriculum with International Primary Curriculum (IPC).',
+    provider: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      url: 'https://www.dutchschool.co.ke',
+    },
+    educationalProgramMode: 'full-time',
+    timeToComplete: 'P8Y',
+    programPrerequisites: locale === 'nl' ? 'Minimaal 4 jaar oud' : 'Minimum age 4 years',
+    educationalCredentialAwarded: locale === 'nl' ? 'Basisschooldiploma' : 'Primary School Diploma',
+    occupationalCategory: 'Primary Education',
+    teaches: [
+      locale === 'nl' ? 'Nederlandse taal' : 'Dutch language',
+      locale === 'nl' ? 'Engelse taal' : 'English language',
+      locale === 'nl' ? 'Rekenen/Wiskunde' : 'Mathematics',
+      locale === 'nl' ? 'Wereldoriëntatie' : 'World orientation',
+      locale === 'nl' ? 'Creatieve vakken' : 'Creative subjects',
+    ],
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/primary" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <BilingualSection />

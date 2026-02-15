@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { Check, Plus, CreditCard, Users } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import FeesTable from '@/components/FeesTable';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -19,8 +20,60 @@ export default async function FeesPage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Structured data for school fees
+  const feesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: locale === 'nl' ? 'Schoolgeld Dutch School Nairobi' : 'School Fees Dutch School Nairobi',
+    description: locale === 'nl'
+      ? 'Transparante tariefstructuur met twee tariefgroepen voor tweetalig onderwijs in Nairobi.'
+      : 'Transparent fee structure with two tariff groups for bilingual education in Nairobi.',
+    mainEntity: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: locale === 'nl' ? 'Schoolgelden' : 'Tuition Fees',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            name: locale === 'nl' ? 'Peuterspeelzaal' : 'Toddler Group',
+            description: locale === 'nl' ? 'Kinderen vanaf 1,5 jaar' : 'Children from age 1.5',
+            itemOffered: {
+              '@type': 'EducationalOccupationalProgram',
+              name: locale === 'nl' ? 'Peuterspeelzaal' : 'Toddler Group',
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: locale === 'nl' ? 'Basisschool' : 'Primary School',
+            description: locale === 'nl' ? 'Groep 1 t/m 8' : 'Groups 1-8',
+            itemOffered: {
+              '@type': 'EducationalOccupationalProgram',
+              name: locale === 'nl' ? 'Basisschool' : 'Primary School',
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'NTC',
+            description: locale === 'nl' ? 'Nederlandse Taal en Cultuur lessen' : 'Dutch Language and Culture lessons',
+            itemOffered: {
+              '@type': 'EducationalOccupationalProgram',
+              name: 'NTC - Dutch Language and Culture',
+            },
+          },
+        ],
+      },
+    },
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/practical/fees" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(feesSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <TariffsSection />

@@ -45,11 +45,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       locale: locale === 'nl' ? 'nl_NL' : 'en_US',
       alternateLocale: locale === 'nl' ? 'en_US' : 'nl_NL',
       type: 'website',
+      images: [
+        {
+          url: 'https://www.dutchschool.co.ke/images/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Dutch School Nairobi - Bilingual Education in Kenya',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+      images: ['https://www.dutchschool.co.ke/images/og-image.png'],
     },
     alternates: {
       canonical: `https://www.dutchschool.co.ke/${locale}`,

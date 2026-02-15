@@ -7,6 +7,10 @@ Allow: /
 # Sitemap location
 Sitemap: https://www.dutchschool.co.ke/sitemap.xml
 
+# AI-readable site information
+# See https://llmstxt.org for specification
+LLMs-Txt: https://www.dutchschool.co.ke/llms.txt
+
 # Crawl-delay for polite crawling
 Crawl-delay: 1
 

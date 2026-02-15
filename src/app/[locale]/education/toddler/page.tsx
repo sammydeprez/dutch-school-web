@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Calendar, Languages, Gamepad2, Eye, Clock, Users, UserCheck } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -18,8 +19,38 @@ export default async function ToddlerPage({ params }: { params: Promise<{ locale
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Structured data for toddler program
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: locale === 'nl' ? 'Peuterspeelzaal' : 'Toddler Group',
+    description: locale === 'nl'
+      ? 'Spelend leren in een kleine groep van maximaal 15 kinderen, voor kinderen vanaf 1,5 jaar.'
+      : 'Learning through play in a small group of maximum 15 children, for children from age 1.5.',
+    provider: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      url: 'https://www.dutchschool.co.ke',
+    },
+    educationalProgramMode: 'full-time',
+    timeToComplete: 'P2Y6M',
+    programPrerequisites: locale === 'nl' ? 'Minimaal 1,5 jaar oud' : 'Minimum age 1.5 years',
+    occupationalCategory: 'Early Childhood Education',
+    teaches: [
+      locale === 'nl' ? 'Sociale ontwikkeling' : 'Social development',
+      locale === 'nl' ? 'Taalverwerving (Nederlands)' : 'Language acquisition (Dutch)',
+      locale === 'nl' ? 'Motorische vaardigheden' : 'Motor skills',
+      locale === 'nl' ? 'Creatieve expressie' : 'Creative expression',
+    ],
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/toddler" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <ProgramSection />
