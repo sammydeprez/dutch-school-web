@@ -44,6 +44,13 @@ jobs:
           path: out
           retention-days: 1
 
+      - name: Upload API artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: api
+          path: api
+          retention-days: 1
+
   deploy:
     name: Deploy to Azure
     runs-on: ubuntu-latest
@@ -58,6 +65,12 @@ jobs:
         with:
           name: static-site
           path: out
+
+      - name: Download API artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: api
+          path: api
 
       - name: Azure Login
         uses: azure/login@v2
@@ -107,5 +120,14 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: 'upload'
           app_location: 'out'
+          api_location: 'api'
           output_location: ''
           skip_app_build: true
+          skip_api_build: true
+
+      - name: Configure API environment variables
+        run: |
+          az staticwebapp appsettings set \
+            --name ${{ env.SWA_NAME }} \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --setting-names GITHUB_TOKEN="${{ secrets.GH_ISSUES_PAT }}"

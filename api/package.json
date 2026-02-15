@@ -1,0 +1,9 @@
+{
+  "name": "dutch-school-api",
+  "version": "1.0.0",
+  "description": "API functions for Dutch School Nairobi website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  }
+}
