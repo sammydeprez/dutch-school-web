@@ -145,6 +145,9 @@ export default function Footer() {
               <a href="#" className="text-white/50 hover:text-white text-sm transition-colors">
                 {t('terms')}
               </a>
+              <Link href="/internal/change-request" className="text-white/30 hover:text-white/50 text-sm transition-colors">
+                Feedback
+              </Link>
             </div>
           </div>
         </div>
