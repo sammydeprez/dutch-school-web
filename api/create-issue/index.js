@@ -1,9 +1,14 @@
 module.exports = async function (context, req) {
+  const headers = {
+    'Content-Type': 'application/json'
+  };
+
   // Only allow POST requests
   if (req.method !== 'POST') {
     context.res = {
       status: 405,
-      body: { error: 'Method not allowed' }
+      headers,
+      body: JSON.stringify({ error: 'Method not allowed' })
     };
     return;
   }
@@ -14,7 +19,8 @@ module.exports = async function (context, req) {
   if (!title || !description) {
     context.res = {
       status: 400,
-      body: { error: 'Title and description are required' }
+      headers,
+      body: JSON.stringify({ error: 'Title and description are required' })
     };
     return;
   }
@@ -24,7 +30,8 @@ module.exports = async function (context, req) {
   if (!githubToken) {
     context.res = {
       status: 500,
-      body: { error: 'GitHub token not configured' }
+      headers,
+      body: JSON.stringify({ error: 'GitHub token not configured' })
     };
     return;
   }
@@ -68,7 +75,8 @@ ${description}
       const error = await response.text();
       context.res = {
         status: response.status,
-        body: { error: `GitHub API error: ${error}` }
+        headers,
+        body: JSON.stringify({ error: `GitHub API error: ${error}` })
       };
       return;
     }
@@ -77,16 +85,18 @@ ${description}
 
     context.res = {
       status: 201,
-      body: {
+      headers,
+      body: JSON.stringify({
         success: true,
         issueNumber: issue.number,
         issueUrl: issue.html_url
-      }
+      })
     };
   } catch (error) {
     context.res = {
       status: 500,
-      body: { error: `Failed to create issue: ${error.message}` }
+      headers,
+      body: JSON.stringify({ error: `Failed to create issue: ${error.message}` })
     };
   }
 };

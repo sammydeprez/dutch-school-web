@@ -1,9 +1,14 @@
 module.exports = async function (context, req) {
+  const headers = {
+    'Content-Type': 'application/json'
+  };
+
   // Only allow POST requests
   if (req.method !== 'POST') {
     context.res = {
       status: 405,
-      body: { error: 'Method not allowed' }
+      headers,
+      body: JSON.stringify({ error: 'Method not allowed' })
     };
     return;
   }
@@ -14,7 +19,8 @@ module.exports = async function (context, req) {
   if (!name || !email || !subject || !message) {
     context.res = {
       status: 400,
-      body: { error: 'Name, email, subject, and message are required' }
+      headers,
+      body: JSON.stringify({ error: 'Name, email, subject, and message are required' })
     };
     return;
   }
@@ -24,7 +30,8 @@ module.exports = async function (context, req) {
   if (!apiToken) {
     context.res = {
       status: 500,
-      body: { error: 'Email service not configured' }
+      headers,
+      body: JSON.stringify({ error: 'Email service not configured' })
     };
     return;
   }
@@ -106,23 +113,26 @@ ${new Date().toISOString()}
       console.error('MailerSend error:', error);
       context.res = {
         status: response.status,
-        body: { error: 'Failed to send email' }
+        headers,
+        body: JSON.stringify({ error: 'Failed to send email' })
       };
       return;
     }
 
     context.res = {
       status: 200,
-      body: {
+      headers,
+      body: JSON.stringify({
         success: true,
         message: 'Email sent successfully'
-      }
+      })
     };
   } catch (error) {
     console.error('Email error:', error);
     context.res = {
       status: 500,
-      body: { error: `Failed to send email: ${error.message}` }
+      headers,
+      body: JSON.stringify({ error: `Failed to send email: ${error.message}` })
     };
   }
 };
