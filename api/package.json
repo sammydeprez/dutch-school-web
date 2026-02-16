@@ -8,8 +8,5 @@
   },
   "scripts": {
     "test": "echo \"No tests specified\""
-  },
-  "dependencies": {
-    "node-fetch": "^2.7.0"
   }
 }
