@@ -2,11 +2,14 @@
   "name": "dutch-school-api",
   "version": "1.0.0",
   "description": "API functions for Dutch School Nairobi website",
-  "main": "index.js",
+  "main": "src/functions/*.js",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
     "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
   }
 }

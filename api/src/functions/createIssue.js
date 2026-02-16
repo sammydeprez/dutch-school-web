@@ -1,0 +1,99 @@
+const { app } = require('@azure/functions');
+
+app.http('create-issue', {
+  methods: ['POST'],
+  authLevel: 'anonymous',
+  handler: async (request, context) => {
+    context.log('Create-issue function invoked');
+
+    try {
+      const body = await request.json();
+      context.log('Request body:', JSON.stringify(body));
+
+      const { title, description, page, type, submittedBy } = body || {};
+
+      // Validate required fields
+      if (!title || !description) {
+        return {
+          status: 400,
+          jsonBody: { error: 'Title and description are required' }
+        };
+      }
+
+      // Get GitHub token from environment variable
+      const githubToken = process.env.GITHUB_TOKEN;
+      context.log('GitHub token present:', !!githubToken);
+
+      if (!githubToken) {
+        return {
+          status: 500,
+          jsonBody: { error: 'GitHub token not configured' }
+        };
+      }
+
+      // Build issue body
+      const issueBody = `## Description
+${description}
+
+## Details
+- **Page/Section:** ${page || 'Not specified'}
+- **Type:** ${type || 'Change Request'}
+- **Submitted by:** ${submittedBy || 'Anonymous'}
+- **Submitted at:** ${new Date().toISOString()}
+
+---
+*Submitted via Change Request Form*`;
+
+      // Create labels based on type
+      const labels = ['change-request'];
+      if (type === 'bug') labels.push('bug');
+      if (type === 'content') labels.push('content');
+      if (type === 'feature') labels.push('enhancement');
+
+      context.log('Making request to GitHub API...');
+      const response = await fetch('https://api.github.com/repos/sammydeprez/dutch-school-web/issues', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${githubToken}`,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          title: `[${type || 'Request'}] ${title}`,
+          body: issueBody,
+          labels: labels,
+        }),
+      });
+
+      context.log('GitHub API response status:', response.status);
+
+      if (!response.ok) {
+        const error = await response.text();
+        context.log('GitHub API error:', error);
+        return {
+          status: response.status,
+          jsonBody: { error: `GitHub API error: ${error}` }
+        };
+      }
+
+      const issue = await response.json();
+      context.log('Issue created:', issue.number);
+
+      return {
+        status: 201,
+        jsonBody: {
+          success: true,
+          issueNumber: issue.number,
+          issueUrl: issue.html_url
+        }
+      };
+    } catch (error) {
+      context.log('Unhandled error:', error.message, error.stack);
+      return {
+        status: 500,
+        jsonBody: { error: `Failed to create issue: ${error.message}` }
+      };
+    }
+  }
+});
