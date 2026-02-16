@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 module.exports = async function (context, req) {
-  context.log('Function invoked');
+  context.log('Create-issue function invoked');
 
   const headers = {
     'Content-Type': 'application/json'
