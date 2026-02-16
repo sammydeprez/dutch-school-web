@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "API functions for Dutch School Nairobi website",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
   }
 }
