@@ -37,6 +37,9 @@ jobs:
       - name: Copy SWA config to output
         run: cp staticwebapp.config.json out/
 
+      - name: Install API dependencies
+        run: npm install --prefix api
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
