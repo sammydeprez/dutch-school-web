@@ -1,9 +1,13 @@
 'use client';
 
-import { useState } from 'react';
-import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { useState, useRef } from 'react';
+import { Send, CheckCircle, AlertCircle, Loader2, Paperclip, X } from 'lucide-react';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB per file
+const MAX_FILES = 5;
+const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp', 'application/pdf'];
 
 export default function ChangeRequestPage() {
   const [formData, setFormData] = useState({
@@ -13,9 +17,11 @@ export default function ChangeRequestPage() {
     type: 'content',
     submittedBy: '',
   });
+  const [attachments, setAttachments] = useState<File[]>([]);
   const [status, setStatus] = useState<FormStatus>('idle');
   const [issueUrl, setIssueUrl] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,12 +29,20 @@ export default function ChangeRequestPage() {
     setErrorMessage(null);
 
     try {
+      const submitData = new FormData();
+      submitData.append('title', formData.title);
+      submitData.append('description', formData.description);
+      submitData.append('page', formData.page);
+      submitData.append('type', formData.type);
+      submitData.append('submittedBy', formData.submittedBy);
+
+      attachments.forEach((file) => {
+        submitData.append('attachments', file);
+      });
+
       const response = await fetch('/api/create-issue', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        body: submitData,
       });
 
       const data = await response.json();
@@ -46,6 +60,7 @@ export default function ChangeRequestPage() {
         type: 'content',
         submittedBy: '',
       });
+      setAttachments([]);
     } catch (error) {
       setStatus('error');
       setErrorMessage(error instanceof Error ? error.message : 'An error occurred');
@@ -59,6 +74,51 @@ export default function ChangeRequestPage() {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    const validFiles: File[] = [];
+    const errors: string[] = [];
+
+    files.forEach((file) => {
+      if (!ALLOWED_TYPES.includes(file.type)) {
+        errors.push(`${file.name}: Invalid file type. Allowed: JPG, PNG, GIF, WebP, PDF`);
+        return;
+      }
+      if (file.size > MAX_FILE_SIZE) {
+        errors.push(`${file.name}: File too large. Maximum size is 5MB`);
+        return;
+      }
+      if (attachments.length + validFiles.length >= MAX_FILES) {
+        errors.push(`Maximum ${MAX_FILES} files allowed`);
+        return;
+      }
+      validFiles.push(file);
+    });
+
+    if (errors.length > 0) {
+      setErrorMessage(errors.join('\n'));
+      setStatus('error');
+    }
+
+    if (validFiles.length > 0) {
+      setAttachments((prev) => [...prev, ...validFiles]);
+    }
+
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const removeAttachment = (index: number) => {
+    setAttachments((prev) => prev.filter((_, i) => i !== index));
+  };
+
+  const formatFileSize = (bytes: number) => {
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
   };
 
   return (
@@ -193,6 +253,64 @@ export default function ChangeRequestPage() {
                   placeholder="So we know who to follow up with"
                   className="w-full px-4 py-3 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                 />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-2">
+                  Attachments (optional)
+                </label>
+                <div className="space-y-3">
+                  <div
+                    className="border-2 border-dashed border-border rounded-xl p-6 text-center hover:border-primary/50 transition-colors cursor-pointer"
+                    onClick={() => fileInputRef.current?.click()}
+                  >
+                    <Paperclip className="w-8 h-8 mx-auto text-muted mb-2" />
+                    <p className="text-sm text-muted">
+                      Click to upload files or drag and drop
+                    </p>
+                    <p className="text-xs text-muted mt-1">
+                      JPG, PNG, GIF, WebP, PDF up to 5MB (max {MAX_FILES} files)
+                    </p>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      multiple
+                      accept={ALLOWED_TYPES.join(',')}
+                      onChange={handleFileChange}
+                      className="hidden"
+                    />
+                  </div>
+
+                  {attachments.length > 0 && (
+                    <ul className="space-y-2">
+                      {attachments.map((file, index) => (
+                        <li
+                          key={`${file.name}-${index}`}
+                          className="flex items-center justify-between p-3 bg-surface rounded-lg"
+                        >
+                          <div className="flex items-center gap-3 min-w-0">
+                            <Paperclip className="w-4 h-4 text-muted flex-shrink-0" />
+                            <div className="min-w-0">
+                              <p className="text-sm font-medium text-foreground truncate">
+                                {file.name}
+                              </p>
+                              <p className="text-xs text-muted">
+                                {formatFileSize(file.size)}
+                              </p>
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => removeAttachment(index)}
+                            className="p-1 hover:bg-border rounded-full transition-colors flex-shrink-0"
+                          >
+                            <X className="w-4 h-4 text-muted" />
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
 
               <button
