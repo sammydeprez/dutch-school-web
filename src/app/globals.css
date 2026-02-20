@@ -118,3 +118,419 @@ img {
   background-color: var(--dutch-blue-light);
   color: white;
 }
+
+/* ================================
+   ANIMATIONS
+   ================================ */
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* Animation Delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* Initially hidden for scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* Stagger container for child animations */
+.stagger-children > * {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.stagger-children.is-visible > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children.is-visible > *:nth-child(2) { animation-delay: 100ms; }
+.stagger-children.is-visible > *:nth-child(3) { animation-delay: 200ms; }
+.stagger-children.is-visible > *:nth-child(4) { animation-delay: 300ms; }
+.stagger-children.is-visible > *:nth-child(5) { animation-delay: 400ms; }
+.stagger-children.is-visible > *:nth-child(6) { animation-delay: 500ms; }
+
+/* ================================
+   COMPONENT ANIMATIONS
+   ================================ */
+
+/* Nav Link Underline Animation */
+.nav-link-animated {
+  position: relative;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--dutch-blue);
+  transition: width 0.3s ease;
+}
+
+.nav-link-animated:hover::after,
+.nav-link-animated.active::after {
+  width: 100%;
+}
+
+/* Header Shrink Animation */
+.header-normal {
+  height: 80px;
+  transition: height 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.header-shrunk {
+  height: 64px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+/* Card Hover Animations */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Animation on Card Hover */
+.card-hover:hover .icon-animated {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.icon-animated {
+  transition: transform 0.3s ease;
+}
+
+/* Button Arrow Animation */
+.btn-arrow {
+  transition: transform 0.3s ease;
+}
+
+.group:hover .btn-arrow,
+.btn-animated:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Button Ripple Effect */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-ripple:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Image Zoom on Hover */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-enter {
+  animation: slideInFromBottom 0.3s ease forwards;
+}
+
+/* Language Switcher Animation */
+.lang-switch-active {
+  transition: all 0.3s ease;
+}
+
+/* Floating Card Animation */
+.floating-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-card-delayed {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Stats Counter Animation */
+.stat-number {
+  display: inline-block;
+}
+
+/* Testimonial Card Hover */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote Icon Animation */
+.testimonial-card:hover .quote-icon {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.quote-icon {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Decorative Blob Animation */
+.blob-animated {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.blob-animated-delayed {
+  animation: floatSlow 8s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+/* Program Card Image Zoom */
+.program-card .program-image {
+  transition: transform 0.5s ease;
+}
+
+.program-card:hover .program-image {
+  transform: scale(1.05);
+}
+
+/* CTA Section Decoration Animation */
+.cta-decoration {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+/* Link Hover with Arrow */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.link-arrow:hover {
+  gap: 0.75rem;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

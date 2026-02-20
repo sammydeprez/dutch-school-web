@@ -16,7 +16,7 @@ import {
   Mail,
   Phone
 } from 'lucide-react';
-import { OptimizedImage } from '@/components/ui';
+import { OptimizedImage, AnimatedSection } from '@/components/ui';
 
 export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   return <HomePageContent params={params} />;
@@ -87,60 +87,109 @@ function HeroSection() {
 
   return (
     <section className="relative gradient-hero overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/20 rounded-full blur-2xl" />
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent/20 rounded-full blur-2xl" />
+      {/* Animated Decorative Elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/20 rounded-full blur-2xl animate-float-slow" />
+      <div
+        className="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-float-slow"
+        style={{ animationDelay: '2s' }}
+      />
+      <div
+        className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent/20 rounded-full blur-2xl animate-float"
+        style={{ animationDelay: '1s' }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-primary mb-6">
+            <div
+              className="
+                inline-flex items-center gap-2
+                bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full
+                text-sm font-medium text-primary mb-6
+                animate-fade-in-down
+              "
+            >
               <Star className="w-4 h-4 fill-secondary text-secondary" />
               <span>{t('badges.since')}</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            <h1
+              className="
+                text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6
+                animate-fade-in-up
+              "
+            >
               {t('title')}
             </h1>
 
-            <p className="text-lg sm:text-xl text-muted max-w-xl mx-auto lg:mx-0 mb-8">
+            <p
+              className="
+                text-lg sm:text-xl text-muted max-w-xl mx-auto lg:mx-0 mb-8
+                animate-fade-in-up
+              "
+              style={{ animationDelay: '150ms' }}
+            >
               {t('subtitle')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div
+              className="
+                flex flex-col sm:flex-row gap-4 justify-center lg:justify-start
+                animate-fade-in-up
+              "
+              style={{ animationDelay: '300ms' }}
+            >
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-all hover:shadow-lg hover:shadow-primary/25"
+                className="
+                  group
+                  inline-flex items-center justify-center gap-2
+                  px-8 py-4 bg-primary text-white font-semibold rounded-full
+                  hover:bg-primary-dark transition-all duration-300
+                  hover:shadow-lg hover:shadow-primary/25
+                  hover:scale-105 active:scale-95
+                "
               >
                 {t('cta')}
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-foreground font-semibold rounded-full border-2 border-border hover:border-primary hover:text-primary transition-all"
+                className="
+                  inline-flex items-center justify-center gap-2
+                  px-8 py-4 bg-white text-foreground font-semibold rounded-full
+                  border-2 border-border
+                  hover:border-primary hover:text-primary transition-all duration-300
+                  hover:scale-105 active:scale-95
+                "
               >
                 {t('secondaryCta')}
               </Link>
             </div>
 
             {/* Trust Badges */}
-            <div className="mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-6">
-              <div className="flex items-center gap-2 text-sm text-muted">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
+            <div
+              className="
+                mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-6
+                animate-fade-in-up
+              "
+              style={{ animationDelay: '450ms' }}
+            >
+              <div className="flex items-center gap-2 text-sm text-muted group">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-110">
                   <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
                 <span>{t('badges.nobRecognized')}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
+              <div className="flex items-center gap-2 text-sm text-muted group">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-110">
                   <Globe className="w-5 h-5 text-accent" />
                 </div>
                 <span>{t('badges.nationalities')}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
+              <div className="flex items-center gap-2 text-sm text-muted group">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-110">
                   <Heart className="w-5 h-5 text-red" />
                 </div>
                 <span>{t('badges.smallClasses')}</span>
@@ -149,8 +198,8 @@ function HeroSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative animate-fade-in-left" style={{ animationDelay: '200ms' }}>
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl img-zoom">
               <OptimizedImage
                 src="/images/hero-main.png"
                 alt="Children learning at Dutch School Nairobi"
@@ -162,7 +211,12 @@ function HeroSection() {
             </div>
 
             {/* Floating Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl hidden lg:block">
+            <div
+              className="
+                absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl
+                hidden lg:block floating-card
+              "
+            >
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <Languages className="w-6 h-6 text-primary" />
@@ -174,7 +228,12 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl hidden lg:block">
+            <div
+              className="
+                absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl
+                hidden lg:block floating-card-delayed
+              "
+            >
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
                   <BookOpen className="w-6 h-6 text-secondary" />
@@ -223,39 +282,52 @@ function FeaturesSection() {
   ];
 
   const colorClasses = {
-    primary: 'bg-primary/10 text-primary',
-    secondary: 'bg-secondary/10 text-secondary',
-    accent: 'bg-accent/10 text-accent',
+    primary: 'bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white',
+    secondary: 'bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-foreground',
+    accent: 'bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white',
   };
 
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-muted">
             {t('subtitle')}
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div
+            <AnimatedSection
               key={index}
-              className="group p-6 rounded-2xl bg-surface hover:bg-white hover:shadow-xl transition-all duration-300"
+              delay={index * 100}
+              className="
+                group p-6 rounded-2xl bg-surface
+                hover:bg-white hover:shadow-xl hover:-translate-y-2
+                transition-all duration-300
+                cursor-default
+              "
             >
-              <div className={`w-14 h-14 rounded-xl ${colorClasses[feature.color as keyof typeof colorClasses]} flex items-center justify-center mb-5`}>
-                <feature.icon className="w-7 h-7" />
+              <div
+                className={`
+                  w-14 h-14 rounded-xl
+                  ${colorClasses[feature.color as keyof typeof colorClasses]}
+                  flex items-center justify-center mb-5
+                  transition-all duration-300
+                `}
+              >
+                <feature.icon className="w-7 h-7 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-foreground mb-3 transition-colors duration-300 group-hover:text-primary">
                 {feature.title}
               </h3>
               <p className="text-muted leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
@@ -271,8 +343,8 @@ function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
-          <div className="relative">
-            <div className="aspect-square rounded-3xl overflow-hidden">
+          <AnimatedSection animation="fade-in-right" className="relative">
+            <div className="aspect-square rounded-3xl overflow-hidden img-zoom">
               <OptimizedImage
                 src="/images/community.png"
                 alt="Dutch School Nairobi community"
@@ -283,14 +355,19 @@ function AboutSection() {
             </div>
 
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl">
+            <div
+              className="
+                absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl
+                animate-bounce-subtle
+              "
+            >
               <p className="text-4xl font-bold">50+</p>
               <p className="text-sm opacity-90">{t('stats.years')}</p>
             </div>
-          </div>
+          </AnimatedSection>
 
           {/* Content */}
-          <div>
+          <AnimatedSection animation="fade-in-left">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               {t('title')}
             </h2>
@@ -302,18 +379,18 @@ function AboutSection() {
             </p>
 
             <div className="space-y-6 mb-8">
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-6 h-6 text-primary" />
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                  <Heart className="w-6 h-6 text-primary transition-colors duration-300 group-hover:text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">{t('mission')}</h4>
                   <p className="text-muted text-sm">{t('missionText')}</p>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Globe className="w-6 h-6 text-secondary" />
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-secondary group-hover:scale-110">
+                  <Globe className="w-6 h-6 text-secondary transition-colors duration-300 group-hover:text-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">{t('vision')}</h4>
@@ -324,12 +401,12 @@ function AboutSection() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              className="link-arrow text-primary font-semibold"
             >
               {t('learnMore')}
               <ChevronRight className="w-5 h-5" />
             </Link>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
@@ -377,20 +454,25 @@ function ProgramsSection() {
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-muted">
             {t('subtitle')}
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid sm:grid-cols-2 gap-8">
-          {programs.map((program) => (
-            <div
+          {programs.map((program, index) => (
+            <AnimatedSection
               key={program.id}
-              className="group relative bg-white border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300"
+              delay={index * 100}
+              className="
+                program-card group
+                relative bg-white border border-border rounded-3xl overflow-hidden
+                hover:shadow-xl transition-all duration-300
+              "
             >
               {/* Program Image */}
               <div className="aspect-[4/3] overflow-hidden">
@@ -399,7 +481,7 @@ function ProgramsSection() {
                   alt={program.title}
                   width={800}
                   height={597}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="program-image w-full h-full object-cover"
                 />
               </div>
 
@@ -407,7 +489,7 @@ function ProgramsSection() {
                 <div className="inline-flex items-center px-3 py-1 bg-surface rounded-full text-sm text-muted mb-4">
                   {program.ages}
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">
+                <h3 className="text-2xl font-bold text-foreground mb-3 transition-colors duration-300 group-hover:text-primary">
                   {program.title}
                 </h3>
                 <p className="text-muted leading-relaxed mb-6">
@@ -415,13 +497,13 @@ function ProgramsSection() {
                 </p>
                 <Link
                   href={program.href}
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  className="link-arrow text-primary font-semibold"
                 >
                   {t('learnMore')}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
@@ -442,22 +524,30 @@ function QuickFactsSection() {
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
-        </div>
+        </AnimatedSection>
 
         <div className="space-y-8">
           {questions.map((item, index) => (
-            <div key={index} className="bg-surface p-6 lg:p-8 rounded-2xl">
+            <AnimatedSection
+              key={index}
+              delay={index * 100}
+              className="
+                bg-surface p-6 lg:p-8 rounded-2xl
+                transition-all duration-300
+                hover:shadow-lg hover:-translate-y-1
+              "
+            >
               <h3 className="text-xl font-bold text-foreground mb-3">
                 {item.question}
               </h3>
               <p className="text-muted leading-relaxed">
                 {item.answer}
               </p>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
@@ -492,27 +582,28 @@ function TestimonialsSection() {
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-muted">
             {t('subtitle')}
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <AnimatedSection
               key={index}
-              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow"
+              delay={index * 150}
+              className="testimonial-card bg-white p-8 rounded-3xl shadow-sm"
             >
-              <Quote className="w-10 h-10 text-primary/20 mb-4" />
+              <Quote className="quote-icon w-10 h-10 text-primary/20 mb-4" />
               <p className="text-foreground leading-relaxed mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
                   <OptimizedImage
                     src={testimonial.image}
                     alt={testimonial.author}
@@ -526,7 +617,7 @@ function TestimonialsSection() {
                   <p className="text-sm text-muted">{testimonial.role}</p>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
@@ -545,18 +636,23 @@ function StatsSection() {
   ];
 
   return (
-    <section className="py-16 bg-primary">
+    <section className="py-16 bg-primary overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <p className="text-4xl lg:text-5xl font-bold text-white mb-2">
+            <AnimatedSection
+              key={index}
+              animation="scale-in"
+              delay={index * 100}
+              className="text-center"
+            >
+              <p className="stat-number text-4xl lg:text-5xl font-bold text-white mb-2">
                 {stat.value}
               </p>
               <p className="text-white/80 text-sm lg:text-base">
                 {stat.label}
               </p>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
@@ -570,10 +666,15 @@ function CTASection() {
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-gradient-to-br from-foreground to-foreground/90 rounded-3xl overflow-hidden">
-          {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full blur-3xl" />
+        <AnimatedSection
+          className="relative bg-gradient-to-br from-foreground to-foreground/90 rounded-3xl overflow-hidden"
+        >
+          {/* Animated decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl cta-decoration" />
+          <div
+            className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full blur-3xl cta-decoration"
+            style={{ animationDelay: '2s' }}
+          />
 
           <div className="relative px-8 py-16 lg:px-16 lg:py-20 text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -589,10 +690,16 @@ function CTASection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-all hover:shadow-lg"
+                className="
+                  group
+                  inline-flex items-center justify-center gap-2
+                  px-8 py-4 bg-primary text-white font-semibold rounded-full
+                  hover:bg-primary-dark transition-all duration-300
+                  hover:shadow-lg hover:scale-105 active:scale-95
+                "
               >
                 {t('button')}
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </div>
 
@@ -600,17 +707,31 @@ function CTASection() {
               {t('contact')}
             </p>
             <div className="flex items-center justify-center gap-6 mt-3">
-              <a href="mailto:info@dutchschool.co.ke" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a
+                href="mailto:info@dutchschool.co.ke"
+                className="
+                  inline-flex items-center gap-2 text-white/80
+                  hover:text-white transition-all duration-300
+                  hover:scale-105
+                "
+              >
                 <Mail className="w-4 h-4" />
                 info@dutchschool.co.ke
               </a>
-              <a href="tel:+254123456789" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a
+                href="tel:+254123456789"
+                className="
+                  inline-flex items-center gap-2 text-white/80
+                  hover:text-white transition-all duration-300
+                  hover:scale-105
+                "
+              >
                 <Phone className="w-4 h-4" />
                 +254 123 456 789
               </a>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );
