@@ -1,0 +1,19 @@
+name: Assign Copilot to user-submitted issues
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  assign-copilot:
+    if: contains(github.event.issue.labels.*.name, 'by-users')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Assign Copilot
+        run: |
+          gh issue edit "$ISSUE_URL" --add-assignee copilot
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
