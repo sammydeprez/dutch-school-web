@@ -108,7 +108,7 @@ export default async function LocaleLayout({
             foundingDate: '1971',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'Makindi Road',
+              streetAddress: 'Windy Ridge, off Ngong Road',
               addressLocality: 'Nairobi',
               addressCountry: 'KE',
             },

@@ -11,9 +11,9 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Assign Copilot
+      - name: Tag Copilot
         run: |
-          gh issue edit "$ISSUE_URL" --add-assignee copilot
+          gh issue comment "$ISSUE_URL" --body "@copilot Please review this change request and implement the requested changes."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}

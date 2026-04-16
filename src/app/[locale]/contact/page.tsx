@@ -29,7 +29,7 @@ function ContactPageSchema() {
       email: 'info@dutchschool.co.ke',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Makindi Road',
+        streetAddress: 'Windy Ridge, off Ngong Road',
         addressLocality: 'Nairobi',
         postalCode: '14997',
         addressCountry: 'KE',
@@ -285,9 +285,9 @@ function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{t('info.address')}</h3>
                   <p className="text-muted">
-                    Makindi Road<br />
-                    P.O. Box 14997<br />
-                    Nairobi, Kenya
+                    Windy Ridge, off Ngong Road<br />
+                    P.O. Box 14997 – 00800<br />
+                    Nairobi, Karen, Kenya
                   </p>
                 </div>
               </div>
