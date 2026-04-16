@@ -30,7 +30,7 @@
   },
   "hero": {
     "title": "Greatness in Intimacy",
-    "subtitle": "Dutch education in the heart of Nairobi. Where every child is seen, known, and valued.",
+    "subtitle": "Dutch-language education in the heart of Nairobi. Where every child is seen, known, and valued.",
     "cta": "Discover Our School",
     "secondaryCta": "Schedule a Visit",
     "watchStory": "Watch Our Story",
@@ -52,13 +52,13 @@
     }
   },
   "about": {
-    "title": "About Dutch School Nairobi",
-    "subtitle": "Nearly 50 years of educational excellence",
-    "description": "The Netherlands School Society has been offering Dutch pre- and primary education in Nairobi for almost 50 years. Our small classrooms focus on individual learning needs, while our large, green compound provides a wonderful place to learn and discover.",
+    "title": "About the Dutch School Nairobi",
+    "subtitle": "More than 50 years of educational excellence",
+    "description": "The Dutch School has been offering Dutch-language education in Nairobi for more than 50 years. Our small classrooms focus on individual learning needs, while our large, green compound provides a wonderful place to learn and discover.",
     "mission": "Our Mission",
-    "missionText": "To provide exceptional bilingual education that combines the best of Dutch educational traditions with international perspectives, preparing children to thrive in a global society.",
+    "missionText": "We provide international, multilingual, and differentiated education to toddlers and primary school students that fully meets the Dutch Core Objectives and the goals of the International Primary Curriculum, enabling our students to develop into open-minded, inquiring, and critical global citizens.",
     "vision": "Our Vision",
-    "visionText": "A community where every child develops their unique potential through personalized learning, cultural awareness, and a deep connection to both Dutch heritage and their international environment.",
+    "visionText": "Our vision is to develop children's own identity and talents to make a valuable contribution to a changing world.",
     "learnMore": "Learn more about us",
     "stats": {
       "years": "Years of Excellence",
@@ -68,15 +68,15 @@
     }
   },
   "features": {
-    "title": "Why Choose Dutch School?",
+    "title": "Why Choose the Dutch School?",
     "subtitle": "Greatness in intimacy - where every child is seen",
     "bilingual": {
       "title": "Bilingual Education",
-      "description": "3 days Dutch, 2 days English in kindergarten. Fully bilingual curriculum for seamless transition."
+      "description": "Fully bilingual curriculum for seamless transition, internationally or in the Netherlands and Belgium."
     },
     "curriculum": {
       "title": "IEYC/IPC Curriculum",
-      "description": "International Early Years and Primary Curriculum with thematic learning that encourages participation and global citizenship."
+      "description": "International Early Years and Primary Curriculum with thematic learning that encourages inquiry-based learning and global citizenship."
     },
     "community": {
       "title": "Small Community",
@@ -84,26 +84,26 @@
     },
     "environment": {
       "title": "Green Campus",
-      "description": "Beautiful green compound in Karen with space for outdoor learning, play, and discovery."
+      "description": "A beautiful green compound in Karen with space for outdoor learning, play, experience, and discovery."
     }
   },
   "programs": {
-    "title": "Our Programs",
-    "subtitle": "Education for every stage of development",
+    "title": "Our Offering",
+    "subtitle": "A varied offering that meets diverse needs",
     "toddler": {
       "title": "Toddler Group",
       "ages": "From age 1.5",
-      "description": "A nurturing introduction to learning through play, with a maximum of 15 children and early Dutch language exposure."
+      "description": "Learning through play and discovery in a warm and safe environment, in small groups (max. 15 toddlers), with a strong language foundation in Dutch and English."
     },
     "primary": {
       "title": "Primary School",
       "ages": "Groups 1 - 8",
-      "description": "Comprehensive bilingual education combining Dutch curriculum with International Primary Curriculum (IPC)."
+      "description": "Rich bilingual education combining Dutch curriculum with International Primary Curriculum (IPC)."
     },
     "ntc": {
       "title": "NTC",
       "ages": "Dutch Language & Culture",
-      "description": "Dutch language and culture education for children attending other international schools in Nairobi."
+      "description": "Dutch language and culture education in the afternoon for children attending other international schools in Nairobi."
     },
     "adult": {
       "title": "Adult Dutch Lessons",
@@ -132,28 +132,28 @@
     }
   },
   "quickFacts": {
-    "title": "Quick Facts About Dutch School Nairobi",
+    "title": "Quick Facts About the Dutch School",
     "q1": {
-      "question": "What is Dutch School Nairobi?",
-      "answer": "Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children from age 1.5. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB), the school combines the Dutch national curriculum with the International Primary Curriculum (IPC)."
+      "question": "The Dutch School in a nutshell",
+      "answer": "The Dutch School is an accredited school in Nairobi, Kenya, with various departments. The bilingual primary school offers Dutch-language and English-language education for children from age 1.5. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB), the school combines the Dutch national curriculum with the International Primary Curriculum (IPC)."
     },
     "q2": {
-      "question": "What curriculum does Dutch School Nairobi follow?",
-      "answer": "We follow a bilingual curriculum combining the official Dutch national education standards with the IEYC (International Early Years Curriculum) and IPC (International Primary Curriculum). This ensures students can transition seamlessly to schools in the Netherlands or continue their international education pathway."
+      "question": "What curriculum does the Dutch School follow?",
+      "answer": "We follow a bilingual curriculum combining the official Dutch core objectives with the IEYC (International Early Years Curriculum) and IPC (International Primary Curriculum). This ensures students can transition seamlessly to schools in the Netherlands and Belgium or continue their international education pathway in Kenya or elsewhere."
     },
     "q3": {
-      "question": "What are the school fees at Dutch School Nairobi?",
-      "answer": "Our fees are divided into two groups: Tariff A for families where the employer reimburses school fees, and Tariff B for families paying out of pocket. Contact our admissions team for the detailed fee structure."
+      "question": "What are the school fees at the Dutch School?",
+      "answer": "Our fees are divided into two groups: Tariff A for families where the employer reimburses school fees, and Tariff B for families paying out of pocket. Contact us for the detailed fee structure."
     },
     "q4": {
       "question": "Do students need to speak Dutch to enroll?",
-      "answer": "No prior Dutch language knowledge is required. Our immersive bilingual program supports children at all language levels. Students typically become conversationally fluent in Dutch within their first year through daily exposure and dedicated language instruction."
+      "answer": "No prior Dutch language knowledge is required for our day school department. Our immersive bilingual program supports children at all language levels. In most cases, students speak fluent Dutch in daily use within a year, through the combination of daily exposure and dedicated language instruction."
     }
   },
   "cta": {
-    "title": "Begin Your Child's Journey",
-    "subtitle": "Join our diverse community of learners",
-    "description": "Discover how Dutch School Nairobi can provide your child with a world-class bilingual education in a nurturing environment.",
+    "title": "A great start for your child's school career",
+    "subtitle": "Discover our diverse and engaged school community",
+    "description": "Discover how the Dutch School can give your child a strong bilingual foundation through quality education in a safe and trusted learning environment.",
     "button": "Schedule a School Tour",
     "contact": "Or contact us at"
   },
@@ -165,11 +165,12 @@
       "toddler": "Toddler Group",
       "primary": "Primary School",
       "ntc": "NTC",
-      "curriculum": "Curriculum"
+      "curriculum": "Curriculum",
+      "adultDutch": "Adult Dutch Lessons"
     },
     "contact": "Contact Us",
     "address": "Karen, Nairobi, Kenya",
-    "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+    "hours": "Mon - Fri: 8:00 AM - 4:30 PM",
     "copyright": "Dutch School Nairobi. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"

@@ -33,22 +33,22 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
     mainEntity: [
       {
         '@type': 'Question',
-        name: locale === 'nl' ? 'Wat is Dutch School Nairobi?' : 'What is Dutch School Nairobi?',
+        name: locale === 'nl' ? 'De Dutch school in een notendop' : 'The Dutch School in a nutshell',
         acceptedAnswer: {
           '@type': 'Answer',
           text: locale === 'nl'
-            ? 'Dutch School Nairobi (Nederlandse Schoolvereniging) is een erkende tweetalige basisschool in Kenia, die Nederlands en Engels onderwijs biedt voor kinderen van 1½-18 jaar. Opgericht in 1971 en erkend door de Stichting Nederlands Onderwijs in het Buitenland (NOB).'
-            : 'Dutch School Nairobi (Nederlandse Schoolvereniging) is an accredited bilingual primary school in Kenya, offering Dutch and English education for children ages 1½-18. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB).',
+            ? 'De Dutch School is een erkende school in Nairobi, Kenia, met verschillende afdelingen. De tweetalige basisschool biedt Nederlandstalig en Engelstalig onderwijs voor kinderen vanaf 1,5 jaar. Opgericht in 1971 en erkend door Stichting Nederlands Onderwijs in het Buitenland (NOB).'
+            : 'The Dutch School is an accredited school in Nairobi, Kenya, with various departments. The bilingual primary school offers Dutch-language and English-language education for children from age 1.5. Established in 1971 and recognized by the Dutch Education Abroad Foundation (NOB).',
         },
       },
       {
         '@type': 'Question',
-        name: locale === 'nl' ? 'Welk curriculum volgt Dutch School Nairobi?' : 'What curriculum does Dutch School Nairobi follow?',
+        name: locale === 'nl' ? 'Welk curriculum volgt de Dutch School?' : 'What curriculum does the Dutch School follow?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: locale === 'nl'
-            ? 'Wij volgen een tweetalig curriculum dat de officiële Nederlandse onderwijsstandaarden combineert met het International Primary Curriculum (IPC).'
-            : 'We follow a bilingual curriculum combining the official Dutch national education standards with the International Primary Curriculum (IPC).',
+            ? 'Wij volgen een tweetalig curriculum dat de officiële Nederlandse kerndoelen combineert met het IEYC en IPC (International Primary Curriculum).'
+            : 'We follow a bilingual curriculum combining the official Dutch core objectives with the IEYC and IPC (International Primary Curriculum).',
         },
       },
       {
@@ -57,8 +57,8 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
         acceptedAnswer: {
           '@type': 'Answer',
           text: locale === 'nl'
-            ? 'Nee, voorkennis van de Nederlandse taal is niet vereist. Ons immersieve tweetalige programma ondersteunt kinderen op alle taalniveaus.'
-            : 'No prior Dutch language knowledge is required. Our immersive bilingual program supports children at all language levels.',
+            ? 'Nee, voorkennis van de Nederlandse taal is niet vereist voor onze dagschool afdeling. Ons immersieve tweetalige programma ondersteunt kinderen op alle taalniveaus.'
+            : 'No prior Dutch language knowledge is required for our day school department. Our immersive bilingual program supports children at all language levels.',
         },
       },
     ],
@@ -719,7 +719,7 @@ function CTASection() {
                 info@dutchschool.co.ke
               </a>
               <a
-                href="tel:+254123456789"
+                href="tel:+254733675432"
                 className="
                   inline-flex items-center gap-2 text-white/80
                   hover:text-white transition-all duration-300
@@ -727,7 +727,7 @@ function CTASection() {
                 "
               >
                 <Phone className="w-4 h-4" />
-                +254 123 456 789
+                +254 733 675 432
               </a>
             </div>
           </div>

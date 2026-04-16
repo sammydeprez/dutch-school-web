@@ -99,6 +99,11 @@ export default function Footer() {
                   {t('educationList.curriculum')}
                 </Link>
               </li>
+              <li>
+                <span className="text-white/70">
+                  {t('educationList.adultDutch')}
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -112,8 +117,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="tel:+254123456789" className="text-white/70 hover:text-white transition-colors">
-                  +254 123 456 789
+                <a href="tel:+254733675432" className="text-white/70 hover:text-white transition-colors">
+                  +254 733 675 432
                 </a>
               </li>
               <li className="flex items-center gap-3">

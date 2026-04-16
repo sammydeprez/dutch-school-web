@@ -25,7 +25,7 @@ function ContactPageSchema() {
     mainEntity: {
       '@type': 'EducationalOrganization',
       name: 'Dutch School Nairobi',
-      telephone: '+254-123-456-789',
+      telephone: '+254-733-675-432',
       email: 'info@dutchschool.co.ke',
       address: {
         '@type': 'PostalAddress',
@@ -299,12 +299,8 @@ function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{t('info.phone')}</h3>
                   <p className="text-muted">
-                    <a href="tel:+254123456789" className="hover:text-primary transition-colors">
-                      +254 123 456 789
-                    </a>
-                    <br />
-                    <a href="tel:+254987654321" className="hover:text-primary transition-colors">
-                      +254 987 654 321
+                    <a href="tel:+254733675432" className="hover:text-primary transition-colors">
+                      +254 733 675 432
                     </a>
                   </p>
                 </div>

@@ -114,7 +114,7 @@ export default async function LocaleLayout({
             },
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '+254-123-456-789',
+              telephone: '+254-733-675-432',
               contactType: 'admissions',
               availableLanguage: ['English', 'Dutch'],
             },
