@@ -53,9 +53,12 @@ function LocationSection() {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               {t('title')}
             </h2>
-            <p className="text-lg text-muted leading-relaxed mb-8">
-              {t('content')}
-            </p>
+            <div className="space-y-4 text-muted leading-relaxed mb-8">
+              <p className="text-lg">{t('content')}</p>
+              <p>{t('paragraph2')}</p>
+              <p>{t('paragraph3')}</p>
+              <p>{t('paragraph4')}</p>
+            </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Heart, Lightbulb, RefreshCw, Quote } from 'lucide-react';
+import { Heart, Lightbulb, RefreshCw, Quote, Sparkles } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -23,6 +23,7 @@ export default async function VisionPage({ params }: { params: Promise<{ locale:
       <HeroSection />
       <PhilosophySection />
       <MissionVisionSection />
+      <MottoSection />
       <ValuesSection />
       <CTASection />
     </>
@@ -65,25 +66,61 @@ function MissionVisionSection() {
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           <div className="bg-white p-8 lg:p-10 rounded-3xl">
             <h3 className="text-2xl font-bold text-foreground mb-4">
               {t('mission.title')}
             </h3>
-            <p className="text-muted leading-relaxed">
-              {t('mission.content')}
-            </p>
+            <div className="space-y-4 text-muted leading-relaxed">
+              <p>{t('mission.content')}</p>
+              <p>{t('mission.paragraph2')}</p>
+              <p>{t('mission.paragraph3')}</p>
+            </div>
+            <div className="mt-6 pt-6 border-t border-border">
+              <p className="text-lg font-semibold text-primary text-center italic">
+                &ldquo;{t('mission.missionQuote')}&rdquo;
+              </p>
+            </div>
           </div>
 
           <div className="bg-white p-8 lg:p-10 rounded-3xl">
             <h3 className="text-2xl font-bold text-foreground mb-4">
               {t('vision.title')}
             </h3>
-            <p className="text-muted leading-relaxed">
-              {t('vision.content')}
-            </p>
+            <div className="space-y-4 text-muted leading-relaxed">
+              <p>{t('vision.content')}</p>
+              <p>{t('vision.paragraph2')}</p>
+            </div>
+            <div className="mt-6 pt-6 border-t border-border">
+              <p className="text-lg font-semibold text-primary text-center italic">
+                &ldquo;{t('vision.visionQuote')}&rdquo;
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function MottoSection() {
+  const t = useTranslations('visionPage.motto');
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="inline-flex w-16 h-16 mx-auto rounded-2xl bg-primary/10 items-center justify-center mb-6">
+          <Sparkles className="w-8 h-8 text-primary" />
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          {t('title')}
+        </h2>
+        <p className="text-2xl lg:text-3xl text-primary font-bold mb-6">
+          {t('subtitle')}
+        </p>
+        <p className="text-lg text-muted leading-relaxed">
+          {t('content')}
+        </p>
       </div>
     </section>
   );

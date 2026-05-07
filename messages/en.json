@@ -6,15 +6,23 @@
     "vision": "Our Vision",
     "team": "The Team",
     "campus": "Location & Campus",
-    "education": "Education",
+    "education": "Day School",
     "educationOverview": "Overview",
     "toddler": "Toddler Group",
     "primary": "Primary School",
-    "ntc": "NTC",
-    "curriculum": "Curriculum",
+    "curriculum": "Our Education",
     "languageClub": "Language Club",
     "skillsClub": "Skills Club",
+    "library": "Library",
     "studentSupport": "Student Support",
+    "ntc": "NTC",
+    "ntcOverview": "Overview",
+    "ntcSchedule": "Hours & Locations",
+    "ntcFees": "School Fees",
+    "adultClasses": "Dutch Adult Classes",
+    "adultClassesOverview": "Overview",
+    "adultClassesSchedule": "Hours & Locations",
+    "adultClassesFees": "School Fees",
     "practical": "Practical",
     "practicalOverview": "Overview",
     "schedule": "School Hours",
@@ -278,33 +286,41 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "About Dutch School Nairobi",
-      "subtitle": "Greatness in intimacy - nearly 50 years of educational excellence in Kenya"
+      "title": "About the Dutch School",
+      "subtitle": "Greatness in intimacy - over 50 years of educational excellence in Kenya"
     },
     "history": {
       "title": "Our History",
-      "content": "Founded in 1971, the Netherlands School Society has been a cornerstone of Dutch education in East Africa. What started as a small initiative by Dutch expatriate families has grown into a thriving international community, proudly recognized by the Dutch Education Abroad Foundation.",
+      "content": "Founded in 1971, the Netherlands School Society has been a cornerstone of Dutch education in East Africa. What started as a small initiative by Dutch-speaking expatriate families has grown into a thriving international community, proudly recognized by the Dutch Education Abroad Foundation.",
       "timeline": {
-        "1971": "School founded by Dutch expatriate families",
-        "1985": "Official recognition by Dutch government",
-        "2000": "Introduction of IPC curriculum",
-        "2010": "NTC program expansion",
-        "2020": "Digital learning integration",
-        "today": "50+ years of educational excellence"
+        "1971": "School founded by Dutch-speaking expatriate families",
+        "1985": "Official recognition by the Dutch government",
+        "2007": "Introduction of the IPC curriculum",
+        "2014": "Officially bilingual education (Dutch and English)",
+        "2016": "Move to our compound in Karen",
+        "2024": "Merger with NTC school, to offer a complete program"
       }
     },
     "approach": {
-      "title": "Our Educational Approach",
-      "content": "We believe in the power of small-scale education. Our unique combination of the Dutch curriculum and the International Primary Curriculum (IPC) ensures students are well-prepared for both Dutch and international educational pathways. Small class sizes allow for personalized attention, ensuring every child reaches their full potential."
+      "title": "Greatness in Intimacy",
+      "content": "Since 1971, the Dutch School (formerly Netherlands School Society) has been a trusted place for Dutch and international families in Nairobi. A place where children learn, discover, and grow, in a warm environment where education, the joy of learning, and community come together.",
+      "paragraph2": "We believe that greatness lies in the small. 'Greatness in Intimacy' shows how our strength lies precisely in the closeness and connection within our school. Because we truly know each other, children feel safe to be themselves and have the space to learn and grow in their own way.",
+      "paragraph3": "In our small-scale environment, students, teachers, and parents work closely together. We listen to the voice of every child, encourage their personal talents, and celebrate the small moments that matter, from a good conversation over coffee to a grand Sinterklaas celebration or a helping hand when needed.",
+      "paragraph4": "We offer the best of both worlds: strong bilingual (Dutch/English) education with an international perspective. With the Dutch core objectives and the International Primary Curriculum (IPC), children learn thematically and through discovery, sparking their curiosity and building their self-confidence. Small groups, personal attention, and a close-knit parent community ensure that every child feels seen and valued.",
+      "paragraph5": "With more than 10 nationalities and cultures within our community, we are proud of both our diversity and our connectedness. Because no matter how far our students later fly, the foundation they build here, in knowledge, in friendship, in the feeling of being together, always stays close.",
+      "paragraph6": "The Dutch School, Greatness in Intimacy. A place where every child is allowed to grow, and where the small things turn out to be the greatest of all.",
+      "quote": "The Small Dutch-Speaking School for Great Global Citizens."
     },
     "team": {
       "title": "Our Team",
-      "subtitle": "Dedicated educators passionate about your child's success",
+      "subtitle": "Dedicated teachers who work with passion to help every child grow.",
+      "intro": "At the Dutch School, our class teachers are the heart of the school. They are inspired, Dutch-speaking education professionals with a passion for learning and development. In the lower grades, they are carefully supported by our dedicated English-speaking classroom assistants. Together they create a safe, stimulating environment in which every child can grow.",
+      "intro2": "Our team is our greatest strength: with their expertise, attention, and dedication, they bring out the best in your child's learning every day. We also work with specialized subject teachers for English, swimming, and sports, so every child can develop optimally in these areas as well. These subject teachers bring their passion and expertise to make our education even richer and more varied. For our Skills Clubs and after-school activities, we partner with trusted consultants and experienced experts who contribute with the same engagement to the broad development of our students.",
       "members": {
-        "director": { "name": "School Leader", "role": "Management" },
-        "headPrimary": { "name": "Class Teacher", "role": "Primary School" },
-        "headEarlyYears": { "name": "Pedagogical Staff", "role": "Toddler Group" },
-        "operations": { "name": "Support Staff", "role": "Administration" }
+        "director": { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
+        "headPrimary": { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
+        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Toddler Teacher" },
+        "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
     "values": {
@@ -323,11 +339,11 @@
       },
       "value4": {
         "title": "Global Citizenship",
-        "description": "We prepare children to thrive in an interconnected world."
+        "description": "We guide students to grow into open, respectful, and curious global citizens who feel connected to the world and contribute to it actively and responsibly."
       }
     },
     "cta": {
-      "title": "Ready to Join Our Community?",
+      "title": "We warmly welcome you to our school community.",
       "subtitle": "Schedule a visit to experience our campus and meet our team.",
       "button": "Schedule a Visit"
     }
@@ -339,16 +355,26 @@
     },
     "philosophy": {
       "title": "Small Makes Great",
-      "content": "At Dutch School Nairobi, we believe that small makes great. In an intimate setting where every child is personally known, we can provide the best environment for development and growth.",
+      "content": "At the Dutch School, we believe that 'small makes great'. In an intimate setting where every child is personally known, we can provide the best environment for development and growth.",
       "quote": "Greatness in Intimacy means we are great in what we do, precisely because we are small in size."
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To provide high-quality bilingual education in a small-scale, warm environment where every child can develop optimally and be prepared for an international future."
+      "title": "Our day school mission",
+      "content": "At the Dutch School, we offer international, multilingual, and differentiated education in which children develop into open-minded, inquiring, and critical global citizens.",
+      "paragraph2": "We stand for high-quality education, in which students get the unique opportunity to learn and maintain the Dutch and English languages in an international environment. Our goal is for students to grow up bilingual, learn to think creatively and critically, and stay motivated to learn, their whole life long.",
+      "paragraph3": "We believe that every child has unique talents and potential, which are best discovered, nurtured, and expressed in a small, intimate learning environment with personal attention. We believe in a small school community with close ties between teachers, students, and parents, to give everyone a voice and combine strengths. With the goal of letting students learn, discover, and grow to their optimal individual potential. So they ultimately stand strong on their feet and make a difference in an ever-changing world that reaches beyond the Netherlands, Belgium, and/or Kenya.",
+      "missionQuote": "Greatness comes with self-knowledge."
     },
     "vision": {
-      "title": "Our Vision",
-      "content": "A school where every child is seen, known, and valued. Where the Dutch language and culture form a solid foundation and children develop into confident global citizens."
+      "title": "Our vision",
+      "content": "We believe in cultivating each person's own identity and talents, so that students find their place in a changing world with confidence and resilience.",
+      "paragraph2": "Our education challenges students to remain curious, take responsibility for their learning process, and make a positive contribution to their surroundings.",
+      "visionQuote": "Those who know their own strengths and beautiful imperfections, dare to ask, discover, learn, adapt… to keep growing!"
+    },
+    "motto": {
+      "title": "Our Motto",
+      "subtitle": "Bilingual learners, international community, growing together!",
+      "content": "A motto that captures who we are: a close-knit, international school community in which students grow together; in language, knowledge, and connection."
     },
     "values": {
       "title": "Our Core Values",
@@ -374,15 +400,46 @@
   "teamPage": {
     "hero": {
       "title": "Our Team",
-      "subtitle": "Dedicated professionals who know every child personally"
+      "subtitle": "Dedicated teachers who work with passion to help every child grow."
     },
     "intro": {
-      "title": "The People Behind Our School",
-      "content": "Our small, close-knit team consists of experienced and passionate professionals. Due to our small scale, every staff member knows every child personally, ensuring optimal guidance and support."
+      "title": "Teaching Team",
+      "content": "At the Dutch School, our class teachers are the heart of the school. They are inspired, Dutch-speaking education professionals with a passion for learning and development. In the lower grades, they are carefully supported by our dedicated English-speaking classroom assistants. Together they create a safe, stimulating environment in which every child can grow.",
+      "content2": "Our team is our greatest strength: with their expertise, attention, and dedication, they bring out the best in your child's learning every day. We also work with specialized subject teachers for English, swimming, and sports, so every child can develop optimally in these areas as well. These subject teachers bring their passion and expertise to make our education even richer and more varied. For our Skills Clubs and after-school activities, we partner with trusted consultants and experienced experts who contribute with the same engagement to the broad development of our students."
+    },
+    "roster": {
+      "title": "Our Teaching Team",
+      "members": [
+        { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
+        { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
+        { "name": "Jessica Donia", "role": "Upper Primary Teacher" },
+        { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher" },
+        { "name": "Jantien Hofland", "role": "Lower Primary Teacher" },
+        { "name": "Sarah Vijzelman", "role": "Toddler Teacher" },
+        { "name": "Caroline Slot", "role": "Toddler Teacher" },
+        { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant" },
+        { "name": "Faith Sambe", "role": "Teaching Assistant" },
+        { "name": "Jacinta", "role": "Teaching Assistant" },
+        { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches" },
+        { "name": "Miss Sandra", "role": "English & PE Teacher" }
+      ]
+    },
+    "wholeTeam": {
+      "title": "The Whole Team",
+      "content": "At the Dutch School, we are proud of our close-knit and engaged team. Together we make sure our school is a place where children feel safe, seen, and challenged.",
+      "content2": "Our team consists of much more than teachers alone. Every staff member contributes in their own way to the warm and well-organized school life. Our beautiful, green compound is carefully maintained by our gardeners, two of whom also dedicatedly drive the school bus to bring the children safely to and from school.",
+      "content3": "Our Finance & Operations Manager watches over the day-to-day running behind the scenes and is supported by our caretaker. Our cleaners ensure every day that the school stays clean, fresh, and welcoming.",
+      "content4": "We offer all our staff a safe, respectful working environment in which collaboration, engagement, and joy take center stage. Because only when our team feels good can we together create an optimal learning environment for every child.",
+      "members": [
+        { "name": "Lucy Kamau", "role": "Finance and Operations Manager" },
+        { "name": "Mulwa, Charles, Steve & Robert", "role": "Gardeners" },
+        { "name": "Steve & Robert", "role": "Bus Drivers" },
+        { "name": "Achieng & Charity", "role": "Cleaners" }
+      ]
     },
     "leadership": {
       "title": "School Leadership",
-      "description": "Our school leader carries daily responsibility for education and the wellbeing of all students."
+      "description": "Our school leader carries daily responsibility for education and the wellbeing of all students. She works closely with the Learning Support Coordinator, the NTC coordinator, and the Finance and Operations Manager; together they form the Management Team."
     },
     "teachers": {
       "title": "Teachers",
@@ -390,7 +447,11 @@
     },
     "support": {
       "title": "Support Staff",
-      "description": "From learning support coordinator to administration - our team works together to ensure the best experience for children and parents."
+      "description": "From teaching assistants, gardeners, cleaners, and bus drivers to administration, our team works together to ensure the best experience for children and parents."
+    },
+    "board": {
+      "title": "Board",
+      "description": "Our board consists of volunteer parents elected by the members of the association. All parents with children at the school are automatically members of the association. The board oversees the management team and safeguards the policy and quality of education and school organisation."
     },
     "cta": {
       "title": "Meet Our Team",
@@ -404,8 +465,11 @@
       "subtitle": "A green oasis in the heart of Karen, Nairobi"
     },
     "location": {
-      "title": "Our Location",
-      "content": "Dutch School Nairobi is located in Karen, one of the greenest and most peaceful neighborhoods of Nairobi. Our spacious compound provides a safe, natural environment where children can learn, play, and discover.",
+      "title": "Location",
+      "content": "Dutch School Nairobi is located in the heart of Karen, one of the greenest and most peaceful neighborhoods in the city. Our school sits on a beautiful, spacious compound with plenty of trees, lawns, and shaded spots where children can play and learn safely.",
+      "paragraph2": "The surroundings offer endless play opportunities: running, climbing, playing, football, cycling, or simply enjoying the outdoors. Children get the space, both literally and figuratively, to move, discover, and feel free here.",
+      "paragraph3": "Parents appreciate how easy our school is to reach. The location is central in Karen and easily accessible by car. School transport is also available via our school buses, so families from outside Karen can easily have their children dropped off and picked up.",
+      "paragraph4": "The combination of nature, space, and calm makes Dutch School Nairobi a place where children feel at home and come to school happily!",
       "features": {
         "green": "Large green grounds with play areas",
         "outdoor": "Outdoor education facilities",
@@ -433,7 +497,7 @@
       }
     },
     "directions": {
-      "title": "Directions",
+      "title": "Accessibility",
       "content": "We are easily accessible from all parts of Nairobi. Our school also offers transport from various neighborhoods."
     },
     "cta": {
@@ -444,7 +508,7 @@
   },
   "educationPage": {
     "hero": {
-      "title": "Education",
+      "title": "Day School Education",
       "subtitle": "Bilingual education from toddler group through grade 8"
     },
     "intro": {
@@ -493,21 +557,25 @@
   "toddlerPage": {
     "hero": {
       "title": "Toddler Group",
-      "subtitle": "A warm start for our youngest learners, from age 1.5"
+      "subtitle": "A warm, playful, bilingual environment where toddlers grow, discover, and develop through play. Maximum 15 children per morning, 2-5 mornings per week."
     },
     "intro": {
-      "title": "Learning Through Play",
-      "content": "Our toddler group provides a safe, stimulating environment where children from age 1.5 playfully become familiar with the Dutch language and culture. In a small group of maximum 15 children, every child receives the attention and care they deserve."
+      "title": "Toddler Group (Peuterspeelzaal)",
+      "content": "In our toddler group, our youngest learners discover the world at their own pace, in a safe and familiar environment. We welcome toddlers from one and a half years old, two to five mornings per week, in a small group of maximum fifteen children.",
+      "paragraph2": "Through play, we work on independence, social skills, and language development. Toddlers learn to put on their own coats, tidy up, take turns, and work together with others; important first steps toward primary school. In conversations, stories, and play, both Dutch and English receive plenty of attention, allowing children to build a rich vocabulary in a natural way.",
+      "paragraph3": "Movement and discovery are central: during outdoor play, toddler gym, and, weather permitting, even at the weekly toddler swimming with their own teacher. Creativity also gets space. The toddlers experiment with paint, clay, scissors, and paper and learn different techniques.",
+      "paragraph4": "We carefully follow their development with the KIJK! observation system and work with themes from the International Early Years Curriculum (IEYC). This way, the activities connect with the world of young children and prepare them through play for groups 1 and 2. Toddlers move on to group 0/1 when they turn 4.",
+      "paragraph5": "In short: our toddler education lays a warm, playful, and solid foundation for a lifetime of learning."
     },
     "program": {
       "title": "The Program",
       "schedule": {
-        "title": "Flexible Care",
-        "description": "Choose 2, 3, 4, or 5 mornings per week, depending on your family's needs."
+        "title": "Flexible Mornings",
+        "description": "Toddlers can attend 2, 3, 4, or 5 mornings per week."
       },
       "language": {
         "title": "Language Exposure",
-        "description": "Natural introduction to Dutch through songs, stories, and daily interactions."
+        "description": "Natural introduction to Dutch and English through songs, stories, and daily interactions."
       },
       "play": {
         "title": "Learning Through Play",
@@ -519,21 +587,23 @@
       }
     },
     "activities": {
-      "title": "Daily Activities",
+      "title": "Weekly Activities",
       "list": [
         "Circle time with songs and stories",
         "Free play indoors and outdoors",
         "Creative activities",
         "Movement activities",
         "Nature and outdoor play",
-        "Music and dance"
+        "Music and dance",
+        "Swimming",
+        "Cooperative play"
       ]
     },
     "practical": {
       "title": "Practical Information",
-      "hours": "Opening hours: 8:30 AM - 12:30 PM",
+      "hours": "Opening hours: 8:00 AM - 12:00 PM (option until 3:00 PM)",
       "group": "Group size: maximum 15 children",
-      "staff": "Supervision: experienced pedagogical staff"
+      "staff": "Supervision: experienced pedagogical staff and teaching assistants"
     },
     "cta": {
       "title": "Want to Learn More?",
@@ -544,43 +614,57 @@
   "primaryPage": {
     "hero": {
       "title": "Primary School",
-      "subtitle": "Bilingual education from groups 1 through 8"
+      "subtitle": "Fully bilingual education with the Dutch curriculum and the International Primary Curriculum (IPC). Small classes, personal attention."
     },
     "intro": {
       "title": "The Best of Both Worlds",
-      "content": "Our primary school combines the Dutch curriculum with the International Primary Curriculum (IPC). Children receive education in both Dutch and English, preparing them optimally for either return to the Netherlands or continuation of international education."
+      "content": "Our primary school combines the Dutch curriculum with the International Primary Curriculum (IPC). Children receive education in both Dutch and English, preparing them optimally for either return to the Netherlands or continuation of international education.",
+      "visionTitle": "Our vision on bilingual education",
+      "visionContent": "At the Dutch School, we believe that multilingualism is a strength, a key to connection, understanding, and success in an international world. We offer education in which Dutch and English are used in balance, so our students are firmly rooted in Dutch and Flemish culture and can communicate confidently in an international environment.",
+      "visionParagraph2": "Our bilingual education is more than receiving lessons in two languages. It is a thoughtful approach in which students learn language through meaningful experiences, within rich themes from the International Early Years and Primary Curriculum (IEYC/IPC). This way, children grow into true global citizens: flexible in language, culture, and thinking.",
+      "visionParagraph3": "Through this approach, students develop not only two strong language systems, but also a deeper language awareness (metalinguistic awareness). They learn to think about language, recognize differences, and use strategies that strengthen their learning capacity. This stimulates their creative, social, and cognitive development, and prepares them for diverse onward education paths; both internationally and Dutch-speaking.",
+      "visionParagraph4": "Our teachers work purposefully on rich knowledge and skills, with attention to play, inquiry, reflection, and self-insight. Students discover how their brain works, learn how they themselves influence their growth, and experience the joy of learning in two languages.",
+      "visionParagraph5": "The strength of our bilingual education lies in the balance between familiar and international: Dutch as a solid foundation, English as a window to the world. This way we create an environment in which students can be themselves, experience connection with others, and grow with confidence into multilingual, curious, and open-minded global citizens."
     },
     "bilingual": {
-      "title": "Bilingual Education",
+      "title": "Our Education",
       "kindergarten": {
-        "title": "Groups 1-2 (Kindergarten)",
-        "description": "3 days Dutch, 2 days English. Learning through play with the IEYC curriculum."
+        "title": "Kindergarten Education (Groups 1-2)",
+        "description": "In our kindergarten groups, we lay a solid foundation for lifelong learning through play. In a rich, bilingual learning environment (3 days Dutch, 2 days English) full of play, discovery, and wonder, children grow in language, self-confidence, and social skills. Through meaningful IEYC themes, we stimulate curiosity, creativity, and a natural development in both Dutch and English.",
+        "extended": "Dutch-speaking kindergarten education is internationally recognized as powerful and future-focused. In our kindergarten groups, we lay a solid foundation for lifelong learning. Young learning is discovering, wondering, and growing, and that is what our kindergarteners do every day in a rich learning environment full of play, language, and curiosity. Our education is bilingual: three days a week in Dutch and two days fully in English. This way, the children build a natural foundation in both languages, without separate language lessons. Our kindergarten classes are set up with various corners full of play, learning, and development materials, inviting discovery and collaboration. We work with themes from the International Early Years Curriculum (IEYC) and devote much attention to social-emotional development. We track development with the KIJK! observation system. Our kindergarten class is a safe, cheerful, and stimulating place where every child has the space to grow; in language, in self-confidence, and in wonder."
       },
       "lower": {
-        "title": "Groups 3-5 (Lower Primary)",
-        "description": "Fundamental skills in language, mathematics, and world studies in both languages."
+        "title": "Pedagogical and Didactic Approach",
+        "description": "At the Dutch School, the development of the child is central, both as a student and as a person. In a safe, warm, and structured environment, children learn not only what they learn, but also how they learn. Our teachers stimulate curiosity, self-confidence, and ownership, with attention to executive functions, talent development, and getting to know their own brain. Together we build brain-friendly, future-oriented education in which every child blossoms.",
+        "extended": "At the Dutch School, we believe that children only truly learn when they feel safe, seen, and valued. Our teachers play a central role in this. They are not only teachers, but also guides in the broad development of every child, with attention to head, heart, and hands. Within our heterogeneous groups, students naturally learn to work together, take responsibility, and consider one another. The basis of our pedagogical approach is shaped by our five golden rules: 1. We make sure everyone feels safe at school. 2. We are friendly and kind to one another. 3. We take good care of our own and others' belongings. 4. We let each other play and work undisturbed. 5. We trust each other. Using the brain powers from Breinhelden, the personal goals of the IPC, and a talent-focused lens, we strengthen not only knowledge but also character. Our education is purposeful, child-centered, and inquiry-based."
       },
       "upper": {
-        "title": "Groups 6-8 (Upper Primary)",
-        "description": "Deepening knowledge and preparation for secondary education. Transition test in group 8."
+        "title": "Broad Development",
+        "description": "At the Dutch School, we look beyond just academic performance. We guide children in their cognitive, social, creative, and physical development, so they can grow with confidence, resilience, and curiosity. With attention to ownership, talent development, and global citizenship, we create an environment in which every child learns with head, heart, and hands.",
+        "extended": "At the Dutch School, we believe learning goes beyond knowledge alone. We guide children in their broad development; cognitively, socially, creatively, and physically, so they meet the world with confidence and curiosity. Our teachers stimulate students to think independently, collaborate, and reflect. Within IPC education, personal goals such as resilience, empathy, respect, and responsibility are central. Programs like Breinhelden help children understand their emotions, stay focused, and persevere; qualities that contribute to growth, self-confidence, and joy in learning. Alongside a strong academic program, we offer space for creativity and talent development. During our Skills Clubs, students discover new interests in art, music, sport, woodworking, and gardening. Movement is also a regular part of the weekly program, with weekly gym and swimming lessons for all groups. As an international Dutch-speaking school in a diverse community, we devote much attention to citizenship and global citizenship."
       }
     },
     "curriculum": {
       "title": "Curriculum",
       "dutch": {
         "title": "Dutch Curriculum",
-        "subjects": ["Dutch language", "Mathematics", "Reading comprehension", "Spelling", "Writing"]
+        "subjects": ["Dutch language", "Reading comprehension", "Spelling", "Writing", "Mathematics"]
       },
       "ipc": {
         "title": "IPC (International Primary Curriculum)",
         "subjects": ["Thematic learning", "Science", "History", "Geography", "Arts & Culture"]
+      },
+      "english": {
+        "title": "English Lessons",
+        "subjects": ["Listening", "Speaking", "Reading", "Writing"]
       }
     },
     "assessment": {
       "title": "Assessment & Tracking",
-      "content": "We use the CITO student monitoring system to track each child's progress. In group 8, students take the official transition test.",
+      "content": "We use observation and student monitoring systems to track each child's progress. In group 8, students take the official transition test.",
       "items": [
-        "CITO tests for comparison with Netherlands",
+        "KIJK observation system for groups 1-2",
+        "CITO student monitoring system for groups 1-8, benchmarked with the Netherlands",
         "Transition test in group 8",
         "Pearson Young Learners English Benchmark",
         "Regular progress reports to parents"
@@ -590,6 +674,82 @@
       "title": "Want to Know More?",
       "subtitle": "Discover how our bilingual education can prepare your child for the future.",
       "button": "Schedule a Visit"
+    }
+  },
+  "ntcSchedulePage": {
+    "hero": {
+      "title": "NTC Hours & Locations",
+      "subtitle": "When and where our NTC lessons take place"
+    },
+    "intro": {
+      "title": "Content coming soon",
+      "content": "More information about the times, days, and locations of our NTC program will appear on this page soon. Do you have a question now? Feel free to contact us."
+    },
+    "cta": {
+      "title": "Questions about hours?",
+      "subtitle": "We'd be happy to help.",
+      "button": "Contact Us"
+    }
+  },
+  "ntcFeesPage": {
+    "hero": {
+      "title": "NTC School Fees",
+      "subtitle": "Rates and payment information for the NTC program"
+    },
+    "intro": {
+      "title": "Content coming soon",
+      "content": "More information about the fees for the NTC program will appear on this page soon. For current rates, please contact our office."
+    },
+    "cta": {
+      "title": "Request rates",
+      "subtitle": "Contact us for current NTC rates.",
+      "button": "Contact Us"
+    }
+  },
+  "adultClassesPage": {
+    "hero": {
+      "title": "Dutch Adult Classes",
+      "subtitle": "Dutch language courses for adults"
+    },
+    "intro": {
+      "title": "Dutch Lessons for Adults",
+      "content": "Our Dutch Adult Classes offer Dutch language courses for adults at all proficiency levels. Perfect for parents, partners, or anyone who wants to learn Dutch or improve their language skills.",
+      "comingSoon": "We are working on a comprehensive page with all the information about our courses, levels, and approach. Content coming soon. Do you have a question now? Feel free to contact us."
+    },
+    "cta": {
+      "title": "Interested in Dutch lessons?",
+      "subtitle": "Contact us for more information.",
+      "button": "Contact Us"
+    }
+  },
+  "adultClassesSchedulePage": {
+    "hero": {
+      "title": "Hours & Locations",
+      "subtitle": "When and where our Dutch Adult Classes take place"
+    },
+    "intro": {
+      "title": "Content coming soon",
+      "content": "More information about the times, days, and locations of the Dutch Adult Classes will appear on this page soon. Do you have a question now? Feel free to contact us."
+    },
+    "cta": {
+      "title": "Questions about hours?",
+      "subtitle": "We'd be happy to help.",
+      "button": "Contact Us"
+    }
+  },
+  "adultClassesFeesPage": {
+    "hero": {
+      "title": "Course Fees",
+      "subtitle": "Rates and payment information for the Dutch Adult Classes"
+    },
+    "intro": {
+      "title": "Content coming soon",
+      "content": "More information about the course fees for the Dutch Adult Classes will appear on this page soon. For current rates, please contact our office."
+    },
+    "cta": {
+      "title": "Request rates",
+      "subtitle": "Contact us for current rates.",
+      "button": "Contact Us"
     }
   },
   "ntcPage": {
@@ -648,12 +808,21 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Curriculum",
-      "subtitle": "A balanced bilingual education program"
+      "title": "Our Education",
+      "subtitle": "A balanced bilingual education program with IEYC, IPC, Dutch core objectives, and English language lessons"
     },
     "intro": {
       "title": "The Best of Both Systems",
       "content": "Our curriculum combines the strengths of the Dutch educational system with the internationally recognized IEYC and IPC. This ensures broad, balanced development of every child."
+    },
+    "english": {
+      "title": "English Lessons",
+      "intro": "Language connects, opens worlds, and brings people closer together, and that is exactly what we want to achieve at the Dutch School with our bilingual education.",
+      "paragraph2": "We offer all students from groups 3-8 English language lessons twice a week, taught by a native English speaker. In these lessons, listening, speaking, reading, and writing come together in a lively and meaningful way.",
+      "paragraph3": "We use the Pearson Now I Know method, combined with the Bilingual Primary Education learning line for English, with which we build strong communicative skills and a solid grammatical foundation. Our ambitions are high: many students achieve, by the end of group 8, an English language level comparable to HAVO 4 in the Netherlands. That ensures a smooth transition to international education, which a large portion of our students continue after completing primary school.",
+      "paragraph4": "Within our IEYC/IPC lessons, English is also used as the language of instruction. This helps students learn to use the language naturally across diverse subject areas, from science to art and society. At the same time, Dutch remains firmly anchored in our curriculum, so students learn to switch between languages and strengthen their metalinguistic awareness.",
+      "paragraph5": "In addition to Dutch and English, students get the chance to discover other languages. In our Language Club, we offer French and Kiswahili, languages that connect with both our students' backgrounds and our international and local environment in Kenya.",
+      "paragraph6": "This way, our students grow step by step into confident, multilingual global citizens who feel at home in multiple languages and cultures."
     },
     "dutch": {
       "title": "Dutch Curriculum",
@@ -716,15 +885,22 @@
     },
     "intro": {
       "title": "Expand Language Skills",
-      "content": "In addition to our bilingual Dutch-English program, we offer extra language lessons. Children can learn French or Kiswahili, perfect for their international future and local integration."
+      "content": "In addition to our bilingual Dutch-English program, we offer extra language lessons. Children can learn French or Kiswahili, perfect for their international future and local integration.",
+      "extendedTitle": "Language Club",
+      "paragraph2": "Our Language Club gives students 45 minutes a week to deepen and broaden their language skills. We focus on the four languages that play a role in our school: Dutch, English, French, and Kiswahili.",
+      "paragraph3": "For students who do not yet fully master Dutch or English, the Language Club offers extra language support. This way, they build a solid foundation for the rest of their school career. Other students can choose Kiswahili (groups 1-8) or French (groups 5-8).",
+      "paragraph4": "In Kiswahili lessons, students work playfully on listening and speaking skills around familiar themes such as greetings, counting, family, animals, food, and visiting the market. We work with different level groups, from beginner to advanced, so every child progresses at their own pace.",
+      "paragraph5": "The French language club starts from group 5 with a playful introduction to the language and culture. In groups 7 and 8, we work toward the final goals of Flemish education for year 6. This way, Flemish students can further strengthen their home language, while other students lay a solid foundation in a third European language.",
+      "paragraph6": "The goal of the Language Club is to offer children a rich language program, increase their language enjoyment and cultural curiosity, and prepare them for various future learning paths. We see multilingualism as a strength: it stimulates creative thinking, strengthens social skills, and enriches learning at all levels.",
+      "paragraph7": "We are proud of our Language Club: a place where languages come to life and students grow in communication and self-confidence."
     },
     "french": {
       "title": "French",
       "ages": "Groups 5-8",
-      "content": "French lessons as preparation for secondary education and international communication.",
+      "content": "French lessons as preparation for education in Belgium and secondary education.",
       "features": [
         "Basic conversation and vocabulary",
-        "French culture",
+        "Belgian culture",
         "Preparation for secondary education"
       ]
     },
@@ -740,7 +916,7 @@
     },
     "schedule": {
       "title": "Schedule",
-      "content": "Language lessons are given during or after school, integrated into the weekly schedule."
+      "content": "The extra language lessons as part of the Language Club are given during school time, integrated into the weekly schedule, at least once a week."
     },
     "cta": {
       "title": "Interested in Extra Languages?",
@@ -748,14 +924,39 @@
       "button": "Contact Us"
     }
   },
+  "libraryPage": {
+    "hero": {
+      "title": "Library",
+      "subtitle": "A beloved place where the joy of reading takes center stage"
+    },
+    "intro": {
+      "title": "Library",
+      "content": "At the Dutch School, the joy of reading is central. We believe it is important that every child discovers the magic of stories, not only to learn language, but most of all to enjoy reading itself.",
+      "paragraph2": "Because there is no Dutch library around the corner in Kenya, we cherish our own extensive collection of Dutch-language children's books, supplemented with informative titles and a fine selection of English books. The latter are used during English lessons and to further encourage reading at home. Every year we expand our library with new, current books, so there is always something inspiring to discover.",
+      "paragraph3": "The library is a beloved place in our school. Here children learn not only to read, but also to take care of their books. With their own canvas library bag, they choose new books every week, thanks to our dedicated 'library parents' who keep everything running smoothly.",
+      "paragraph4": "Throughout the year, we highlight various themes and book genres. A highlight is the Children's Book Week in October, during which the whole school buzzes with stories, reading aloud, and creative book activities for two weeks.",
+      "paragraph5": "Our library brings not only children but also parents closer to the joy of reading; an invitation to keep discovering, browsing, and enjoying the world that books open up together."
+    },
+    "cta": {
+      "title": "Come Visit Our Library",
+      "subtitle": "Schedule a tour and discover our rich collection of books.",
+      "button": "Schedule a Visit"
+    }
+  },
   "skillsClubPage": {
     "hero": {
       "title": "Skills Club",
-      "subtitle": "After-school activities for broad development"
+      "subtitle": "Activities during school hours for broad development"
     },
     "intro": {
-      "title": "More Than Just Books",
-      "content": "The Skills Club offers a rich variety of after-school activities. Children develop practical skills, creativity, and social competencies in a relaxed atmosphere."
+      "title": "More than cognitive learning",
+      "content": "The Skills Club offers, twice a week during school hours and as part of the learning program, a rich variety of activities. Students discover and develop their talents, practical skills, creativity, and social competencies in an inspiring environment in which joy and engagement take center stage.",
+      "extendedTitle": "Skills Club",
+      "paragraph2": "Twice a week, our students close their school day with something special: the Skills Club. During these afternoons, children get the chance to discover their talents, develop new skills, and most of all to learn with joy.",
+      "paragraph3": "The Skills Clubs offer a wide range of activities, from art, music, and sport to woodworking and gardening. By learning with their hands, heart, and head, students discover where their strength lies and dare to take on new challenges. The emphasis is not on grades or performance, but on personal growth, creativity, and collaboration.",
+      "paragraph4": "Within the clubs, students learn skills that reach beyond the classroom: perseverance, responsibility, communication, and self-confidence. Step by step, they develop the executive functions and social skills that help them stand independently, resiliently, and curiously in life.",
+      "paragraph5": "The Skills Clubs are led by trusted consultants and experienced experts who love to share their passion with the children. This way, we offer an inspiring learning environment in which every child has the space to grow, in their own way.",
+      "paragraph6": "At the Dutch School, we believe that learning goes beyond books and tests. In the Skills Club, students discover what they can do, what they enjoy, and who they want to become."
     },
     "activities": {
       "title": "Activities",
@@ -779,14 +980,14 @@
         "title": "Sports & Movement",
         "description": "Various sports and movement activities."
       },
-      "cooking": {
-        "title": "Cooking",
-        "description": "Simple recipes and healthy eating."
+      "digital": {
+        "title": "Digital Literacy",
+        "description": "Creative and inquiry-based use of technology, media, and digital skills."
       }
     },
     "schedule": {
       "title": "When?",
-      "content": "Skills Club activities take place after school. The offering varies per term."
+      "content": "Skills Club activities take place during school hours. There is a fixed offering throughout the school year and a number of rotating activities per term."
     },
     "cta": {
       "title": "What Activities Are Available Now?",

@@ -73,16 +73,20 @@ function IntroSection() {
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               {t('title')}
             </h2>
-            <p className="text-lg text-muted leading-relaxed">
-              {t('content')}
-            </p>
+            <div className="space-y-4 text-muted leading-relaxed">
+              <p className="text-lg">{t('content')}</p>
+              <p>{t('paragraph2')}</p>
+              <p>{t('paragraph3')}</p>
+              <p>{t('paragraph4')}</p>
+              <p className="font-medium text-foreground">{t('paragraph5')}</p>
+            </div>
           </div>
-          <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+          <div className="aspect-[4/3] rounded-3xl overflow-hidden lg:sticky lg:top-24">
             <OptimizedImage
               src="/images/toddler.png"
               alt="Toddler group at Dutch School Nairobi"

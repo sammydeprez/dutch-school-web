@@ -39,13 +39,25 @@ function IntroSection() {
 
   return (
     <section className="py-20 lg:py-28 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 text-center">
           {t('title')}
         </h2>
-        <p className="text-lg text-muted leading-relaxed">
+        <p className="text-lg text-muted leading-relaxed text-center mb-12">
           {t('content')}
         </p>
+
+        <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+          {t('extendedTitle')}
+        </h3>
+        <div className="space-y-5 text-muted leading-relaxed">
+          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph3')}</p>
+          <p>{t('paragraph4')}</p>
+          <p>{t('paragraph5')}</p>
+          <p>{t('paragraph6')}</p>
+          <p className="font-medium text-foreground">{t('paragraph7')}</p>
+        </div>
       </div>
     </section>
   );

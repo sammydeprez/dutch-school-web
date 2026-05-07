@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { BookOpen, Calculator, FileText, Check } from 'lucide-react';
+import { BookOpen, Calculator, FileText, Check, Languages } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -25,6 +25,7 @@ export default async function CurriculumPage({ params }: { params: Promise<{ loc
       <DutchCurriculumSection />
       <IEYCSection />
       <IPCSection />
+      <EnglishSection />
       <AssessmentSection />
       <CTASection />
     </>
@@ -169,6 +170,31 @@ function IPCSection() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function EnglishSection() {
+  const t = useTranslations('curriculumPage.english');
+
+  return (
+    <section className="py-20 lg:py-28 bg-accent/5">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="inline-flex w-16 h-16 mx-auto rounded-2xl bg-accent/10 items-center justify-center mb-6">
+          <Languages className="w-8 h-8 text-accent" />
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8 text-center">
+          {t('title')}
+        </h2>
+        <div className="space-y-5 text-muted leading-relaxed">
+          <p className="text-lg">{t('intro')}</p>
+          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph3')}</p>
+          <p>{t('paragraph4')}</p>
+          <p>{t('paragraph5')}</p>
+          <p>{t('paragraph6')}</p>
         </div>
       </div>
     </section>

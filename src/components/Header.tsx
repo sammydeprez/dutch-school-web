@@ -52,10 +52,28 @@ export default function Header() {
       { href: '/education', label: t('educationOverview') },
       { href: '/education/toddler', label: t('toddler') },
       { href: '/education/primary', label: t('primary') },
-      { href: '/education/ntc', label: t('ntc') },
       { href: '/education/curriculum', label: t('curriculum') },
       { href: '/education/language-club', label: t('languageClub') },
       { href: '/education/skills-club', label: t('skillsClub') },
+      { href: '/education/library', label: t('library') },
+    ],
+  };
+
+  const ntcDropdown: NavDropdown = {
+    label: t('ntc'),
+    items: [
+      { href: '/ntc', label: t('ntcOverview') },
+      { href: '/ntc/schedule', label: t('ntcSchedule') },
+      { href: '/ntc/fees', label: t('ntcFees') },
+    ],
+  };
+
+  const adultClassesDropdown: NavDropdown = {
+    label: t('adultClasses'),
+    items: [
+      { href: '/adult-classes', label: t('adultClassesOverview') },
+      { href: '/adult-classes/schedule', label: t('adultClassesSchedule') },
+      { href: '/adult-classes/fees', label: t('adultClassesFees') },
     ],
   };
 
@@ -148,6 +166,8 @@ export default function Header() {
             {/* Dropdown menus */}
             <NavigationDropdown dropdown={aboutDropdown} />
             <NavigationDropdown dropdown={educationDropdown} />
+            <NavigationDropdown dropdown={ntcDropdown} />
+            <NavigationDropdown dropdown={adultClassesDropdown} />
 
             {/* Student Support single link */}
             <Link
@@ -270,6 +290,20 @@ export default function Header() {
               <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                 <NavigationDropdown
                   dropdown={educationDropdown}
+                  mobile
+                  onItemClick={() => setIsMenuOpen(false)}
+                />
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: '125ms' }}>
+                <NavigationDropdown
+                  dropdown={ntcDropdown}
+                  mobile
+                  onItemClick={() => setIsMenuOpen(false)}
+                />
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: '140ms' }}>
+                <NavigationDropdown
+                  dropdown={adultClassesDropdown}
                   mobile
                   onItemClick={() => setIsMenuOpen(false)}
                 />

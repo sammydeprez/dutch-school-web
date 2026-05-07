@@ -6,15 +6,23 @@
     "vision": "Onze Visie",
     "team": "Het Team",
     "campus": "Locatie & Campus",
-    "education": "Onderwijs",
+    "education": "Onderwijs Dagschool",
     "educationOverview": "Overzicht",
     "toddler": "Peuterspeelzaal",
     "primary": "Basisschool",
-    "ntc": "NTC",
-    "curriculum": "Curriculum",
+    "curriculum": "Ons Onderwijs",
     "languageClub": "Talenclub",
     "skillsClub": "Skills Club",
+    "library": "Bibliotheek",
     "studentSupport": "Leerlingenzorg",
+    "ntc": "NTC",
+    "ntcOverview": "Overzicht",
+    "ntcSchedule": "Lestijden en locaties",
+    "ntcFees": "Schoolgeld",
+    "adultClasses": "Dutch Adult Classes",
+    "adultClassesOverview": "Overzicht",
+    "adultClassesSchedule": "Lestijden en locaties",
+    "adultClassesFees": "Schoolgeld",
     "practical": "Praktisch",
     "practicalOverview": "Overzicht",
     "schedule": "Schooltijden",
@@ -278,33 +286,41 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "Over Dutch School Nairobi",
-      "subtitle": "Groots in kleinschaligheid - bijna 50 jaar onderwijsexcellentie in Kenia"
+      "title": "Over de Dutch School",
+      "subtitle": "Groots in kleinschaligheid - al meer dan 50 jaar onderwijsexcellentie in Kenia"
     },
     "history": {
       "title": "Onze Geschiedenis",
       "content": "Opgericht in 1971, is de Nederlandse Schoolvereniging een hoeksteen van Nederlands onderwijs in Oost-Afrika. Wat begon als een klein initiatief van Nederlandse expatfamilies is uitgegroeid tot een bloeiende internationale gemeenschap, met trots erkend door de Stichting Nederlands Onderwijs in het Buitenland.",
       "timeline": {
-        "1971": "School opgericht door Nederlandse expatfamilies",
+        "1971": "School opgericht door Nederlandstalige expat families",
         "1985": "Officiële erkenning door de Nederlandse overheid",
-        "2000": "Introductie van IPC curriculum",
-        "2010": "Uitbreiding NTC-programma",
-        "2020": "Integratie van digitaal leren",
-        "today": "50+ jaar onderwijsexcellentie"
+        "2007": "Introductie van IPC curriculum",
+        "2014": "Officieel tweetalig onderwijs (Nederlands en Engels)",
+        "2016": "Verhuizing naar onze compound in Karen",
+        "2024": "Fusie met NTC school, om volledig aanbod aan te bieden"
       }
     },
     "approach": {
-      "title": "Onze Onderwijsaanpak",
-      "content": "Wij geloven in de kracht van kleinschalig onderwijs. Onze unieke combinatie van het Nederlandse curriculum en het International Primary Curriculum (IPC) zorgt ervoor dat leerlingen goed voorbereid zijn op zowel Nederlandse als internationale onderwijstrajecten. Kleine klassen maken persoonlijke aandacht mogelijk, zodat elk kind zijn volledige potentieel bereikt."
+      "title": "Groots in Kleinschaligheid",
+      "content": "Sinds 1971 is de Dutch School (voorheen Netherlands School Society) een vertrouwde plek voor Nederlandse en internationale gezinnen in Nairobi. Een plek waar kinderen leren, ontdekken en groeien, in een warme omgeving waar onderwijs, plezier in leren en gemeenschap samenkomen.",
+      "paragraph2": "Wij geloven dat grootsheid schuilt in het kleine. 'Groots in Kleinschaligheid' laat zien hoe onze kracht juist ligt in de nabijheid en verbondenheid binnen onze school. Doordat we elkaar écht kennen, voelen kinderen zich veilig om zichzelf te zijn en krijgen ze de ruimte om op hun eigen manier te leren en te groeien.",
+      "paragraph3": "In onze kleinschalige omgeving werken leerlingen, leraren en ouders nauw samen. We luisteren naar de stem van elk kind, stimuleren hun persoonlijke talenten en vieren de kleine momenten die ertoe doen, van een goed gesprek bij de koffie tot een groots Sinterklaasfeest of een helpende hand wanneer dat even nodig is.",
+      "paragraph4": "Wij bieden het beste van twee werelden: sterk tweetalig (Nederlands/Engels) onderwijs met een internationale blik. Met de Nederlandse kerndoelen en het International Primary Curriculum (IPC) leren kinderen thematisch en ontdekkend, wat hun nieuwsgierigheid prikkelt en hun zelfvertrouwen versterkt. Kleine groepen, persoonlijke aandacht en een hechte ouder community zorgen ervoor dat ieder kind zich gezien en gewaardeerd voelt.",
+      "paragraph5": "Met meer dan 10 nationaliteiten en culturen binnen onze gemeenschap zijn we trots op onze veelzijdigheid én onze verbondenheid. Want hoe ver onze leerlingen later ook uitvliegen, de basis die ze hier leggen, in kennis, in vriendschap, in gevoel van samen zijn, blijft altijd dichtbij.",
+      "paragraph6": "De Dutch School, Groots in Kleinschaligheid. Een plek waar ieder kind mag groeien, en waar de kleine dingen het grootst van alles blijken te zijn.",
+      "quote": "De Kleine Nederlandstalige School voor Grootse Wereldburgers."
     },
     "team": {
       "title": "Ons Team",
-      "subtitle": "Toegewijde docenten gepassioneerd over het succes van uw kind",
+      "subtitle": "Toegewijde leerkrachten die met passie werken aan de groei van ieder kind.",
+      "intro": "Bij de Dutch School vormen onze groepsleerkrachten het hart van de school. Het zijn bevlogen, Nederlandstalige onderwijsprofessionals met een passie voor leren en ontwikkelen. In de onderbouw worden zij met zorg ondersteund door onze toegewijde Engelstalige klassenassistenten. Samen creëren zij een veilige, stimulerende omgeving waarin ieder kind kan groeien.",
+      "intro2": "Ons team is onze grootste kracht: met hun expertise, aandacht en toewijding halen zij elke dag het beste uit het leren van uw kind. Daarnaast werken we met gespecialiseerde vakleerkrachten voor Engels, zwemmen en sport, zodat ieder kind zich ook op deze gebieden optimaal kan ontwikkelen. Deze vakleerkrachten brengen hun passie en expertise in om ons onderwijs nog rijker en veelzijdiger te maken. Voor onze Skills Clubs en naschoolse activiteiten werken we samen met vertrouwde consultants en ervaren experts, die met dezelfde betrokkenheid bijdragen aan de brede ontwikkeling van onze leerlingen.",
       "members": {
-        "director": { "name": "Schoolleider", "role": "Directie" },
-        "headPrimary": { "name": "Groepsleerkracht", "role": "Basisschool" },
-        "headEarlyYears": { "name": "Pedagogisch Medewerker", "role": "Peuterspeelzaal" },
-        "operations": { "name": "Ondersteunend", "role": "Administratie" }
+        "director": { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht" },
+        "headPrimary": { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht" },
+        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Peuterleerkracht" },
+        "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
     "values": {
@@ -323,11 +339,11 @@
       },
       "value4": {
         "title": "Wereldburgerschap",
-        "description": "We bereiden kinderen voor om te gedijen in een verbonden wereld."
+        "description": "We begeleiden leerlingen om uit te groeien tot open, respectvolle en nieuwsgierige wereldburgers die zich verbonden voelen met de wereld en daar actief en verantwoordelijk aan bijdragen."
       }
     },
     "cta": {
-      "title": "Klaar om Lid te Worden van Onze Gemeenschap?",
+      "title": "We heten u graag welkom in onze schoolgemeenschap.",
       "subtitle": "Plan een bezoek om onze campus te ervaren en ons team te ontmoeten.",
       "button": "Plan een Bezoek"
     }
@@ -339,16 +355,26 @@
     },
     "philosophy": {
       "title": "Klein Maakt Groots",
-      "content": "Bij Dutch School Nairobi geloven we dat klein maakt groots. In een intieme setting waar elk kind persoonlijk gekend wordt, kunnen we de beste omgeving bieden voor ontwikkeling en groei.",
+      "content": "Bij de Dutch School geloven we dat 'klein groots maakt'. In een intieme setting waar elk kind persoonlijk gekend wordt, kunnen we de beste omgeving bieden voor ontwikkeling en groei.",
       "quote": "Groots in Kleinschaligheid betekent dat we groot zijn in wat we doen, juist omdat we klein zijn in omvang."
     },
     "mission": {
-      "title": "Onze Missie",
-      "content": "Het bieden van hoogwaardig tweetalig onderwijs in een kleinschalige, warme omgeving waar elk kind zich optimaal kan ontwikkelen en voorbereid wordt op een internationale toekomst."
+      "title": "Onze missie dagschool",
+      "content": "Op de Dutch School bieden we internationaal, meertalig en gedifferentieerd onderwijs waarin kinderen zich ontwikkelen tot ruimdenkende, onderzoekende en kritische wereldburgers.",
+      "paragraph2": "Wij staan voor kwalitatief hoogwaardig onderwijs, waarin leerlingen de unieke kans krijgen om de Nederlandse en Engelse taal te leren en te onderhouden in een internationale omgeving. Ons doel is dat leerlingen tweetalig opgroeien, creatief en kritisch leren denken, en gemotiveerd blijven om te leren, hun hele leven lang.",
+      "paragraph3": "Wij geloven dat ieder kind unieke talenten en potentieel heeft, die het beste ontdekt, gevoed en tot uiting komen in een kleine, intieme leeromgeving met persoonlijke aandacht. Wij geloven in een kleine school community met nauwe banden tussen leraren, leerlingen en ouders, om iedereen een stem te geven en krachten te bundelen. Met het doel leerlingen te laten leren, ontdekken en groeien tot hun optimale individuele potentieel. Om uiteindelijk sterk in hun schoenen te staan en een verschil te maken in een steeds veranderende wereld die verder reikt dan Nederland, België en/of Kenia.",
+      "missionQuote": "Grootsheid komt met zelfkennis."
     },
     "vision": {
-      "title": "Onze Visie",
-      "content": "Een school waar elk kind gezien, gekend en gewaardeerd wordt. Waar de Nederlandse taal en cultuur een stevige basis vormen en kinderen zich ontwikkelen tot zelfverzekerde wereldburgers."
+      "title": "Onze visie",
+      "content": "Wij geloven in het ontplooien van ieders eigen identiteit en talenten, zodat leerlingen met zelfvertrouwen en veerkracht hun plek vinden in een veranderende wereld.",
+      "paragraph2": "Ons onderwijs daagt leerlingen uit om nieuwsgierig te blijven, verantwoordelijkheid te nemen voor hun leerproces en een positieve bijdrage te leveren aan hun omgeving.",
+      "visionQuote": "Wie zijn eigen krachten en mooie imperfecties kent, durft te vragen, ontdekken, leren, aan te passen…te blijven groeien!"
+    },
+    "motto": {
+      "title": "Ons motto",
+      "subtitle": "Bilingual learners, international community, growing together!",
+      "content": "Een motto dat samenvat wie we zijn: een hechte, internationale schoolgemeenschap waarin leerlingen samen groeien; in taal, kennis en verbondenheid."
     },
     "values": {
       "title": "Onze Kernwaarden",
@@ -374,15 +400,46 @@
   "teamPage": {
     "hero": {
       "title": "Ons Team",
-      "subtitle": "Toegewijde professionals die elk kind persoonlijk kennen"
+      "subtitle": "Toegewijde leerkrachten die met passie werken aan de groei van ieder kind."
     },
     "intro": {
-      "title": "De Mensen Achter Onze School",
-      "content": "Ons kleine, hechte team bestaat uit ervaren en gepassioneerde professionals. Door onze kleinschaligheid kent elke medewerker elk kind persoonlijk, wat zorgt voor optimale begeleiding en ondersteuning."
+      "title": "Onderwijsteam",
+      "content": "Bij de Dutch School vormen onze groepsleerkrachten het hart van de school. Het zijn bevlogen, Nederlandstalige onderwijsprofessionals met een passie voor leren en ontwikkelen. In de onderbouw worden zij met zorg ondersteund door onze toegewijde Engelstalige klassenassistenten. Samen creëren zij een veilige, stimulerende omgeving waarin ieder kind kan groeien.",
+      "content2": "Ons team is onze grootste kracht: met hun expertise, aandacht en toewijding halen zij elke dag het beste uit het leren van uw kind. Daarnaast werken we met gespecialiseerde vakleerkrachten voor Engels, zwemmen en sport, zodat ieder kind zich ook op deze gebieden optimaal kan ontwikkelen. Deze vakleerkrachten brengen hun passie en expertise in om ons onderwijs nog rijker en veelzijdiger te maken. Voor onze Skills Clubs en naschoolse activiteiten werken we samen met vertrouwde consultants en ervaren experts, die met dezelfde betrokkenheid bijdragen aan de brede ontwikkeling van onze leerlingen."
+    },
+    "roster": {
+      "title": "Ons Onderwijsteam",
+      "members": [
+        { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht" },
+        { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht" },
+        { "name": "Jessica Donia", "role": "Bovenbouwleerkracht" },
+        { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht" },
+        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht" },
+        { "name": "Sarah Vijzelman", "role": "Peuterleerkracht" },
+        { "name": "Caroline Slot", "role": "Peuterleerkracht" },
+        { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente" },
+        { "name": "Faith Sambe", "role": "Onderwijsassistente" },
+        { "name": "Jacinta", "role": "Onderwijsassistente" },
+        { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen" },
+        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE" }
+      ]
+    },
+    "wholeTeam": {
+      "title": "Het hele team",
+      "content": "Bij de Dutch School zijn we trots op ons hechte en betrokken team. Samen zorgen we ervoor dat onze school een plek is waar kinderen zich veilig, gezien en uitgedaagd voelen.",
+      "content2": "Ons team bestaat uit veel meer dan alleen leerkrachten. Iedere medewerker draagt op zijn of haar eigen manier bij aan het warme en goed georganiseerde schoolleven. Onze prachtige, groene compound wordt met zorg onderhouden door onze tuinmannen, van wie er twee ook met toewijding de schoolbus rijden om de kinderen veilig van en naar school te brengen.",
+      "content3": "Onze Finance & Operations Manager waakt over het reilen en zeilen achter de schermen en wordt daarin ondersteund door onze conciërge. Onze schoonmaaksters zorgen er elke dag opnieuw voor dat de school schoon, fris en uitnodigend blijft.",
+      "content4": "We bieden al onze medewerkers een veilige, respectvolle werkomgeving waarin samenwerking, betrokkenheid en plezier centraal staan. Want alleen als ons team goed in zijn vel zit, kunnen we samen een optimale leeromgeving creëren voor ieder kind.",
+      "members": [
+        { "name": "Lucy Kamau", "role": "Finance and Operations Manager" },
+        { "name": "Mulwa, Charles, Steve & Robert", "role": "Tuinmannen" },
+        { "name": "Steve & Robert", "role": "Buschauffeurs" },
+        { "name": "Achieng & Charity", "role": "Schoonmakers" }
+      ]
     },
     "leadership": {
       "title": "Schoolleiding",
-      "description": "Onze schoolleider draagt de dagelijkse verantwoordelijkheid voor het onderwijs en het welzijn van alle leerlingen."
+      "description": "Onze schoolleider draagt de dagelijkse verantwoordelijkheid voor het onderwijs en het welzijn van alle leerlingen. Zij werkt hierin nauw samen met de Interne Begeleider, de NTC coördinator en de Finance en Operations Manager, samen vormen zij het Management Team."
     },
     "teachers": {
       "title": "Leerkrachten",
@@ -390,7 +447,11 @@
     },
     "support": {
       "title": "Ondersteunend Personeel",
-      "description": "Van intern begeleider tot administratie - ons team werkt samen om de beste ervaring voor kinderen en ouders te garanderen."
+      "description": "Van onderwijsassistenten, tuinmannen, schoonmaaksters en buschauffeurs tot administratie, ons team werkt samen om de beste ervaring voor kinderen en ouders te garanderen."
+    },
+    "board": {
+      "title": "Bestuur",
+      "description": "Ons bestuur bestaat uit vrijwillige ouders die door de leden van de vereniging worden gekozen. Alle ouders met kinderen op school zijn automatisch lid van de vereniging. Het bestuur houdt toezicht op het managementteam en bewaakt het beleid en de kwaliteit van het onderwijs en de schoolorganisatie."
     },
     "cta": {
       "title": "Maak Kennis met Ons Team",
@@ -404,8 +465,11 @@
       "subtitle": "Een groene oase in het hart van Karen, Nairobi"
     },
     "location": {
-      "title": "Onze Locatie",
-      "content": "Dutch School Nairobi is gevestigd in Karen, een van de groenste en rustigste wijken van Nairobi. Ons ruime compound biedt een veilige, natuurlijke omgeving waar kinderen kunnen leren, spelen en ontdekken.",
+      "title": "Locatie",
+      "content": "De Dutch School Nairobi is gelegen in het hart van Karen, één van de groenste en rustigste wijken van de stad. Onze school bevindt zich op een prachtige, ruime compound met veel bomen, grasvelden en schaduwrijke plekken waar kinderen veilig kunnen spelen en leren.",
+      "paragraph2": "De omgeving biedt eindeloze speelmogelijkheden: rennen, klimmen, spelen, voetballen, fietsen of gewoon genieten van het buiten zijn. Kinderen krijgen hier letterlijk én figuurlijk de ruimte om te bewegen, te ontdekken en zich vrij te voelen.",
+      "paragraph3": "Ouders waarderen de goede bereikbaarheid van onze school. De locatie is centraal in Karen en makkelijk te bereiken met de auto. Daarnaast is er de mogelijkheid tot schooltransport via onze schoolbussen, zodat ook gezinnen van buiten Karen hun kinderen eenvoudig kunnen laten brengen en ophalen.",
+      "paragraph4": "De combinatie van natuur, ruimte en rust maakt de Dutch School Nairobi tot een plek waar kinderen zich thuis voelen en met plezier naar school komen!",
       "features": {
         "green": "Groot groen terrein met speelruimtes",
         "outdoor": "Faciliteiten voor buitenonderwijs",
@@ -433,7 +497,7 @@
       }
     },
     "directions": {
-      "title": "Routebeschrijving",
+      "title": "Bereikbaarheid",
       "content": "Wij zijn gemakkelijk bereikbaar vanuit alle delen van Nairobi. Onze school biedt ook transport aan vanuit verschillende wijken."
     },
     "cta": {
@@ -444,7 +508,7 @@
   },
   "educationPage": {
     "hero": {
-      "title": "Onderwijs",
+      "title": "Onderwijs dagschool",
       "subtitle": "Tweetalig onderwijs van peuterspeelzaal tot en met groep 8"
     },
     "intro": {
@@ -493,21 +557,25 @@
   "toddlerPage": {
     "hero": {
       "title": "Peuterspeelzaal",
-      "subtitle": "Een warme start voor de jongste leerlingen, vanaf 1,5 jaar"
+      "subtitle": "Een warme, speelse, tweetalige omgeving waar peuters al spelend groeien, ontdekken en zich ontwikkelen. Maximaal 15 kinderen per ochtend, 2-5 ochtenden per week."
     },
     "intro": {
-      "title": "Spelend Leren",
-      "content": "Onze peuterspeelzaal biedt een veilige, stimulerende omgeving waar kinderen vanaf 1,5 jaar op een speelse manier kennismaken met de Nederlandse taal en cultuur. In een kleine groep van maximaal 15 kinderen krijgt elk kind de aandacht en zorg die het verdient."
+      "title": "Peuterspeelzaal (Toddler Group)",
+      "content": "In onze peutergroep ontdekken de jongste leerlingen de wereld op hun eigen tempo, in een veilige en vertrouwde omgeving. We verwelkomen peuters vanaf anderhalf jaar, twee tot vijf ochtenden per week, in een kleine groep van maximaal vijftien kinderen.",
+      "paragraph2": "Spelenderwijs werken we aan zelfstandigheid, sociale vaardigheden en taalontwikkeling. Peuters leren zelf hun jas aantrekken, opruimen, op hun beurt wachten en samenwerken met anderen; belangrijke eerste stappen richting de basisschool. In gesprekken, verhalen en spel krijgen zowel de Nederlandse als Engelse taal volop aandacht, waardoor kinderen op een natuurlijke manier een rijke woordenschat opbouwen.",
+      "paragraph3": "Bewegen en ontdekken staan centraal: tijdens het buitenspel, de peutergym en, als het weer het toelaat, zelfs bij het wekelijkse peuterzwemmen met hun eigen juf. Ook creativiteit krijgt ruimte. De peuters experimenteren met verf, klei, scharen en papier en leren zo verschillende technieken kennen.",
+      "paragraph4": "We volgen hun ontwikkeling zorgvuldig met het observatiesysteem KIJK! en werken met thema's uit het International Early Years Curriculum (IEYC). Zo sluiten de activiteiten aan bij de belevingswereld van jonge kinderen en bereiden ze spelenderwijs voor op groep 1 en 2. Peuters stromen door naar groep 0/1 als ze 4 jaar worden.",
+      "paragraph5": "Kortom: ons peuteronderwijs legt een warme, speelse en stevige basis voor een leven lang leren."
     },
     "program": {
       "title": "Het Programma",
       "schedule": {
-        "title": "Flexibele Opvang",
-        "description": "Kies voor 2, 3, 4 of 5 ochtenden per week, afhankelijk van de behoeften van uw gezin."
+        "title": "Flexibele Ochtenden",
+        "description": "Peuters kunnen 2, 3, 4 of 5 ochtenden per week deelnemen."
       },
       "language": {
         "title": "Taalblootstelling",
-        "description": "Natuurlijke introductie tot het Nederlands door liedjes, verhalen en dagelijkse interacties."
+        "description": "Natuurlijke introductie tot het Nederlands en Engels door liedjes, verhalen en dagelijkse interacties."
       },
       "play": {
         "title": "Spelend Leren",
@@ -519,21 +587,23 @@
       }
     },
     "activities": {
-      "title": "Dagelijkse Activiteiten",
+      "title": "Wekelijkse Activiteiten",
       "list": [
         "Kringtijd met liedjes en verhalen",
         "Vrij spel binnen en buiten",
         "Creatieve activiteiten",
         "Bewegingsactiviteiten",
         "Natuur en buitenspel",
-        "Muziek en dans"
+        "Muziek en dans",
+        "Zwemmen",
+        "Samenspel"
       ]
     },
     "practical": {
       "title": "Praktische Informatie",
-      "hours": "Openingstijden: 8:30 - 12:30",
+      "hours": "Openingstijden: 8:00 - 12:00 (mogelijkheid tot 15:00)",
       "group": "Groepsgrootte: maximaal 15 kinderen",
-      "staff": "Begeleiding: ervaren pedagogisch medewerkers"
+      "staff": "Begeleiding: ervaren pedagogisch medewerker en onderwijsassistenten"
     },
     "cta": {
       "title": "Kennismaken?",
@@ -544,43 +614,57 @@
   "primaryPage": {
     "hero": {
       "title": "Basisschool",
-      "subtitle": "Tweetalig onderwijs van groep 1 tot en met groep 8"
+      "subtitle": "Volledig tweetalig onderwijs met het Nederlandse curriculum en International Primary Curriculum (IPC). Kleine klassen, persoonlijke aandacht."
     },
     "intro": {
       "title": "Het Beste van Twee Werelden",
-      "content": "Onze basisschool combineert het Nederlandse curriculum met het International Primary Curriculum (IPC). Kinderen krijgen onderwijs in zowel Nederlands als Engels, waardoor ze optimaal voorbereid zijn op zowel terugkeer naar Nederland als voortzetting van internationaal onderwijs."
+      "content": "Onze basisschool combineert het Nederlandse curriculum met het International Primary Curriculum (IPC). Kinderen krijgen onderwijs in zowel Nederlands als Engels, waardoor ze optimaal voorbereid zijn op zowel terugkeer naar Nederland als voortzetting van internationaal onderwijs.",
+      "visionTitle": "Onze visie op tweetalig onderwijs",
+      "visionContent": "Bij de Dutch School geloven we dat meertaligheid een kracht is, een sleutel tot verbinding, begrip en succes in een internationale wereld. Wij bieden onderwijs waarin Nederlands en Engels in balans worden gebruikt, zodat onze leerlingen stevig wortelen in de Nederlandse en Vlaamse cultuur én zelfverzekerd kunnen communiceren in een internationale omgeving.",
+      "visionParagraph2": "Ons tweetalig onderwijs is meer dan les krijgen in twee talen. Het is een doordachte aanpak waarin leerlingen taal leren door betekenisvolle ervaringen, binnen rijke thema's van het International Early Years en Primary Curriculum (IEYC/IPC). Zo groeien kinderen op tot echte wereldburgers: flexibel in taal, cultuur en denken.",
+      "visionParagraph3": "Door deze aanpak ontwikkelen leerlingen niet alleen twee sterke taalsystemen, maar ook een dieper taalbewustzijn (metalinguïstisch bewustzijn). Ze leren nadenken over taal, verschillen herkennen en strategieën gebruiken die hun leervermogen versterken. Dit stimuleert hun creatieve, sociale en cognitieve ontwikkeling, en bereidt hen voor op uiteenlopende vervolgonderwijs trajecten; zowel internationaal als Nederlandstalig.",
+      "visionParagraph4": "Onze leerkrachten werken doelgericht aan rijke kennis en vaardigheden, met aandacht voor spel, onderzoek, reflectie en zelfinzicht. Leerlingen ontdekken hoe hun brein werkt, leren hoe ze zelf invloed hebben op hun groei, en ervaren het plezier van leren in twee talen.",
+      "visionParagraph5": "De kracht van ons tweetalig onderwijs ligt in de balans tussen vertrouwd en internationaal: Nederlands als stevige basis, Engels als venster op de wereld. Zo creëren we een omgeving waarin leerlingen zichzelf kunnen zijn, verbinding ervaren met anderen, en vol vertrouwen uitgroeien tot meertalige, nieuwsgierige en ruimdenkende wereldburgers."
     },
     "bilingual": {
-      "title": "Tweetalig Onderwijs",
+      "title": "Ons Onderwijs",
       "kindergarten": {
-        "title": "Groep 1-2 (Kleuterklas)",
-        "description": "3 dagen Nederlands, 2 dagen Engels. Spelend leren met het IEYC curriculum."
+        "title": "Kleuteronderwijs (Groep 1-2)",
+        "description": "In onze kleutergroepen leggen we spelenderwijs een stevige basis voor een leven lang leren. In een rijke, tweetalige leeromgeving (3 dagen Nederlands, 2 dagen Engels) vol spel, ontdekking en verwondering groeien kinderen in taal, zelfvertrouwen en sociale vaardigheden. Vanuit betekenisvolle IEYC-thema's stimuleren we nieuwsgierigheid, creativiteit en een natuurlijke ontwikkeling in zowel het Nederlands als Engels.",
+        "extended": "Het Nederlandstalige kleuteronderwijs staat internationaal bekend als krachtig en toekomstgericht. In onze kleutergroepen leggen we een stevige basis voor een leven lang leren. Jong leren is ontdekken, verwonderen en groeien en dat doen onze kleuters elke dag in een rijke leeromgeving vol spel, taal en nieuwsgierigheid. Ons onderwijs is tweetalig vormgegeven: drie dagen per week in het Nederlands en twee dagen volledig in het Engels. Zo bouwen de kinderen een natuurlijke basis op in beide talen, zonder aparte taallessen. Onze kleuterklassen zijn ingericht met verschillende hoeken vol spel-, leer- en ontwikkelingsmateriaal, die uitnodigen tot ontdekken en samenwerken. We werken aan de hand van thema's uit het International Early Years Curriculum (IEYC) en besteden veel aandacht aan sociaal-emotionele ontwikkeling. We volgen de ontwikkeling met het observatiesysteem KIJK!. Onze kleuterklas is een veilige, vrolijke en stimulerende plek waar ieder kind de ruimte krijgt om te groeien; in taal, in zelfvertrouwen en in verwondering."
       },
       "lower": {
-        "title": "Groep 3-5 (Onderbouw)",
-        "description": "Fundamentele vaardigheden in taal, rekenen en wereldoriëntatie in beide talen."
+        "title": "Pedagogisch en didactisch handelen",
+        "description": "Op de Dutch School staat de ontwikkeling van het kind centraal, als leerling en als mens. In een veilige, warme en gestructureerde omgeving leren kinderen niet alleen wat ze leren, maar ook hoe ze leren. Onze leerkrachten stimuleren nieuwsgierigheid, zelfvertrouwen en eigenaarschap, met aandacht voor executieve functies, talentontwikkeling en het leren kennen van je eigen brein. Zo bouwen we samen aan hersenvriendelijk, toekomstgericht onderwijs waarin ieder kind tot bloei komt.",
+        "extended": "Op de Dutch School geloven we dat kinderen pas écht tot leren komen als zij zich veilig, gezien en gewaardeerd voelen. Onze leerkrachten spelen hierin een centrale rol. Zij zijn niet alleen onderwijzers, maar ook begeleiders in de brede ontwikkeling van ieder kind, met aandacht voor het hoofd, hart en handen. Binnen onze heterogene groepen leren leerlingen op een natuurlijke manier samen te werken, verantwoordelijkheid te nemen en rekening te houden met elkaar. De basis van ons pedagogisch handelen wordt gevormd door onze vijf gouden regels: 1. We zorgen ervoor dat iedereen zich op school veilig voelt. 2. We zijn vriendelijk en aardig tegen elkaar. 3. We zorgen goed voor de spullen van onszelf en van een ander. 4. We laten elkaar ongestoord spelen en werken. 5. We vertrouwen elkaar. Met behulp van de breinkrachten uit Breinhelden, de persoonlijke doelen van het IPC en een talentgerichte bril versterken we niet alleen kennis, maar ook karakter. Ons onderwijs is doelgericht, kindgericht en onderzoekend."
       },
       "upper": {
-        "title": "Groep 6-8 (Bovenbouw)",
-        "description": "Verdieping en voorbereiding op voortgezet onderwijs. Doorstroomtoets in groep 8."
+        "title": "Brede Ontwikkeling",
+        "description": "Bij de Dutch School kijken we verder dan alleen schoolprestaties. We begeleiden kinderen in hun cognitieve, sociale, creatieve en lichamelijke ontwikkeling, zodat zij met zelfvertrouwen, veerkracht en nieuwsgierigheid kunnen groeien. Met aandacht voor eigenaarschap, talentontwikkeling en wereldburgerschap creëren we een omgeving waarin ieder kind leert met hoofd, hart en handen.",
+        "extended": "Bij de Dutch School geloven we dat leren verder gaat dan kennis alleen. We begeleiden kinderen in hun brede ontwikkeling, op cognitief, sociaal, creatief en lichamelijk vlak, zodat zij met zelfvertrouwen en nieuwsgierigheid de wereld tegemoet treden. Onze leerkrachten stimuleren leerlingen om zelfstandig te leren denken, samenwerken en reflecteren. Binnen het IPC-onderwijs staan persoonlijke doelen zoals veerkracht, empathie, respect en verantwoordelijkheid centraal. Programma's als Breinhelden helpen kinderen hun emoties te begrijpen, focus te houden en door te zetten, kwaliteiten die bijdragen aan groei, zelfvertrouwen en plezier in leren. Naast een sterk academisch programma bieden we ruimte voor creativiteit en talentontwikkeling. Tijdens onze Skills Clubs ontdekken leerlingen nieuwe interesses in onder meer kunst, muziek, sport, houtbewerking en tuinieren. Ook beweging is een vast onderdeel van het weekprogramma, met wekelijkse gym- en zwemlessen voor alle groepen. Als internationale Nederlandstalige school in een diverse gemeenschap besteden we veel aandacht aan burgerschap en wereldburgerschap."
       }
     },
     "curriculum": {
       "title": "Curriculum",
       "dutch": {
         "title": "Nederlands Curriculum",
-        "subjects": ["Nederlandse taal", "Rekenen/Wiskunde", "Begrijpend lezen", "Spelling", "Schrijven"]
+        "subjects": ["Nederlandse taal", "Begrijpend lezen", "Spelling", "Schrijven", "Rekenen/Wiskunde"]
       },
       "ipc": {
         "title": "IPC (International Primary Curriculum)",
         "subjects": ["Thematisch leren", "Wetenschap", "Geschiedenis", "Aardrijkskunde", "Kunst & Cultuur"]
+      },
+      "english": {
+        "title": "Engelse Taallessen",
+        "subjects": ["Luisteren", "Spreken", "Lezen", "Schrijven"]
       }
     },
     "assessment": {
       "title": "Toetsing & Volgsysteem",
-      "content": "We gebruiken het CITO leerlingvolgsysteem om de voortgang van elk kind te monitoren. In groep 8 maken leerlingen de officiële doorstroomtoets.",
+      "content": "We gebruiken het observatie- en leerlingvolgsystemen om de voortgang van elk kind te monitoren. In groep 8 maken leerlingen de officiële doorstroomtoets.",
       "items": [
-        "CITO toetsen voor vergelijking met Nederland",
+        "KIJK observatiesysteem voor groep 1-2",
+        "CITO leerlingvolgsysteem voor groep 1-8, benchmark met Nederland",
         "Doorstroomtoets in groep 8",
         "Pearson Young Learners English Benchmark",
         "Regelmatige rapportages aan ouders"
@@ -590,6 +674,82 @@
       "title": "Meer Weten?",
       "subtitle": "Ontdek hoe ons tweetalig onderwijs uw kind kan voorbereiden op de toekomst.",
       "button": "Plan een Bezoek"
+    }
+  },
+  "ntcSchedulePage": {
+    "hero": {
+      "title": "NTC Lestijden en Locaties",
+      "subtitle": "Wanneer en waar onze NTC lessen plaatsvinden"
+    },
+    "intro": {
+      "title": "Inhoud volgt binnenkort",
+      "content": "Op deze pagina komt binnenkort meer informatie over de lestijden, dagen en locaties van ons NTC programma. Heeft u nu al een vraag? Neem gerust contact met ons op."
+    },
+    "cta": {
+      "title": "Vragen over de lestijden?",
+      "subtitle": "We helpen u graag verder.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "ntcFeesPage": {
+    "hero": {
+      "title": "NTC Schoolgeld",
+      "subtitle": "Tarieven en betalingsinformatie voor het NTC programma"
+    },
+    "intro": {
+      "title": "Inhoud volgt binnenkort",
+      "content": "Op deze pagina komt binnenkort meer informatie over het schoolgeld voor het NTC programma. Voor de actuele tarieven kunt u contact opnemen met ons kantoor."
+    },
+    "cta": {
+      "title": "Tarieven opvragen",
+      "subtitle": "Neem contact op voor de actuele NTC tarieven.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "adultClassesPage": {
+    "hero": {
+      "title": "Dutch Adult Classes",
+      "subtitle": "Nederlandse taalcursussen voor volwassenen"
+    },
+    "intro": {
+      "title": "Nederlandse Les voor Volwassenen",
+      "content": "Onze Dutch Adult Classes bieden Nederlandse taalcursussen voor volwassenen op alle niveaus. Perfect voor ouders, partners, of iedereen die Nederlands wil leren of zijn taalvaardigheid wil verbeteren.",
+      "comingSoon": "We werken aan een uitgebreide pagina met alle informatie over onze cursussen, niveaus en aanpak. Inhoud volgt binnenkort. Heeft u nu al een vraag? Neem gerust contact met ons op."
+    },
+    "cta": {
+      "title": "Interesse in Nederlandse les?",
+      "subtitle": "Neem contact op voor meer informatie.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "adultClassesSchedulePage": {
+    "hero": {
+      "title": "Lestijden en Locaties",
+      "subtitle": "Wanneer en waar onze Dutch Adult Classes plaatsvinden"
+    },
+    "intro": {
+      "title": "Inhoud volgt binnenkort",
+      "content": "Op deze pagina komt binnenkort meer informatie over de lestijden, dagen en locaties van de Dutch Adult Classes. Heeft u nu al een vraag? Neem gerust contact met ons op."
+    },
+    "cta": {
+      "title": "Vragen over de lestijden?",
+      "subtitle": "We helpen u graag verder.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "adultClassesFeesPage": {
+    "hero": {
+      "title": "Cursusgeld",
+      "subtitle": "Tarieven en betalingsinformatie voor de Dutch Adult Classes"
+    },
+    "intro": {
+      "title": "Inhoud volgt binnenkort",
+      "content": "Op deze pagina komt binnenkort meer informatie over het cursusgeld voor de Dutch Adult Classes. Voor de actuele tarieven kunt u contact opnemen met ons kantoor."
+    },
+    "cta": {
+      "title": "Tarieven opvragen",
+      "subtitle": "Neem contact op voor de actuele tarieven.",
+      "button": "Neem Contact Op"
     }
   },
   "ntcPage": {
@@ -648,12 +808,21 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Curriculum",
-      "subtitle": "Een uitgebalanceerd tweetalig onderwijsprogramma"
+      "title": "Ons Onderwijs",
+      "subtitle": "Een uitgebalanceerd tweetalig onderwijsprogramma met IEYC, IPC, Nederlandse kerndoelen en Engelse taallessen"
     },
     "intro": {
       "title": "Het Beste van Twee Systemen",
       "content": "Ons curriculum combineert de sterke punten van het Nederlandse onderwijssysteem met het internationaal erkende IEYC en IPC. Dit zorgt voor een brede, evenwichtige ontwikkeling van elk kind."
+    },
+    "english": {
+      "title": "Engelse Taallessen",
+      "intro": "Taal verbindt, opent werelden en brengt mensen dichter bij elkaar en dat is precies wat we op de Dutch School willen bereiken met ons tweetalig onderwijs.",
+      "paragraph2": "Wij bieden voor alle leerlingen van groep 3-8 twee keer per week Engelse taallessen aan, verzorgd door een native English speaker. In deze lessen komen luisteren, spreken, lezen en schrijven op een levendige en betekenisvolle manier aan bod.",
+      "paragraph3": "We werken met de methode Now I Know van Pearson, in combinatie met de Tweetalig Primair Onderwijs leerlijn voor Engels, waarmee we bouwen aan sterke communicatieve vaardigheden én een stevig grammaticaal fundament. Onze ambities liggen hoog: veel leerlingen behalen aan het einde van groep 8 een Engels taalniveau vergelijkbaar met HAVO 4 in Nederland. Dat zorgt voor een soepele overstap naar het internationale onderwijs, waar een groot deel van onze leerlingen hun leerweg voortzetten na het afronden van de basisschool.",
+      "paragraph4": "Binnen onze IEYC/IPC-lessen wordt Engels bovendien als instructietaal gebruikt. Hierdoor leren leerlingen de taal op een natuurlijke manier te gebruiken binnen uiteenlopende vakgebieden, van wetenschap tot kunst en maatschappij. Tegelijkertijd blijft het Nederlands stevig verankerd binnen ons curriculum, waardoor leerlingen leren schakelen tussen talen en hun metalinguïstisch bewustzijn versterken.",
+      "paragraph5": "Naast Nederlands en Engels krijgen leerlingen bij ons ook de kans om andere talen te ontdekken. In onze Language Club bieden we Frans en Kiswahili aan, talen die aansluiten bij zowel de achtergrond van onze leerlingen als onze internationale en lokale omgeving in Kenia.",
+      "paragraph6": "Zo groeien onze leerlingen stap voor stap uit tot zelfverzekerde, meertalige wereldburgers die zich thuis voelen in meerdere talen en culturen."
     },
     "dutch": {
       "title": "Nederlands Curriculum",
@@ -716,15 +885,22 @@
     },
     "intro": {
       "title": "Verbreed de Talenkennis",
-      "content": "Naast ons tweetalig Nederlands-Engels programma bieden we extra talenlessen aan. Kinderen kunnen Frans of Kiswahili leren, perfect voor hun internationale toekomst en lokale integratie."
+      "content": "Naast ons tweetalig Nederlands-Engels programma bieden we extra talenlessen aan. Kinderen kunnen Frans of Kiswahili leren, perfect voor hun internationale toekomst en lokale integratie.",
+      "extendedTitle": "Language Club",
+      "paragraph2": "Onze Language Club biedt leerlingen wekelijks 45 minuten de kans om hun talenkennis te verdiepen en te verbreden. We richten ons op de vier talen die binnen onze school een rol spelen: Nederlands, Engels, Frans en Kiswahili.",
+      "paragraph3": "Voor leerlingen die het Nederlands of Engels nog niet volledig beheersen, biedt de Language Club extra taalondersteuning. Zo bouwen zij een stevige basis op voor hun verdere schoolloopbaan. Andere leerlingen kunnen kiezen voor Kiswahili (groep 1-8) of Frans (groep 5-8).",
+      "paragraph4": "In de lessen Kiswahili werken leerlingen spelenderwijs aan luister- en spreekvaardigheid rond herkenbare thema's als begroeten, tellen, familie, dieren, eten en marktbezoek. Er wordt gewerkt met verschillende niveaugroepen, van beginner tot gevorderd, zodat ieder kind op eigen tempo vooruitgang boekt.",
+      "paragraph5": "De Franse language club start vanaf groep 5 met een speelse kennismaking met de taal en cultuur. In groep 7 en 8 wordt toegewerkt naar de eindtermen van het Vlaamse onderwijs voor leerjaar 6. Zo kunnen Vlaamse leerlingen hun thuistaal verder versterken, terwijl andere leerlingen een stevige basis leggen in een derde Europese taal.",
+      "paragraph6": "Het doel van de Language Club is om kinderen een rijk taalaanbod te bieden, hun taalplezier en culturele nieuwsgierigheid te vergroten, en hen voor te bereiden op verschillende toekomstige leerwegen. Meertaligheid zien wij als een kracht: het stimuleert creatief denken, versterkt sociale vaardigheden en verrijkt het leren op alle niveaus.",
+      "paragraph7": "We zijn trots op onze Language Club: een plek waar talen tot leven komen en leerlingen groeien in communicatie en zelfvertrouwen."
     },
     "french": {
       "title": "Frans",
       "ages": "Groep 5-8",
-      "content": "Franse les als voorbereiding op het voortgezet onderwijs en internationale communicatie.",
+      "content": "Franse les als voorbereiding op het onderwijs in België en het voortgezet onderwijs.",
       "features": [
         "Basis conversatie en vocabulaire",
-        "Franse cultuur",
+        "Belgische cultuur",
         "Voorbereiding op secundair onderwijs"
       ]
     },
@@ -740,7 +916,7 @@
     },
     "schedule": {
       "title": "Rooster",
-      "content": "Talenlessen worden gegeven tijdens of na schooltijd, geïntegreerd in het weekrooster."
+      "content": "De extra taallessen als onderdeel van de Talenclub worden gegeven tijdens schooltijd, geïntegreerd in het weekrooster, minimaal een keer per week."
     },
     "cta": {
       "title": "Interesse in Extra Talen?",
@@ -748,14 +924,39 @@
       "button": "Neem Contact Op"
     }
   },
+  "libraryPage": {
+    "hero": {
+      "title": "Bibliotheek",
+      "subtitle": "Een geliefde plek waar leesplezier centraal staat"
+    },
+    "intro": {
+      "title": "Bibliotheek",
+      "content": "Bij de Dutch School staat leesplezier centraal. We vinden het belangrijk dat ieder kind de magie van verhalen ontdekt, niet alleen om taal te leren, maar vooral om te genieten van het lezen zelf.",
+      "paragraph2": "Omdat er in Kenia geen Nederlandse bibliotheek om de hoek is, koesteren wij onze eigen uitgebreide collectie Nederlandstalige jeugdboeken, aangevuld met informatieve titels en een mooie selectie Engelstalige boeken. Deze laatste worden gebruikt tijdens de Engelse lessen én om thuis het lezen verder te stimuleren. Elk jaar breiden we onze bibliotheek uit met nieuwe, actuele boeken, zodat er altijd iets inspirerends te ontdekken valt.",
+      "paragraph3": "De bibliotheek is een geliefde plek binnen onze school. Hier leren kinderen niet alleen lezen, maar ook zorg dragen voor hun boeken. Met hun eigen canvas bibliotheektas kiezen zij wekelijks nieuwe boeken uit, met dank aan onze betrokken 'biebouders' die alles in goede banen leiden.",
+      "paragraph4": "Door het jaar heen zetten we verschillende thema's en boekgenres in de spotlight. Een hoogtepunt is de Kinderboekenweek in oktober, waarin de hele school twee weken lang bruist van verhalen, voorlezen en creatieve boekactiviteiten.",
+      "paragraph5": "Onze bibliotheek brengt niet alleen kinderen, maar ook ouders dichter bij het leesplezier, een uitnodiging om samen te blijven ontdekken, bladeren en genieten van de wereld die boeken openen."
+    },
+    "cta": {
+      "title": "Kom Onze Bibliotheek Bezoeken",
+      "subtitle": "Plan een rondleiding en ontdek onze rijke collectie boeken.",
+      "button": "Plan een Bezoek"
+    }
+  },
   "skillsClubPage": {
     "hero": {
       "title": "Skills Club",
-      "subtitle": "Naschoolse activiteiten voor brede ontwikkeling"
+      "subtitle": "Activiteiten onder schooltijd voor de brede ontwikkeling"
     },
     "intro": {
-      "title": "Meer dan Alleen Boeken",
-      "content": "De Skills Club biedt een rijke variëteit aan naschoolse activiteiten. Kinderen ontwikkelen praktische vaardigheden, creativiteit en sociale competenties in een ontspannen sfeer."
+      "title": "Meer dan cognitief leren",
+      "content": "De Skills Club biedt tweemaal per week, onder schooltijd en als onderdeel van het leerprogramma, een rijke variatie aan activiteiten. Leerlingen ontdekken en ontwikkelen hun talenten, praktische vaardigheden, creativiteit en sociale competenties in een inspirerende omgeving waarin plezier en betrokkenheid centraal staan.",
+      "extendedTitle": "Skills Club",
+      "paragraph2": "Twee keer per week sluiten onze leerlingen hun schooldag af met iets bijzonders: de Skills Club. Tijdens deze middagen krijgen kinderen de kans om hun talenten te ontdekken, nieuwe vaardigheden te ontwikkelen en vooral om met plezier te leren.",
+      "paragraph3": "De Skills Clubs bieden een breed scala aan activiteiten, van kunst, muziek en sport tot houtbewerking en tuinieren. Door te leren met hun handen, hart en hoofd, ontdekken leerlingen waar hun kracht ligt en durven ze nieuwe uitdagingen aan te gaan. De nadruk ligt niet op cijfers of prestaties, maar op persoonlijke groei, creativiteit en samenwerking.",
+      "paragraph4": "Binnen de clubs leren leerlingen vaardigheden die verder reiken dan het klaslokaal: doorzettingsvermogen, verantwoordelijkheid, communicatie en zelfvertrouwen. Zo ontwikkelen ze stap voor stap de executieve functies en sociale vaardigheden die hen helpen om zelfstandig, veerkrachtig en nieuwsgierig in het leven te staan.",
+      "paragraph5": "De Skills Clubs worden begeleid door vertrouwde consultants en ervaren experts, die hun passie graag delen met de kinderen. Zo bieden we een inspirerende leeromgeving waarin ieder kind de ruimte krijgt om te groeien, op zijn of haar eigen manier.",
+      "paragraph6": "Op de Dutch School geloven we dat leren verder gaat dan boeken en toetsen. In de Skills Club ontdekken leerlingen wat ze kunnen, wat ze leuk vinden en wie ze willen worden."
     },
     "activities": {
       "title": "Activiteiten",
@@ -779,14 +980,14 @@
         "title": "Sport & Beweging",
         "description": "Verschillende sporten en bewegingsactiviteiten."
       },
-      "cooking": {
-        "title": "Koken",
-        "description": "Eenvoudige recepten en gezonde voeding."
+      "digital": {
+        "title": "Digitale geletterdheid",
+        "description": "Creatieve en onderzoekend omgaan met technologie, media en digitale vaardigheden."
       }
     },
     "schedule": {
       "title": "Wanneer?",
-      "content": "Skills Club activiteiten vinden plaats na schooltijd. Het aanbod wisselt per trimester."
+      "content": "Skills Club activiteiten vinden plaats onder schooltijd. Er is een vast aanbod door het schooljaar heen en er zijn een aantal wisselende activiteiten per trimester."
     },
     "cta": {
       "title": "Welke Activiteiten Zijn er Nu?",

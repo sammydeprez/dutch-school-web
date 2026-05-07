@@ -63,6 +63,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       />
       <HeroSection />
       <HistorySection />
+      <ApproachSection />
       <ValuesSection />
       <TeamSection />
       <CTASection />
@@ -82,16 +83,16 @@ function HistorySection() {
   const timeline = [
     { year: '1971', event: t('history.timeline.1971') },
     { year: '1985', event: t('history.timeline.1985') },
-    { year: '2000', event: t('history.timeline.2000') },
-    { year: '2010', event: t('history.timeline.2010') },
-    { year: '2020', event: t('history.timeline.2020') },
-    { year: t('history.timeline.today').split(' ')[0], event: t('history.timeline.today') },
+    { year: '2007', event: t('history.timeline.2007') },
+    { year: '2014', event: t('history.timeline.2014') },
+    { year: '2016', event: t('history.timeline.2016') },
+    { year: '2024', event: t('history.timeline.2024') },
   ];
 
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Content */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
@@ -99,13 +100,6 @@ function HistorySection() {
             </h2>
             <p className="text-muted leading-relaxed mb-8">
               {t('history.content')}
-            </p>
-
-            <h3 className="text-2xl font-bold text-foreground mb-6">
-              {t('approach.title')}
-            </h3>
-            <p className="text-muted leading-relaxed">
-              {t('approach.content')}
             </p>
           </div>
 
@@ -126,6 +120,33 @@ function HistorySection() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ApproachSection() {
+  const t = useTranslations('aboutPage.approach');
+
+  return (
+    <section className="py-20 lg:py-28 bg-surface">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8 text-center">
+          {t('title')}
+        </h2>
+        <div className="space-y-5 text-muted leading-relaxed">
+          <p>{t('content')}</p>
+          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph3')}</p>
+          <p>{t('paragraph4')}</p>
+          <p>{t('paragraph5')}</p>
+          <p>{t('paragraph6')}</p>
+        </div>
+        <div className="mt-10 bg-white p-6 lg:p-8 rounded-2xl border-2 border-primary/20 text-center">
+          <p className="text-lg lg:text-xl font-semibold text-foreground italic">
+            &ldquo;{t('quote')}&rdquo;
+          </p>
         </div>
       </div>
     </section>
