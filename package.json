@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "lucide-react": "^0.564.0",
-    "next": "16.2.4",
-    "next-intl": "^4.8.2",
+    "next": "16.2.6",
+    "next-intl": "^4.9.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
