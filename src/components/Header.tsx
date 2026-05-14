@@ -46,34 +46,42 @@ export default function Header() {
     ],
   };
 
-  const educationDropdown: NavDropdown = {
-    label: t('education'),
-    items: [
-      { href: '/education', label: t('educationOverview') },
-      { href: '/education/toddler', label: t('toddler') },
-      { href: '/education/primary', label: t('primary') },
-      { href: '/education/curriculum', label: t('curriculum') },
-      { href: '/education/language-club', label: t('languageClub') },
-      { href: '/education/skills-club', label: t('skillsClub') },
-      { href: '/education/library', label: t('library') },
-    ],
-  };
-
-  const ntcDropdown: NavDropdown = {
-    label: t('ntc'),
-    items: [
-      { href: '/ntc', label: t('ntcOverview') },
-      { href: '/ntc/schedule', label: t('ntcSchedule') },
-      { href: '/ntc/fees', label: t('ntcFees') },
-    ],
-  };
-
-  const adultClassesDropdown: NavDropdown = {
-    label: t('adultClasses'),
-    items: [
-      { href: '/adult-classes', label: t('adultClassesOverview') },
-      { href: '/adult-classes/schedule', label: t('adultClassesSchedule') },
-      { href: '/adult-classes/fees', label: t('adultClassesFees') },
+  const programsDropdown: NavDropdown = {
+    label: t('programs'),
+    sections: [
+      {
+        label: t('education'),
+        href: '/education',
+        items: [
+          { href: '/education/toddler', label: t('toddler') },
+          { href: '/education/primary', label: t('primary') },
+          { href: '/education/curriculum', label: t('curriculum') },
+          { href: '/education/language-club', label: t('languageClub') },
+          { href: '/education/skills-club', label: t('skillsClub') },
+          { href: '/education/library', label: t('library') },
+        ],
+      },
+      {
+        label: t('ntc'),
+        href: '/ntc',
+        items: [
+          { href: '/ntc/schedule', label: t('ntcSchedule') },
+          { href: '/ntc/fees', label: t('ntcFees') },
+        ],
+      },
+      {
+        label: t('adultClasses'),
+        href: '/adult-classes',
+        items: [
+          { href: '/adult-classes/schedule', label: t('adultClassesSchedule') },
+          { href: '/adult-classes/fees', label: t('adultClassesFees') },
+        ],
+      },
+      {
+        label: t('studentSupport'),
+        href: '/student-support',
+        items: [],
+      },
     ],
   };
 
@@ -96,11 +104,6 @@ export default function Header() {
     ],
   };
 
-  const singleLinks = [
-    { href: '/', label: t('home') },
-  ];
-
-  const studentSupportLink = { href: '/student-support', label: t('studentSupport') };
   const contactLink = { href: '/contact', label: t('contact') };
 
   const isActive = (href: string) => {
@@ -148,43 +151,11 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
-            {/* Home link */}
-            {singleLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`
-                  nav-link-animated
-                  text-sm font-medium transition-colors hover:text-primary
-                  ${isActive(link.href) ? 'text-primary active' : 'text-foreground'}
-                `}
-              >
-                {link.label}
-              </Link>
-            ))}
-
-            {/* Dropdown menus */}
             <NavigationDropdown dropdown={aboutDropdown} />
-            <NavigationDropdown dropdown={educationDropdown} />
-            <NavigationDropdown dropdown={ntcDropdown} />
-            <NavigationDropdown dropdown={adultClassesDropdown} />
-
-            {/* Student Support single link */}
-            <Link
-              href={studentSupportLink.href}
-              className={`
-                nav-link-animated
-                text-sm font-medium transition-colors hover:text-primary
-                ${isActive(studentSupportLink.href) ? 'text-primary active' : 'text-foreground'}
-              `}
-            >
-              {studentSupportLink.label}
-            </Link>
-
+            <NavigationDropdown dropdown={programsDropdown} />
             <NavigationDropdown dropdown={practicalDropdown} />
             <NavigationDropdown dropdown={communityDropdown} />
 
-            {/* Contact link */}
             <Link
               href={contactLink.href}
               className={`
@@ -258,28 +229,6 @@ export default function Header() {
         >
           <div className="py-4 border-t border-border">
             <div className="flex flex-col gap-2">
-              {/* Home link */}
-              {singleLinks.map((link, index) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`
-                    px-4 py-3 rounded-lg text-base font-medium
-                    transition-all duration-300
-                    animate-fade-in-up
-                    ${isActive(link.href)
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-foreground hover:bg-surface'
-                    }
-                  `}
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  {link.label}
-                </Link>
-              ))}
-
-              {/* Dropdown menus as accordions */}
               <div className="animate-fade-in-up" style={{ animationDelay: '50ms' }}>
                 <NavigationDropdown
                   dropdown={aboutDropdown}
@@ -289,52 +238,19 @@ export default function Header() {
               </div>
               <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                 <NavigationDropdown
-                  dropdown={educationDropdown}
+                  dropdown={programsDropdown}
                   mobile
                   onItemClick={() => setIsMenuOpen(false)}
                 />
               </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: '125ms' }}>
-                <NavigationDropdown
-                  dropdown={ntcDropdown}
-                  mobile
-                  onItemClick={() => setIsMenuOpen(false)}
-                />
-              </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: '140ms' }}>
-                <NavigationDropdown
-                  dropdown={adultClassesDropdown}
-                  mobile
-                  onItemClick={() => setIsMenuOpen(false)}
-                />
-              </div>
-
-              {/* Student Support single link */}
-              <Link
-                href={studentSupportLink.href}
-                onClick={() => setIsMenuOpen(false)}
-                className={`
-                  px-4 py-3 rounded-lg text-base font-medium
-                  transition-all duration-300
-                  animate-fade-in-up
-                  ${isActive(studentSupportLink.href)
-                    ? 'bg-primary/10 text-primary'
-                    : 'text-foreground hover:bg-surface'
-                  }
-                `}
-                style={{ animationDelay: '150ms' }}
-              >
-                {studentSupportLink.label}
-              </Link>
-
-              <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>
                 <NavigationDropdown
                   dropdown={practicalDropdown}
                   mobile
                   onItemClick={() => setIsMenuOpen(false)}
                 />
               </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: '250ms' }}>
+              <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                 <NavigationDropdown
                   dropdown={communityDropdown}
                   mobile
@@ -342,7 +258,6 @@ export default function Header() {
                 />
               </div>
 
-              {/* Contact link */}
               <Link
                 href={contactLink.href}
                 onClick={() => setIsMenuOpen(false)}
@@ -355,7 +270,7 @@ export default function Header() {
                     : 'text-foreground hover:bg-surface'
                   }
                 `}
-                style={{ animationDelay: '300ms' }}
+                style={{ animationDelay: '250ms' }}
               >
                 {contactLink.label}
               </Link>
@@ -371,7 +286,7 @@ export default function Header() {
                   animate-fade-in-up
                   active:scale-95
                 "
-                style={{ animationDelay: '350ms' }}
+                style={{ animationDelay: '300ms' }}
               >
                 {t('applyNow')}
               </Link>
