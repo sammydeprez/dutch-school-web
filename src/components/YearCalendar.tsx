@@ -1,9 +1,31 @@
 'use client';
 
-import { useLocale } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import schoolHolidays from '@/data/school-holidays.json';
 
 type HolidayType = 'holiday' | 'public' | 'school';
+
+interface Holiday {
+  name: string;
+  nameNl: string;
+  start: string;
+  end: string;
+  type: string;
+}
+
+interface SpecialDay {
+  name: string;
+  nameNl: string;
+  date: string;
+  type: string;
+}
+
+interface SchoolYearData {
+  schoolYear: string;
+  endDate: string;
+  holidays: Holiday[];
+  specialDays: SpecialDay[];
+}
 
 interface DayInfo {
   date: Date;
@@ -15,15 +37,15 @@ interface DayInfo {
 }
 
 const MONTHS_EN = [
-  'September', 'October', 'November', 'December',
+  'August', 'September', 'October', 'November', 'December',
   'January', 'February', 'March', 'April',
-  'May', 'June', 'July', 'August'
+  'May', 'June', 'July'
 ];
 
 const MONTHS_NL = [
-  'September', 'Oktober', 'November', 'December',
+  'Augustus', 'September', 'Oktober', 'November', 'December',
   'Januari', 'Februari', 'Maart', 'April',
-  'Mei', 'Juni', 'Juli', 'Augustus'
+  'Mei', 'Juni', 'Juli'
 ];
 
 const DAYS_EN = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
@@ -45,9 +67,43 @@ function isSameDay(date1: Date, date2: Date): boolean {
     date1.getDate() === date2.getDate();
 }
 
-function getHolidayInfo(date: Date, locale: string): { type: HolidayType; name: string } | null {
-  // Check multi-day holidays
-  for (const holiday of schoolHolidays.holidays) {
+function selectSchoolYear(today: Date): SchoolYearData | null {
+  const sorted = [...schoolHolidays.schoolYears].sort(
+    (a, b) => parseDate(a.endDate).getTime() - parseDate(b.endDate).getTime()
+  );
+  for (const year of sorted) {
+    if (today.getTime() <= parseDate(year.endDate).getTime()) {
+      return year;
+    }
+  }
+  return null;
+}
+
+function getSchoolYearMonths(schoolYear: string): { year: number; month: number }[] {
+  const startYear = Number(schoolYear.split('-')[0]);
+  const endYear = startYear + 1;
+  return [
+    { year: startYear, month: 7 },   // August
+    { year: startYear, month: 8 },   // September
+    { year: startYear, month: 9 },   // October
+    { year: startYear, month: 10 },  // November
+    { year: startYear, month: 11 },  // December
+    { year: endYear, month: 0 },     // January
+    { year: endYear, month: 1 },     // February
+    { year: endYear, month: 2 },     // March
+    { year: endYear, month: 3 },     // April
+    { year: endYear, month: 4 },     // May
+    { year: endYear, month: 5 },     // June
+    { year: endYear, month: 6 },     // July
+  ];
+}
+
+function getHolidayInfo(
+  date: Date,
+  locale: string,
+  data: SchoolYearData
+): { type: HolidayType; name: string } | null {
+  for (const holiday of data.holidays) {
     const start = parseDate(holiday.start);
     const end = parseDate(holiday.end);
     if (isDateInRange(date, start, end)) {
@@ -58,8 +114,7 @@ function getHolidayInfo(date: Date, locale: string): { type: HolidayType; name: 
     }
   }
 
-  // Check single-day special days
-  for (const special of schoolHolidays.specialDays) {
+  for (const special of data.specialDays) {
     const specialDate = parseDate(special.date);
     if (isSameDay(date, specialDate)) {
       return {
@@ -72,17 +127,19 @@ function getHolidayInfo(date: Date, locale: string): { type: HolidayType; name: 
   return null;
 }
 
-function getMonthDays(year: number, month: number, locale: string): DayInfo[] {
+function getMonthDays(
+  year: number,
+  month: number,
+  locale: string,
+  data: SchoolYearData
+): DayInfo[] {
   const days: DayInfo[] = [];
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
 
-  // Get the day of week for the first day (0 = Sunday, 1 = Monday, etc.)
-  // Convert to Monday-based (0 = Monday, 6 = Sunday)
   let startDayOfWeek = firstDay.getDay() - 1;
   if (startDayOfWeek < 0) startDayOfWeek = 6;
 
-  // Add empty days for the start of the month
   for (let i = 0; i < startDayOfWeek; i++) {
     const prevDate = new Date(year, month, -startDayOfWeek + i + 1);
     days.push({
@@ -93,12 +150,11 @@ function getMonthDays(year: number, month: number, locale: string): DayInfo[] {
     });
   }
 
-  // Add days of the month
   for (let day = 1; day <= lastDay.getDate(); day++) {
     const date = new Date(year, month, day);
     const dayOfWeek = date.getDay();
     const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const holidayInfo = getHolidayInfo(date, locale);
+    const holidayInfo = getHolidayInfo(date, locale, data);
 
     days.push({
       date,
@@ -113,13 +169,14 @@ function getMonthDays(year: number, month: number, locale: string): DayInfo[] {
   return days;
 }
 
-function MonthCalendar({ year, month, monthName, locale }: {
+function MonthCalendar({ year, month, monthName, locale, data }: {
   year: number;
   month: number;
   monthName: string;
   locale: string;
+  data: SchoolYearData;
 }) {
-  const days = getMonthDays(year, month, locale);
+  const days = getMonthDays(year, month, locale, data);
   const dayLabels = locale === 'nl' ? DAYS_NL : DAYS_EN;
 
   return (
@@ -128,7 +185,6 @@ function MonthCalendar({ year, month, monthName, locale }: {
         {monthName} {year}
       </h3>
 
-      {/* Day headers */}
       <div className="grid grid-cols-7 gap-0.5 mb-1">
         {dayLabels.map((day, i) => (
           <div
@@ -142,7 +198,6 @@ function MonthCalendar({ year, month, monthName, locale }: {
         ))}
       </div>
 
-      {/* Days grid */}
       <div className="grid grid-cols-7 gap-0.5">
         {days.map((day, i) => {
           if (!day.isCurrentMonth) {
@@ -181,27 +236,25 @@ function MonthCalendar({ year, month, monthName, locale }: {
 
 export default function YearCalendar() {
   const locale = useLocale();
+  const t = useTranslations('schedulePage.calendar');
   const months = locale === 'nl' ? MONTHS_NL : MONTHS_EN;
 
-  // School year months: September 2024 to August 2025
-  const schoolYearMonths = [
-    { year: 2024, month: 8 },  // September
-    { year: 2024, month: 9 },  // October
-    { year: 2024, month: 10 }, // November
-    { year: 2024, month: 11 }, // December
-    { year: 2025, month: 0 },  // January
-    { year: 2025, month: 1 },  // February
-    { year: 2025, month: 2 },  // March
-    { year: 2025, month: 3 },  // April
-    { year: 2025, month: 4 },  // May
-    { year: 2025, month: 5 },  // June
-    { year: 2025, month: 6 },  // July
-    { year: 2025, month: 7 },  // August
-  ];
+  const selected = selectSchoolYear(new Date());
+
+  if (!selected) {
+    return (
+      <div className="bg-surface rounded-2xl py-12 px-6 text-center">
+        <p className="text-muted text-base sm:text-lg">
+          {t('notAvailable')}
+        </p>
+      </div>
+    );
+  }
+
+  const schoolYearMonths = getSchoolYearMonths(selected.schoolYear);
 
   return (
     <div>
-      {/* Legend */}
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-sm bg-primary" />
@@ -217,7 +270,6 @@ export default function YearCalendar() {
         </div>
       </div>
 
-      {/* Calendar grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
         {schoolYearMonths.map(({ year, month }, i) => (
           <MonthCalendar
@@ -226,15 +278,15 @@ export default function YearCalendar() {
             month={month}
             monthName={months[i]}
             locale={locale}
+            data={selected}
           />
         ))}
       </div>
 
-      {/* School year info */}
       <p className="text-center text-sm text-muted mt-6">
         {locale === 'nl'
-          ? `Schooljaar ${schoolHolidays.schoolYear}`
-          : `School Year ${schoolHolidays.schoolYear}`}
+          ? `Schooljaar ${selected.schoolYear}`
+          : `School Year ${selected.schoolYear}`}
       </p>
     </div>
   );
