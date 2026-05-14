@@ -1112,7 +1112,8 @@
     },
     "calendar": {
       "title": "Schoolkalender",
-      "content": "Ons schooljaar volgt grotendeels het Nederlandse schooljaar, met aanpassingen voor Keniaanse feestdagen. De jaarkalender wordt aan het begin van elk schooljaar gedeeld."
+      "content": "Ons schooljaar volgt grotendeels het Nederlandse schooljaar, met aanpassingen voor Keniaanse feestdagen. De jaarkalender wordt aan het begin van elk schooljaar gedeeld.",
+      "notAvailable": "De schoolkalender voor het volgende schooljaar is nog niet beschikbaar. Kom dichter bij de start van het nieuwe jaar terug."
     },
     "afterSchool": {
       "title": "Na Schooltijd",

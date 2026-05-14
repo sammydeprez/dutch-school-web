@@ -1112,7 +1112,8 @@
     },
     "calendar": {
       "title": "School Calendar",
-      "content": "Our school year largely follows the Dutch school year, with adjustments for Kenyan holidays. The annual calendar is shared at the beginning of each school year."
+      "content": "Our school year largely follows the Dutch school year, with adjustments for Kenyan holidays. The annual calendar is shared at the beginning of each school year.",
+      "notAvailable": "The school calendar for the next school year is not yet available. Please check back closer to the start of the new year."
     },
     "afterSchool": {
       "title": "After School",
