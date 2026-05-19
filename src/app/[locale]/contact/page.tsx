@@ -385,7 +385,7 @@ function MapSection() {
             height={968}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent" />
           <a
             href="https://maps.app.goo.gl/TL3UWmdWREFJwhU89"
             target="_blank"
