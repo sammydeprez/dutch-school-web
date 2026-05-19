@@ -387,7 +387,7 @@ function MapSection() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           <a
-            href="https://www.google.com/maps/place/The+Netherlands+School+Society/@-1.323051,36.702182,17z"
+            href="https://maps.app.goo.gl/TL3UWmdWREFJwhU89"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"
