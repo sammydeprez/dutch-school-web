@@ -25,6 +25,13 @@
       ],
       "holidays": [
         {
+          "name": "Summer Break",
+          "nameNl": "Zomervakantie",
+          "start": "2025-08-01",
+          "end": "2025-08-24",
+          "type": "holiday"
+        },
+        {
           "name": "Autumn Break",
           "nameNl": "Herfstvakantie",
           "start": "2025-10-20",
@@ -166,6 +173,13 @@
         }
       ],
       "holidays": [
+        {
+          "name": "Summer Break",
+          "nameNl": "Zomervakantie",
+          "start": "2026-08-01",
+          "end": "2026-08-30",
+          "type": "holiday"
+        },
         {
           "name": "Autumn Break",
           "nameNl": "Herfstvakantie",
