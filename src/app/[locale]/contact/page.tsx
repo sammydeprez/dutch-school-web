@@ -381,8 +381,8 @@ function MapSection() {
           <OptimizedImage
             src="/images/map-static.png"
             alt="Dutch School Nairobi location map"
-            width={1075}
-            height={600}
+            width={1625}
+            height={968}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
