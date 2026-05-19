@@ -36,8 +36,8 @@ function ContactPageSchema() {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: '-1.2921',
-        longitude: '36.8219',
+        latitude: '-1.323051',
+        longitude: '36.702182',
       },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
@@ -377,18 +377,17 @@ function MapSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{t('map')}</h2>
 
-        {/* Map Image */}
-        <div className="relative aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden">
+        <div className="relative aspect-[5/3] rounded-3xl overflow-hidden">
           <OptimizedImage
             src="/images/map-static.png"
             alt="Dutch School Nairobi location map"
-            width={1075}
-            height={600}
+            width={1625}
+            height={968}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           <a
-            href="https://maps.google.com/?q=Makindi+Road+Nairobi+Kenya"
+            href="https://www.google.com/maps/place/The+Netherlands+School+Society/@-1.323051,36.702182,17z"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"
