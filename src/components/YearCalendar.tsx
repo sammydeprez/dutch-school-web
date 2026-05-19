@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import schoolHolidays from '@/data/school-holidays.json';
 
@@ -239,7 +240,12 @@ export default function YearCalendar() {
   const t = useTranslations('schedulePage.calendar');
   const months = locale === 'nl' ? MONTHS_NL : MONTHS_EN;
 
-  const selected = selectSchoolYear(new Date());
+  const sortedYears = [...schoolHolidays.schoolYears].sort(
+    (a, b) => parseDate(a.endDate).getTime() - parseDate(b.endDate).getTime()
+  );
+  const defaultYear = selectSchoolYear(new Date()) ?? sortedYears[sortedYears.length - 1] ?? null;
+  const [selectedKey, setSelectedKey] = useState<string>(defaultYear?.schoolYear ?? '');
+  const selected = sortedYears.find((y) => y.schoolYear === selectedKey) ?? null;
 
   if (!selected) {
     return (
@@ -255,6 +261,29 @@ export default function YearCalendar() {
 
   return (
     <div>
+      {sortedYears.length > 1 && (
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {sortedYears.map((y) => {
+            const isActive = y.schoolYear === selectedKey;
+            return (
+              <button
+                key={y.schoolYear}
+                type="button"
+                onClick={() => setSelectedKey(y.schoolYear)}
+                aria-pressed={isActive}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  isActive
+                    ? 'bg-primary text-white'
+                    : 'bg-surface text-foreground hover:bg-border'
+                }`}
+              >
+                {locale === 'nl' ? `Schooljaar ${y.schoolYear}` : `School Year ${y.schoolYear}`}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-sm bg-primary" />
@@ -282,12 +311,6 @@ export default function YearCalendar() {
           />
         ))}
       </div>
-
-      <p className="text-center text-sm text-muted mt-6">
-        {locale === 'nl'
-          ? `Schooljaar ${selected.schoolYear}`
-          : `School Year ${selected.schoolYear}`}
-      </p>
     </div>
   );
 }
