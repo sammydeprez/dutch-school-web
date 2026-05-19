@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { OptimizedImage } from '@/components/ui';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -377,14 +378,14 @@ function MapSection() {
         <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{t('map')}</h2>
 
         <div className="relative aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps?q=-1.323051,36.702182&z=16&output=embed"
-            title="Dutch School Nairobi location"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full border-0"
+          <OptimizedImage
+            src="/images/map-static.png"
+            alt="Dutch School Nairobi location map"
+            width={1075}
+            height={600}
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           <a
             href="https://www.google.com/maps/place/The+Netherlands+School+Society/@-1.323051,36.702182,17z"
             target="_blank"
