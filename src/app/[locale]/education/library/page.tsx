@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { BookOpen } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -22,6 +22,7 @@ export default async function LibraryPage({ params }: { params: Promise<{ locale
     <>
       <HeroSection />
       <IntroSection />
+      <GallerySection />
       <CTASection />
     </>
   );
@@ -51,6 +52,37 @@ function IntroSection() {
           <p>{t('paragraph3')}</p>
           <p>{t('paragraph4')}</p>
           <p className="font-medium text-foreground">{t('paragraph5')}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GallerySection() {
+  const t = useTranslations('libraryPage.images');
+
+  return (
+    <section className="pb-20 lg:pb-28 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+            <OptimizedImage
+              src="/images/library-1.png"
+              alt={t('image1Alt')}
+              width={800}
+              height={600}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+            <OptimizedImage
+              src="/images/library-2.png"
+              alt={t('image2Alt')}
+              width={800}
+              height={600}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
