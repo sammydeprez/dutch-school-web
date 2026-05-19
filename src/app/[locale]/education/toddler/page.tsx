@@ -88,7 +88,7 @@ function IntroSection() {
           </div>
           <div className="aspect-[4/3] rounded-3xl overflow-hidden lg:sticky lg:top-24">
             <OptimizedImage
-              src="/images/toddler.png"
+              src="/images/toddler-page.png"
               alt="Toddler group at Dutch School Nairobi"
               width={800}
               height={600}

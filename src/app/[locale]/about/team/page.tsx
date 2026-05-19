@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Users, Wrench, ShieldCheck } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -55,7 +55,39 @@ function IntroSection() {
   );
 }
 
-type Member = { name: string; role: string };
+type Member = { name: string; role: string; image?: string };
+
+function MemberCard({ member, fallbackTint }: { member: Member; fallbackTint: 'primary' | 'secondary' }) {
+  const tintClass = fallbackTint === 'primary'
+    ? 'bg-primary/10 text-primary'
+    : 'bg-secondary/10 text-secondary';
+  const cardBg = fallbackTint === 'primary' ? 'bg-white' : 'bg-surface';
+  const FallbackIcon = fallbackTint === 'primary' ? Users : Wrench;
+
+  return (
+    <div className={`${cardBg} p-6 rounded-2xl flex items-center gap-4`}>
+      {member.image ? (
+        <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+          <OptimizedImage
+            src={member.image}
+            alt={member.name}
+            width={400}
+            height={400}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${tintClass}`}>
+          <FallbackIcon className="w-7 h-7" />
+        </div>
+      )}
+      <div className="min-w-0">
+        <h3 className="font-bold text-foreground">{member.name}</h3>
+        <p className="text-muted text-sm">{member.role}</p>
+      </div>
+    </div>
+  );
+}
 
 function RosterSection() {
   const t = useTranslations('teamPage.roster');
@@ -70,15 +102,7 @@ function RosterSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {members.map((member, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Users className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground">{member.name}</h3>
-                <p className="text-muted text-sm">{member.role}</p>
-              </div>
-            </div>
+            <MemberCard key={index} member={member} fallbackTint="primary" />
           ))}
         </div>
       </div>
@@ -105,17 +129,9 @@ function WholeTeamSection() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {members.map((member, index) => (
-            <div key={index} className="bg-surface p-6 rounded-2xl flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                <Wrench className="w-6 h-6 text-secondary" />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground text-sm">{member.name}</h3>
-                <p className="text-muted text-sm">{member.role}</p>
-              </div>
-            </div>
+            <MemberCard key={index} member={member} fallbackTint="secondary" />
           ))}
         </div>
       </div>

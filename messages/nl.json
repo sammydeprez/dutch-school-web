@@ -411,18 +411,18 @@
     "roster": {
       "title": "Ons Onderwijsteam",
       "members": [
-        { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht" },
-        { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht" },
-        { "name": "Jessica Donia", "role": "Bovenbouwleerkracht" },
-        { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht" },
-        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht" },
-        { "name": "Sarah Vijzelman", "role": "Peuterleerkracht" },
-        { "name": "Caroline Slot", "role": "Peuterleerkracht" },
-        { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente" },
-        { "name": "Faith Sambe", "role": "Onderwijsassistente" },
-        { "name": "Jacinta", "role": "Onderwijsassistente" },
-        { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen" },
-        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE" }
+        { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht", "image": "/images/team/director.png" },
+        { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht", "image": "/images/team/primary-head.png" },
+        { "name": "Jessica Donia", "role": "Bovenbouwleerkracht", "image": "/images/team/jessica.png" },
+        { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht", "image": "/images/team/bo.png" },
+        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "" },
+        { "name": "Sarah Vijzelman", "role": "Peuterleerkracht", "image": "/images/team/early-years-head.png" },
+        { "name": "Caroline Slot", "role": "Peuterleerkracht", "image": "" },
+        { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente", "image": "/images/team/elsie.png" },
+        { "name": "Faith Sambe", "role": "Onderwijsassistente", "image": "/images/team/faith.png" },
+        { "name": "Jacinta", "role": "Onderwijsassistente", "image": "/images/team/jacinta.png" },
+        { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen", "image": "" },
+        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE", "image": "" }
       ]
     },
     "wholeTeam": {
@@ -432,10 +432,13 @@
       "content3": "Onze Finance & Operations Manager waakt over het reilen en zeilen achter de schermen en wordt daarin ondersteund door onze conciërge. Onze schoonmaaksters zorgen er elke dag opnieuw voor dat de school schoon, fris en uitnodigend blijft.",
       "content4": "We bieden al onze medewerkers een veilige, respectvolle werkomgeving waarin samenwerking, betrokkenheid en plezier centraal staan. Want alleen als ons team goed in zijn vel zit, kunnen we samen een optimale leeromgeving creëren voor ieder kind.",
       "members": [
-        { "name": "Lucy Kamau", "role": "Finance and Operations Manager" },
-        { "name": "Mulwa, Charles, Steve & Robert", "role": "Tuinmannen" },
-        { "name": "Steve & Robert", "role": "Buschauffeurs" },
-        { "name": "Achieng & Charity", "role": "Schoonmakers" }
+        { "name": "Lucy Kamau", "role": "Finance and Operations Manager", "image": "/images/team/operations.png" },
+        { "name": "Mulwa", "role": "Tuinman", "image": "/images/team/mulwa.png" },
+        { "name": "Charles", "role": "Tuinman", "image": "/images/team/charles.png" },
+        { "name": "Robbert", "role": "Buschauffeur & Tuinman", "image": "/images/team/robbert.png" },
+        { "name": "Steve", "role": "Buschauffeur & Tuinman", "image": "" },
+        { "name": "Achieng", "role": "Schoonmaker", "image": "/images/team/achieng.png" },
+        { "name": "Charity", "role": "Schoonmaker", "image": "/images/team/charity.png" }
       ]
     },
     "leadership": {
@@ -937,6 +940,10 @@
       "paragraph3": "De bibliotheek is een geliefde plek binnen onze school. Hier leren kinderen niet alleen lezen, maar ook zorg dragen voor hun boeken. Met hun eigen canvas bibliotheektas kiezen zij wekelijks nieuwe boeken uit, met dank aan onze betrokken 'biebouders' die alles in goede banen leiden.",
       "paragraph4": "Door het jaar heen zetten we verschillende thema's en boekgenres in de spotlight. Een hoogtepunt is de Kinderboekenweek in oktober, waarin de hele school twee weken lang bruist van verhalen, voorlezen en creatieve boekactiviteiten.",
       "paragraph5": "Onze bibliotheek brengt niet alleen kinderen, maar ook ouders dichter bij het leesplezier, een uitnodiging om samen te blijven ontdekken, bladeren en genieten van de wereld die boeken openen."
+    },
+    "images": {
+      "image1Alt": "Kinderen lezen in de schoolbibliotheek",
+      "image2Alt": "Kind gebruikt een digitaal leesapparaat in de bibliotheek"
     },
     "cta": {
       "title": "Kom Onze Bibliotheek Bezoeken",

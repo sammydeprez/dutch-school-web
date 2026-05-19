@@ -411,18 +411,18 @@
     "roster": {
       "title": "Our Teaching Team",
       "members": [
-        { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
-        { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
-        { "name": "Jessica Donia", "role": "Upper Primary Teacher" },
-        { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher" },
-        { "name": "Jantien Hofland", "role": "Lower Primary Teacher" },
-        { "name": "Sarah Vijzelman", "role": "Toddler Teacher" },
-        { "name": "Caroline Slot", "role": "Toddler Teacher" },
-        { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant" },
-        { "name": "Faith Sambe", "role": "Teaching Assistant" },
-        { "name": "Jacinta", "role": "Teaching Assistant" },
-        { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches" },
-        { "name": "Miss Sandra", "role": "English & PE Teacher" }
+        { "name": "Hanneke Hollak", "role": "School Leader and Teacher", "image": "/images/team/director.png" },
+        { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher", "image": "/images/team/primary-head.png" },
+        { "name": "Jessica Donia", "role": "Upper Primary Teacher", "image": "/images/team/jessica.png" },
+        { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher", "image": "/images/team/bo.png" },
+        { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "" },
+        { "name": "Sarah Vijzelman", "role": "Toddler Teacher", "image": "/images/team/early-years-head.png" },
+        { "name": "Caroline Slot", "role": "Toddler Teacher", "image": "" },
+        { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant", "image": "/images/team/elsie.png" },
+        { "name": "Faith Sambe", "role": "Teaching Assistant", "image": "/images/team/faith.png" },
+        { "name": "Jacinta", "role": "Teaching Assistant", "image": "/images/team/jacinta.png" },
+        { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches", "image": "" },
+        { "name": "Miss Sandra", "role": "English & PE Teacher", "image": "" }
       ]
     },
     "wholeTeam": {
@@ -432,10 +432,13 @@
       "content3": "Our Finance & Operations Manager watches over the day-to-day running behind the scenes and is supported by our caretaker. Our cleaners ensure every day that the school stays clean, fresh, and welcoming.",
       "content4": "We offer all our staff a safe, respectful working environment in which collaboration, engagement, and joy take center stage. Because only when our team feels good can we together create an optimal learning environment for every child.",
       "members": [
-        { "name": "Lucy Kamau", "role": "Finance and Operations Manager" },
-        { "name": "Mulwa, Charles, Steve & Robert", "role": "Gardeners" },
-        { "name": "Steve & Robert", "role": "Bus Drivers" },
-        { "name": "Achieng & Charity", "role": "Cleaners" }
+        { "name": "Lucy Kamau", "role": "Finance and Operations Manager", "image": "/images/team/operations.png" },
+        { "name": "Mulwa", "role": "Gardener", "image": "/images/team/mulwa.png" },
+        { "name": "Charles", "role": "Gardener", "image": "/images/team/charles.png" },
+        { "name": "Robbert", "role": "Bus Driver & Gardener", "image": "/images/team/robbert.png" },
+        { "name": "Steve", "role": "Bus Driver & Gardener", "image": "" },
+        { "name": "Achieng", "role": "Cleaner", "image": "/images/team/achieng.png" },
+        { "name": "Charity", "role": "Cleaner", "image": "/images/team/charity.png" }
       ]
     },
     "leadership": {
@@ -937,6 +940,10 @@
       "paragraph3": "The library is a beloved place in our school. Here children learn not only to read, but also to take care of their books. With their own canvas library bag, they choose new books every week, thanks to our dedicated 'library parents' who keep everything running smoothly.",
       "paragraph4": "Throughout the year, we highlight various themes and book genres. A highlight is the Children's Book Week in October, during which the whole school buzzes with stories, reading aloud, and creative book activities for two weeks.",
       "paragraph5": "Our library brings not only children but also parents closer to the joy of reading; an invitation to keep discovering, browsing, and enjoying the world that books open up together."
+    },
+    "images": {
+      "image1Alt": "Children reading in the school library",
+      "image2Alt": "Child using a digital reading device in the library"
     },
     "cta": {
       "title": "Come Visit Our Library",
