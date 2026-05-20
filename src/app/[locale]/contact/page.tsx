@@ -43,7 +43,7 @@ function ContactPageSchema() {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '08:00',
-        closes: '16:00',
+        closes: '16:30',
       },
     },
   };
@@ -331,8 +331,7 @@ function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{t('info.hours')}</h3>
                   <p className="text-muted">
-                    {t('info.hoursValue')}<br />
-                    <span className="text-sm">School: 8:00 AM - 3:30 PM</span>
+                    {t('info.hoursValue')}
                   </p>
                 </div>
               </div>
@@ -343,7 +342,7 @@ function ContactSection() {
               <h3 className="font-semibold text-foreground mb-4">Quick Contact</h3>
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://wa.me/254123456789"
+                  href="https://wa.me/254733675432"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-xl hover:bg-[#128C7E] transition-colors font-medium"

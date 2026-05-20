@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -28,17 +28,23 @@ export default function Footer() {
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/NetherlandsSchool/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/the.dutch.school/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="YouTube">
-                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -95,14 +101,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/education/curriculum" className="text-white/70 hover:text-white transition-colors">
-                  {t('educationList.curriculum')}
-                </Link>
-              </li>
-              <li>
-                <span className="text-white/70">
+                <Link href="/adult-classes" className="text-white/70 hover:text-white transition-colors">
                   {t('educationList.adultDutch')}
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
