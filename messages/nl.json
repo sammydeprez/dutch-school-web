@@ -1213,8 +1213,8 @@
       "subtitle": "Transparante tariefstructuur"
     },
     "intro": {
-      "title": "Twee Tariefgroepen",
-      "content": "Dutch School Nairobi hanteert twee tariefgroepen om het onderwijs toegankelijk te houden voor verschillende gezinssituaties."
+      "title": "Tariefgroepen",
+      "content": "Om onderwijs voor zoveel mogelijk gezinnen toegankelijk te houden, werken we met verschillende tarieven. Voor onze peutergroep geldt een apart tarief, waarbij ouders kunnen kiezen voor 2 tot 5 ochtenden per week. Binnen de basisschool maken we onderscheid tussen groep 1-2 en groep 3-8. Daarnaast bieden we een aangepast tarief voor gezinnen die geen werkgeversbijdrage van 75% of meer ontvangen."
     },
     "tariffs": {
       "title": "Tariefgroepen",
@@ -1229,12 +1229,25 @@
         "note": "Gereduceerd tarief"
       }
     },
+    "toddlerSection": {
+      "title": "Peutertarieven",
+      "subtitle": "Tarieven per trimester op basis van het aantal ochtenden per week",
+      "morningsHeader": "Ochtenden per week",
+      "morningsSuffix": "ochtenden",
+      "notes": [
+        "Minimaal 2 ochtenden per week.",
+        "De lestijden met de Nederlandstalige leerkracht zijn van 8.00 - 12.00 uur.",
+        "Er is een optie om in de middag tot 15.00 uur te blijven onder begeleiding van een Engelstalige onderwijsassistent. Hiervoor wordt 5 euro extra per middag in rekening gebracht.",
+        "Bij aanmelding geldt een borg van 250 euro per peuter. Voor peuters wordt geen inschrijfgeld in rekening gebracht."
+      ]
+    },
     "included": {
       "title": "Inbegrepen",
       "items": [
         "Alle lesmaterialen en boeken",
-        "Onderwijsactiviteiten en excursies",
-        "Toegang tot Skills Club basis-activiteiten"
+        "Onderwijsactiviteiten en excursies (muv schoolkamp)",
+        "Language en Skills Club activiteiten",
+        "Gebruik van de compound en het zwembad in de weekenden"
       ]
     },
     "additional": {
@@ -1242,17 +1255,16 @@
       "items": [
         "Inschrijfgeld (eenmalig voor nieuwe leerlingen)",
         "Schoolbus (optioneel)",
-        "Lunch (optioneel)",
-        "Specifieke Skills Club activiteiten"
+        "After School Activities (optioneel)"
       ]
     },
     "payment": {
       "title": "Betaling",
-      "content": "Schoolgeld kan per trimester of per jaar worden betaald. Betalingsregelingen zijn bespreekbaar."
+      "content": "Schoolgeld kan per trimester of per jaar worden betaald. Maandelijkse betalingsregelingen zijn bespreekbaar."
     },
     "siblings": {
       "title": "Korting",
-      "content": "Er geldt een korting voor het tweede en volgende kind uit hetzelfde gezin."
+      "content": "Voor de basisschool geldt er een korting voor het tweede en volgende kind uit hetzelfde gezin."
     },
     "table": {
       "ages": "Leeftijd",

@@ -1213,8 +1213,8 @@
       "subtitle": "Transparent fee structure"
     },
     "intro": {
-      "title": "Two Tariff Groups",
-      "content": "Dutch School Nairobi uses two tariff groups to keep education accessible for different family situations."
+      "title": "Tariff Groups",
+      "content": "To keep education accessible to as many families as possible, we work with several tariffs. The toddler group has its own pricing based on 2 to 5 mornings per week. Within primary school we distinguish between groups 1-2 and groups 3-8. In addition, we offer an adjusted tariff for families who don't receive a 75% or higher employer contribution."
     },
     "tariffs": {
       "title": "Tariff Groups",
@@ -1229,30 +1229,42 @@
         "note": "Reduced rate"
       }
     },
+    "toddlerSection": {
+      "title": "Toddler Tariffs",
+      "subtitle": "Per-term rates based on number of mornings per week",
+      "morningsHeader": "Mornings per week",
+      "morningsSuffix": "mornings",
+      "notes": [
+        "Minimum 2 mornings per week.",
+        "Lesson hours with the Dutch-speaking teacher are 8:00 AM - 12:00 noon.",
+        "There is an option to stay in the afternoon until 3:00 PM under the supervision of an English-speaking teaching assistant. This is charged at 5 euro per afternoon.",
+        "Upon admission a 250 euro deposit is required per toddler. No entry fee is charged for toddlers."
+      ]
+    },
     "included": {
       "title": "Included",
       "items": [
         "All learning materials and books",
-        "Educational activities and field trips",
-        "Access to basic Skills Club activities"
+        "Educational activities and excursions (excluding school camp)",
+        "Language and Skills Club activities",
+        "Use of the compound and swimming pool on weekends"
       ]
     },
     "additional": {
       "title": "Additional Costs",
       "items": [
-        "Registration fee (one-time for new students)",
+        "Entry fee (one-time, for new students)",
         "School bus (optional)",
-        "Lunch (optional)",
-        "Specific Skills Club activities"
+        "After School Activities (optional)"
       ]
     },
     "payment": {
       "title": "Payment",
-      "content": "Tuition can be paid per term or per year. Payment arrangements can be discussed."
+      "content": "Tuition can be paid per term or per year. Monthly payment arrangements can be discussed."
     },
     "siblings": {
       "title": "Discount",
-      "content": "A discount applies for the second and subsequent children from the same family."
+      "content": "For primary school, a discount applies for the second and subsequent children from the same family."
     },
     "table": {
       "ages": "Ages",
