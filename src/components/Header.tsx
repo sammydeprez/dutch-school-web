@@ -46,7 +46,7 @@ export default function Header() {
     ],
   };
 
-  const programsDropdown: NavDropdown = {
+  const educationDropdown: NavDropdown = {
     label: t('programs'),
     sections: [
       {
@@ -59,6 +59,11 @@ export default function Header() {
           { href: '/education/language-club', label: t('languageClub') },
           { href: '/education/skills-club', label: t('skillsClub') },
           { href: '/education/library', label: t('library') },
+          { href: '/student-support', label: t('studentSupport') },
+          { href: '/practical/schedule', label: t('schedule') },
+          { href: '/practical/transport', label: t('transport') },
+          { href: '/practical/fees', label: t('fees') },
+          { href: '/practical/food', label: t('food') },
         ],
       },
       {
@@ -77,21 +82,6 @@ export default function Header() {
           { href: '/adult-classes/fees', label: t('adultClassesFees') },
         ],
       },
-      {
-        label: t('studentSupport'),
-        href: '/student-support',
-        items: [],
-      },
-    ],
-  };
-
-  const practicalDropdown: NavDropdown = {
-    label: t('practical'),
-    items: [
-      { href: '/practical', label: t('practicalOverview') },
-      { href: '/practical/schedule', label: t('schedule') },
-      { href: '/practical/transport', label: t('transport') },
-      { href: '/practical/fees', label: t('fees') },
     ],
   };
 
@@ -152,8 +142,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             <NavigationDropdown dropdown={aboutDropdown} />
-            <NavigationDropdown dropdown={programsDropdown} />
-            <NavigationDropdown dropdown={practicalDropdown} />
+            <NavigationDropdown dropdown={educationDropdown} />
             <NavigationDropdown dropdown={communityDropdown} />
 
             <Link
@@ -238,19 +227,12 @@ export default function Header() {
               </div>
               <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                 <NavigationDropdown
-                  dropdown={programsDropdown}
+                  dropdown={educationDropdown}
                   mobile
                   onItemClick={() => setIsMenuOpen(false)}
                 />
               </div>
               <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-                <NavigationDropdown
-                  dropdown={practicalDropdown}
-                  mobile
-                  onItemClick={() => setIsMenuOpen(false)}
-                />
-              </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                 <NavigationDropdown
                   dropdown={communityDropdown}
                   mobile

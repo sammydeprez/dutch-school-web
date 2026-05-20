@@ -7,11 +7,11 @@
     "team": "The Team",
     "campus": "Location & Campus",
     "education": "Day School",
-    "programs": "Programs",
+    "programs": "Education",
     "educationOverview": "Overview",
     "toddler": "Toddler Group",
     "primary": "Primary School",
-    "curriculum": "Our Education",
+    "curriculum": "Our Approach",
     "languageClub": "Language Club",
     "skillsClub": "Skills Club",
     "library": "Library",
@@ -29,6 +29,7 @@
     "schedule": "School Hours",
     "transport": "Transport",
     "fees": "School Fees",
+    "food": "Food & Drink",
     "community": "Community",
     "communityOverview": "Overview",
     "parents": "For Parents",
@@ -628,7 +629,7 @@
       "visionParagraph5": "The strength of our bilingual education lies in the balance between familiar and international: Dutch as a solid foundation, English as a window to the world. This way we create an environment in which students can be themselves, experience connection with others, and grow with confidence into multilingual, curious, and open-minded global citizens."
     },
     "bilingual": {
-      "title": "Our Education",
+      "title": "Our Approach",
       "kindergarten": {
         "title": "Kindergarten Education (Groups 1-2)",
         "description": "In our kindergarten groups, we lay a solid foundation for lifelong learning through play. In a rich, bilingual learning environment (3 days Dutch, 2 days English) full of play, discovery, and wonder, children grow in language, self-confidence, and social skills. Through meaningful IEYC themes, we stimulate curiosity, creativity, and a natural development in both Dutch and English.",
@@ -809,7 +810,7 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Our Education",
+      "title": "Our Approach",
       "subtitle": "A balanced bilingual education program with IEYC, IPC, Dutch core objectives, and English language lessons"
     },
     "intro": {
