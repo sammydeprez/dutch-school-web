@@ -6,16 +6,16 @@
       "amount": 615,
       "name": "Entry Fee",
       "nameNl": "Inschrijfgeld",
-      "note": "per child, non-refundable",
-      "noteNl": "per kind, niet-restitueerbaar"
+      "note": "per child, non-refundable; primary school only",
+      "noteNl": "per kind, niet-restitueerbaar; alleen basisschool"
     },
     "deposit": {
       "name": "Caution and Security Deposit",
       "nameNl": "Borg",
       "tariff1": 750,
       "tariff2": 500,
-      "note": "per child, refundable",
-      "noteNl": "per kind, restitueerbaar"
+      "note": "per primary-school child, refundable",
+      "noteNl": "per basisschool-kind, restitueerbaar"
     }
   },
   "terms": [
@@ -23,13 +23,26 @@
     { "name": "Term 2", "nameNl": "Trimester 2", "weeks": 12 },
     { "name": "Term 3", "nameNl": "Trimester 3", "weeks": 10 }
   ],
+  "toddler": {
+    "name": "Toddler Group",
+    "nameNl": "Peutergroep",
+    "ageRange": "1.5-4",
+    "mornings": {
+      "2": { "term1": 708, "term2": 567, "term3": 472, "annual": 1747 },
+      "3": { "term1": 1063, "term2": 850, "term3": 708, "annual": 2621 },
+      "4": { "term1": 1416, "term2": 1133, "term3": 945, "annual": 3494 },
+      "5": { "term1": 1771, "term2": 1417, "term3": 1180, "annual": 4368 }
+    },
+    "afternoonFee": { "amount": 5 },
+    "deposit": { "amount": 250 }
+  },
   "programs": [
     {
-      "id": "toddler",
-      "name": "Toddler Group",
-      "nameNl": "Peutergroep",
+      "id": "kleuters",
+      "name": "Primary School Groups 1-2",
+      "nameNl": "Basisschool Groep 1-2",
       "groups": "1-2",
-      "ageRange": "2.5-4",
+      "ageRange": "4-6",
       "tariefgroep1": {
         "term1": 4023,
         "term2": 3218,
@@ -44,10 +57,10 @@
     },
     {
       "id": "primary",
-      "name": "Primary School",
-      "nameNl": "Basisschool",
+      "name": "Primary School Groups 3-8",
+      "nameNl": "Basisschool Groep 3-8",
       "groups": "3-8",
-      "ageRange": "4-12",
+      "ageRange": "6-12",
       "tariefgroep1": {
         "term1": 6062,
         "term2": 4886,
@@ -76,9 +89,9 @@
     }
   },
   "notes": {
-    "review": "School fees are reviewed annually at the general members' meeting with member approval.",
-    "reviewNl": "De schoolgelden worden elk jaar herzien in de algemene ledenvergadering met toestemming van de leden.",
-    "deposit": "The security deposit is refunded when leaving the school, provided the school has a positive cashflow position.",
-    "depositNl": "De borg wordt terugbetaald bij het verlaten van de school, mits de school een positieve cashflowpositie heeft."
+    "review": "School fees are reviewed annually at the general members' meeting with approval of the members (parents of the school).",
+    "reviewNl": "De schoolgelden worden elk jaar herzien in de algemene ledenvergadering met toestemming van de leden (ouders van school).",
+    "deposit": "The security deposit is refunded when leaving the school, provided the school has a positive operational result for the relevant school year.",
+    "depositNl": "De borg wordt terugbetaald bij het verlaten van de school, mits de school een positief operationeel resultaat heeft voor het desbetreffende schooljaar."
   }
 }
