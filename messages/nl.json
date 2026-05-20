@@ -316,7 +316,7 @@
       "members": {
         "director": { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht" },
         "headPrimary": { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht" },
-        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Peuterleerkracht" },
+        "headEarlyYears": { "name": "Joke Neuskens", "role": "Peuterleerkracht" },
         "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
@@ -411,14 +411,15 @@
         { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht", "image": "/images/team/primary-head.png" },
         { "name": "Jessica Donia", "role": "Bovenbouwleerkracht", "image": "/images/team/jessica.png" },
         { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht", "image": "/images/team/bo.png" },
-        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "" },
-        { "name": "Sarah Vijzelman", "role": "Peuterleerkracht", "image": "/images/team/early-years-head.png" },
+        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "/images/team/jantien.png" },
+        { "name": "Joke Neuskens", "role": "Peuterleerkracht", "image": "/images/team/joke.png" },
         { "name": "Caroline Slot", "role": "Peuterleerkracht", "image": "" },
         { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Onderwijsassistente", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Onderwijsassistente", "image": "/images/team/jacinta.png" },
-        { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen", "image": "" },
-        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE", "image": "" }
+        { "name": "Coach Ray", "role": "Vakleerkracht zwemmen", "image": "/images/team/coach-ray.png" },
+        { "name": "Coach Steve", "role": "Vakleerkracht zwemmen", "image": "/images/team/coach-steve.png" },
+        { "name": "Miss Sandra Aleri", "role": "Vakleerkracht Engels & PE", "image": "" }
       ]
     },
     "wholeTeam": {
@@ -432,7 +433,7 @@
         { "name": "Mulwa", "role": "Tuinman", "image": "/images/team/mulwa.png" },
         { "name": "Charles", "role": "Tuinman", "image": "/images/team/charles.png" },
         { "name": "Robbert", "role": "Buschauffeur & Tuinman", "image": "/images/team/robbert.png" },
-        { "name": "Steve", "role": "Buschauffeur & Tuinman", "image": "" },
+        { "name": "Steve", "role": "Buschauffeur & Tuinman", "image": "/images/team/steve.png" },
         { "name": "Achieng", "role": "Schoonmaker", "image": "/images/team/achieng.png" },
         { "name": "Charity", "role": "Schoonmaker", "image": "/images/team/charity.png" }
       ]

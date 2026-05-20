@@ -316,7 +316,7 @@
       "members": {
         "director": { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
         "headPrimary": { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
-        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Toddler Teacher" },
+        "headEarlyYears": { "name": "Joke Neuskens", "role": "Toddler Teacher" },
         "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
@@ -411,14 +411,15 @@
         { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher", "image": "/images/team/primary-head.png" },
         { "name": "Jessica Donia", "role": "Upper Primary Teacher", "image": "/images/team/jessica.png" },
         { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher", "image": "/images/team/bo.png" },
-        { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "" },
-        { "name": "Sarah Vijzelman", "role": "Toddler Teacher", "image": "/images/team/early-years-head.png" },
+        { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "/images/team/jantien.png" },
+        { "name": "Joke Neuskens", "role": "Toddler Teacher", "image": "/images/team/joke.png" },
         { "name": "Caroline Slot", "role": "Toddler Teacher", "image": "" },
         { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Teaching Assistant", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Teaching Assistant", "image": "/images/team/jacinta.png" },
-        { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches", "image": "" },
-        { "name": "Miss Sandra", "role": "English & PE Teacher", "image": "" }
+        { "name": "Coach Ray", "role": "Swimming Coach", "image": "/images/team/coach-ray.png" },
+        { "name": "Coach Steve", "role": "Swimming Coach", "image": "/images/team/coach-steve.png" },
+        { "name": "Miss Sandra Aleri", "role": "English & PE Teacher", "image": "" }
       ]
     },
     "wholeTeam": {
@@ -432,7 +433,7 @@
         { "name": "Mulwa", "role": "Gardener", "image": "/images/team/mulwa.png" },
         { "name": "Charles", "role": "Gardener", "image": "/images/team/charles.png" },
         { "name": "Robbert", "role": "Bus Driver & Gardener", "image": "/images/team/robbert.png" },
-        { "name": "Steve", "role": "Bus Driver & Gardener", "image": "" },
+        { "name": "Steve", "role": "Bus Driver & Gardener", "image": "/images/team/steve.png" },
         { "name": "Achieng", "role": "Cleaner", "image": "/images/team/achieng.png" },
         { "name": "Charity", "role": "Cleaner", "image": "/images/team/charity.png" }
       ]
