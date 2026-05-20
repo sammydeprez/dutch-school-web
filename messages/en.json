@@ -1286,7 +1286,10 @@
     },
     "intro": {
       "title": "Stronger Together",
-      "content": "Dutch School Nairobi is more than a school - it's a community. Parents, students, and staff together form a close-knit group where everyone knows and supports each other."
+      "content": "The Dutch School is more than a school, it's a community. Parents, students, and team members together form a close-knit group where everyone knows and supports each other.",
+      "paragraph2": "Every morning, coffee and tea are ready for parents, so after dropping off the children there is space to meet, catch up, and make new connections. This is how we foster a warm and connected school community in which parents easily find one another.",
+      "paragraph3": "The school is an association, which means that all parents automatically become members of the school community. As members, parents have voting rights and actively help shape the school's future. An engaged board, made up of parents, oversees the running of the school and supports the direction and continuity of the organization.",
+      "paragraph4": "Twice a year we organize a General Members' Meeting (ALV), in which parents are kept up to date on developments within the school and can vote on important topics such as budgets, annual plans, and other policy choices. Together we build a strong, transparent, and engaged school community."
     },
     "sections": {
       "parents": {
@@ -1296,7 +1299,7 @@
       },
       "events": {
         "title": "Events",
-        "description": "Dutch traditions, school celebrations, and social activities.",
+        "description": "Dutch and Flemish traditions, theme weeks, and social activities.",
         "link": "View Events"
       }
     },
@@ -1313,13 +1316,13 @@
     },
     "intro": {
       "title": "Parent Involvement",
-      "content": "At Dutch School Nairobi, parents are important partners. We believe in open communication and active parent involvement in school life."
+      "content": "At the Dutch School, parents are important partners. We believe in open communication and active parent involvement in school life."
     },
     "communication": {
       "title": "Communication",
       "items": [
         "Weekly newsletter",
-        "Parent portal for practical information",
+        "Parent App for updates and practical information",
         "Regular parent meetings",
         "Direct communication with teachers"
       ]
@@ -1335,8 +1338,9 @@
       ]
     },
     "parentCommittee": {
-      "title": "Parent Association",
-      "content": "The parent association organizes events and represents parent interests. New members are always welcome."
+      "title": "Coffee Mornings",
+      "content": "At the Dutch School we regularly organize coffee mornings to bring parents together and create space for meeting, inspiration, and exchange. During these gatherings we discuss educational themes as well as topics around parenting, child development, and family life.",
+      "paragraph2": "The coffee mornings offer a platform to gain new insights, share experiences, and learn from each other. The school regularly puts topics on the table and invites outside experts where appropriate. At the same time we encourage parents to bring their own ideas, or to host a session themselves drawing on their own knowledge, background, or expertise. Together we build a learning and engaged school community."
     },
     "cta": {
       "title": "Questions About Parent Involvement?",
@@ -1347,43 +1351,59 @@
   "eventsPage": {
     "hero": {
       "title": "Events",
-      "subtitle": "Dutch traditions and international celebrations"
+      "subtitle": "Dutch and Flemish traditions and international celebrations"
     },
     "intro": {
       "title": "A Year Full of Events",
-      "content": "At Dutch School Nairobi, we celebrate both Dutch traditions and international holidays. These events strengthen our community and connect children with their cultural background."
+      "content": "At the Dutch School we celebrate both Dutch and Flemish traditions and international holidays. These events strengthen our community and connect children with their own cultural background and that of their classmates."
     },
-    "dutch": {
-      "title": "Dutch Traditions",
+    "traditions": {
+      "title": "Traditions",
       "events": {
         "sinterklaas": {
           "title": "Sinterklaas",
-          "description": "In early December, the whole school celebrates Sinterklaas with songs, surprises, and pepernoten."
+          "description": "In late November / early December the whole school celebrates Sinterklaas with songs, surprises, and pepernoten. The weeks beforehand are also dedicated to the build-up in the classroom."
         },
-        "koningsdag": {
-          "title": "King's Day",
-          "description": "An orange celebration with games, flea market, and Dutch gezelligheid."
+        "koningsspelen": {
+          "title": "Koningsspelen and Orange Party",
+          "description": "Every year the school takes part in the Koningsspelen, an active sports day. Around King's Day we also organize an orange party with games, a flea market, and Dutch gezelligheid."
+        },
+        "belgischeDag": {
+          "title": "Belgian Day",
+          "description": "In November we celebrate our annual Belgian Day at school. Students learn more about Belgium, get to know Belgian traditions, and enjoy typical treats and fun activities together. A lovely way to experience culture and celebrate together."
         },
         "kerst": {
           "title": "Christmas Celebration",
           "description": "A joint Christmas celebration with performances by the children."
+        },
+        "eindmusical": {
+          "title": "End-of-Year Musical",
+          "description": "Celebrating the end of the school year with a musical and a farewell to group 8 and other departing students."
         }
       }
     },
-    "school": {
-      "title": "School Events",
+    "themaweken": {
+      "title": "Theme Weeks",
       "events": {
-        "openDay": {
-          "title": "Open Day",
-          "description": "Getting to know our school for interested families."
+        "kinderboekenweek": {
+          "title": "Children's Book Week",
+          "description": "During the National Children's Book Week the whole school is dedicated to the joy of reading and stories. Around the annual theme we organize activities involving books, reading aloud, and creative language use, so that students discover how fun and inspiring reading can be."
         },
-        "sportsDay": {
-          "title": "Sports Day",
-          "description": "A day full of sports and games for all students."
+        "lentekriebels": {
+          "title": "Spring Buzz Week",
+          "description": "During the Week of Spring Buzz we give age-appropriate and respectful attention to themes such as relationships, resilience, boundaries, feelings, and learning to understand yourself and others. This supports students' social-emotional development and contributes to a safe and open school culture."
         },
-        "endOfYear": {
-          "title": "End of Year Celebration",
-          "description": "Celebrating the end of the school year with performances and farewell to group 8."
+        "neuroDiversity": {
+          "title": "Neurodiversity Week",
+          "description": "During Neurodiversity Week we celebrate the different ways people think, learn, and experience the world. Students discover that differences are valuable and learn to look at themselves and others with curiosity, understanding, and respect."
+        },
+        "wereldReligie": {
+          "title": "World Religions Week",
+          "description": "During World Religions Week students get to know various world religions and worldviews. By exploring together, asking questions, and discovering similarities and differences, we encourage respect, openness, and global citizenship."
+        },
+        "verkeersweek": {
+          "title": "Traffic Week",
+          "description": "During Traffic Week students work on traffic skills and traffic awareness in an active, hands-on way. With games, assignments, and their own bike or other wheels, they learn to apply traffic rules and take part safely in traffic."
         }
       }
     },
