@@ -63,23 +63,13 @@ function RoutesSection() {
     {
       title: t('route1.title'),
       description: t('route1.description'),
-      areas: [
-        t('route1.areas.0'),
-        t('route1.areas.1'),
-        t('route1.areas.2'),
-        t('route1.areas.3'),
-      ],
+      areas: t.raw('route1.areas') as string[],
       color: 'primary',
     },
     {
       title: t('route2.title'),
       description: t('route2.description'),
-      areas: [
-        t('route2.areas.0'),
-        t('route2.areas.1'),
-        t('route2.areas.2'),
-        t('route2.areas.3'),
-      ],
+      areas: t.raw('route2.areas') as string[],
       color: 'secondary',
     },
   ];
