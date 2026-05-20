@@ -1087,11 +1087,46 @@
         "title": "Schoolgeld",
         "description": "Informatie over tarieven en betalingsregelingen.",
         "link": "Bekijk Schoolgeld"
+      },
+      "food": {
+        "title": "Eten en drinken",
+        "description": "Snacks, lunch en eetmomenten samen met de klas.",
+        "link": "Bekijk Eten en drinken"
       }
     },
     "contact": {
       "title": "Vragen?",
       "content": "Voor praktische vragen kunt u contact opnemen met ons kantoor.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "foodPage": {
+    "hero": {
+      "title": "Eten en drinken",
+      "subtitle": "Snacks, lunch en eetmomenten samen met de klas"
+    },
+    "intro": {
+      "content": "Bij de Dutch School eten de kinderen gezellig samen met hun klas. Iedere dag nemen de leerlingen hun eigen snack en lunch mee van thuis, zodat ze iets kunnen eten wat ze lekker vinden en wat goed bij hen past."
+    },
+    "schedule": {
+      "title": "Pauzes en eetmomenten",
+      "content": "De snack wordt in de klas gegeten, vlak voor de korte pauze van 10.00 tot 10.30 uur. De lunch is om 11.45 uur voor de onderbouw en om 12.15 uur voor de midden- en bovenbouw. Daarna is het tijd om lekker buiten te spelen en even te ontspannen."
+    },
+    "healthy": {
+      "title": "Gezonde keuzes",
+      "content": "We moedigen gezonde keuzes aan. Een stuk fruit of een andere gezonde snack is ideaal voor in de ochtend. Tijdens de lunch genieten veel kinderen van een boterham, maar een andere maaltijd meenemen mag natuurlijk ook. Op onze school zien we een mooie mix aan lunchgewoontes terug: van chapati tot pasta of rijstgerechten in warmhoudbakjes. Divers, internationaal en passend bij wat kinderen lekker vinden en gewend zijn van thuis. Houd er wel rekening mee dat we op school geen maaltijden kunnen opwarmen."
+    },
+    "water": {
+      "title": "Drinkwater",
+      "content": "Er is voldoende schoon drinkwater aanwezig waar de kinderen de hele dag gebruik van kunnen maken."
+    },
+    "social": {
+      "title": "Een gezellig moment samen",
+      "content": "De snack- en lunchmomenten zijn bedoeld als een rustig en gezellig moment samen. Vaak leest de leerkracht tijdens het eten een leuk, spannend of grappig verhaal voor. Een fijne pauze midden op de schooldag!"
+    },
+    "cta": {
+      "title": "Vragen over eten en drinken?",
+      "subtitle": "Neem contact op voor meer informatie.",
       "button": "Neem Contact Op"
     }
   },
@@ -1104,19 +1139,20 @@
       "title": "Dagelijks Rooster",
       "toddler": {
         "title": "Peuterspeelzaal",
-        "hours": "8:30 - 12:30",
-        "note": "2-5 ochtenden per week naar keuze"
+        "hours": "8.00 - 12.00",
+        "note": "2-5 ochtenden naar keuze. Opvang mogelijk in de middag van 12.00 - 15.00 (ma-do) en 12.00 - 14.00 (vr)."
       },
       "primary": {
         "title": "Basisschool",
-        "hours": "8:00 - 15:00 (ma-do), 8:00 - 12:30 (vr)",
-        "note": "Lunch op school"
+        "hours": "8.00 - 15.00 (ma-do), 8.00 - 14.00 (vr)",
+        "note": ""
       }
     },
     "breaks": {
       "title": "Pauzes",
-      "morning": "Ochtendpauze: 10:15 - 10:30",
-      "lunch": "Lunchpauze: 12:00 - 12:45"
+      "morning": "Ochtendpauze: 10.00 - 10.30",
+      "lunch": "Lunchpauze: 12.15 - 13.00",
+      "note": "Leerlingen nemen een snack en lunch van huis mee."
     },
     "calendar": {
       "title": "Schoolkalender",
@@ -1125,7 +1161,7 @@
     },
     "afterSchool": {
       "title": "Na Schooltijd",
-      "content": "Na de reguliere schooltijd bieden we Skills Club activiteiten aan. Kinderen kunnen ook gebruik maken van de BSO tot 17:00."
+      "content": "Na de reguliere schooldag bieden we After School Activities aan. Deze optionele activiteiten bieden kinderen de kans om nieuwe interesses te ontdekken, talenten verder te ontwikkelen en samen plezier te maken buiten de klas. Voor deelname aan deze keuzeactiviteiten wordt een aanvullende bijdrage gevraagd."
     },
     "cta": {
       "title": "Vragen over de Schooltijden?",
@@ -1147,7 +1183,7 @@
       "route1": {
         "title": "Route 1: Lavington / Kilimani",
         "description": "Deze route bedient de gebieden Lavington, Kilimani en omgeving.",
-        "areas": ["Lavington", "Kilimani", "Kileleshwa", "Hurlingham"]
+        "areas": ["Lavington", "Kilimani", "Kileleshwa"]
       },
       "route2": {
         "title": "Route 2: Loresho / Kitisuru",

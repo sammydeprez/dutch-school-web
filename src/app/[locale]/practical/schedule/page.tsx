@@ -102,10 +102,11 @@ function BreaksSection() {
             <Coffee className="w-6 h-6 text-primary" />
             <span className="text-foreground">{t('morning')}</span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 mb-6">
             <Coffee className="w-6 h-6 text-secondary" />
             <span className="text-foreground">{t('lunch')}</span>
           </div>
+          <p className="text-muted text-sm">{t('note')}</p>
         </div>
       </div>
     </section>
