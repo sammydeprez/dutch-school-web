@@ -317,7 +317,7 @@
       "members": {
         "director": { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
         "headPrimary": { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
-        "headEarlyYears": { "name": "Joke Neuskens", "role": "Toddler Teacher" },
+        "headEarlyYears": { "name": "Joke Neuskens", "role": "NTC Coordinator and Teacher" },
         "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
@@ -413,7 +413,8 @@
         { "name": "Jessica Donia", "role": "Upper Primary Teacher", "image": "/images/team/jessica.png" },
         { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher", "image": "/images/team/bo.png" },
         { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "/images/team/jantien.png" },
-        { "name": "Joke Neuskens", "role": "Toddler Teacher", "image": "/images/team/joke.png" },
+        { "name": "Joke Neuskens", "role": "NTC Coordinator and Teacher", "image": "/images/team/joke.png" },
+        { "name": "Sarah Vijzelman", "role": "Toddler Teacher", "image": "/images/team/early-years-head.png" },
         { "name": "Caroline Slot", "role": "Toddler Teacher", "image": "" },
         { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Teaching Assistant", "image": "/images/team/faith.png" },
