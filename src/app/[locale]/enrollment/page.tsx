@@ -1,7 +1,7 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { FileText, Calendar, ClipboardCheck, UserCheck, GraduationCap, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
+import { FileText, Calendar, ClipboardCheck, UserCheck, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -30,20 +30,20 @@ export default async function EnrollmentPage({ params }: { params: Promise<{ loc
     {
       question: locale === 'nl' ? 'Moeten kinderen Nederlands spreken?' : 'Do children need to speak Dutch?',
       answer: locale === 'nl'
-        ? 'Nee, voorkennis van de Nederlandse taal is niet vereist. Ons tweetalig programma is ontworpen om kinderen op alle taalniveaus te ondersteunen, en ze pikken snel Nederlands op door onderdompeling.'
-        : 'No prior Dutch language knowledge is required. Our bilingual program is designed to support children at all language levels, and they quickly pick up Dutch through immersion.',
+        ? 'Nee, voorkennis van de Nederlandse taal is voor kinderen op de dagschool niet vereist. Wel moeten leerlingen ouder dan 4 jaar een Nederlandstalige ouder hebben om in te stromen. Ons tweetalig programma is ontworpen om kinderen op alle taalniveaus te ondersteunen, en ze pikken snel Nederlands op door onderdompeling.'
+        : 'No prior Dutch language knowledge is required for children in the day school. Students older than 4 do need a Dutch-speaking parent in order to join. Our bilingual program is designed to support children at all language levels, and they quickly pick up Dutch through immersion.',
     },
     {
-      question: locale === 'nl' ? 'Wat zijn de schooltijden?' : 'What is the school schedule?',
+      question: locale === 'nl' ? 'Wat zijn de schooltijden?' : 'What are the school hours?',
       answer: locale === 'nl'
-        ? 'Schooltijden zijn maandag tot vrijdag, 8:00 tot 15:30. Verlengde opvang is beschikbaar tot 17:00 tegen extra kosten.'
-        : 'School hours are Monday to Friday, 8:00 AM to 3:30 PM. Extended care is available until 5:00 PM for an additional fee.',
+        ? 'Op de dagschool zijn de schooltijden van maandag tot en met donderdag van 8:00 tot 15:00 en op vrijdag van 8.00 - 14.00. De peutergroep is van 8.00 - 12.00 maar opvang is aanwezig op school in de middagen tot 15.00 (ma - do) en tot 14.00 uur op vrijdag. De NTC lessen vinden plaats na schooltijd, de meeste lessen zijn van 15.30 - 18.00.'
+        : 'Day school hours are Monday to Thursday from 8:00 to 15:00 and Friday from 8:00 to 14:00. The toddler group runs from 8:00 to 12:00 with afternoon care available until 15:00 (Mon-Thu) and 14:00 (Fri). NTC lessons take place after school hours, most lessons run from 15:30 to 18:00.',
     },
     {
-      question: locale === 'nl' ? 'Is er schoolvervoer beschikbaar?' : 'Is transportation available?',
+      question: locale === 'nl' ? 'Is er schooltransport beschikbaar?' : 'Is school transport available?',
       answer: locale === 'nl'
-        ? 'We werken samen met goedgekeurde vervoersaanbieders die schoolbusdiensten aanbieden in de belangrijkste gebieden van Nairobi. Details worden verstrekt bij inschrijving.'
-        : 'We partner with approved transport providers who offer school bus services covering major areas of Nairobi. Details are provided upon enrollment.',
+        ? 'De school beschikt over twee schoolbussen, waardoor we twee busroutes aan kunnen bieden. Neem gerust contact op voor meer informatie en de kosten die hieraan verbonden zijn.'
+        : 'The school operates two school buses, allowing us to offer two bus routes. Please get in touch for more information and the associated costs.',
     },
   ];
 
@@ -126,12 +126,6 @@ function ProcessSection() {
       description: t('step4.description'),
       color: 'primary',
     },
-    {
-      icon: GraduationCap,
-      title: t('step5.title'),
-      description: t('step5.description'),
-      color: 'secondary',
-    },
   ];
 
   const colorClasses = {
@@ -153,7 +147,7 @@ function ProcessSection() {
           {/* Connection Line */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
             {steps.map((step, index) => (
               <div key={index} className="text-center relative">
                 {/* Step Number */}
@@ -183,8 +177,6 @@ function RequirementsSection() {
     t('item1'),
     t('item2'),
     t('item3'),
-    t('item4'),
-    t('item5'),
   ];
 
   return (
@@ -214,36 +206,22 @@ function RequirementsSection() {
           <div className="bg-white p-8 rounded-3xl shadow-sm">
             <h3 className="text-xl font-bold text-foreground mb-6">{te('downloads.title')}</h3>
             <div className="space-y-4">
-              <a href="#" className="flex items-center gap-4 p-4 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all group">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <FileText className="w-6 h-6 text-primary" />
+              {[
+                { label: te('downloads.toddler'), iconClass: 'bg-primary/10 text-primary' },
+                { label: te('downloads.primary'), iconClass: 'bg-secondary/10 text-secondary' },
+                { label: te('downloads.ntc'), iconClass: 'bg-accent/10 text-accent' },
+                { label: te('downloads.adult'), iconClass: 'bg-primary/10 text-primary' },
+              ].map((form, i) => (
+                <div key={i} className="flex items-center gap-4 p-4 border border-border rounded-xl">
+                  <div className={`w-12 h-12 ${form.iconClass} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                    <FileText className="w-6 h-6" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-foreground">{form.label}</p>
+                    <p className="text-sm text-muted">{te('downloads.comingSoon')}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-foreground">{te('downloads.applicationForm')}</p>
-                  <p className="text-sm text-muted">PDF, 245 KB</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-primary transition-colors" />
-              </a>
-              <a href="#" className="flex items-center gap-4 p-4 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all group">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                  <FileText className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">{te('downloads.medicalForm')}</p>
-                  <p className="text-sm text-muted">PDF, 180 KB</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-secondary transition-colors" />
-              </a>
-              <a href="#" className="flex items-center gap-4 p-4 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all group">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <FileText className="w-6 h-6 text-accent" />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">{te('downloads.infoPack')}</p>
-                  <p className="text-sm text-muted">PDF, 1.2 MB</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted ml-auto group-hover:text-accent transition-colors" />
-              </a>
+              ))}
             </div>
           </div>
         </div>
@@ -254,14 +232,28 @@ function RequirementsSection() {
 
 function FeesSection() {
   const t = useTranslations('enrollment.fees');
-  const te = useTranslations('enrollment');
+  const locale = useLocale();
 
   const fees = [
-    { program: 'Toddler Group (1½-4)', fee: 'Contact for fees', note: 'Per term' },
-    { program: 'Primary School (4-12)', fee: 'Contact for fees', note: 'Per term' },
-    { program: 'NTC Lessons', fee: 'Contact for fees', note: 'Per semester' },
-    { program: 'Adult Dutch Lessons', fee: 'Contact for fees', note: 'Per course' },
+    {
+      program: locale === 'nl' ? 'Peutergroep (1½-4)' : 'Toddler Group (1½-4)',
+      href: '/practical/fees',
+    },
+    {
+      program: locale === 'nl' ? 'Basisonderwijs dagschool (4-12)' : 'Primary School (4-12)',
+      href: '/practical/fees',
+    },
+    {
+      program: locale === 'nl' ? 'NTC lessen' : 'NTC Lessons',
+      href: '/ntc/fees',
+    },
+    {
+      program: locale === 'nl' ? 'Adult Dutch Lessons' : 'Adult Dutch Lessons',
+      href: '/adult-classes/fees',
+    },
   ];
+
+  const linkLabel = locale === 'nl' ? 'Klik hier' : 'Click here';
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -280,34 +272,27 @@ function FeesSection() {
             <table className="w-full">
               <thead className="bg-primary text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left font-semibold">Program</th>
-                  <th className="px-6 py-4 text-left font-semibold">Tuition</th>
-                  <th className="px-6 py-4 text-left font-semibold hidden sm:table-cell">Billing</th>
+                  <th className="px-6 py-4 text-left font-semibold">{locale === 'nl' ? 'Aanbod' : 'Program'}</th>
+                  <th className="px-6 py-4 text-left font-semibold">{locale === 'nl' ? 'Schoolgeld' : 'Tuition'}</th>
                 </tr>
               </thead>
               <tbody>
                 {fees.map((item, index) => (
                   <tr key={index} className="border-b border-border last:border-0">
                     <td className="px-6 py-4 font-medium text-foreground">{item.program}</td>
-                    <td className="px-6 py-4 text-muted">{item.fee}</td>
-                    <td className="px-6 py-4 text-muted hidden sm:table-cell">{item.note}</td>
+                    <td className="px-6 py-4">
+                      <Link
+                        href={item.href}
+                        className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                      >
+                        {linkLabel}
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
-
-          <div className="mt-8 p-6 bg-primary/5 rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-sm text-muted">
-              <strong className="text-foreground">Note:</strong> {te('feesNote')}
-            </p>
-            <Link
-              href="/practical/fees"
-              className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
-            >
-              {te('feesLink')}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </div>
