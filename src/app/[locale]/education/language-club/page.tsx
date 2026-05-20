@@ -1,11 +1,14 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/language-club'),
     title: locale === 'nl' ? 'Talenclub | Dutch School Nairobi' : 'Language Club | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Extra talen leren naast Nederlands en Engels: Frans en Kiswahili.'
@@ -19,6 +22,7 @@ export default async function LanguageClubPage({ params }: { params: Promise<{ l
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/language-club" />
       <HeroSection />
       <IntroSection />
       <LanguagesSection />

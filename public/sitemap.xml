@@ -211,6 +211,41 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/education/library/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/library/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/library/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/education/library/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/education/library/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/education/library/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Adult Classes -->
+  <url>
+    <loc>https://www.dutchschool.co.ke/nl/adult-classes/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/adult-classes/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/adult-classes/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dutchschool.co.ke/en/adult-classes/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dutchschool.co.ke/nl/adult-classes/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchschool.co.ke/en/adult-classes/" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Enrollment -->
   <url>
     <loc>https://www.dutchschool.co.ke/nl/enrollment/</loc>

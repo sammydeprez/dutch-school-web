@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { BookOpen } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/library'),
     title: locale === 'nl' ? 'Bibliotheek | Dutch School Nairobi' : 'Library | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Onze schoolbibliotheek met een uitgebreide collectie Nederlandse en Engelse jeugdboeken.'
@@ -20,6 +23,7 @@ export default async function LibraryPage({ params }: { params: Promise<{ locale
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/library" />
       <HeroSection />
       <IntroSection />
       <GallerySection />

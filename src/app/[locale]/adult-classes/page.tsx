@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Users } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/adult-classes'),
     title: locale === 'nl'
       ? 'Dutch Adult Classes | Dutch School Nairobi'
       : 'Dutch Adult Classes | Dutch School Nairobi',
@@ -20,8 +23,53 @@ export default async function AdultClassesPage({ params }: { params: Promise<{ l
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: locale === 'nl' ? 'Nederlandse Les voor Volwassenen' : 'Dutch Adult Classes',
+    description: locale === 'nl'
+      ? 'Nederlandse taalcursussen voor volwassenen op alle niveaus, aangeboden door Dutch School Nairobi.'
+      : 'Dutch language courses for adult learners at all proficiency levels, offered by Dutch School Nairobi.',
+    provider: {
+      '@type': 'EducationalOrganization',
+      name: 'Dutch School Nairobi',
+      url: 'https://www.dutchschool.co.ke',
+    },
+    educationalProgramMode: 'part-time',
+    occupationalCategory: 'Adult Language Education',
+    audience: {
+      '@type': 'EducationalAudience',
+      educationalRole: 'adult learner',
+    },
+    teaches: [
+      locale === 'nl' ? 'Nederlandse spreekvaardigheid' : 'Dutch speaking skills',
+      locale === 'nl' ? 'Nederlandse grammatica' : 'Dutch grammar',
+      locale === 'nl' ? 'Nederlandse leesvaardigheid' : 'Dutch reading',
+      locale === 'nl' ? 'Nederlandse schrijfvaardigheid' : 'Dutch writing',
+    ],
+    inLanguage: 'nl',
+    offers: {
+      '@type': 'Offer',
+      category: locale === 'nl' ? 'Parttime cursus' : 'Part-time course',
+      availableAtOrFrom: {
+        '@type': 'Place',
+        name: 'Dutch School Nairobi',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Nairobi',
+          addressCountry: 'KE',
+        },
+      },
+    },
+  };
+
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/adult-classes" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
       <HeroSection />
       <IntroSection />
       <CTASection />

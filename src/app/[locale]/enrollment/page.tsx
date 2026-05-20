@@ -3,11 +3,13 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { FileText, Calendar, ClipboardCheck, UserCheck, GraduationCap, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/enrollment'),
     title: locale === 'nl' ? 'Inschrijving | Dutch School Nairobi' : 'Enrollment | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Schrijf uw kind in bij Dutch School Nairobi. Leer over het toelatingsproces, vereisten en schoolgeld.'

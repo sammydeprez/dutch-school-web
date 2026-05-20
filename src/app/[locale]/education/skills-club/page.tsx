@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Palette, Music, Hammer, Flower2, Dumbbell, Laptop } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/skills-club'),
     title: locale === 'nl' ? 'Skills Club | Dutch School Nairobi' : 'Skills Club | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Naschoolse activiteiten voor brede ontwikkeling: kunst, muziek, houtbewerking, tuinieren en sport.'
@@ -20,6 +23,7 @@ export default async function SkillsClubPage({ params }: { params: Promise<{ loc
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/skills-club" />
       <HeroSection />
       <IntroSection />
       <ActivitiesSection />

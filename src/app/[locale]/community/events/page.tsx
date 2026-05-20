@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Gift, Crown, Snowflake, DoorOpen, Trophy, GraduationCap, Calendar } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/community/events'),
     title: locale === 'nl' ? 'Evenementen | Dutch School Nairobi' : 'Events | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Nederlandse tradities en internationale vieringen. Sinterklaas, Koningsdag en meer.'
@@ -20,6 +23,7 @@ export default async function EventsPage({ params }: { params: Promise<{ locale:
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/community/events" />
       <HeroSection />
       <IntroSection />
       <DutchTraditionsSection />

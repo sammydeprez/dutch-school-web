@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Banknote } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/adult-classes/fees'),
     title: locale === 'nl'
       ? 'Cursusgeld Dutch Adult Classes | Dutch School Nairobi'
       : 'Dutch Adult Classes Fees | Dutch School Nairobi',
@@ -22,6 +25,7 @@ export default async function AdultClassesFeesPage({ params }: { params: Promise
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/adult-classes/fees" />
       <HeroSection />
       <IntroSection />
       <CTASection />

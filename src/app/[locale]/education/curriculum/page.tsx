@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { BookOpen, Calculator, FileText, Check, Languages } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/curriculum'),
     title: locale === 'nl' ? 'Curriculum | Dutch School Nairobi' : 'Curriculum | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Ons curriculum combineert het Nederlandse onderwijssysteem met IEYC en IPC voor tweetalig onderwijs.'
@@ -20,6 +23,7 @@ export default async function CurriculumPage({ params }: { params: Promise<{ loc
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/curriculum" />
       <HeroSection />
       <IntroSection />
       <DutchCurriculumSection />

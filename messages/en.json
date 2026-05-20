@@ -169,13 +169,32 @@
   "footer": {
     "description": "Dutch and bilingual education in Nairobi since 1971. Recognized by the Dutch Education Abroad Foundation. Greatness in Intimacy.",
     "quickLinks": "Quick Links",
+    "school": "School",
     "education": "Education",
     "educationList": {
       "toddler": "Toddler Group",
       "primary": "Primary School",
       "ntc": "NTC",
       "curriculum": "Curriculum",
+      "library": "Library",
+      "languageClub": "Language Club",
+      "skillsClub": "Skills Club",
+      "studentSupport": "Student Support",
       "adultDutch": "Adult Dutch Lessons"
+    },
+    "quickLinksList": {
+      "about": "About Us",
+      "vision": "Our Vision",
+      "team": "The Team",
+      "campus": "Location & Campus",
+      "enrollment": "Enrollment",
+      "practical": "Practical Info",
+      "schedule": "School Hours",
+      "fees": "School Fees",
+      "transport": "Transport",
+      "community": "Community",
+      "studentSupport": "Student Support",
+      "contact": "Contact"
     },
     "contact": "Contact Us",
     "address": "Windy Ridge, off Ngong Road, Karen, Nairobi",

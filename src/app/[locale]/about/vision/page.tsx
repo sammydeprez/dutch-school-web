@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Heart, Lightbulb, RefreshCw, Quote, Sparkles } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/about/vision'),
     title: locale === 'nl' ? 'Onze Visie & Missie | Dutch School Nairobi' : 'Our Vision & Mission | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Groots in Kleinschaligheid - waar elk kind gezien, gekend en gewaardeerd wordt. Onze visie, missie en kernwaarden.'
@@ -20,6 +23,7 @@ export default async function VisionPage({ params }: { params: Promise<{ locale:
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/about/vision" />
       <HeroSection />
       <PhilosophySection />
       <MissionVisionSection />

@@ -3,11 +3,14 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Users, Calendar, ArrowRight } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/community'),
     title: locale === 'nl' ? 'Gemeenschap | Dutch School Nairobi' : 'Community | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Een hechte, internationale schoolfamilie. Ouderbetrokkenheid en evenementen.'
@@ -21,6 +24,7 @@ export default async function CommunityPage({ params }: { params: Promise<{ loca
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/community" />
       <HeroSection />
       <IntroSection />
       <SectionsOverview />

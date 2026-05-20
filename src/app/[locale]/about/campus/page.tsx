@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Trees, Sun, Shield, Leaf, School, Flower2, BookOpen, Palette } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/about/campus'),
     title: locale === 'nl' ? 'Locatie & Campus | Dutch School Nairobi' : 'Location & Campus | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Een groene oase in het hart van Karen, Nairobi. Bekijk onze faciliteiten en locatie.'
@@ -20,6 +23,7 @@ export default async function CampusPage({ params }: { params: Promise<{ locale:
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/about/campus" />
       <HeroSection />
       <LocationSection />
       <FacilitiesSection />

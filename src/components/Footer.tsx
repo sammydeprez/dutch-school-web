@@ -43,33 +43,43 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* School */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">{t('quickLinks')}</h3>
+            <h3 className="text-lg font-semibold mb-6">{t('school')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-white/70 hover:text-white transition-colors">
-                  {nav('home')}
-                </Link>
-              </li>
-              <li>
                 <Link href="/about" className="text-white/70 hover:text-white transition-colors">
-                  {nav('about')}
+                  {t('quickLinksList.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/education" className="text-white/70 hover:text-white transition-colors">
-                  {nav('education')}
+                <Link href="/about/vision" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.vision')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about/team" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.team')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about/campus" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.campus')}
                 </Link>
               </li>
               <li>
                 <Link href="/enrollment" className="text-white/70 hover:text-white transition-colors">
-                  {nav('enrollment')}
+                  {t('quickLinksList.enrollment')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/community" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.community')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-white/70 hover:text-white transition-colors">
-                  {nav('contact')}
+                  {t('quickLinksList.contact')}
                 </Link>
               </li>
             </ul>
@@ -79,6 +89,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">{t('education')}</h3>
             <ul className="space-y-3">
+              <li>
+                <Link href="/education" className="text-white/70 hover:text-white transition-colors">
+                  {nav('educationOverview')}
+                </Link>
+              </li>
               <li>
                 <Link href="/education/toddler" className="text-white/70 hover:text-white transition-colors">
                   {t('educationList.toddler')}
@@ -100,15 +115,54 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-white/70">
+                <Link href="/education/library" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.library')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/education/language-club" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.languageClub')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/education/skills-club" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.skillsClub')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/student-support" className="text-white/70 hover:text-white transition-colors">
+                  {t('educationList.studentSupport')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/adult-classes" className="text-white/70 hover:text-white transition-colors">
                   {t('educationList.adultDutch')}
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Practical & Contact Info */}
           <div>
+            <h3 className="text-lg font-semibold mb-6">{t('quickLinksList.practical')}</h3>
+            <ul className="space-y-3 mb-8">
+              <li>
+                <Link href="/practical/schedule" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.schedule')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/practical/fees" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.fees')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/practical/transport" className="text-white/70 hover:text-white transition-colors">
+                  {t('quickLinksList.transport')}
+                </Link>
+              </li>
+            </ul>
+
             <h3 className="text-lg font-semibold mb-6">{t('contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Clock } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/ntc/schedule'),
     title: locale === 'nl' ? 'NTC Lestijden | Dutch School Nairobi' : 'NTC Schedule | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Lestijden en locaties voor het NTC programma.'
@@ -20,6 +23,7 @@ export default async function NTCSchedulePage({ params }: { params: Promise<{ lo
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/ntc/schedule" />
       <HeroSection />
       <IntroSection />
       <CTASection />

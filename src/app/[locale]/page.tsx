@@ -17,6 +17,14 @@ import {
   Phone
 } from 'lucide-react';
 import { OptimizedImage, AnimatedSection } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return {
+    alternates: getAlternates(locale, '/'),
+  };
+}
 
 export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   return <HomePageContent params={params} />;

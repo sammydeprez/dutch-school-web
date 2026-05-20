@@ -3,11 +3,13 @@ import { setRequestLocale } from 'next-intl/server';
 import { Calendar, Languages, Gamepad2, Eye, Clock, Users, UserCheck } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/toddler'),
     title: locale === 'nl' ? 'Peuterspeelzaal | Dutch School Nairobi' : 'Toddler Group | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Peuterspeelzaal voor kinderen vanaf 1,5 jaar. Spelend leren in een kleine groep van maximaal 15 kinderen.'

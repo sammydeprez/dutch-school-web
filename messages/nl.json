@@ -169,13 +169,32 @@
   "footer": {
     "description": "Nederlands en tweetalig onderwijs in Nairobi sinds 1971. Erkend door de Stichting Nederlands Onderwijs in het Buitenland. Groots in Kleinschaligheid.",
     "quickLinks": "Snelle Links",
+    "school": "School",
     "education": "Onderwijs",
     "educationList": {
       "toddler": "Peuterspeelzaal",
       "primary": "Basisschool",
       "ntc": "NTC",
       "curriculum": "Curriculum",
+      "library": "Bibliotheek",
+      "languageClub": "Talenclub",
+      "skillsClub": "Vaardighedenclub",
+      "studentSupport": "Leerlingbegeleiding",
       "adultDutch": "Nederlandse Les Volwassenen"
+    },
+    "quickLinksList": {
+      "about": "Over Ons",
+      "vision": "Visie",
+      "team": "Het Team",
+      "campus": "Locatie & Campus",
+      "enrollment": "Inschrijving",
+      "practical": "Praktisch",
+      "schedule": "Schooltijden",
+      "fees": "Schoolgeld",
+      "transport": "Vervoer",
+      "community": "Gemeenschap",
+      "studentSupport": "Leerlingbegeleiding",
+      "contact": "Contact"
     },
     "contact": "Contact",
     "address": "Windy Ridge, off Ngong Road, Karen, Nairobi",

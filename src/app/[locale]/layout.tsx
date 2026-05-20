@@ -60,13 +60,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
       images: ['https://www.dutchschool.co.ke/images/og-image.png'],
     },
-    alternates: {
-      canonical: `https://www.dutchschool.co.ke/${locale}`,
-      languages: {
-        en: 'https://www.dutchschool.co.ke/en',
-        nl: 'https://www.dutchschool.co.ke/nl',
-      },
-    },
     robots: {
       index: true,
       follow: true,
@@ -99,29 +92,69 @@ export default async function LocaleLayout({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'EducationalOrganization',
-            '@id': 'https://www.dutchschool.co.ke',
+            '@id': 'https://www.dutchschool.co.ke/#organization',
             name: 'Dutch School Nairobi',
             alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
-            description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation.',
+            description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation (NOB).',
+            slogan: locale === 'nl' ? 'Groots in Kleinschaligheid' : 'Greatness in Intimacy',
             url: 'https://www.dutchschool.co.ke',
             logo: 'https://www.dutchschool.co.ke/logo-color.png',
+            image: 'https://www.dutchschool.co.ke/images/og-image.png',
             foundingDate: '1971',
+            numberOfEmployees: {
+              '@type': 'QuantitativeValue',
+              value: 20,
+            },
             address: {
               '@type': 'PostalAddress',
               streetAddress: 'Windy Ridge, off Ngong Road',
               addressLocality: 'Nairobi',
+              postalCode: '14997',
               addressCountry: 'KE',
             },
-            contactPoint: {
-              '@type': 'ContactPoint',
-              telephone: '+254-733-675-432',
-              contactType: 'admissions',
-              availableLanguage: ['English', 'Dutch'],
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: '-1.2921',
+              longitude: '36.8219',
             },
+            areaServed: [
+              {
+                '@type': 'City',
+                name: 'Nairobi',
+              },
+              {
+                '@type': 'Country',
+                name: 'Kenya',
+              },
+            ],
+            contactPoint: [
+              {
+                '@type': 'ContactPoint',
+                telephone: '+254-733-675-432',
+                contactType: 'admissions',
+                email: 'admissions@dutchschool.co.ke',
+                availableLanguage: ['English', 'Dutch'],
+              },
+              {
+                '@type': 'ContactPoint',
+                telephone: '+254-733-675-432',
+                contactType: 'customer service',
+                email: 'info@dutchschool.co.ke',
+                availableLanguage: ['English', 'Dutch'],
+              },
+            ],
             sameAs: [
               'https://www.facebook.com/dutchschoolnairobi',
               'https://www.linkedin.com/company/netherlands-school-society',
             ],
+            parentOrganization: {
+              '@type': 'Organization',
+              name: 'Stichting Nederlands Onderwijs in het Buitenland',
+              alternateName: 'Dutch Education Abroad Foundation (NOB)',
+              url: 'https://www.stichtingnob.nl',
+            },
+            award: 'Recognized by Stichting NOB (Dutch Education Abroad Foundation)',
+            knowsLanguage: ['nl', 'en'],
             hasOfferCatalog: {
               '@type': 'OfferCatalog',
               name: 'Educational Programs',
@@ -132,6 +165,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'Toddler Group',
                     description: 'Early childhood education for ages 1½-4',
+                    url: `https://www.dutchschool.co.ke/${locale}/education/toddler/`,
                   },
                 },
                 {
@@ -140,6 +174,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'Primary School',
                     description: 'Bilingual education for ages 4-12 with IPC curriculum',
+                    url: `https://www.dutchschool.co.ke/${locale}/education/primary/`,
                   },
                 },
                 {
@@ -148,6 +183,16 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'NTC Lessons',
                     description: 'Dutch language and culture lessons for ages 3.5-18',
+                    url: `https://www.dutchschool.co.ke/${locale}/education/ntc/`,
+                  },
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'EducationalOccupationalProgram',
+                    name: 'Dutch Adult Classes',
+                    description: 'Dutch language courses for adult learners',
+                    url: `https://www.dutchschool.co.ke/${locale}/adult-classes/`,
                   },
                 },
               ],
