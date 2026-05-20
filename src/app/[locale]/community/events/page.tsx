@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Gift, Crown, Snowflake, DoorOpen, Trophy, GraduationCap, Calendar } from 'lucide-react';
+import { Gift, Crown, Flag, Snowflake, GraduationCap, BookOpen, Flower2, Brain, Globe, TrafficCone, Calendar } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,8 +22,8 @@ export default async function EventsPage({ params }: { params: Promise<{ locale:
     <>
       <HeroSection />
       <IntroSection />
-      <DutchTraditionsSection />
-      <SchoolEventsSection />
+      <TraditionsSection />
+      <ThemeWeeksSection />
       <CalendarSection />
       <CTASection />
     </>
@@ -53,34 +53,21 @@ function IntroSection() {
   );
 }
 
-function DutchTraditionsSection() {
-  const t = useTranslations('eventsPage.dutch');
+function TraditionsSection() {
+  const t = useTranslations('eventsPage.traditions');
 
   const events = [
-    {
-      icon: Gift,
-      title: t('events.sinterklaas.title'),
-      description: t('events.sinterklaas.description'),
-      color: 'red',
-    },
-    {
-      icon: Crown,
-      title: t('events.koningsdag.title'),
-      description: t('events.koningsdag.description'),
-      color: 'secondary',
-    },
-    {
-      icon: Snowflake,
-      title: t('events.kerst.title'),
-      description: t('events.kerst.description'),
-      color: 'primary',
-    },
+    { icon: Gift, title: t('events.sinterklaas.title'), description: t('events.sinterklaas.description'), color: 'primary' },
+    { icon: Crown, title: t('events.koningsspelen.title'), description: t('events.koningsspelen.description'), color: 'secondary' },
+    { icon: Flag, title: t('events.belgischeDag.title'), description: t('events.belgischeDag.description'), color: 'accent' },
+    { icon: Snowflake, title: t('events.kerst.title'), description: t('events.kerst.description'), color: 'primary' },
+    { icon: GraduationCap, title: t('events.eindmusical.title'), description: t('events.eindmusical.description'), color: 'secondary' },
   ];
 
   const colorClasses = {
-    red: 'bg-red/10 text-red',
-    secondary: 'bg-secondary/10 text-secondary',
     primary: 'bg-primary/10 text-primary',
+    secondary: 'bg-secondary/10 text-secondary',
+    accent: 'bg-accent/10 text-accent',
   };
 
   return (
@@ -90,7 +77,7 @@ function DutchTraditionsSection() {
           {t('title')}
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl text-center">
               <div className={`w-16 h-16 mx-auto rounded-2xl ${colorClasses[event.color as keyof typeof colorClasses]} flex items-center justify-center mb-4`}>
@@ -110,28 +97,15 @@ function DutchTraditionsSection() {
   );
 }
 
-function SchoolEventsSection() {
-  const t = useTranslations('eventsPage.school');
+function ThemeWeeksSection() {
+  const t = useTranslations('eventsPage.themaweken');
 
   const events = [
-    {
-      icon: DoorOpen,
-      title: t('events.openDay.title'),
-      description: t('events.openDay.description'),
-      color: 'primary',
-    },
-    {
-      icon: Trophy,
-      title: t('events.sportsDay.title'),
-      description: t('events.sportsDay.description'),
-      color: 'secondary',
-    },
-    {
-      icon: GraduationCap,
-      title: t('events.endOfYear.title'),
-      description: t('events.endOfYear.description'),
-      color: 'accent',
-    },
+    { icon: BookOpen, title: t('events.kinderboekenweek.title'), description: t('events.kinderboekenweek.description'), color: 'primary' },
+    { icon: Flower2, title: t('events.lentekriebels.title'), description: t('events.lentekriebels.description'), color: 'secondary' },
+    { icon: Brain, title: t('events.neuroDiversity.title'), description: t('events.neuroDiversity.description'), color: 'accent' },
+    { icon: Globe, title: t('events.wereldReligie.title'), description: t('events.wereldReligie.description'), color: 'primary' },
+    { icon: TrafficCone, title: t('events.verkeersweek.title'), description: t('events.verkeersweek.description'), color: 'secondary' },
   ];
 
   const colorClasses = {
@@ -147,7 +121,7 @@ function SchoolEventsSection() {
           {t('title')}
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event, index) => (
             <div key={index} className="bg-surface p-8 rounded-2xl text-center">
               <div className={`w-16 h-16 mx-auto rounded-2xl ${colorClasses[event.color as keyof typeof colorClasses]} flex items-center justify-center mb-4`}>

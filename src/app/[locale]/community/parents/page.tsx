@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { MessageSquare, HandHeart, Users, Check } from 'lucide-react';
+import { MessageSquare, HandHeart, Coffee, Check } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -134,16 +134,17 @@ function ParentCommitteeSection() {
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white p-8 lg:p-12 rounded-3xl text-center">
+        <div className="bg-white p-8 lg:p-12 rounded-3xl">
           <div className="w-16 h-16 mx-auto rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
-            <Users className="w-8 h-8 text-accent" />
+            <Coffee className="w-8 h-8 text-accent" />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 text-center">
             {t('title')}
           </h2>
-          <p className="text-muted leading-relaxed">
-            {t('content')}
-          </p>
+          <div className="space-y-4 text-muted leading-relaxed">
+            <p>{t('content')}</p>
+            <p>{t('paragraph2')}</p>
+          </div>
         </div>
       </div>
     </section>

@@ -1286,7 +1286,10 @@
     },
     "intro": {
       "title": "Samen Sterk",
-      "content": "Dutch School Nairobi is meer dan een school - het is een gemeenschap. Ouders, leerlingen en medewerkers vormen samen een hechte groep waarin iedereen elkaar kent en ondersteunt."
+      "content": "De Dutch School is meer dan een school, het is een gemeenschap. Ouders, leerlingen en teamleden vormen samen een hechte groep waarin iedereen elkaar kent en ondersteunt.",
+      "paragraph2": "Elke ochtend staan koffie en thee klaar voor ouders, zodat er na het brengen van de kinderen ruimte is om elkaar te ontmoeten, even bij te praten en nieuwe contacten te leggen. Zo stimuleren we een warme en verbonden schoolgemeenschap waarin ouders elkaar gemakkelijk weten te vinden.",
+      "paragraph3": "De school is een vereniging, wat betekent dat alle ouders automatisch lid worden van de schoolgemeenschap. Als lid krijgen ouders stemrecht en denken zij actief mee over de toekomst van de school. Een betrokken bestuur, bestaande uit ouders, houdt toezicht op het reilen en zeilen van de school en ondersteunt de koers en continuïteit van de organisatie.",
+      "paragraph4": "Twee keer per jaar organiseren we een Algemene Ledenvergadering (ALV), waarin ouders worden meegenomen in de ontwikkelingen binnen de school en kunnen stemmen over belangrijke onderwerpen, zoals begrotingen, jaarplannen en andere beleidskeuzes. Zo bouwen we samen aan een sterke, transparante en betrokken schoolgemeenschap."
     },
     "sections": {
       "parents": {
@@ -1296,7 +1299,7 @@
       },
       "events": {
         "title": "Evenementen",
-        "description": "Nederlandse tradities, schoolfeesten en sociale activiteiten.",
+        "description": "Nederlandse en Vlaamse tradities, themaweken en sociale activiteiten.",
         "link": "Bekijk Evenementen"
       }
     },
@@ -1313,13 +1316,13 @@
     },
     "intro": {
       "title": "Ouderbetrokkenheid",
-      "content": "Op Dutch School Nairobi zijn ouders belangrijke partners. We geloven in open communicatie en actieve betrokkenheid van ouders bij het schoolleven."
+      "content": "Op de Dutch School zijn ouders belangrijke partners. We geloven in open communicatie en actieve betrokkenheid van ouders bij het schoolleven."
     },
     "communication": {
       "title": "Communicatie",
       "items": [
         "Wekelijkse nieuwsbrief",
-        "Ouderportaal voor praktische informatie",
+        "Ouder App voor updates en praktische informatie",
         "Regelmatige oudergesprekken",
         "Directe communicatie met leerkrachten"
       ]
@@ -1335,8 +1338,9 @@
       ]
     },
     "parentCommittee": {
-      "title": "Oudervereniging",
-      "content": "De oudervereniging organiseert evenementen en behartigt de belangen van ouders. Nieuwe leden zijn altijd welkom."
+      "title": "Koffie Ochtenden",
+      "content": "Op de Dutch School organiseren we regelmatig koffieochtenden om ouders samen te brengen en ruimte te creëren voor ontmoeting, inspiratie en uitwisseling. Tijdens deze bijeenkomsten gaan we in gesprek over onderwijskundige thema's, maar ook over onderwerpen rondom opvoeding, ontwikkeling en het ouderschap.",
+      "paragraph2": "De koffieochtenden bieden een platform om nieuwe inzichten op te doen, ervaringen te delen en van elkaar te leren. De school draagt regelmatig onderwerpen aan en nodigt waar passend externe experts uit. Tegelijkertijd moedigen we ouders aan om zelf ideeën in te brengen of vanuit hun eigen kennis, achtergrond of expertise een bijeenkomst te verzorgen. Zo bouwen we samen aan een lerende en betrokken schoolgemeenschap."
     },
     "cta": {
       "title": "Vragen over Ouderbetrokkenheid?",
@@ -1347,43 +1351,59 @@
   "eventsPage": {
     "hero": {
       "title": "Evenementen",
-      "subtitle": "Nederlandse tradities en internationale vieringen"
+      "subtitle": "Nederlandse en Vlaamse tradities en internationale vieringen"
     },
     "intro": {
       "title": "Een Jaar Vol Evenementen",
-      "content": "Bij Dutch School Nairobi vieren we zowel Nederlandse tradities als internationale feestdagen. Deze evenementen versterken onze gemeenschap en verbinden kinderen met hun culturele achtergrond."
+      "content": "Bij de Dutch School vieren we zowel Nederlandse en Vlaamse tradities als internationale feestdagen. Deze evenementen versterken onze gemeenschap en verbinden kinderen met hun culturele achtergrond en die van klasgenoten."
     },
-    "dutch": {
-      "title": "Nederlandse Tradities",
+    "traditions": {
+      "title": "Tradities",
       "events": {
         "sinterklaas": {
           "title": "Sinterklaas",
-          "description": "Begin december viert de hele school het Sinterklaasfeest met liedjes, surprises en pepernoten."
+          "description": "Eind november / begin december viert de hele school het Sinterklaasfeest met liedjes, surprises en pepernoten. Op school wordt hier in de weken ervoor ook al aandacht aan besteed."
         },
-        "koningsdag": {
-          "title": "Koningsdag",
-          "description": "Een oranje feest met spelletjes, rommelmarkt en Nederlandse gezelligheid."
+        "koningsspelen": {
+          "title": "Koningsspelen en Oranje Feest",
+          "description": "Op school doen we jaarlijks mee met de Koningsspelen, een sportieve dag vol beweging. Daarnaast organiseren we rond Koningsdag een oranje feest met spelletjes, een rommelmarkt en Nederlandse gezelligheid."
+        },
+        "belgischeDag": {
+          "title": "Belgische Dag",
+          "description": "In november vieren we op school onze jaarlijkse Belgische Dag. Leerlingen leren meer over België, maken kennis met Belgische tradities en genieten samen van typische lekkernijen en leuke spelactiviteiten. Een mooie manier om cultuur te beleven en samen te vieren."
         },
         "kerst": {
           "title": "Kerstviering",
           "description": "Een gezamenlijke kerstviering met optredens van de kinderen."
+        },
+        "eindmusical": {
+          "title": "Eindmusical",
+          "description": "Viering van het einde van het schooljaar met een eindmusical en afscheid van groep 8 en andere vertrekkende leerlingen."
         }
       }
     },
-    "school": {
-      "title": "Schoolevenementen",
+    "themaweken": {
+      "title": "Themaweken",
       "events": {
-        "openDay": {
-          "title": "Open Dag",
-          "description": "Kennismaken met onze school voor geïnteresseerde families."
+        "kinderboekenweek": {
+          "title": "Kinderboekenweek",
+          "description": "Tijdens de Nationale Kinderboekenweek staat de hele school in het teken van leesplezier en verhalen. Aan de hand van het jaarlijkse thema organiseren we activiteiten rondom boeken, voorlezen en creatief taalgebruik, zodat leerlingen ontdekken hoe leuk en inspirerend lezen kan zijn."
         },
-        "sportsDay": {
-          "title": "Sportdag",
-          "description": "Een dag vol sporten en spelletjes voor alle leerlingen."
+        "lentekriebels": {
+          "title": "Week van de Lentekriebels",
+          "description": "Tijdens de Week van de Lentekriebels besteden we op een leeftijdsgerichte en respectvolle manier aandacht aan thema's zoals relaties, weerbaarheid, grenzen, gevoelens en jezelf en de ander leren begrijpen. Zo ondersteunen we leerlingen in hun sociaal-emotionele ontwikkeling en dragen we bij aan een veilige en open schoolcultuur."
         },
-        "endOfYear": {
-          "title": "Eindfeest",
-          "description": "Viering van het einde van het schooljaar met optredens en afscheid van groep 8."
+        "neuroDiversity": {
+          "title": "Neuro Diversity Week",
+          "description": "Tijdens Neuro Diversity Week vieren we de verschillende manieren waarop mensen denken, leren en de wereld ervaren. Leerlingen ontdekken dat verschillen waardevol zijn en leren met nieuwsgierigheid, begrip en respect kijken naar zichzelf en anderen."
+        },
+        "wereldReligie": {
+          "title": "Wereld Religie Week",
+          "description": "Tijdens de Wereld Religie Week maken leerlingen kennis met verschillende wereldreligies en levensbeschouwingen. Door samen te onderzoeken, vragen te stellen en overeenkomsten en verschillen te ontdekken, stimuleren we respect, openheid en wereldburgerschap."
+        },
+        "verkeersweek": {
+          "title": "Verkeersweek",
+          "description": "Tijdens de Verkeersweek werken leerlingen op een actieve en praktische manier aan verkeersvaardigheden en verkeersbewustzijn. Met spel, opdrachten én hun eigen fiets of andere wielen leren zij verkeersregels toepassen en veilig deelnemen aan het verkeer."
         }
       }
     },
