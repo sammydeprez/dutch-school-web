@@ -38,29 +38,11 @@
   },
   "programs": [
     {
-      "id": "kleuters",
-      "name": "Primary School Groups 1-2",
-      "nameNl": "Basisschool Groep 1-2",
-      "groups": "1-2",
-      "ageRange": "4-6",
-      "tariefgroep1": {
-        "term1": 4023,
-        "term2": 3218,
-        "term3": 2682,
-        "annual": 9923
-      },
-      "tariefgroep2": {
-        "child1": { "term1": 2878, "term2": 2302, "term3": 1918, "annual": 7098 },
-        "child2": { "term1": 2606, "term2": 2072, "term3": 1710, "annual": 6388 },
-        "child3": { "term1": 2352, "term2": 1842, "term3": 1534, "annual": 5678 }
-      }
-    },
-    {
       "id": "primary",
-      "name": "Primary School Groups 3-8",
-      "nameNl": "Basisschool Groep 3-8",
-      "groups": "3-8",
-      "ageRange": "6-12",
+      "name": "Primary School",
+      "nameNl": "Basisschool",
+      "groups": "1-8",
+      "ageRange": "4-12",
       "tariefgroep1": {
         "term1": 6062,
         "term2": 4886,
