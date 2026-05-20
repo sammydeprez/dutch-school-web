@@ -6,12 +6,12 @@
     "vision": "Onze Visie",
     "team": "Het Team",
     "campus": "Locatie & Campus",
-    "education": "Onderwijs Dagschool",
-    "programs": "Programma's",
+    "education": "Dagschool",
+    "programs": "Onderwijs",
     "educationOverview": "Overzicht",
     "toddler": "Peuterspeelzaal",
     "primary": "Basisschool",
-    "curriculum": "Ons Onderwijs",
+    "curriculum": "Onze aanpak",
     "languageClub": "Talenclub",
     "skillsClub": "Skills Club",
     "library": "Bibliotheek",
@@ -29,6 +29,7 @@
     "schedule": "Schooltijden",
     "transport": "Transport",
     "fees": "Schoolgeld",
+    "food": "Eten en drinken",
     "community": "Gemeenschap",
     "communityOverview": "Overzicht",
     "parents": "Voor Ouders",
@@ -628,7 +629,7 @@
       "visionParagraph5": "De kracht van ons tweetalig onderwijs ligt in de balans tussen vertrouwd en internationaal: Nederlands als stevige basis, Engels als venster op de wereld. Zo creëren we een omgeving waarin leerlingen zichzelf kunnen zijn, verbinding ervaren met anderen, en vol vertrouwen uitgroeien tot meertalige, nieuwsgierige en ruimdenkende wereldburgers."
     },
     "bilingual": {
-      "title": "Ons Onderwijs",
+      "title": "Onze aanpak",
       "kindergarten": {
         "title": "Kleuteronderwijs (Groep 1-2)",
         "description": "In onze kleutergroepen leggen we spelenderwijs een stevige basis voor een leven lang leren. In een rijke, tweetalige leeromgeving (3 dagen Nederlands, 2 dagen Engels) vol spel, ontdekking en verwondering groeien kinderen in taal, zelfvertrouwen en sociale vaardigheden. Vanuit betekenisvolle IEYC-thema's stimuleren we nieuwsgierigheid, creativiteit en een natuurlijke ontwikkeling in zowel het Nederlands als Engels.",
@@ -809,7 +810,7 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Ons Onderwijs",
+      "title": "Onze aanpak",
       "subtitle": "Een uitgebalanceerd tweetalig onderwijsprogramma met IEYC, IPC, Nederlandse kerndoelen en Engelse taallessen"
     },
     "intro": {
