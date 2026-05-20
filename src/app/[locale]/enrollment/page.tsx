@@ -245,7 +245,7 @@ function FeesSection() {
     },
     {
       program: locale === 'nl' ? 'NTC lessen' : 'NTC Lessons',
-      href: '/ntc/fees',
+      href: '/education/ntc/fees',
     },
     {
       program: locale === 'nl' ? 'Adult Dutch Lessons' : 'Adult Dutch Lessons',
