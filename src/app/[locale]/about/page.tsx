@@ -221,7 +221,7 @@ function TeamSection() {
   const team = [
     { name: t('members.director.name'), role: t('members.director.role'), image: '/images/team/director.png' },
     { name: t('members.headPrimary.name'), role: t('members.headPrimary.role'), image: '/images/team/primary-head.png' },
-    { name: t('members.headEarlyYears.name'), role: t('members.headEarlyYears.role'), image: '/images/team/early-years-head.png' },
+    { name: t('members.headEarlyYears.name'), role: t('members.headEarlyYears.role'), image: '/images/team/joke.png' },
     { name: t('members.operations.name'), role: t('members.operations.role'), image: '/images/team/operations.png' },
   ];
 
