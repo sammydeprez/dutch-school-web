@@ -196,45 +196,41 @@
       },
       "step2": {
         "title": "School Tour",
-        "description": "Visit our campus, meet our teachers, and see our facilities firsthand."
+        "description": "Visit our compound, meet our team, and see our facilities firsthand."
       },
       "step3": {
-        "title": "Application",
-        "description": "Complete the application form and submit required documents."
+        "title": "Enrollment",
+        "description": "Complete the enrollment form to join our community."
       },
       "step4": {
-        "title": "Assessment",
-        "description": "A friendly assessment to understand your child's needs and learning style."
-      },
-      "step5": {
-        "title": "Enrollment",
-        "description": "Receive your offer and complete enrollment to join our community."
+        "title": "Introduction",
+        "description": "After enrollment, we schedule a friendly introduction meeting to understand the needs and learning styles of your child(ren)."
       }
     },
     "requirements": {
       "title": "Requirements",
-      "subtitle": "Please prepare the following documents for your child's enrollment application.",
-      "item1": "Completed application form",
+      "subtitle": "Please prepare the following documents for your child's enrollment.",
+      "item1": "Completed enrollment form",
       "item2": "Copy of child's passport",
-      "item3": "Recent passport-size photos",
-      "item4": "Previous school reports (if applicable)",
-      "item5": "Immunization records"
+      "item3": "Previous school reports (if applicable)"
     },
     "fees": {
       "title": "Tuition & Fees",
-      "description": "Our fees are competitive and include all learning materials. We have two tariff groups: Tariff A (employer reimbursement) and Tariff B (self-pay)."
+      "description": "Our rates are competitive and include all learning materials. We use different rates across our educational offering."
     },
     "cta": "Start Your Application",
     "faq": {
       "title": "Frequently Asked Questions",
       "moreQuestions": "Have more questions?",
-      "contactLink": "Contact our admissions team"
+      "contactLink": "Get in touch"
     },
     "downloads": {
       "title": "Download Forms",
-      "applicationForm": "Application Form",
-      "medicalForm": "Medical Form",
-      "infoPack": "School Information Pack"
+      "toddler": "Toddler Group enrollment form",
+      "primary": "Day School enrollment form",
+      "ntc": "NTC enrollment form",
+      "adult": "Dutch Adult Class enrollment form",
+      "comingSoon": "Coming soon"
     },
     "readyToApply": {
       "title": "Ready to Apply?",

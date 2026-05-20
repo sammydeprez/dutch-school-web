@@ -196,45 +196,41 @@
       },
       "step2": {
         "title": "Schoolrondleiding",
-        "description": "Bezoek onze campus, ontmoet onze docenten en bekijk onze faciliteiten."
+        "description": "Bezoek onze compound, ontmoet ons team en bekijk onze faciliteiten."
       },
       "step3": {
-        "title": "Aanmelding",
-        "description": "Vul het aanmeldformulier in en lever de vereiste documenten aan."
+        "title": "Inschrijving",
+        "description": "Vul het inschrijfformulier in om lid te worden van onze gemeenschap."
       },
       "step4": {
         "title": "Kennismaking",
-        "description": "Een vriendelijke kennismaking om de behoeften en leerstijl van uw kind te begrijpen."
-      },
-      "step5": {
-        "title": "Inschrijving",
-        "description": "Ontvang uw aanbod en rond de inschrijving af om lid te worden van onze gemeenschap."
+        "description": "Na het inschrijven plannen wij graag een vriendelijke kennismaking in, om de behoeften en leerstijlen van uw kind(eren) te begrijpen."
       }
     },
     "requirements": {
       "title": "Vereisten",
       "subtitle": "Bereid de volgende documenten voor voor de inschrijving van uw kind.",
-      "item1": "Ingevuld aanmeldformulier",
+      "item1": "Ingevuld inschrijfformulier",
       "item2": "Kopie van het paspoort van het kind",
-      "item3": "Recente pasfoto's",
-      "item4": "Vorige schoolrapporten (indien van toepassing)",
-      "item5": "Vaccinatiegegevens"
+      "item3": "Vorige schoolrapporten (indien van toepassing)"
     },
     "fees": {
       "title": "Schoolgeld & Kosten",
-      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen. We hanteren twee tariefgroepen: Tarief A (werkgeververgoeding) en Tarief B (eigen betaling)."
+      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen. We hanteren verschillende tarieven binnen ons onderwijsaanbod."
     },
     "cta": "Start Uw Aanmelding",
     "faq": {
       "title": "Veelgestelde Vragen",
       "moreQuestions": "Heeft u meer vragen?",
-      "contactLink": "Neem contact op met ons toelatings team"
+      "contactLink": "Neem contact met ons op"
     },
     "downloads": {
       "title": "Formulieren Downloaden",
-      "applicationForm": "Aanmeldingsformulier",
-      "medicalForm": "Medisch Formulier",
-      "infoPack": "School Informatiepakket"
+      "toddler": "Inschrijfformulier peuterspeelzaal",
+      "primary": "Inschrijfformulier dagschool",
+      "ntc": "Inschrijfformulier NTC",
+      "adult": "Inschrijfformulier Dutch adult class",
+      "comingSoon": "Binnenkort beschikbaar"
     },
     "readyToApply": {
       "title": "Klaar om Aan te Melden?",
