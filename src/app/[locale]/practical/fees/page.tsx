@@ -154,12 +154,7 @@ function IncludedSection() {
 function AdditionalSection() {
   const t = useTranslations('feesPage.additional');
 
-  const items = [
-    t('items.0'),
-    t('items.1'),
-    t('items.2'),
-    t('items.3'),
-  ];
+  const items = t.raw('items') as string[];
 
   return (
     <section className="py-20 lg:py-28 bg-surface">
