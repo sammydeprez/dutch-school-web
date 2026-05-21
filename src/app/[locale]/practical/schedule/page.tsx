@@ -3,11 +3,14 @@ import { setRequestLocale } from 'next-intl/server';
 import { Clock, Coffee } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import YearCalendar from '@/components/YearCalendar';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/practical/schedule'),
     title: locale === 'nl' ? 'Schooltijden | Dutch School Nairobi' : 'School Hours | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Informatie over lestijden, pauzes en vakanties bij Dutch School Nairobi.'
@@ -21,6 +24,7 @@ export default async function SchedulePage({ params }: { params: Promise<{ local
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/practical/schedule" />
       <HeroSection />
       <DailyScheduleSection />
       <BreaksSection />

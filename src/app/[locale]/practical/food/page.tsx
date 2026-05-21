@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Apple, Clock, Droplets, BookOpen } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/practical/food'),
     title: locale === 'nl' ? 'Eten en drinken | Dutch School Nairobi' : 'Food & Drink | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Snacks, lunch en eetmomenten samen met de klas op de Dutch School.'
@@ -20,6 +23,7 @@ export default async function FoodPage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/practical/food" />
       <HeroSection />
       <IntroSection />
       <SectionsList />

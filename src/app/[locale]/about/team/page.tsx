@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Users, Wrench, ShieldCheck } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/about/team'),
     title: locale === 'nl' ? 'Ons Team | Dutch School Nairobi' : 'Our Team | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Maak kennis met ons team van toegewijde professionals die elk kind persoonlijk kennen.'
@@ -20,6 +23,7 @@ export default async function TeamPage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/about/team" />
       <HeroSection />
       <IntroSection />
       <RosterSection />
@@ -70,7 +74,7 @@ function MemberCard({ member, fallbackTint }: { member: Member; fallbackTint: 'p
         <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
           <OptimizedImage
             src={member.image}
-            alt={member.name}
+            alt={`${member.name}, ${member.role} at Dutch School Nairobi`}
             width={400}
             height={400}
             className="w-full h-full object-cover"

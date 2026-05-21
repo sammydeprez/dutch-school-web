@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { MessageSquare, HandHeart, Coffee, Check } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/community/parents'),
     title: locale === 'nl' ? 'Voor Ouders | Dutch School Nairobi' : 'For Parents | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Partners in het onderwijs van uw kind. Ouderbetrokkenheid en communicatie.'
@@ -20,6 +23,7 @@ export default async function ParentsPage({ params }: { params: Promise<{ locale
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/community/parents" />
       <HeroSection />
       <IntroSection />
       <CommunicationSection />

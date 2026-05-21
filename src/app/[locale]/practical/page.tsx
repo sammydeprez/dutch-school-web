@@ -3,11 +3,14 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Clock, Bus, CreditCard, Utensils, ArrowRight } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/practical'),
     title: locale === 'nl' ? 'Praktische Informatie | Dutch School Nairobi' : 'Practical Information | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Alles wat u moet weten over schooltijden, transport en schoolgeld.'
@@ -21,6 +24,7 @@ export default async function PracticalPage({ params }: { params: Promise<{ loca
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/practical" />
       <HeroSection />
       <IntroSection />
       <SectionsOverview />

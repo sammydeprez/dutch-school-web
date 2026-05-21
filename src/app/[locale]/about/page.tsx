@@ -3,11 +3,13 @@ import { setRequestLocale } from 'next-intl/server';
 import { Award, Heart, Lightbulb, Globe, Calendar } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/about'),
     title: locale === 'nl' ? 'Over Ons | Dutch School Nairobi' : 'About Us | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Leer meer over de geschiedenis, missie en waarden van Dutch School Nairobi. Al 50+ jaar tweetalig onderwijs in Kenia.'
@@ -243,7 +245,7 @@ function TeamSection() {
               <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden group-hover:scale-105 transition-transform">
                 <OptimizedImage
                   src={member.image}
-                  alt={member.name}
+                  alt={`${member.name}, ${member.role} at Dutch School Nairobi`}
                   width={400}
                   height={400}
                   className="w-full h-full object-cover"

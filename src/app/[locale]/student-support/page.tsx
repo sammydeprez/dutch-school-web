@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { UserCheck, Eye, HeartHandshake, Users, Sparkles } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/student-support'),
     title: locale === 'nl' ? 'Leerlingenzorg | Dutch School Nairobi' : 'Student Support | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Persoonlijke begeleiding voor elk kind. CITO, KIJK!, doorstroomtoets en meer.'
@@ -20,6 +23,7 @@ export default async function StudentSupportPage({ params }: { params: Promise<{
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/student-support" />
       <HeroSection />
       <IntroSection />
       <ApproachSection />

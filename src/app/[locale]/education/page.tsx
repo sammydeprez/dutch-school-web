@@ -4,11 +4,13 @@ import { Link } from '@/i18n/navigation';
 import { ArrowRight, Users, GraduationCap, Globe, Palette, Languages } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education'),
     title: locale === 'nl' ? 'Onderwijs | Dutch School Nairobi' : 'Education | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Tweetalig onderwijs van peuterspeelzaal tot en met groep 8. Peuterspeelzaal, Basisschool en NTC programma.'

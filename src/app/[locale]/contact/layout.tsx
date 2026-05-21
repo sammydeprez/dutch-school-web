@@ -1,7 +1,11 @@
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/contact'),
     title: locale === 'nl' ? 'Contact | Dutch School Nairobi' : 'Contact Us | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Neem contact op met Dutch School Nairobi. Bezoek ons op Windy Ridge, Nairobi of bel ons voor informatie over inschrijving en programma\'s.'
@@ -15,10 +19,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function ContactLayout({
+export default async function ContactLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  return children;
+  const { locale } = await params;
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} path="/contact" />
+      {children}
+    </>
+  );
 }

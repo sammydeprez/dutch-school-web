@@ -4,11 +4,13 @@ import { Check, Plus, CreditCard, Users } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import FeesTable from '@/components/FeesTable';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/practical/fees'),
     title: locale === 'nl' ? 'Schoolgeld | Dutch School Nairobi' : 'School Fees | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Transparante tariefstructuur met twee tariefgroepen. Informatie over schoolgeld en betalingsregelingen.'

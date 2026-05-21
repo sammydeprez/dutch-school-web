@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Banknote } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/ntc/fees'),
     title: locale === 'nl' ? 'NTC Schoolgeld | Dutch School Nairobi' : 'NTC Fees | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Schoolgeld en tarieven voor het NTC programma.'
@@ -20,6 +23,7 @@ export default async function NTCFeesPage({ params }: { params: Promise<{ locale
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/education/ntc/fees" />
       <HeroSection />
       <IntroSection />
       <CTASection />

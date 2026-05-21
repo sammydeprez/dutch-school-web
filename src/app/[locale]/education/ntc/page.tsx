@@ -3,11 +3,13 @@ import { setRequestLocale } from 'next-intl/server';
 import { BookOpen, Globe, Users, Calendar, Check } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/ntc'),
     title: locale === 'nl' ? 'NTC - Nederlands Taal en Cultuur | Dutch School Nairobi' : 'NTC - Dutch Language and Culture | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'NTC-programma voor Nederlandstalige kinderen op andere internationale scholen. Behoud en ontwikkel het Nederlands.'

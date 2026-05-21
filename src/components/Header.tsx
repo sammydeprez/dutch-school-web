@@ -211,9 +211,11 @@ export default function Header() {
         <div
           className={`
             lg:hidden
-            overflow-hidden
             transition-all duration-300 ease-in-out
-            ${isMenuOpen ? 'max-h-[calc(100vh-80px)] opacity-100' : 'max-h-0 opacity-0'}
+            ${isMenuOpen
+              ? 'max-h-[calc(100vh-80px)] opacity-100 overflow-y-auto overscroll-contain'
+              : 'max-h-0 opacity-0 overflow-hidden'
+            }
           `}
         >
           <div className="py-4 border-t border-border">

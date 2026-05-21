@@ -2,11 +2,14 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Bus, Shield, MapPin, Check } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/practical/transport'),
     title: locale === 'nl' ? 'Schooltransport | Dutch School Nairobi' : 'School Transport | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Veilig schoolbusvervoer vanuit verschillende delen van Nairobi.'
@@ -20,6 +23,7 @@ export default async function TransportPage({ params }: { params: Promise<{ loca
 
   return (
     <>
+      <BreadcrumbSchema locale={locale} path="/practical/transport" />
       <HeroSection />
       <IntroSection />
       <RoutesSection />

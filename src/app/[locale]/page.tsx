@@ -17,6 +17,14 @@ import {
   Phone
 } from 'lucide-react';
 import { OptimizedImage, AnimatedSection } from '@/components/ui';
+import { getAlternates } from '@/lib/seo';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return {
+    alternates: getAlternates(locale, '/'),
+  };
+}
 
 export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   return <HomePageContent params={params} />;
@@ -294,7 +302,7 @@ function FeaturesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
-          <p className="text-lg text-muted">
+          <p className="text-lg text-muted whitespace-pre-line">
             {t('subtitle')}
           </p>
         </AnimatedSection>

@@ -3,11 +3,13 @@ import { setRequestLocale } from 'next-intl/server';
 import { Check } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { getAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   return {
+    alternates: getAlternates(locale, '/education/primary'),
     title: locale === 'nl' ? 'Basisschool | Dutch School Nairobi' : 'Primary School | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Tweetalig basisonderwijs van groep 1 tot en met groep 8. Nederlands curriculum gecombineerd met IPC.'
