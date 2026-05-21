@@ -78,7 +78,7 @@
   },
   "features": {
     "title": "Waarom de Dutch School?",
-    "subtitle": "Groots in kleinschaligheid - waar elk kind gezien wordt",
+    "subtitle": "Groots in kleinschaligheid\nWaar elk kind gezien wordt",
     "bilingual": {
       "title": "Tweetalig Onderwijs",
       "description": "Volledig tweetalig curriculum voor naadloze doorstroom, internationaal of in Nederland en België."
@@ -332,8 +332,8 @@
       "quote": "De Kleine Nederlandstalige School voor Grootse Wereldburgers."
     },
     "team": {
-      "title": "Ons Team",
-      "subtitle": "Toegewijde leerkrachten die met passie werken aan de groei van ieder kind.",
+      "title": "Ons Management Team",
+      "subtitle": "Een betrokken managementteam dat met passie en visie richting geeft aan kwalitatief goed onderwijs en samen met het team een inspirerende leeromgeving creëert waarin ieder kind zich optimaal kan ontwikkelen.",
       "intro": "Bij de Dutch School vormen onze groepsleerkrachten het hart van de school. Het zijn bevlogen, Nederlandstalige onderwijsprofessionals met een passie voor leren en ontwikkelen. In de onderbouw worden zij met zorg ondersteund door onze toegewijde Engelstalige klassenassistenten. Samen creëren zij een veilige, stimulerende omgeving waarin ieder kind kan groeien.",
       "intro2": "Ons team is onze grootste kracht: met hun expertise, aandacht en toewijding halen zij elke dag het beste uit het leren van uw kind. Daarnaast werken we met gespecialiseerde vakleerkrachten voor Engels, zwemmen en sport, zodat ieder kind zich ook op deze gebieden optimaal kan ontwikkelen. Deze vakleerkrachten brengen hun passie en expertise in om ons onderwijs nog rijker en veelzijdiger te maken. Voor onze Skills Clubs en naschoolse activiteiten werken we samen met vertrouwde consultants en ervaren experts, die met dezelfde betrokkenheid bijdragen aan de brede ontwikkeling van onze leerlingen.",
       "members": {
@@ -436,12 +436,14 @@
         { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht", "image": "/images/team/bo.png" },
         { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "" },
         { "name": "Sarah Vijzelman", "role": "Peuterleerkracht", "image": "/images/team/early-years-head.png" },
-        { "name": "Caroline Slot", "role": "Peuterleerkracht", "image": "" },
+        { "name": "Caroline Slot", "role": "NTC leerkracht en peuterleerkracht", "image": "/images/team/caroline.png" },
+        { "name": "Liesbeth Boot", "role": "NTC leerkracht", "image": "/images/team/liesbeth.png" },
+        { "name": "Marlous Werger", "role": "NTC leerkracht", "image": "" },
         { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Onderwijsassistente", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Onderwijsassistente", "image": "/images/team/jacinta.png" },
         { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen", "image": "" },
-        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE", "image": "" }
+        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE", "image": "/images/team/sandra.png" }
       ]
     },
     "wholeTeam": {

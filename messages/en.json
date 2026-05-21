@@ -78,7 +78,7 @@
   },
   "features": {
     "title": "Why Choose the Dutch School?",
-    "subtitle": "Greatness in intimacy - where every child is seen",
+    "subtitle": "Greatness in intimacy\nWhere every child is seen",
     "bilingual": {
       "title": "Bilingual Education",
       "description": "Fully bilingual curriculum for seamless transition, internationally or in the Netherlands and Belgium."
@@ -332,8 +332,8 @@
       "quote": "The Small Dutch-Speaking School for Great Global Citizens."
     },
     "team": {
-      "title": "Our Team",
-      "subtitle": "Dedicated teachers who work with passion to help every child grow.",
+      "title": "Our Management Team",
+      "subtitle": "A dedicated management team that, with passion and vision, leads our commitment to high-quality education and works alongside the wider team to create an inspiring learning environment where every child can develop to their full potential.",
       "intro": "At the Dutch School, our class teachers are the heart of the school. They are inspired, Dutch-speaking education professionals with a passion for learning and development. In the lower grades, they are carefully supported by our dedicated English-speaking classroom assistants. Together they create a safe, stimulating environment in which every child can grow.",
       "intro2": "Our team is our greatest strength: with their expertise, attention, and dedication, they bring out the best in your child's learning every day. We also work with specialized subject teachers for English, swimming, and sports, so every child can develop optimally in these areas as well. These subject teachers bring their passion and expertise to make our education even richer and more varied. For our Skills Clubs and after-school activities, we partner with trusted consultants and experienced experts who contribute with the same engagement to the broad development of our students.",
       "members": {
@@ -436,12 +436,14 @@
         { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher", "image": "/images/team/bo.png" },
         { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "" },
         { "name": "Sarah Vijzelman", "role": "Toddler Teacher", "image": "/images/team/early-years-head.png" },
-        { "name": "Caroline Slot", "role": "Toddler Teacher", "image": "" },
+        { "name": "Caroline Slot", "role": "NTC Teacher and Toddler Teacher", "image": "/images/team/caroline.png" },
+        { "name": "Liesbeth Boot", "role": "NTC Teacher", "image": "/images/team/liesbeth.png" },
+        { "name": "Marlous Werger", "role": "NTC Teacher", "image": "" },
         { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Teaching Assistant", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Teaching Assistant", "image": "/images/team/jacinta.png" },
         { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches", "image": "" },
-        { "name": "Miss Sandra", "role": "English & PE Teacher", "image": "" }
+        { "name": "Miss Sandra", "role": "English & PE Teacher", "image": "/images/team/sandra.png" }
       ]
     },
     "wholeTeam": {

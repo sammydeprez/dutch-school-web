@@ -302,7 +302,7 @@ function FeaturesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
-          <p className="text-lg text-muted">
+          <p className="text-lg text-muted whitespace-pre-line">
             {t('subtitle')}
           </p>
         </AnimatedSection>
