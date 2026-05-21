@@ -48,9 +48,12 @@ function IntroSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
           {t('title')}
         </h2>
-        <p className="text-lg text-muted leading-relaxed">
-          {t('content')}
-        </p>
+        <div className="space-y-5 text-lg text-muted leading-relaxed text-left">
+          <p>{t('content')}</p>
+          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph3')}</p>
+          <p>{t('paragraph4')}</p>
+        </div>
       </div>
     </section>
   );

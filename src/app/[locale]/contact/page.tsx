@@ -36,14 +36,14 @@ function ContactPageSchema() {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: '-1.2921',
-        longitude: '36.8219',
+        latitude: '-1.323051',
+        longitude: '36.702182',
       },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '08:00',
-        closes: '16:00',
+        closes: '16:30',
       },
     },
   };
@@ -331,8 +331,7 @@ function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{t('info.hours')}</h3>
                   <p className="text-muted">
-                    {t('info.hoursValue')}<br />
-                    <span className="text-sm">School: 8:00 AM - 3:30 PM</span>
+                    {t('info.hoursValue')}
                   </p>
                 </div>
               </div>
@@ -343,7 +342,7 @@ function ContactSection() {
               <h3 className="font-semibold text-foreground mb-4">Quick Contact</h3>
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://wa.me/254123456789"
+                  href="https://wa.me/254733675432"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-xl hover:bg-[#128C7E] transition-colors font-medium"
@@ -377,18 +376,17 @@ function MapSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{t('map')}</h2>
 
-        {/* Map Image */}
-        <div className="relative aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden">
+        <div className="relative aspect-[5/3] rounded-3xl overflow-hidden">
           <OptimizedImage
             src="/images/map-static.png"
             alt="Dutch School Nairobi location map"
-            width={1075}
-            height={600}
+            width={1625}
+            height={968}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent" />
           <a
-            href="https://maps.google.com/?q=Makindi+Road+Nairobi+Kenya"
+            href="https://maps.app.goo.gl/TL3UWmdWREFJwhU89"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Clock } from 'lucide-react';
+import { Banknote } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import { getAlternates } from '@/lib/seo';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
@@ -9,21 +9,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
 
   return {
-    alternates: getAlternates(locale, '/ntc/schedule'),
-    title: locale === 'nl' ? 'NTC Lestijden | Dutch School Nairobi' : 'NTC Schedule | Dutch School Nairobi',
+    alternates: getAlternates(locale, '/education/ntc/fees'),
+    title: locale === 'nl' ? 'NTC Schoolgeld | Dutch School Nairobi' : 'NTC Fees | Dutch School Nairobi',
     description: locale === 'nl'
-      ? 'Lestijden en locaties voor het NTC programma.'
-      : 'Hours and locations for the NTC program.',
+      ? 'Schoolgeld en tarieven voor het NTC programma.'
+      : 'Fees and rates for the NTC program.',
   };
 }
 
-export default async function NTCSchedulePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function NTCFeesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   return (
     <>
-      <BreadcrumbSchema locale={locale} path="/ntc/schedule" />
+      <BreadcrumbSchema locale={locale} path="/education/ntc/fees" />
       <HeroSection />
       <IntroSection />
       <CTASection />
@@ -32,19 +32,19 @@ export default async function NTCSchedulePage({ params }: { params: Promise<{ lo
 }
 
 function HeroSection() {
-  const t = useTranslations('ntcSchedulePage.hero');
+  const t = useTranslations('ntcFeesPage.hero');
 
   return <PageHero title={t('title')} subtitle={t('subtitle')} />;
 }
 
 function IntroSection() {
-  const t = useTranslations('ntcSchedulePage.intro');
+  const t = useTranslations('ntcFeesPage.intro');
 
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex w-16 h-16 mx-auto rounded-2xl bg-primary/10 items-center justify-center mb-6">
-          <Clock className="w-8 h-8 text-primary" />
+          <Banknote className="w-8 h-8 text-primary" />
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
           {t('title')}
@@ -58,7 +58,7 @@ function IntroSection() {
 }
 
 function CTASection() {
-  const t = useTranslations('ntcSchedulePage.cta');
+  const t = useTranslations('ntcFeesPage.cta');
 
   return (
     <PageCTA

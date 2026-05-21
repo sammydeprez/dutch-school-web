@@ -6,12 +6,12 @@
     "vision": "Onze Visie",
     "team": "Het Team",
     "campus": "Locatie & Campus",
-    "education": "Onderwijs Dagschool",
-    "programs": "Programma's",
+    "education": "Dagschool",
+    "programs": "Onderwijs",
     "educationOverview": "Overzicht",
     "toddler": "Peuterspeelzaal",
     "primary": "Basisschool",
-    "curriculum": "Ons Onderwijs",
+    "curriculum": "Onze aanpak",
     "languageClub": "Talenclub",
     "skillsClub": "Skills Club",
     "library": "Bibliotheek",
@@ -29,6 +29,7 @@
     "schedule": "Schooltijden",
     "transport": "Transport",
     "fees": "Schoolgeld",
+    "food": "Eten en drinken",
     "community": "Gemeenschap",
     "communityOverview": "Overzicht",
     "parents": "Voor Ouders",
@@ -215,45 +216,41 @@
       },
       "step2": {
         "title": "Schoolrondleiding",
-        "description": "Bezoek onze campus, ontmoet onze docenten en bekijk onze faciliteiten."
+        "description": "Bezoek onze compound, ontmoet ons team en bekijk onze faciliteiten."
       },
       "step3": {
-        "title": "Aanmelding",
-        "description": "Vul het aanmeldformulier in en lever de vereiste documenten aan."
+        "title": "Inschrijving",
+        "description": "Vul het inschrijfformulier in om lid te worden van onze gemeenschap."
       },
       "step4": {
         "title": "Kennismaking",
-        "description": "Een vriendelijke kennismaking om de behoeften en leerstijl van uw kind te begrijpen."
-      },
-      "step5": {
-        "title": "Inschrijving",
-        "description": "Ontvang uw aanbod en rond de inschrijving af om lid te worden van onze gemeenschap."
+        "description": "Na het inschrijven plannen wij graag een vriendelijke kennismaking in, om de behoeften en leerstijlen van uw kind(eren) te begrijpen."
       }
     },
     "requirements": {
       "title": "Vereisten",
       "subtitle": "Bereid de volgende documenten voor voor de inschrijving van uw kind.",
-      "item1": "Ingevuld aanmeldformulier",
+      "item1": "Ingevuld inschrijfformulier",
       "item2": "Kopie van het paspoort van het kind",
-      "item3": "Recente pasfoto's",
-      "item4": "Vorige schoolrapporten (indien van toepassing)",
-      "item5": "Vaccinatiegegevens"
+      "item3": "Vorige schoolrapporten (indien van toepassing)"
     },
     "fees": {
       "title": "Schoolgeld & Kosten",
-      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen. We hanteren twee tariefgroepen: Tarief A (werkgeververgoeding) en Tarief B (eigen betaling)."
+      "description": "Onze tarieven zijn concurrerend en omvatten alle leermaterialen. We hanteren verschillende tarieven binnen ons onderwijsaanbod."
     },
     "cta": "Start Uw Aanmelding",
     "faq": {
       "title": "Veelgestelde Vragen",
       "moreQuestions": "Heeft u meer vragen?",
-      "contactLink": "Neem contact op met ons toelatings team"
+      "contactLink": "Neem contact met ons op"
     },
     "downloads": {
       "title": "Formulieren Downloaden",
-      "applicationForm": "Aanmeldingsformulier",
-      "medicalForm": "Medisch Formulier",
-      "infoPack": "School Informatiepakket"
+      "toddler": "Inschrijfformulier peuterspeelzaal",
+      "primary": "Inschrijfformulier dagschool",
+      "ntc": "Inschrijfformulier NTC",
+      "adult": "Inschrijfformulier Dutch adult class",
+      "comingSoon": "Binnenkort beschikbaar"
     },
     "readyToApply": {
       "title": "Klaar om Aan te Melden?",
@@ -296,7 +293,7 @@
       "phone": "Telefoon",
       "email": "E-mail",
       "hours": "Kantooruren",
-      "hoursValue": "Maandag - Vrijdag: 8:00 - 16:00"
+      "hoursValue": "Maandag - Vrijdag: 8:00 - 16:30"
     },
     "visit": {
       "title": "Plan een Bezoek",
@@ -323,7 +320,7 @@
     },
     "approach": {
       "title": "Groots in Kleinschaligheid",
-      "content": "Sinds 1971 is de Dutch School (voorheen Netherlands School Society) een vertrouwde plek voor Nederlandse en internationale gezinnen in Nairobi. Een plek waar kinderen leren, ontdekken en groeien, in een warme omgeving waar onderwijs, plezier in leren en gemeenschap samenkomen.",
+      "content": "Sinds 1971 is de Dutch School (voorheen Netherlands School Society) een vertrouwde plek voor Nederlandstalige en internationale gezinnen in Nairobi. Een plek waar kinderen leren, ontdekken en groeien, in een warme omgeving waar onderwijs, plezier in leren en gemeenschap samenkomen.",
       "paragraph2": "Wij geloven dat grootsheid schuilt in het kleine. 'Groots in Kleinschaligheid' laat zien hoe onze kracht juist ligt in de nabijheid en verbondenheid binnen onze school. Doordat we elkaar écht kennen, voelen kinderen zich veilig om zichzelf te zijn en krijgen ze de ruimte om op hun eigen manier te leren en te groeien.",
       "paragraph3": "In onze kleinschalige omgeving werken leerlingen, leraren en ouders nauw samen. We luisteren naar de stem van elk kind, stimuleren hun persoonlijke talenten en vieren de kleine momenten die ertoe doen, van een goed gesprek bij de koffie tot een groots Sinterklaasfeest of een helpende hand wanneer dat even nodig is.",
       "paragraph4": "Wij bieden het beste van twee werelden: sterk tweetalig (Nederlands/Engels) onderwijs met een internationale blik. Met de Nederlandse kerndoelen en het International Primary Curriculum (IPC) leren kinderen thematisch en ontdekkend, wat hun nieuwsgierigheid prikkelt en hun zelfvertrouwen versterkt. Kleine groepen, persoonlijke aandacht en een hechte ouder community zorgen ervoor dat ieder kind zich gezien en gewaardeerd voelt.",
@@ -339,7 +336,7 @@
       "members": {
         "director": { "name": "Hanneke Hollak", "role": "Schoolleider en leerkracht" },
         "headPrimary": { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht" },
-        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Peuterleerkracht" },
+        "headEarlyYears": { "name": "Joke Neuskens", "role": "NTC coordinator en leerkracht" },
         "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
@@ -434,7 +431,8 @@
         { "name": "Marja van Doorn", "role": "Intern Begeleider en leerkracht", "image": "/images/team/primary-head.png" },
         { "name": "Jessica Donia", "role": "Bovenbouwleerkracht", "image": "/images/team/jessica.png" },
         { "name": "Bo Duinmeijer", "role": "Middenbouwleerkracht", "image": "/images/team/bo.png" },
-        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "" },
+        { "name": "Jantien Hofland", "role": "Onderbouwleerkracht", "image": "/images/team/jantien.png" },
+        { "name": "Joke Neuskens", "role": "NTC coordinator en leerkracht", "image": "/images/team/joke.png" },
         { "name": "Sarah Vijzelman", "role": "Peuterleerkracht", "image": "/images/team/early-years-head.png" },
         { "name": "Caroline Slot", "role": "NTC leerkracht en peuterleerkracht", "image": "/images/team/caroline.png" },
         { "name": "Liesbeth Boot", "role": "NTC leerkracht", "image": "/images/team/liesbeth.png" },
@@ -442,8 +440,9 @@
         { "name": "Elsie Mukanzi Fozia", "role": "Onderwijsassistente", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Onderwijsassistente", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Onderwijsassistente", "image": "/images/team/jacinta.png" },
-        { "name": "Coach Ray & Coach Steve", "role": "Vakleerkracht zwemmen", "image": "" },
-        { "name": "Miss Sandra", "role": "Vakleerkracht Engels & PE", "image": "/images/team/sandra.png" }
+        { "name": "Coach Ray", "role": "Vakleerkracht zwemmen", "image": "/images/team/coach-ray.png" },
+        { "name": "Coach Steve", "role": "Vakleerkracht zwemmen", "image": "/images/team/coach-steve.png" },
+        { "name": "Miss Sandra Aleri", "role": "Vakleerkracht Engels & PE", "image": "/images/team/sandra.png" }
       ]
     },
     "wholeTeam": {
@@ -457,7 +456,7 @@
         { "name": "Mulwa", "role": "Tuinman", "image": "/images/team/mulwa.png" },
         { "name": "Charles", "role": "Tuinman", "image": "/images/team/charles.png" },
         { "name": "Robbert", "role": "Buschauffeur & Tuinman", "image": "/images/team/robbert.png" },
-        { "name": "Steve", "role": "Buschauffeur & Tuinman", "image": "" },
+        { "name": "Steve", "role": "Buschauffeur & Tuinman", "image": "/images/team/steve.png" },
         { "name": "Achieng", "role": "Schoonmaker", "image": "/images/team/achieng.png" },
         { "name": "Charity", "role": "Schoonmaker", "image": "/images/team/charity.png" }
       ]
@@ -652,7 +651,7 @@
       "visionParagraph5": "De kracht van ons tweetalig onderwijs ligt in de balans tussen vertrouwd en internationaal: Nederlands als stevige basis, Engels als venster op de wereld. Zo creëren we een omgeving waarin leerlingen zichzelf kunnen zijn, verbinding ervaren met anderen, en vol vertrouwen uitgroeien tot meertalige, nieuwsgierige en ruimdenkende wereldburgers."
     },
     "bilingual": {
-      "title": "Ons Onderwijs",
+      "title": "Onze aanpak",
       "kindergarten": {
         "title": "Kleuteronderwijs (Groep 1-2)",
         "description": "In onze kleutergroepen leggen we spelenderwijs een stevige basis voor een leven lang leren. In een rijke, tweetalige leeromgeving (3 dagen Nederlands, 2 dagen Engels) vol spel, ontdekking en verwondering groeien kinderen in taal, zelfvertrouwen en sociale vaardigheden. Vanuit betekenisvolle IEYC-thema's stimuleren we nieuwsgierigheid, creativiteit en een natuurlijke ontwikkeling in zowel het Nederlands als Engels.",
@@ -833,7 +832,7 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Ons Onderwijs",
+      "title": "Onze aanpak",
       "subtitle": "Een uitgebalanceerd tweetalig onderwijsprogramma met IEYC, IPC, Nederlandse kerndoelen en Engelse taallessen"
     },
     "intro": {
@@ -1108,11 +1107,46 @@
         "title": "Schoolgeld",
         "description": "Informatie over tarieven en betalingsregelingen.",
         "link": "Bekijk Schoolgeld"
+      },
+      "food": {
+        "title": "Eten en drinken",
+        "description": "Snacks, lunch en eetmomenten samen met de klas.",
+        "link": "Bekijk Eten en drinken"
       }
     },
     "contact": {
       "title": "Vragen?",
       "content": "Voor praktische vragen kunt u contact opnemen met ons kantoor.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "foodPage": {
+    "hero": {
+      "title": "Eten en drinken",
+      "subtitle": "Snacks, lunch en eetmomenten samen met de klas"
+    },
+    "intro": {
+      "content": "Bij de Dutch School eten de kinderen gezellig samen met hun klas. Iedere dag nemen de leerlingen hun eigen snack en lunch mee van thuis, zodat ze iets kunnen eten wat ze lekker vinden en wat goed bij hen past."
+    },
+    "schedule": {
+      "title": "Pauzes en eetmomenten",
+      "content": "De snack wordt in de klas gegeten, vlak voor de korte pauze van 10.00 tot 10.30 uur. De lunch is om 11.45 uur voor de onderbouw en om 12.15 uur voor de midden- en bovenbouw. Daarna is het tijd om lekker buiten te spelen en even te ontspannen."
+    },
+    "healthy": {
+      "title": "Gezonde keuzes",
+      "content": "We moedigen gezonde keuzes aan. Een stuk fruit of een andere gezonde snack is ideaal voor in de ochtend. Tijdens de lunch genieten veel kinderen van een boterham, maar een andere maaltijd meenemen mag natuurlijk ook. Op onze school zien we een mooie mix aan lunchgewoontes terug: van chapati tot pasta of rijstgerechten in warmhoudbakjes. Divers, internationaal en passend bij wat kinderen lekker vinden en gewend zijn van thuis. Houd er wel rekening mee dat we op school geen maaltijden kunnen opwarmen."
+    },
+    "water": {
+      "title": "Drinkwater",
+      "content": "Er is voldoende schoon drinkwater aanwezig waar de kinderen de hele dag gebruik van kunnen maken."
+    },
+    "social": {
+      "title": "Een gezellig moment samen",
+      "content": "De snack- en lunchmomenten zijn bedoeld als een rustig en gezellig moment samen. Vaak leest de leerkracht tijdens het eten een leuk, spannend of grappig verhaal voor. Een fijne pauze midden op de schooldag!"
+    },
+    "cta": {
+      "title": "Vragen over eten en drinken?",
+      "subtitle": "Neem contact op voor meer informatie.",
       "button": "Neem Contact Op"
     }
   },
@@ -1125,19 +1159,20 @@
       "title": "Dagelijks Rooster",
       "toddler": {
         "title": "Peuterspeelzaal",
-        "hours": "8:30 - 12:30",
-        "note": "2-5 ochtenden per week naar keuze"
+        "hours": "8.00 - 12.00",
+        "note": "2-5 ochtenden naar keuze. Opvang mogelijk in de middag van 12.00 - 15.00 (ma-do) en 12.00 - 14.00 (vr)."
       },
       "primary": {
         "title": "Basisschool",
-        "hours": "8:00 - 15:00 (ma-do), 8:00 - 12:30 (vr)",
-        "note": "Lunch op school"
+        "hours": "8.00 - 15.00 (ma-do), 8.00 - 14.00 (vr)",
+        "note": ""
       }
     },
     "breaks": {
       "title": "Pauzes",
-      "morning": "Ochtendpauze: 10:15 - 10:30",
-      "lunch": "Lunchpauze: 12:00 - 12:45"
+      "morning": "Ochtendpauze: 10.00 - 10.30",
+      "lunch": "Lunchpauze: 12.15 - 13.00",
+      "note": "Leerlingen nemen een snack en lunch van huis mee."
     },
     "calendar": {
       "title": "Schoolkalender",
@@ -1146,7 +1181,7 @@
     },
     "afterSchool": {
       "title": "Na Schooltijd",
-      "content": "Na de reguliere schooltijd bieden we Skills Club activiteiten aan. Kinderen kunnen ook gebruik maken van de BSO tot 17:00."
+      "content": "Na de reguliere schooldag bieden we After School Activities aan. Deze optionele activiteiten bieden kinderen de kans om nieuwe interesses te ontdekken, talenten verder te ontwikkelen en samen plezier te maken buiten de klas. Voor deelname aan deze keuzeactiviteiten wordt een aanvullende bijdrage gevraagd."
     },
     "cta": {
       "title": "Vragen over de Schooltijden?",
@@ -1168,7 +1203,7 @@
       "route1": {
         "title": "Route 1: Lavington / Kilimani",
         "description": "Deze route bedient de gebieden Lavington, Kilimani en omgeving.",
-        "areas": ["Lavington", "Kilimani", "Kileleshwa", "Hurlingham"]
+        "areas": ["Lavington", "Kilimani", "Kileleshwa"]
       },
       "route2": {
         "title": "Route 2: Loresho / Kitisuru",
@@ -1200,8 +1235,8 @@
       "subtitle": "Transparante tariefstructuur"
     },
     "intro": {
-      "title": "Twee Tariefgroepen",
-      "content": "Dutch School Nairobi hanteert twee tariefgroepen om het onderwijs toegankelijk te houden voor verschillende gezinssituaties."
+      "title": "Tariefgroepen",
+      "content": "Om onderwijs voor zoveel mogelijk gezinnen toegankelijk te houden, werken we met verschillende tarieven. Voor onze peutergroep geldt een apart tarief, waarbij ouders kunnen kiezen voor 2 tot 5 ochtenden per week. Binnen de basisschool maken we onderscheid tussen groep 1-2 en groep 3-8. Daarnaast bieden we een aangepast tarief voor gezinnen die geen werkgeversbijdrage van 75% of meer ontvangen."
     },
     "tariffs": {
       "title": "Tariefgroepen",
@@ -1216,12 +1251,25 @@
         "note": "Gereduceerd tarief"
       }
     },
+    "toddlerSection": {
+      "title": "Peutertarieven",
+      "subtitle": "Tarieven per trimester op basis van het aantal ochtenden per week",
+      "morningsHeader": "Ochtenden per week",
+      "morningsSuffix": "ochtenden",
+      "notes": [
+        "Minimaal 2 ochtenden per week.",
+        "De lestijden met de Nederlandstalige leerkracht zijn van 8.00 - 12.00 uur.",
+        "Er is een optie om in de middag tot 15.00 uur te blijven onder begeleiding van een Engelstalige onderwijsassistent. Hiervoor wordt 5 euro extra per middag in rekening gebracht.",
+        "Bij aanmelding geldt een borg van 250 euro per peuter. Voor peuters wordt geen inschrijfgeld in rekening gebracht."
+      ]
+    },
     "included": {
       "title": "Inbegrepen",
       "items": [
         "Alle lesmaterialen en boeken",
-        "Onderwijsactiviteiten en excursies",
-        "Toegang tot Skills Club basis-activiteiten"
+        "Onderwijsactiviteiten en excursies (muv schoolkamp)",
+        "Language en Skills Club activiteiten",
+        "Gebruik van de compound en het zwembad in de weekenden"
       ]
     },
     "additional": {
@@ -1229,17 +1277,16 @@
       "items": [
         "Inschrijfgeld (eenmalig voor nieuwe leerlingen)",
         "Schoolbus (optioneel)",
-        "Lunch (optioneel)",
-        "Specifieke Skills Club activiteiten"
+        "After School Activities (optioneel)"
       ]
     },
     "payment": {
       "title": "Betaling",
-      "content": "Schoolgeld kan per trimester of per jaar worden betaald. Betalingsregelingen zijn bespreekbaar."
+      "content": "Schoolgeld kan per trimester of per jaar worden betaald. Maandelijkse betalingsregelingen zijn bespreekbaar."
     },
     "siblings": {
       "title": "Korting",
-      "content": "Er geldt een korting voor het tweede en volgende kind uit hetzelfde gezin."
+      "content": "Voor de basisschool geldt er een korting voor het tweede en volgende kind uit hetzelfde gezin."
     },
     "table": {
       "ages": "Leeftijd",
@@ -1271,7 +1318,10 @@
     },
     "intro": {
       "title": "Samen Sterk",
-      "content": "Dutch School Nairobi is meer dan een school - het is een gemeenschap. Ouders, leerlingen en medewerkers vormen samen een hechte groep waarin iedereen elkaar kent en ondersteunt."
+      "content": "De Dutch School is meer dan een school, het is een gemeenschap. Ouders, leerlingen en teamleden vormen samen een hechte groep waarin iedereen elkaar kent en ondersteunt.",
+      "paragraph2": "Elke ochtend staan koffie en thee klaar voor ouders, zodat er na het brengen van de kinderen ruimte is om elkaar te ontmoeten, even bij te praten en nieuwe contacten te leggen. Zo stimuleren we een warme en verbonden schoolgemeenschap waarin ouders elkaar gemakkelijk weten te vinden.",
+      "paragraph3": "De school is een vereniging, wat betekent dat alle ouders automatisch lid worden van de schoolgemeenschap. Als lid krijgen ouders stemrecht en denken zij actief mee over de toekomst van de school. Een betrokken bestuur, bestaande uit ouders, houdt toezicht op het reilen en zeilen van de school en ondersteunt de koers en continuïteit van de organisatie.",
+      "paragraph4": "Twee keer per jaar organiseren we een Algemene Ledenvergadering (ALV), waarin ouders worden meegenomen in de ontwikkelingen binnen de school en kunnen stemmen over belangrijke onderwerpen, zoals begrotingen, jaarplannen en andere beleidskeuzes. Zo bouwen we samen aan een sterke, transparante en betrokken schoolgemeenschap."
     },
     "sections": {
       "parents": {
@@ -1281,7 +1331,7 @@
       },
       "events": {
         "title": "Evenementen",
-        "description": "Nederlandse tradities, schoolfeesten en sociale activiteiten.",
+        "description": "Nederlandse en Vlaamse tradities, themaweken en sociale activiteiten.",
         "link": "Bekijk Evenementen"
       }
     },
@@ -1298,13 +1348,13 @@
     },
     "intro": {
       "title": "Ouderbetrokkenheid",
-      "content": "Op Dutch School Nairobi zijn ouders belangrijke partners. We geloven in open communicatie en actieve betrokkenheid van ouders bij het schoolleven."
+      "content": "Op de Dutch School zijn ouders belangrijke partners. We geloven in open communicatie en actieve betrokkenheid van ouders bij het schoolleven."
     },
     "communication": {
       "title": "Communicatie",
       "items": [
         "Wekelijkse nieuwsbrief",
-        "Ouderportaal voor praktische informatie",
+        "Ouder App voor updates en praktische informatie",
         "Regelmatige oudergesprekken",
         "Directe communicatie met leerkrachten"
       ]
@@ -1320,8 +1370,9 @@
       ]
     },
     "parentCommittee": {
-      "title": "Oudervereniging",
-      "content": "De oudervereniging organiseert evenementen en behartigt de belangen van ouders. Nieuwe leden zijn altijd welkom."
+      "title": "Koffie Ochtenden",
+      "content": "Op de Dutch School organiseren we regelmatig koffieochtenden om ouders samen te brengen en ruimte te creëren voor ontmoeting, inspiratie en uitwisseling. Tijdens deze bijeenkomsten gaan we in gesprek over onderwijskundige thema's, maar ook over onderwerpen rondom opvoeding, ontwikkeling en het ouderschap.",
+      "paragraph2": "De koffieochtenden bieden een platform om nieuwe inzichten op te doen, ervaringen te delen en van elkaar te leren. De school draagt regelmatig onderwerpen aan en nodigt waar passend externe experts uit. Tegelijkertijd moedigen we ouders aan om zelf ideeën in te brengen of vanuit hun eigen kennis, achtergrond of expertise een bijeenkomst te verzorgen. Zo bouwen we samen aan een lerende en betrokken schoolgemeenschap."
     },
     "cta": {
       "title": "Vragen over Ouderbetrokkenheid?",
@@ -1332,43 +1383,59 @@
   "eventsPage": {
     "hero": {
       "title": "Evenementen",
-      "subtitle": "Nederlandse tradities en internationale vieringen"
+      "subtitle": "Nederlandse en Vlaamse tradities en internationale vieringen"
     },
     "intro": {
       "title": "Een Jaar Vol Evenementen",
-      "content": "Bij Dutch School Nairobi vieren we zowel Nederlandse tradities als internationale feestdagen. Deze evenementen versterken onze gemeenschap en verbinden kinderen met hun culturele achtergrond."
+      "content": "Bij de Dutch School vieren we zowel Nederlandse en Vlaamse tradities als internationale feestdagen. Deze evenementen versterken onze gemeenschap en verbinden kinderen met hun culturele achtergrond en die van klasgenoten."
     },
-    "dutch": {
-      "title": "Nederlandse Tradities",
+    "traditions": {
+      "title": "Tradities",
       "events": {
         "sinterklaas": {
           "title": "Sinterklaas",
-          "description": "Begin december viert de hele school het Sinterklaasfeest met liedjes, surprises en pepernoten."
+          "description": "Eind november / begin december viert de hele school het Sinterklaasfeest met liedjes, surprises en pepernoten. Op school wordt hier in de weken ervoor ook al aandacht aan besteed."
         },
-        "koningsdag": {
-          "title": "Koningsdag",
-          "description": "Een oranje feest met spelletjes, rommelmarkt en Nederlandse gezelligheid."
+        "koningsspelen": {
+          "title": "Koningsspelen en Oranje Feest",
+          "description": "Op school doen we jaarlijks mee met de Koningsspelen, een sportieve dag vol beweging. Daarnaast organiseren we rond Koningsdag een oranje feest met spelletjes, een rommelmarkt en Nederlandse gezelligheid."
+        },
+        "belgischeDag": {
+          "title": "Belgische Dag",
+          "description": "In november vieren we op school onze jaarlijkse Belgische Dag. Leerlingen leren meer over België, maken kennis met Belgische tradities en genieten samen van typische lekkernijen en leuke spelactiviteiten. Een mooie manier om cultuur te beleven en samen te vieren."
         },
         "kerst": {
           "title": "Kerstviering",
           "description": "Een gezamenlijke kerstviering met optredens van de kinderen."
+        },
+        "eindmusical": {
+          "title": "Eindmusical",
+          "description": "Viering van het einde van het schooljaar met een eindmusical en afscheid van groep 8 en andere vertrekkende leerlingen."
         }
       }
     },
-    "school": {
-      "title": "Schoolevenementen",
+    "themaweken": {
+      "title": "Themaweken",
       "events": {
-        "openDay": {
-          "title": "Open Dag",
-          "description": "Kennismaken met onze school voor geïnteresseerde families."
+        "kinderboekenweek": {
+          "title": "Kinderboekenweek",
+          "description": "Tijdens de Nationale Kinderboekenweek staat de hele school in het teken van leesplezier en verhalen. Aan de hand van het jaarlijkse thema organiseren we activiteiten rondom boeken, voorlezen en creatief taalgebruik, zodat leerlingen ontdekken hoe leuk en inspirerend lezen kan zijn."
         },
-        "sportsDay": {
-          "title": "Sportdag",
-          "description": "Een dag vol sporten en spelletjes voor alle leerlingen."
+        "lentekriebels": {
+          "title": "Week van de Lentekriebels",
+          "description": "Tijdens de Week van de Lentekriebels besteden we op een leeftijdsgerichte en respectvolle manier aandacht aan thema's zoals relaties, weerbaarheid, grenzen, gevoelens en jezelf en de ander leren begrijpen. Zo ondersteunen we leerlingen in hun sociaal-emotionele ontwikkeling en dragen we bij aan een veilige en open schoolcultuur."
         },
-        "endOfYear": {
-          "title": "Eindfeest",
-          "description": "Viering van het einde van het schooljaar met optredens en afscheid van groep 8."
+        "neuroDiversity": {
+          "title": "Neuro Diversity Week",
+          "description": "Tijdens Neuro Diversity Week vieren we de verschillende manieren waarop mensen denken, leren en de wereld ervaren. Leerlingen ontdekken dat verschillen waardevol zijn en leren met nieuwsgierigheid, begrip en respect kijken naar zichzelf en anderen."
+        },
+        "wereldReligie": {
+          "title": "Wereld Religie Week",
+          "description": "Tijdens de Wereld Religie Week maken leerlingen kennis met verschillende wereldreligies en levensbeschouwingen. Door samen te onderzoeken, vragen te stellen en overeenkomsten en verschillen te ontdekken, stimuleren we respect, openheid en wereldburgerschap."
+        },
+        "verkeersweek": {
+          "title": "Verkeersweek",
+          "description": "Tijdens de Verkeersweek werken leerlingen op een actieve en praktische manier aan verkeersvaardigheden en verkeersbewustzijn. Met spel, opdrachten én hun eigen fiets of andere wielen leren zij verkeersregels toepassen en veilig deelnemen aan het verkeer."
         }
       }
     },

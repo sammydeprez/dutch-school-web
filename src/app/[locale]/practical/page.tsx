@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { Clock, Bus, CreditCard, ArrowRight } from 'lucide-react';
+import { Clock, Bus, CreditCard, Utensils, ArrowRight } from 'lucide-react';
 import { PageHero, PageCTA } from '@/components/ui';
 import { getAlternates } from '@/lib/seo';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
@@ -84,6 +84,14 @@ function SectionsOverview() {
       linkText: t('fees.link'),
       color: 'accent',
     },
+    {
+      icon: Utensils,
+      title: t('food.title'),
+      description: t('food.description'),
+      link: '/practical/food',
+      linkText: t('food.link'),
+      color: 'primary',
+    },
   ];
 
   const colorClasses = {
@@ -95,7 +103,7 @@ function SectionsOverview() {
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {sections.map((section, index) => (
             <div
               key={index}

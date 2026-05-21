@@ -7,11 +7,11 @@
     "team": "The Team",
     "campus": "Location & Campus",
     "education": "Day School",
-    "programs": "Programs",
+    "programs": "Education",
     "educationOverview": "Overview",
     "toddler": "Toddler Group",
     "primary": "Primary School",
-    "curriculum": "Our Education",
+    "curriculum": "Our Approach",
     "languageClub": "Language Club",
     "skillsClub": "Skills Club",
     "library": "Library",
@@ -29,6 +29,7 @@
     "schedule": "School Hours",
     "transport": "Transport",
     "fees": "School Fees",
+    "food": "Food & Drink",
     "community": "Community",
     "communityOverview": "Overview",
     "parents": "For Parents",
@@ -215,45 +216,41 @@
       },
       "step2": {
         "title": "School Tour",
-        "description": "Visit our campus, meet our teachers, and see our facilities firsthand."
+        "description": "Visit our compound, meet our team, and see our facilities firsthand."
       },
       "step3": {
-        "title": "Application",
-        "description": "Complete the application form and submit required documents."
+        "title": "Enrollment",
+        "description": "Complete the enrollment form to join our community."
       },
       "step4": {
-        "title": "Assessment",
-        "description": "A friendly assessment to understand your child's needs and learning style."
-      },
-      "step5": {
-        "title": "Enrollment",
-        "description": "Receive your offer and complete enrollment to join our community."
+        "title": "Introduction",
+        "description": "After enrollment, we schedule a friendly introduction meeting to understand the needs and learning styles of your child(ren)."
       }
     },
     "requirements": {
       "title": "Requirements",
-      "subtitle": "Please prepare the following documents for your child's enrollment application.",
-      "item1": "Completed application form",
+      "subtitle": "Please prepare the following documents for your child's enrollment.",
+      "item1": "Completed enrollment form",
       "item2": "Copy of child's passport",
-      "item3": "Recent passport-size photos",
-      "item4": "Previous school reports (if applicable)",
-      "item5": "Immunization records"
+      "item3": "Previous school reports (if applicable)"
     },
     "fees": {
       "title": "Tuition & Fees",
-      "description": "Our fees are competitive and include all learning materials. We have two tariff groups: Tariff A (employer reimbursement) and Tariff B (self-pay)."
+      "description": "Our rates are competitive and include all learning materials. We use different rates across our educational offering."
     },
     "cta": "Start Your Application",
     "faq": {
       "title": "Frequently Asked Questions",
       "moreQuestions": "Have more questions?",
-      "contactLink": "Contact our admissions team"
+      "contactLink": "Get in touch"
     },
     "downloads": {
       "title": "Download Forms",
-      "applicationForm": "Application Form",
-      "medicalForm": "Medical Form",
-      "infoPack": "School Information Pack"
+      "toddler": "Toddler Group enrollment form",
+      "primary": "Day School enrollment form",
+      "ntc": "NTC enrollment form",
+      "adult": "Dutch Adult Class enrollment form",
+      "comingSoon": "Coming soon"
     },
     "readyToApply": {
       "title": "Ready to Apply?",
@@ -296,7 +293,7 @@
       "phone": "Phone",
       "email": "Email",
       "hours": "Office Hours",
-      "hoursValue": "Monday - Friday: 8:00 AM - 4:00 PM"
+      "hoursValue": "Monday - Friday: 8:00 AM - 4:30 PM"
     },
     "visit": {
       "title": "Schedule a Visit",
@@ -339,7 +336,7 @@
       "members": {
         "director": { "name": "Hanneke Hollak", "role": "School Leader and Teacher" },
         "headPrimary": { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher" },
-        "headEarlyYears": { "name": "Sarah Vijzelman", "role": "Toddler Teacher" },
+        "headEarlyYears": { "name": "Joke Neuskens", "role": "NTC Coordinator and Teacher" },
         "operations": { "name": "Lucy Kamau", "role": "Finance and Operations Manager" }
       }
     },
@@ -434,7 +431,8 @@
         { "name": "Marja van Doorn", "role": "Learning Support Coordinator and Teacher", "image": "/images/team/primary-head.png" },
         { "name": "Jessica Donia", "role": "Upper Primary Teacher", "image": "/images/team/jessica.png" },
         { "name": "Bo Duinmeijer", "role": "Middle Primary Teacher", "image": "/images/team/bo.png" },
-        { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "" },
+        { "name": "Jantien Hofland", "role": "Lower Primary Teacher", "image": "/images/team/jantien.png" },
+        { "name": "Joke Neuskens", "role": "NTC Coordinator and Teacher", "image": "/images/team/joke.png" },
         { "name": "Sarah Vijzelman", "role": "Toddler Teacher", "image": "/images/team/early-years-head.png" },
         { "name": "Caroline Slot", "role": "NTC Teacher and Toddler Teacher", "image": "/images/team/caroline.png" },
         { "name": "Liesbeth Boot", "role": "NTC Teacher", "image": "/images/team/liesbeth.png" },
@@ -442,8 +440,9 @@
         { "name": "Elsie Mukanzi Fozia", "role": "Teaching Assistant", "image": "/images/team/elsie.png" },
         { "name": "Faith Sambe", "role": "Teaching Assistant", "image": "/images/team/faith.png" },
         { "name": "Jacinta", "role": "Teaching Assistant", "image": "/images/team/jacinta.png" },
-        { "name": "Coach Ray & Coach Steve", "role": "Swimming Coaches", "image": "" },
-        { "name": "Miss Sandra", "role": "English & PE Teacher", "image": "/images/team/sandra.png" }
+        { "name": "Coach Ray", "role": "Swimming Coach", "image": "/images/team/coach-ray.png" },
+        { "name": "Coach Steve", "role": "Swimming Coach", "image": "/images/team/coach-steve.png" },
+        { "name": "Miss Sandra Aleri", "role": "English & PE Teacher", "image": "/images/team/sandra.png" }
       ]
     },
     "wholeTeam": {
@@ -457,7 +456,7 @@
         { "name": "Mulwa", "role": "Gardener", "image": "/images/team/mulwa.png" },
         { "name": "Charles", "role": "Gardener", "image": "/images/team/charles.png" },
         { "name": "Robbert", "role": "Bus Driver & Gardener", "image": "/images/team/robbert.png" },
-        { "name": "Steve", "role": "Bus Driver & Gardener", "image": "" },
+        { "name": "Steve", "role": "Bus Driver & Gardener", "image": "/images/team/steve.png" },
         { "name": "Achieng", "role": "Cleaner", "image": "/images/team/achieng.png" },
         { "name": "Charity", "role": "Cleaner", "image": "/images/team/charity.png" }
       ]
@@ -652,7 +651,7 @@
       "visionParagraph5": "The strength of our bilingual education lies in the balance between familiar and international: Dutch as a solid foundation, English as a window to the world. This way we create an environment in which students can be themselves, experience connection with others, and grow with confidence into multilingual, curious, and open-minded global citizens."
     },
     "bilingual": {
-      "title": "Our Education",
+      "title": "Our Approach",
       "kindergarten": {
         "title": "Kindergarten Education (Groups 1-2)",
         "description": "In our kindergarten groups, we lay a solid foundation for lifelong learning through play. In a rich, bilingual learning environment (3 days Dutch, 2 days English) full of play, discovery, and wonder, children grow in language, self-confidence, and social skills. Through meaningful IEYC themes, we stimulate curiosity, creativity, and a natural development in both Dutch and English.",
@@ -833,7 +832,7 @@
   },
   "curriculumPage": {
     "hero": {
-      "title": "Our Education",
+      "title": "Our Approach",
       "subtitle": "A balanced bilingual education program with IEYC, IPC, Dutch core objectives, and English language lessons"
     },
     "intro": {
@@ -1108,11 +1107,46 @@
         "title": "School Fees",
         "description": "Information about fees and payment arrangements.",
         "link": "View School Fees"
+      },
+      "food": {
+        "title": "Food & Drink",
+        "description": "Snacks, lunch and eating times together as a class.",
+        "link": "View Food & Drink"
       }
     },
     "contact": {
       "title": "Questions?",
       "content": "For practical questions, you can contact our office.",
+      "button": "Contact Us"
+    }
+  },
+  "foodPage": {
+    "hero": {
+      "title": "Food & Drink",
+      "subtitle": "Snacks, lunch and eating times together as a class"
+    },
+    "intro": {
+      "content": "At the Dutch School, children enjoy eating together with their class. Every day, students bring their own snack and lunch from home, so they can have something they like and that suits them."
+    },
+    "schedule": {
+      "title": "Breaks and meal times",
+      "content": "The snack is eaten in the classroom, just before the short break from 10:00 to 10:30 AM. Lunch is at 11:45 AM for the lower grades and at 12:15 PM for the middle and upper grades. After that, it's time to play outside and relax."
+    },
+    "healthy": {
+      "title": "Healthy choices",
+      "content": "We encourage healthy choices. A piece of fruit or another healthy snack is ideal for the morning. At lunchtime many children enjoy a sandwich, but bringing a different meal is also fine. At our school we see a wonderful mix of lunch habits: from chapati to pasta or rice dishes in insulated containers. Diverse, international, and matching what children enjoy and are used to at home. Please note that we cannot heat meals at school."
+    },
+    "water": {
+      "title": "Drinking water",
+      "content": "Plenty of fresh drinking water is available for the children to use throughout the day."
+    },
+    "social": {
+      "title": "A pleasant moment together",
+      "content": "The snack and lunch moments are meant as a calm and pleasant time together. Often the teacher reads aloud a fun, exciting, or funny story during the meal. A welcome pause in the middle of the school day!"
+    },
+    "cta": {
+      "title": "Questions about food and drink?",
+      "subtitle": "Contact us for more information.",
       "button": "Contact Us"
     }
   },
@@ -1125,19 +1159,20 @@
       "title": "Daily Schedule",
       "toddler": {
         "title": "Toddler Group",
-        "hours": "8:30 AM - 12:30 PM",
-        "note": "2-5 mornings per week of choice"
+        "hours": "8:00 AM - 12:00 PM",
+        "note": "2-5 mornings of choice. Afternoon care available from 12:00 PM - 3:00 PM (Mon-Thu) and 12:00 PM - 2:00 PM (Fri)."
       },
       "primary": {
         "title": "Primary School",
-        "hours": "8:00 AM - 3:00 PM (Mon-Thu), 8:00 AM - 12:30 PM (Fri)",
-        "note": "Lunch at school"
+        "hours": "8:00 AM - 3:00 PM (Mon-Thu), 8:00 AM - 2:00 PM (Fri)",
+        "note": ""
       }
     },
     "breaks": {
       "title": "Breaks",
-      "morning": "Morning break: 10:15 AM - 10:30 AM",
-      "lunch": "Lunch break: 12:00 PM - 12:45 PM"
+      "morning": "Morning break: 10:00 AM - 10:30 AM",
+      "lunch": "Lunch break: 12:15 PM - 1:00 PM",
+      "note": "Students bring a snack and lunch from home."
     },
     "calendar": {
       "title": "School Calendar",
@@ -1146,7 +1181,7 @@
     },
     "afterSchool": {
       "title": "After School",
-      "content": "After regular school hours, we offer Skills Club activities. Children can also use after-school care until 5:00 PM."
+      "content": "After the regular school day we offer After School Activities. These optional activities give children the chance to discover new interests, develop their talents further and enjoy time together outside the classroom. Participation in these elective activities is subject to an additional fee."
     },
     "cta": {
       "title": "Questions About School Hours?",
@@ -1168,7 +1203,7 @@
       "route1": {
         "title": "Route 1: Lavington / Kilimani",
         "description": "This route serves the Lavington, Kilimani, and surrounding areas.",
-        "areas": ["Lavington", "Kilimani", "Kileleshwa", "Hurlingham"]
+        "areas": ["Lavington", "Kilimani", "Kileleshwa"]
       },
       "route2": {
         "title": "Route 2: Loresho / Kitisuru",
@@ -1200,8 +1235,8 @@
       "subtitle": "Transparent fee structure"
     },
     "intro": {
-      "title": "Two Tariff Groups",
-      "content": "Dutch School Nairobi uses two tariff groups to keep education accessible for different family situations."
+      "title": "Tariff Groups",
+      "content": "To keep education accessible to as many families as possible, we work with several tariffs. The toddler group has its own pricing based on 2 to 5 mornings per week. Within primary school we distinguish between groups 1-2 and groups 3-8. In addition, we offer an adjusted tariff for families who don't receive a 75% or higher employer contribution."
     },
     "tariffs": {
       "title": "Tariff Groups",
@@ -1216,30 +1251,42 @@
         "note": "Reduced rate"
       }
     },
+    "toddlerSection": {
+      "title": "Toddler Tariffs",
+      "subtitle": "Per-term rates based on number of mornings per week",
+      "morningsHeader": "Mornings per week",
+      "morningsSuffix": "mornings",
+      "notes": [
+        "Minimum 2 mornings per week.",
+        "Lesson hours with the Dutch-speaking teacher are 8:00 AM - 12:00 noon.",
+        "There is an option to stay in the afternoon until 3:00 PM under the supervision of an English-speaking teaching assistant. This is charged at 5 euro per afternoon.",
+        "Upon admission a 250 euro deposit is required per toddler. No entry fee is charged for toddlers."
+      ]
+    },
     "included": {
       "title": "Included",
       "items": [
         "All learning materials and books",
-        "Educational activities and field trips",
-        "Access to basic Skills Club activities"
+        "Educational activities and excursions (excluding school camp)",
+        "Language and Skills Club activities",
+        "Use of the compound and swimming pool on weekends"
       ]
     },
     "additional": {
       "title": "Additional Costs",
       "items": [
-        "Registration fee (one-time for new students)",
+        "Entry fee (one-time, for new students)",
         "School bus (optional)",
-        "Lunch (optional)",
-        "Specific Skills Club activities"
+        "After School Activities (optional)"
       ]
     },
     "payment": {
       "title": "Payment",
-      "content": "Tuition can be paid per term or per year. Payment arrangements can be discussed."
+      "content": "Tuition can be paid per term or per year. Monthly payment arrangements can be discussed."
     },
     "siblings": {
       "title": "Discount",
-      "content": "A discount applies for the second and subsequent children from the same family."
+      "content": "For primary school, a discount applies for the second and subsequent children from the same family."
     },
     "table": {
       "ages": "Ages",
@@ -1271,7 +1318,10 @@
     },
     "intro": {
       "title": "Stronger Together",
-      "content": "Dutch School Nairobi is more than a school - it's a community. Parents, students, and staff together form a close-knit group where everyone knows and supports each other."
+      "content": "The Dutch School is more than a school, it's a community. Parents, students, and team members together form a close-knit group where everyone knows and supports each other.",
+      "paragraph2": "Every morning, coffee and tea are ready for parents, so after dropping off the children there is space to meet, catch up, and make new connections. This is how we foster a warm and connected school community in which parents easily find one another.",
+      "paragraph3": "The school is an association, which means that all parents automatically become members of the school community. As members, parents have voting rights and actively help shape the school's future. An engaged board, made up of parents, oversees the running of the school and supports the direction and continuity of the organization.",
+      "paragraph4": "Twice a year we organize a General Members' Meeting (ALV), in which parents are kept up to date on developments within the school and can vote on important topics such as budgets, annual plans, and other policy choices. Together we build a strong, transparent, and engaged school community."
     },
     "sections": {
       "parents": {
@@ -1281,7 +1331,7 @@
       },
       "events": {
         "title": "Events",
-        "description": "Dutch traditions, school celebrations, and social activities.",
+        "description": "Dutch and Flemish traditions, theme weeks, and social activities.",
         "link": "View Events"
       }
     },
@@ -1298,13 +1348,13 @@
     },
     "intro": {
       "title": "Parent Involvement",
-      "content": "At Dutch School Nairobi, parents are important partners. We believe in open communication and active parent involvement in school life."
+      "content": "At the Dutch School, parents are important partners. We believe in open communication and active parent involvement in school life."
     },
     "communication": {
       "title": "Communication",
       "items": [
         "Weekly newsletter",
-        "Parent portal for practical information",
+        "Parent App for updates and practical information",
         "Regular parent meetings",
         "Direct communication with teachers"
       ]
@@ -1320,8 +1370,9 @@
       ]
     },
     "parentCommittee": {
-      "title": "Parent Association",
-      "content": "The parent association organizes events and represents parent interests. New members are always welcome."
+      "title": "Coffee Mornings",
+      "content": "At the Dutch School we regularly organize coffee mornings to bring parents together and create space for meeting, inspiration, and exchange. During these gatherings we discuss educational themes as well as topics around parenting, child development, and family life.",
+      "paragraph2": "The coffee mornings offer a platform to gain new insights, share experiences, and learn from each other. The school regularly puts topics on the table and invites outside experts where appropriate. At the same time we encourage parents to bring their own ideas, or to host a session themselves drawing on their own knowledge, background, or expertise. Together we build a learning and engaged school community."
     },
     "cta": {
       "title": "Questions About Parent Involvement?",
@@ -1332,43 +1383,59 @@
   "eventsPage": {
     "hero": {
       "title": "Events",
-      "subtitle": "Dutch traditions and international celebrations"
+      "subtitle": "Dutch and Flemish traditions and international celebrations"
     },
     "intro": {
       "title": "A Year Full of Events",
-      "content": "At Dutch School Nairobi, we celebrate both Dutch traditions and international holidays. These events strengthen our community and connect children with their cultural background."
+      "content": "At the Dutch School we celebrate both Dutch and Flemish traditions and international holidays. These events strengthen our community and connect children with their own cultural background and that of their classmates."
     },
-    "dutch": {
-      "title": "Dutch Traditions",
+    "traditions": {
+      "title": "Traditions",
       "events": {
         "sinterklaas": {
           "title": "Sinterklaas",
-          "description": "In early December, the whole school celebrates Sinterklaas with songs, surprises, and pepernoten."
+          "description": "In late November / early December the whole school celebrates Sinterklaas with songs, surprises, and pepernoten. The weeks beforehand are also dedicated to the build-up in the classroom."
         },
-        "koningsdag": {
-          "title": "King's Day",
-          "description": "An orange celebration with games, flea market, and Dutch gezelligheid."
+        "koningsspelen": {
+          "title": "Koningsspelen and Orange Party",
+          "description": "Every year the school takes part in the Koningsspelen, an active sports day. Around King's Day we also organize an orange party with games, a flea market, and Dutch gezelligheid."
+        },
+        "belgischeDag": {
+          "title": "Belgian Day",
+          "description": "In November we celebrate our annual Belgian Day at school. Students learn more about Belgium, get to know Belgian traditions, and enjoy typical treats and fun activities together. A lovely way to experience culture and celebrate together."
         },
         "kerst": {
           "title": "Christmas Celebration",
           "description": "A joint Christmas celebration with performances by the children."
+        },
+        "eindmusical": {
+          "title": "End-of-Year Musical",
+          "description": "Celebrating the end of the school year with a musical and a farewell to group 8 and other departing students."
         }
       }
     },
-    "school": {
-      "title": "School Events",
+    "themaweken": {
+      "title": "Theme Weeks",
       "events": {
-        "openDay": {
-          "title": "Open Day",
-          "description": "Getting to know our school for interested families."
+        "kinderboekenweek": {
+          "title": "Children's Book Week",
+          "description": "During the National Children's Book Week the whole school is dedicated to the joy of reading and stories. Around the annual theme we organize activities involving books, reading aloud, and creative language use, so that students discover how fun and inspiring reading can be."
         },
-        "sportsDay": {
-          "title": "Sports Day",
-          "description": "A day full of sports and games for all students."
+        "lentekriebels": {
+          "title": "Spring Buzz Week",
+          "description": "During the Week of Spring Buzz we give age-appropriate and respectful attention to themes such as relationships, resilience, boundaries, feelings, and learning to understand yourself and others. This supports students' social-emotional development and contributes to a safe and open school culture."
         },
-        "endOfYear": {
-          "title": "End of Year Celebration",
-          "description": "Celebrating the end of the school year with performances and farewell to group 8."
+        "neuroDiversity": {
+          "title": "Neurodiversity Week",
+          "description": "During Neurodiversity Week we celebrate the different ways people think, learn, and experience the world. Students discover that differences are valuable and learn to look at themselves and others with curiosity, understanding, and respect."
+        },
+        "wereldReligie": {
+          "title": "World Religions Week",
+          "description": "During World Religions Week students get to know various world religions and worldviews. By exploring together, asking questions, and discovering similarities and differences, we encourage respect, openness, and global citizenship."
+        },
+        "verkeersweek": {
+          "title": "Traffic Week",
+          "description": "During Traffic Week students work on traffic skills and traffic awareness in an active, hands-on way. With games, assignments, and their own bike or other wheels, they learn to apply traffic rules and take part safely in traffic."
         }
       }
     },
