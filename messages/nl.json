@@ -126,18 +126,13 @@
     "title": "Wat Ouders Zeggen",
     "subtitle": "Hoor van onze gemeenschap",
     "testimonial1": {
-      "quote": "De Dutch School is een tweede thuis voor onze kinderen. De tweetalige aanpak heeft hen vertrouwen gegeven in zowel Nederlands als Engels, en de kleine klassen zorgen ervoor dat ze echt gedijen.",
-      "author": "Maria van der Berg",
-      "role": "Moeder van twee"
+      "quote": "De overstap vanuit Nederland verliep soepel dankzij de natuurlijke overgang van de peutergroep naar groep 1/2; beide klassen liggen vlakbij elkaar en de vertrouwde routines geven de kinderen snel zelfvertrouwen. Het tweetalig programma laat onze kinderen het Nederlandse curriculum volgen terwijl IPC in het Engels hun nieuwsgierigheid prikkelt met betekenisvolle activiteiten. De schoolbus vanuit Lavington werkt prima en de gemeenschap is heel warm.",
+      "author": "Jenny",
+      "role": "Ouder"
     },
     "testimonial2": {
-      "quote": "Na onze verhuizing uit Nederland maakten we ons zorgen over het onderwijs van onze kinderen. De Dutch School overtrof alle verwachtingen - ze behouden hun Nederlands terwijl ze hun internationale ervaring omarmen.",
-      "author": "Peter & Anna Jansen",
-      "role": "Expat familie"
-    },
-    "testimonial3": {
-      "quote": "Het IPC-curriculum gecombineerd met Nederlandse tradities creëert een unieke leeromgeving. Onze dochter houdt van school en ontwikkelt zich tot een echte wereldburger.",
-      "author": "Sarah Okonkwo",
+      "quote": "Onze familie heeft een geweldige ervaring bij de Dutch School Nairobi. Het is een warme, gastvrije en zorgzame omgeving waar elk kind als individu wordt gewaardeerd. We waarderen vooral dat de school zich inzet voor leerlingen met verschillende leerstijlen en mogelijkheden, zodat elk kind de aandacht en aanmoediging krijgt die het nodig heeft. De diverse gemeenschap en waardering voor verschillende culturen creëren een rijke leeromgeving waar kinderen respect, begrip en zelfvertrouwen ontwikkelen. Het belangrijkste is dat onze zoons elke dag met plezier naar school gaan, omdat het een blije, zorgzame plek is waar ze zich veilig en welkom voelen.",
+      "author": "Dennis Kinambuga",
       "role": "Ouder"
     }
   },
@@ -560,7 +555,7 @@
       }
     },
     "extras": {
-      "title": "Extra Programma's",
+      "title": "Breed onderwijsaanbod",
       "languageClub": {
         "title": "Talenclub",
         "description": "Frans (groep 5-8) en Kiswahili (groep 1-8) als extra taalaanbod.",

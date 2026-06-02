@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { ArrowRight, Users, GraduationCap, Globe, Palette, Languages } from 'lucide-react';
+import { ArrowRight, Users, GraduationCap, Palette, Languages } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { getAlternates } from '@/lib/seo';
@@ -49,16 +49,6 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
           name: locale === 'nl' ? 'Basisschool' : 'Primary School',
           description: locale === 'nl' ? 'Groep 1 t/m 8, voor kinderen van 4-12 jaar' : 'Groups 1-8, for children ages 4-12',
           url: `https://www.dutchschool.co.ke/${locale}/education/primary/`,
-        },
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        item: {
-          '@type': 'EducationalOccupationalProgram',
-          name: locale === 'nl' ? 'NTC - Nederlandse Taal en Cultuur' : 'NTC - Dutch Language and Culture',
-          description: locale === 'nl' ? 'Voor kinderen van 3,5-18 jaar' : 'For children ages 3.5-18',
-          url: `https://www.dutchschool.co.ke/${locale}/education/ntc/`,
         },
       },
     ],
@@ -129,17 +119,6 @@ function ProgramsSection() {
       image: '/images/primary.png',
       color: 'secondary',
     },
-    {
-      key: 'ntc',
-      icon: Globe,
-      title: t('ntc.title'),
-      ages: t('ntc.ages'),
-      description: t('ntc.description'),
-      link: '/education/ntc',
-      linkText: t('ntc.link'),
-      image: '/images/ntc.png',
-      color: 'accent',
-    },
   ];
 
   const colorClasses = {
@@ -151,7 +130,7 @@ function ProgramsSection() {
   return (
     <section className="py-20 lg:py-28 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {programs.map((program) => (
             <div
               key={program.key}

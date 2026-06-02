@@ -126,18 +126,13 @@
     "title": "What Parents Say",
     "subtitle": "Hear from our community",
     "testimonial1": {
-      "quote": "The Dutch School has been a second home for our children. The bilingual approach has given them confidence in both Dutch and English, and the small class sizes mean they truly thrive.",
-      "author": "Maria van der Berg",
-      "role": "Parent of two"
+      "quote": "The transition from school in the Netherlands was made easy thanks to the smooth progression from the Toddler Group into Groep 1/2, with both classes located close together and familiar routines helping children feel confident and settled. The bilingual programme allows our children to follow the Dutch curriculum whilst IPC in English builds curiosity through engaging activities. The school bus from Lavington is efficient, and the community is very warm.",
+      "author": "Jenny",
+      "role": "Parent"
     },
     "testimonial2": {
-      "quote": "Moving from the Netherlands, we were worried about our children's education. The Dutch School exceeded all expectations - they've maintained their Dutch while embracing their international experience.",
-      "author": "Peter & Anna Jansen",
-      "role": "Expat family"
-    },
-    "testimonial3": {
-      "quote": "The IPC curriculum combined with Dutch traditions creates a unique learning environment. Our daughter loves school and is developing into a true global citizen.",
-      "author": "Sarah Okonkwo",
+      "quote": "My family has had a wonderful experience at the Netherlands School Nairobi. It provides a warm, welcoming, and nurturing environment where every child is appreciated and valued as an individual. We especially appreciate the school's commitment to supporting students with different learning styles and abilities, ensuring that each child receives the attention and encouragement they need to thrive. The school's diverse community and appreciation of different cultures create a rich learning environment that helps children develop respect, understanding, and confidence. Most importantly, my sons genuinely love going to school every day because it is a happy, caring place where they feel safe, included, and excited to learn.",
+      "author": "Dennis Kinambuga",
       "role": "Parent"
     }
   },
@@ -560,7 +555,7 @@
       }
     },
     "extras": {
-      "title": "Extra Programs",
+      "title": "Broad Curriculum",
       "languageClub": {
         "title": "Language Club",
         "description": "French (groups 5-8) and Kiswahili (groups 1-8) as additional language offerings.",
