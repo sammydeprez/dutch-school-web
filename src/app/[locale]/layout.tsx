@@ -96,7 +96,7 @@ export default async function LocaleLayout({
             name: 'Dutch School Nairobi',
             alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
             description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation (NOB).',
-            slogan: locale === 'nl' ? 'Groots in Kleinschaligheid' : 'Greatness in Intimacy',
+            slogan: locale === 'nl' ? 'Groots in Kleinschaligheid' : 'Small in Scale, Great in Impact',
             url: 'https://www.dutchschool.co.ke',
             logo: 'https://www.dutchschool.co.ke/logo-color.png',
             image: 'https://www.dutchschool.co.ke/images/og-image.png',
