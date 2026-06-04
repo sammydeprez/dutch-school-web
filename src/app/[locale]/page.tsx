@@ -69,6 +69,16 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
             : 'No prior Dutch language knowledge is required for our day school department. Our immersive bilingual program supports children at all language levels.',
         },
       },
+      {
+        '@type': 'Question',
+        name: locale === 'nl' ? 'Kunnen leerlingen doorstromen naar Engelstalig onderwijs?' : 'Can students transition to English-language education?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: locale === 'nl'
+            ? 'Ja. Dankzij ons tweetalige curriculum, de IPC lessen onderwezen in het Engels en de frequente Engelse taallessen kunnen leerlingen doorstromen naar Brits, Amerikaans of ander Engelstalig onderwijs. Voor leerlingen in groep 8 kunnen we gericht ondersteunen bij de voorbereiding op het (internationaal) vervolgonderwijs.'
+            : 'Yes. Thanks to our bilingual curriculum, IPC lessons taught in English, and frequent English language classes, students can move on to British, American, or other English-language schools. For students in Group 8 we can also offer targeted support in preparing for (international) secondary education.',
+        },
+      },
     ],
   };
 
@@ -527,6 +537,7 @@ function QuickFactsSection() {
     { question: t('q2.question'), answer: t('q2.answer') },
     { question: t('q3.question'), answer: t('q3.answer') },
     { question: t('q4.question'), answer: t('q4.answer') },
+    { question: t('q5.question'), answer: t('q5.answer') },
   ];
 
   return (
@@ -552,7 +563,7 @@ function QuickFactsSection() {
               <h3 className="text-xl font-bold text-foreground mb-3">
                 {item.question}
               </h3>
-              <p className="text-muted leading-relaxed">
+              <p className="text-muted leading-relaxed whitespace-pre-line">
                 {item.answer}
               </p>
             </AnimatedSection>

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Calendar, Languages, Gamepad2, Eye, Clock, Users, UserCheck } from 'lucide-react';
+import { Calendar, Languages, Gamepad2, Eye, Clock, Users, UserCheck, Quote } from 'lucide-react';
 import { PageHero, PageCTA, OptimizedImage } from '@/components/ui';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { getAlternates } from '@/lib/seo';
@@ -58,6 +58,7 @@ export default async function ToddlerPage({ params }: { params: Promise<{ locale
       <ProgramSection />
       <ActivitiesSection />
       <PracticalSection />
+      <TestimonialsSection />
       <CTASection />
     </>
   );
@@ -221,6 +222,59 @@ function PracticalSection() {
                 <item.icon className="w-7 h-7 text-primary" />
               </div>
               <p className="text-foreground font-medium">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+type Testimonial = {
+  quote: string;
+  author: string;
+  role: string;
+  image?: string;
+};
+
+function TestimonialsSection() {
+  const t = useTranslations('toddlerPage.testimonials');
+  const items = t.raw('items') as Testimonial[];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            {t('title')}
+          </h2>
+          <p className="text-lg text-muted">{t('subtitle')}</p>
+        </div>
+
+        <div className="grid md:grid-cols-1 gap-8">
+          {items.map((item, index) => (
+            <div key={index} className="bg-surface p-8 rounded-3xl shadow-sm">
+              <Quote className="w-10 h-10 text-primary/20 mb-4" />
+              <p className="text-foreground leading-relaxed mb-6">
+                &ldquo;{item.quote}&rdquo;
+              </p>
+              <div className="flex items-center gap-4">
+                {item.image && (
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <OptimizedImage
+                      src={item.image}
+                      alt={`${item.author}, ${item.role}`}
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                <div>
+                  <p className="font-semibold text-foreground">{item.author}</p>
+                  <p className="text-sm text-muted">{item.role}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

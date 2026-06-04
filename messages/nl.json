@@ -153,6 +153,10 @@
     "q4": {
       "question": "Moeten leerlingen Nederlands spreken om zich in te schrijven?",
       "answer": "Nee, voorkennis van de Nederlandse taal is niet vereist voor onze dagschool afdeling. Ons immersieve tweetalige programma ondersteunt kinderen op alle taalniveaus. In de meeste gevallen spreken leerlingen binnen een jaar al vlot Nederlands in het dagelijks gebruik, door de combinatie van dagelijkse blootstelling en gerichte taalinstructie."
+    },
+    "q5": {
+      "question": "Kunnen leerlingen doorstromen naar Engelstalig onderwijs?",
+      "answer": "Ja. Dankzij ons tweetalige curriculum, de IPC lessen onderwezen in het Engels en de frequente Engelse taallessen kunnen leerlingen doorstromen naar Brits, Amerikaans of ander Engelstalig onderwijs. Leerlingen ontwikkelen gedurende hun schoolloopbaan een sterke basis in zowel het Nederlands als het Engels, waardoor zij goed voorbereid zijn op een volgende stap binnen een internationale onderwijsomgeving.\n\nWanneer ouders hun plannen tijdig met ons delen, kijken wij graag mee hoe we hun kind optimaal kunnen voorbereiden op de overstap. Voor leerlingen in groep 8 kunnen we daarnaast gericht ondersteunen bij de voorbereiding op het (internationaal) vervolgonderwijs."
     }
   },
   "cta": {
@@ -623,6 +627,18 @@
       "hours": "Openingstijden: 8:00 - 12:00 (mogelijkheid tot 15:00)",
       "group": "Groepsgrootte: maximaal 15 kinderen",
       "staff": "Begeleiding: ervaren pedagogisch medewerker en onderwijsassistenten"
+    },
+    "testimonials": {
+      "title": "Wat ouders zeggen",
+      "subtitle": "Verhalen uit onze peutergroep",
+      "items": [
+        {
+          "quote": "De Dutch School Nairobi bood vanaf de eerste dag een warme en ondersteunende omgeving voor onze tweetalige kinderen. De leerkrachten namen de tijd om de unieke persoonlijkheid van elk kind te leren kennen en begeleidden hun overgang met veel zorg en geduld. Dankzij hun doordachte aanpak zijn onze beide kinderen uitgegroeid tot zelfverzekerde, blije en speelse leerlingen die echt met plezier naar school gaan.",
+          "author": "Burcu",
+          "role": "Ouder van twee peuters",
+          "image": "/images/testimonials/burcu.png"
+        }
+      ]
     },
     "cta": {
       "title": "Kennismaken?",
