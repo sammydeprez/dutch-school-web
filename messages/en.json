@@ -153,6 +153,10 @@
     "q4": {
       "question": "Do students need to speak Dutch to enroll?",
       "answer": "No prior Dutch language knowledge is required for our day school department. Our immersive bilingual program supports children at all language levels. In most cases, students speak fluent Dutch in daily use within a year, through the combination of daily exposure and dedicated language instruction."
+    },
+    "q5": {
+      "question": "Can students transition to English-language education?",
+      "answer": "Yes. Thanks to our bilingual curriculum, IPC lessons taught in English, and frequent English language classes, students can move on to British, American, or other English-language schools. Throughout their school career, students build a strong foundation in both Dutch and English, leaving them well prepared for the next step within an international education environment.\n\nWhen parents share their plans with us in good time, we are happy to think along about how best to prepare their child for the transition. For students in Group 8 we can also offer targeted support in preparing for (international) secondary education."
     }
   },
   "cta": {
@@ -623,6 +627,18 @@
       "hours": "Opening hours: 8:00 AM - 12:00 PM (option until 3:00 PM)",
       "group": "Group size: maximum 15 children",
       "staff": "Supervision: experienced pedagogical staff and teaching assistants"
+    },
+    "testimonials": {
+      "title": "What parents say",
+      "subtitle": "Stories from our toddler group",
+      "items": [
+        {
+          "quote": "The Dutch School Nairobi provided a warm and supportive environment for our bilingual children from day one. The teachers took the time to understand each child's unique personality and supported their transition with great care and patience. Thanks to their thoughtful approach, both of our children have grown into confident, happy, and playful learners who truly enjoy going to school.",
+          "author": "Burcu",
+          "role": "Parent of two toddlers",
+          "image": "/images/testimonials/burcu.png"
+        }
+      ]
     },
     "cta": {
       "title": "Want to Learn More?",
