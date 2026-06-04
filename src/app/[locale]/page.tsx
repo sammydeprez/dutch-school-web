@@ -571,19 +571,13 @@ function TestimonialsSection() {
       quote: t('testimonial1.quote'),
       author: t('testimonial1.author'),
       role: t('testimonial1.role'),
-      image: '/images/testimonials/parent1.png',
+      image: '/images/testimonials/jenny.png',
     },
     {
       quote: t('testimonial2.quote'),
       author: t('testimonial2.author'),
       role: t('testimonial2.role'),
-      image: '/images/testimonials/parent2.png',
-    },
-    {
-      quote: t('testimonial3.quote'),
-      author: t('testimonial3.author'),
-      role: t('testimonial3.role'),
-      image: '/images/testimonials/parent3.png',
+      image: '/images/testimonials/dennis.png',
     },
   ];
 
@@ -599,7 +593,7 @@ function TestimonialsSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <AnimatedSection
               key={index}

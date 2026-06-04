@@ -157,31 +157,43 @@ export default function FeesTable() {
                   {locale === 'nl' ? 'Weken' : 'Weeks'}
                 </th>
                 <th className="px-6 py-3 text-center text-sm font-semibold text-foreground">
-                  {locale === 'nl' ? 'Tarief' : 'Tuition'}
+                  {locale === 'nl' ? 'Groep 1 en 2' : 'Group 1 and 2'}
+                </th>
+                <th className="px-6 py-3 text-center text-sm font-semibold text-foreground">
+                  {locale === 'nl' ? 'Groep 3 t/m 8' : 'Group 3 to 8'}
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              {schoolFees.terms.map((term, i) => (
-                <tr key={term.name}>
-                  <td className="px-6 py-4 text-foreground font-medium">
-                    {locale === 'nl' ? term.nameNl : term.name}
-                  </td>
-                  <td className="px-6 py-4 text-center text-muted">
-                    {term.weeks}
-                  </td>
-                  <td className="px-6 py-4 text-center font-semibold text-primary">
-                    {formatCurrency(schoolFees.programs[0].tariefgroep1[`term${i + 1}` as keyof typeof schoolFees.programs[0]['tariefgroep1']] as number)}
-                  </td>
-                </tr>
-              ))}
+              {schoolFees.terms.map((term, i) => {
+                const termKey = `term${i + 1}` as 'term1' | 'term2' | 'term3';
+                return (
+                  <tr key={term.name}>
+                    <td className="px-6 py-4 text-foreground font-medium">
+                      {locale === 'nl' ? term.nameNl : term.name}
+                    </td>
+                    <td className="px-6 py-4 text-center text-muted">
+                      {term.weeks}
+                    </td>
+                    <td className="px-6 py-4 text-center font-semibold text-primary">
+                      {formatCurrency(schoolFees.programs[0].tariefgroep1.group12[termKey])}
+                    </td>
+                    <td className="px-6 py-4 text-center font-semibold text-primary">
+                      {formatCurrency(schoolFees.programs[0].tariefgroep1.group38[termKey])}
+                    </td>
+                  </tr>
+                );
+              })}
               <tr className="bg-primary/5">
                 <td className="px-6 py-4 text-foreground font-bold">
                   {locale === 'nl' ? 'Jaartotaal' : 'Annual Total'}
                 </td>
                 <td className="px-6 py-4 text-center text-muted font-medium">37</td>
                 <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
-                  {formatCurrency(schoolFees.programs[0].tariefgroep1.annual)}
+                  {formatCurrency(schoolFees.programs[0].tariefgroep1.group12.annual)}
+                </td>
+                <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
+                  {formatCurrency(schoolFees.programs[0].tariefgroep1.group38.annual)}
                 </td>
               </tr>
             </tbody>
@@ -211,7 +223,10 @@ export default function FeesTable() {
                     {locale === 'nl' ? 'Weken' : 'Weeks'}
                   </th>
                   <th className="px-6 py-3 text-center text-sm font-semibold text-foreground">
-                    {locale === 'nl' ? 'Tarief' : 'Tuition'}
+                    {locale === 'nl' ? 'Groep 1 en 2' : 'Group 1 and 2'}
+                  </th>
+                  <th className="px-6 py-3 text-center text-sm font-semibold text-foreground">
+                    {locale === 'nl' ? 'Groep 3 t/m 8' : 'Group 3 to 8'}
                   </th>
                 </tr>
               </thead>
@@ -227,7 +242,10 @@ export default function FeesTable() {
                         {term.weeks}
                       </td>
                       <td className="px-6 py-4 text-center font-semibold text-accent">
-                        {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey][termKey])}
+                        {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].group12[termKey])}
+                      </td>
+                      <td className="px-6 py-4 text-center font-semibold text-accent">
+                        {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].group38[termKey])}
                       </td>
                     </tr>
                   );
@@ -238,7 +256,10 @@ export default function FeesTable() {
                   </td>
                   <td className="px-6 py-4 text-center text-muted font-medium">37</td>
                   <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
-                    {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].annual)}
+                    {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].group12.annual)}
+                  </td>
+                  <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
+                    {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].group38.annual)}
                   </td>
                 </tr>
               </tbody>
