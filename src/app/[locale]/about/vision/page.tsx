@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: locale === 'nl' ? 'Onze Visie & Missie | Dutch School Nairobi' : 'Our Vision & Mission | Dutch School Nairobi',
     description: locale === 'nl'
       ? 'Groots in Kleinschaligheid - waar elk kind gezien, gekend en gewaardeerd wordt. Onze visie, missie en kernwaarden.'
-      : 'Greatness in Intimacy - where every child is seen, known, and valued. Our vision, mission, and core values.',
+      : 'Small in Scale, Great in Impact — where every child is seen, known, and valued. Our vision, mission, and core values.',
   };
 }
 
