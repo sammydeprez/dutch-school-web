@@ -183,8 +183,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:info@dutchschool.co.ke" className="text-white/70 hover:text-white transition-colors">
-                  info@dutchschool.co.ke
+                <a href="mailto:info@dutchschool.ke" className="text-white/70 hover:text-white transition-colors">
+                  info@dutchschool.ke
                 </a>
               </li>
               <li className="flex items-start gap-3">

@@ -23,7 +23,7 @@ function ContactPageSchema() {
       '@type': 'EducationalOrganization',
       name: 'Dutch School Nairobi',
       telephone: '+254-733-675-432',
-      email: 'info@dutchschool.co.ke',
+      email: 'info@dutchschool.ke',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Windy Ridge, off Ngong Road',
@@ -114,12 +114,12 @@ function ContactSection() {
             <div>
               <h3 className="font-semibold text-foreground mb-1">{t('info.email')}</h3>
               <p className="text-muted">
-                <a href="mailto:info@dutchschool.co.ke" className="hover:text-primary transition-colors">
-                  info@dutchschool.co.ke
+                <a href="mailto:info@dutchschool.ke" className="hover:text-primary transition-colors">
+                  info@dutchschool.ke
                 </a>
                 <br />
-                <a href="mailto:admissions@dutchschool.co.ke" className="hover:text-primary transition-colors">
-                  admissions@dutchschool.co.ke
+                <a href="mailto:admissions@dutchschool.ke" className="hover:text-primary transition-colors">
+                  admissions@dutchschool.ke
                 </a>
               </p>
             </div>
@@ -154,7 +154,7 @@ function ContactSection() {
               WhatsApp
             </a>
             <a
-              href="mailto:info@dutchschool.co.ke"
+              href="mailto:info@dutchschool.ke"
               className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors font-medium"
             >
               <Mail className="w-5 h-5" />
