@@ -1,5 +1,5 @@
 # Dutch School Nairobi - AI Information File
-# https://www.dutchschool.co.ke
+# https://www.dutchschool.ke
 # Last updated: 2026-02-15
 
 ## About This Organization
@@ -59,8 +59,8 @@ Dutch School Nairobi (Nederlandse Schoolvereniging Nairobi) is an accredited bil
 ## Website Structure
 
 The website is available in two languages:
-- Dutch: https://www.dutchschool.co.ke/nl/
-- English: https://www.dutchschool.co.ke/en/
+- Dutch: https://www.dutchschool.ke/nl/
+- English: https://www.dutchschool.ke/en/
 
 ### Main Sections:
 - /about/ - School history, mission, values, team, campus

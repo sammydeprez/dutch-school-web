@@ -32,7 +32,7 @@ export default async function NTCPage({ params }: { params: Promise<{ locale: st
     provider: {
       '@type': 'EducationalOrganization',
       name: 'Dutch School Nairobi',
-      url: 'https://www.dutchschool.co.ke',
+      url: 'https://www.dutchschool.ke',
     },
     educationalProgramMode: 'part-time',
     programPrerequisites: locale === 'nl'

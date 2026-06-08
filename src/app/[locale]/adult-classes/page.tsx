@@ -33,7 +33,7 @@ export default async function AdultClassesPage({ params }: { params: Promise<{ l
     provider: {
       '@type': 'EducationalOrganization',
       name: 'Dutch School Nairobi',
-      url: 'https://www.dutchschool.co.ke',
+      url: 'https://www.dutchschool.ke',
     },
     educationalProgramMode: 'part-time',
     occupationalCategory: 'Adult Language Education',

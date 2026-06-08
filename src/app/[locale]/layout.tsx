@@ -40,14 +40,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
-      url: 'https://www.dutchschool.co.ke',
+      url: 'https://www.dutchschool.ke',
       siteName: 'Dutch School Nairobi',
       locale: locale === 'nl' ? 'nl_NL' : 'en_US',
       alternateLocale: locale === 'nl' ? 'en_US' : 'nl_NL',
       type: 'website',
       images: [
         {
-          url: 'https://www.dutchschool.co.ke/images/og-image.png',
+          url: 'https://www.dutchschool.ke/images/og-image.png',
           width: 1200,
           height: 630,
           alt: 'Dutch School Nairobi - Bilingual Education in Kenya',
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
-      images: ['https://www.dutchschool.co.ke/images/og-image.png'],
+      images: ['https://www.dutchschool.ke/images/og-image.png'],
     },
     robots: {
       index: true,
@@ -92,14 +92,14 @@ export default async function LocaleLayout({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'EducationalOrganization',
-            '@id': 'https://www.dutchschool.co.ke/#organization',
+            '@id': 'https://www.dutchschool.ke/#organization',
             name: 'Dutch School Nairobi',
             alternateName: ['Netherlands School Society', 'Nederlandse Schoolvereniging Nairobi'],
             description: 'Bilingual Dutch and English education for children ages 1½-18 in Nairobi, Kenya. Recognized by the Dutch Education Abroad Foundation (NOB).',
             slogan: locale === 'nl' ? 'Groots in Kleinschaligheid' : 'Small in Scale, Great in Impact',
-            url: 'https://www.dutchschool.co.ke',
-            logo: 'https://www.dutchschool.co.ke/logo-color.png',
-            image: 'https://www.dutchschool.co.ke/images/og-image.png',
+            url: 'https://www.dutchschool.ke',
+            logo: 'https://www.dutchschool.ke/logo-color.png',
+            image: 'https://www.dutchschool.ke/images/og-image.png',
             foundingDate: '1971',
             numberOfEmployees: {
               '@type': 'QuantitativeValue',
@@ -165,7 +165,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'Toddler Group',
                     description: 'Early childhood education for ages 1½-4',
-                    url: `https://www.dutchschool.co.ke/${locale}/education/toddler/`,
+                    url: `https://www.dutchschool.ke/${locale}/education/toddler/`,
                   },
                 },
                 {
@@ -174,7 +174,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'Primary School',
                     description: 'Bilingual education for ages 4-12 with IPC curriculum',
-                    url: `https://www.dutchschool.co.ke/${locale}/education/primary/`,
+                    url: `https://www.dutchschool.ke/${locale}/education/primary/`,
                   },
                 },
                 {
@@ -183,7 +183,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'NTC Lessons',
                     description: 'Dutch language and culture lessons for ages 3.5-18',
-                    url: `https://www.dutchschool.co.ke/${locale}/education/ntc/`,
+                    url: `https://www.dutchschool.ke/${locale}/education/ntc/`,
                   },
                 },
                 {
@@ -192,7 +192,7 @@ export default async function LocaleLayout({
                     '@type': 'EducationalOccupationalProgram',
                     name: 'Dutch Adult Classes',
                     description: 'Dutch language courses for adult learners',
-                    url: `https://www.dutchschool.co.ke/${locale}/adult-classes/`,
+                    url: `https://www.dutchschool.ke/${locale}/adult-classes/`,
                   },
                 },
               ],

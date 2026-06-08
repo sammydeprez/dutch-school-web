@@ -38,7 +38,7 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
           '@type': 'EducationalOccupationalProgram',
           name: locale === 'nl' ? 'Peuterspeelzaal' : 'Toddler Group',
           description: locale === 'nl' ? 'Voor kinderen vanaf 1,5 jaar' : 'For children from age 1.5',
-          url: `https://www.dutchschool.co.ke/${locale}/education/toddler/`,
+          url: `https://www.dutchschool.ke/${locale}/education/toddler/`,
         },
       },
       {
@@ -48,7 +48,7 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
           '@type': 'EducationalOccupationalProgram',
           name: locale === 'nl' ? 'Basisschool' : 'Primary School',
           description: locale === 'nl' ? 'Groep 1 t/m 8, voor kinderen van 4-12 jaar' : 'Groups 1-8, for children ages 4-12',
-          url: `https://www.dutchschool.co.ke/${locale}/education/primary/`,
+          url: `https://www.dutchschool.ke/${locale}/education/primary/`,
         },
       },
     ],

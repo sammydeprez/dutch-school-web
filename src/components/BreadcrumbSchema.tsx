@@ -67,7 +67,7 @@ const pathNames: Record<string, Record<string, string>> = {
 };
 
 export default function BreadcrumbSchema({ locale, path }: BreadcrumbSchemaProps) {
-  const baseUrl = 'https://www.dutchschool.co.ke';
+  const baseUrl = 'https://www.dutchschool.ke';
   const homeName = locale === 'nl' ? 'Home' : 'Home';
 
   // Build breadcrumb items
