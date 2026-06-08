@@ -1,16 +1,16 @@
 # Dutch School Nairobi - robots.txt
-# https://www.dutchschool.co.ke
+# https://www.dutchschool.ke
 
 User-agent: *
 Allow: /
 Disallow: /*/internal/
 
 # Sitemap location
-Sitemap: https://www.dutchschool.co.ke/sitemap.xml
+Sitemap: https://www.dutchschool.ke/sitemap.xml
 
 # AI-readable site information
 # See https://llmstxt.org for specification
-LLMs-Txt: https://www.dutchschool.co.ke/llms.txt
+LLMs-Txt: https://www.dutchschool.ke/llms.txt
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

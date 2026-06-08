@@ -1,5 +1,5 @@
 # Dutch School Nairobi - AI Information File
-# https://www.dutchschool.co.ke
+# https://www.dutchschool.ke
 # Last updated: 2026-02-15
 
 ## About This Organization
@@ -51,16 +51,16 @@ Dutch School Nairobi (Nederlandse Schoolvereniging Nairobi) is an accredited bil
 ## Contact Information
 
 - **Address:** Windy Ridge, off Ngong Road, P.O. Box 14997 – 00800, Karen, Nairobi, Kenya
-- **Email:** info@dutchschool.co.ke
-- **Admissions:** admissions@dutchschool.co.ke
+- **Email:** info@dutchschool.ke
+- **Admissions:** admissions@dutchschool.ke
 - **Phone:** +254 733 675 432
 - **Office hours:** Monday-Friday, 8:00 AM - 4:00 PM
 
 ## Website Structure
 
 The website is available in two languages:
-- Dutch: https://www.dutchschool.co.ke/nl/
-- English: https://www.dutchschool.co.ke/en/
+- Dutch: https://www.dutchschool.ke/nl/
+- English: https://www.dutchschool.ke/en/
 
 ### Main Sections:
 - /about/ - School history, mission, values, team, campus

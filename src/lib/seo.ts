@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://www.dutchschool.co.ke';
+export const SITE_URL = 'https://www.dutchschool.ke';
 
 type Locale = 'nl' | 'en';
 

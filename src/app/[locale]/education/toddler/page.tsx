@@ -32,7 +32,7 @@ export default async function ToddlerPage({ params }: { params: Promise<{ locale
     provider: {
       '@type': 'EducationalOrganization',
       name: 'Dutch School Nairobi',
-      url: 'https://www.dutchschool.co.ke',
+      url: 'https://www.dutchschool.ke',
     },
     educationalProgramMode: 'full-time',
     timeToComplete: 'P2Y6M',

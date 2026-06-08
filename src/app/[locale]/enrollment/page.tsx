@@ -365,9 +365,9 @@ function CTASection() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/80">
-          <a href="mailto:admissions@dutchschool.co.ke" className="flex items-center gap-2 hover:text-white transition-colors">
+          <a href="mailto:admissions@dutchschool.ke" className="flex items-center gap-2 hover:text-white transition-colors">
             <Mail className="w-5 h-5" />
-            admissions@dutchschool.co.ke
+            admissions@dutchschool.ke
           </a>
           <a href="tel:+254733675432" className="flex items-center gap-2 hover:text-white transition-colors">
             <Phone className="w-5 h-5" />
