@@ -177,7 +177,7 @@
           "name": "Summer Break",
           "nameNl": "Zomervakantie",
           "start": "2026-08-01",
-          "end": "2026-08-30",
+          "end": "2026-08-25",
           "type": "holiday"
         },
         {
@@ -225,6 +225,12 @@
       ],
       "specialDays": [
         {
+          "name": "Parent-Teacher-Student Meetings (no school)",
+          "nameNl": "Ouder-kind-leerkrachtgesprekken (geen school)",
+          "date": "2026-09-14",
+          "type": "school"
+        },
+        {
           "name": "Utamaduni Day",
           "nameNl": "Utamaduni Dag",
           "date": "2026-10-10",
@@ -235,6 +241,18 @@
           "nameNl": "Mashujaa Dag",
           "date": "2026-10-20",
           "type": "public"
+        },
+        {
+          "name": "School closed (long weekend)",
+          "nameNl": "School gesloten (lang weekend)",
+          "date": "2026-11-13",
+          "type": "school"
+        },
+        {
+          "name": "Teacher Study Day (no school)",
+          "nameNl": "Studiedag leerkrachten (geen school)",
+          "date": "2026-11-16",
+          "type": "school"
         },
         {
           "name": "Jamhuri Day",
@@ -259,6 +277,12 @@
           "nameNl": "Nieuwjaarsdag",
           "date": "2027-01-01",
           "type": "public"
+        },
+        {
+          "name": "Parent-Teacher-Student Meetings (no school)",
+          "nameNl": "Ouder-kind-leerkrachtgesprekken (geen school)",
+          "date": "2027-02-08",
+          "type": "school"
         },
         {
           "name": "Eid al-Fitr (tentative)",
@@ -295,6 +319,12 @@
           "nameNl": "Madaraka Dag",
           "date": "2027-06-01",
           "type": "public"
+        },
+        {
+          "name": "Parent-Teacher-Student Meetings (no school)",
+          "nameNl": "Ouder-kind-leerkrachtgesprekken (geen school)",
+          "date": "2027-06-21",
+          "type": "school"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "schoolYear": "2025-2026",
+  "schoolYear": "2026-2027",
   "currency": "EUR",
   "oneTimeFees": {
     "entryFee": {
@@ -20,18 +20,18 @@
   },
   "terms": [
     { "name": "Term 1", "nameNl": "Trimester 1", "weeks": 15 },
-    { "name": "Term 2", "nameNl": "Trimester 2", "weeks": 12 },
-    { "name": "Term 3", "nameNl": "Trimester 3", "weeks": 10 }
+    { "name": "Term 2", "nameNl": "Trimester 2", "weeks": 11 },
+    { "name": "Term 3", "nameNl": "Trimester 3", "weeks": 11 }
   ],
   "toddler": {
     "name": "Toddler Group",
     "nameNl": "Peutergroep",
     "ageRange": "1.5-4",
     "mornings": {
-      "2": { "term1": 708, "term2": 567, "term3": 472, "annual": 1747 },
-      "3": { "term1": 1063, "term2": 850, "term3": 708, "annual": 2621 },
-      "4": { "term1": 1416, "term2": 1133, "term3": 945, "annual": 3494 },
-      "5": { "term1": 1771, "term2": 1417, "term3": 1180, "annual": 4368 }
+      "2": { "term1": 709, "term2": 519, "term3": 519, "annual": 1747 },
+      "3": { "term1": 1063, "term2": 779, "term3": 779, "annual": 2621 },
+      "4": { "term1": 1416, "term2": 1039, "term3": 1039, "annual": 3494 },
+      "5": { "term1": 1772, "term2": 1298, "term3": 1298, "annual": 4368 }
     },
     "afternoonFee": { "amount": 5 },
     "deposit": { "amount": 250 }
@@ -44,21 +44,21 @@
       "groups": "1-8",
       "ageRange": "4-12",
       "tariefgroep1": {
-        "group12": { "term1": 4023, "term2": 3218, "term3": 2682, "annual": 9923 },
-        "group38": { "term1": 6582, "term2": 5266, "term3": 4388, "annual": 16236 }
+        "group12": { "term1": 4023, "term2": 2950, "term3": 2950, "annual": 9923 },
+        "group38": { "term1": 6582, "term2": 4827, "term3": 4827, "annual": 16236 }
       },
       "tariefgroep2": {
         "child1": {
-          "group12": { "term1": 2878, "term2": 2302, "term3": 1918, "annual": 7098 },
-          "group38": { "term1": 4206, "term2": 3365, "term3": 2803, "annual": 10374 }
+          "group12": { "term1": 2878, "term2": 2110, "term3": 2110, "annual": 7098 },
+          "group38": { "term1": 4206, "term2": 3084, "term3": 3084, "annual": 10374 }
         },
         "child2": {
-          "group12": { "term1": 2590, "term2": 2072, "term3": 1727, "annual": 6389 },
-          "group38": { "term1": 3785, "term2": 3028, "term3": 2524, "annual": 9337 }
+          "group12": { "term1": 2589, "term2": 1900, "term3": 1900, "annual": 6389 },
+          "group38": { "term1": 3785, "term2": 2776, "term3": 2776, "annual": 9337 }
         },
         "child3": {
-          "group12": { "term1": 2302, "term2": 1842, "term3": 1534, "annual": 5678 },
-          "group38": { "term1": 3364, "term2": 2692, "term3": 2243, "annual": 8299 }
+          "group12": { "term1": 2302, "term2": 1688, "term3": 1688, "annual": 5678 },
+          "group38": { "term1": 3365, "term2": 2467, "term3": 2467, "annual": 8299 }
         }
       }
     }

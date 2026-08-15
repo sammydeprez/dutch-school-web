@@ -9,6 +9,8 @@ function formatCurrency(amount: number): string {
 
 const MORNING_KEYS = ['2', '3', '4', '5'] as const;
 
+const TOTAL_WEEKS = schoolFees.terms.reduce((sum, term) => sum + term.weeks, 0);
+
 export default function FeesTable() {
   const locale = useLocale();
   const t = useTranslations('feesPage.table');
@@ -117,7 +119,7 @@ export default function FeesTable() {
                 <td className="px-6 py-4 text-foreground font-bold">
                   {locale === 'nl' ? 'Jaartotaal' : 'Annual Total'}
                 </td>
-                <td className="px-6 py-4 text-center text-muted font-medium">37</td>
+                <td className="px-6 py-4 text-center text-muted font-medium">{TOTAL_WEEKS}</td>
                 {MORNING_KEYS.map((n) => (
                   <td key={n} className="px-6 py-4 text-center font-bold text-foreground text-lg">
                     {formatCurrency(schoolFees.toddler.mornings[n].annual)}
@@ -188,7 +190,7 @@ export default function FeesTable() {
                 <td className="px-6 py-4 text-foreground font-bold">
                   {locale === 'nl' ? 'Jaartotaal' : 'Annual Total'}
                 </td>
-                <td className="px-6 py-4 text-center text-muted font-medium">37</td>
+                <td className="px-6 py-4 text-center text-muted font-medium">{TOTAL_WEEKS}</td>
                 <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
                   {formatCurrency(schoolFees.programs[0].tariefgroep1.group12.annual)}
                 </td>
@@ -254,7 +256,7 @@ export default function FeesTable() {
                   <td className="px-6 py-4 text-foreground font-bold">
                     {locale === 'nl' ? 'Jaartotaal' : 'Annual Total'}
                   </td>
-                  <td className="px-6 py-4 text-center text-muted font-medium">37</td>
+                  <td className="px-6 py-4 text-center text-muted font-medium">{TOTAL_WEEKS}</td>
                   <td className="px-6 py-4 text-center font-bold text-foreground text-lg">
                     {formatCurrency(schoolFees.programs[0].tariefgroep2[childKey].group12.annual)}
                   </td>
