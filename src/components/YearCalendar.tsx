@@ -214,6 +214,9 @@ function MonthCalendar({ year, month, monthName, locale, data }: {
           } else if (day.holidayType === 'public') {
             bgClass = 'bg-secondary';
             textClass = 'text-primary';
+          } else if (day.holidayType === 'school') {
+            bgClass = 'bg-accent';
+            textClass = 'text-white';
           } else if (day.isWeekend) {
             textClass = 'text-muted-light';
           }
@@ -295,6 +298,12 @@ export default function YearCalendar() {
           <div className="w-4 h-4 rounded-sm bg-secondary" />
           <span className="text-sm text-muted">
             {locale === 'nl' ? 'Feestdag' : 'Public Holiday'}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 rounded-sm bg-accent" />
+          <span className="text-sm text-muted">
+            {locale === 'nl' ? 'Geen school' : 'No School'}
           </span>
         </div>
       </div>
