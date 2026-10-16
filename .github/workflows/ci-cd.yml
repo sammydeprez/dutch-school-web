@@ -101,8 +101,8 @@ jobs:
             fi
           done
 
-      # Firebase Hosting calls this service as an anonymous caller, so it needs
-      # public invoker access, granted once by hand (see README § Deployment).
+      # Firebase Hosting calls this service as an anonymous caller; the invoker
+      # check is switched off once by hand (see README § Deployment).
       - name: Deploy API (Cloud Run function)
         run: |
           gcloud run deploy "$API_SERVICE" \
