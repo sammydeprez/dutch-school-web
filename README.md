@@ -92,10 +92,12 @@ Manager when they change.
 1. Run `./infra/gcp-setup.sh` as a project Owner, signed in to `gcloud` and `gh`.
    It enables the APIs, creates the service accounts and Workload Identity
    Federation, and sets the `GCP_WIF_PROVIDER` and `GCP_DEPLOY_SA` repo secrets.
-2. Run the CI/CD workflow once, then let Firebase Hosting call the API by
-   making it publicly invocable. It is the site's public contact-form endpoint,
-   as it was on Azure:
-   `gcloud run services add-iam-policy-binding dutch-school-api --region us-central1 --project dutchschoolke --member allUsers --role roles/run.invoker`
+2. Run the CI/CD workflow once, then let Firebase Hosting call the API. It is
+   the site's public contact-form endpoint, as it was on Azure. The project's
+   organisation enforces domain restricted sharing, so granting `allUsers` the
+   invoker role is refused; switch off the invoker check for this one service
+   instead (it survives later deploys):
+   `gcloud run services update dutch-school-api --region us-central1 --project dutchschoolke --no-invoker-iam-check`
 3. Add `dutchschool.ke` and `www.dutchschool.ke` as custom domains in the
    Firebase console (Hosting → Add custom domain) and update DNS as it shows.
 
