@@ -31,8 +31,14 @@ gc services enable run.googleapis.com cloudbuild.googleapis.com \
   iamcredentials.googleapis.com sts.googleapis.com \
   firebase.googleapis.com firebasehosting.googleapis.com
 
-echo "==> Firebase on the project (already added is fine)"
-npx -y firebase-tools@14 projects:addfirebase "$PROJECT" || true
+echo "==> Firebase on the project"
+# A Google account's first Firebase project needs the terms accepted in the
+# console, which the CLI cannot do, so check rather than try to add it.
+if ! npx -y firebase-tools@14 hosting:sites:list --project "$PROJECT" 2>/dev/null | grep -q "$PROJECT.web.app"; then
+  echo "Firebase is not on $PROJECT yet. Add it at https://console.firebase.google.com"
+  echo "(Create a project -> add Firebase to an existing Google Cloud project), then re-run."
+  exit 1
+fi
 
 echo "==> Artifact Registry repo for the function's image, newest two kept"
 gc artifacts repositories describe cloud-run-source-deploy --location "$REGION" >/dev/null 2>&1 ||
