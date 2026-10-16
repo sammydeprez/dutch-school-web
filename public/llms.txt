@@ -96,6 +96,6 @@ A: NTC (Nederlandse Taal en Cultuur) provides Dutch language and culture lessons
 ## Technical Information
 
 - Website built with Next.js
-- Static site hosted on Azure Static Web Apps
+- Static site hosted on Firebase Hosting (Google Cloud)
 - Bilingual content management via next-intl
 - Schema.org structured data implemented for rich search results

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Dutch School Nairobi website - a bilingual (Dutch/English) static website built with Next.js 16 and deployed to Azure Static Web Apps.
+Dutch School Nairobi website - a bilingual (Dutch/English) static website built with Next.js 16 and deployed to Firebase Hosting on GCP (project `dutchschoolke`).
 
 ## Commands
 
@@ -78,11 +78,12 @@ src/components/
 
 ### Deployment
 
-- Deployed to Azure Static Web Apps (Free tier)
-- GitHub Actions workflow in `.github/workflows/ci-cd.yml`
-- Azure config in `staticwebapp.config.json` (handles redirects and security headers)
+- Deployed to Firebase Hosting (free tier); `/api/**` is rewritten to the Cloud Run function `dutch-school-api` in `us-central1`
+- GitHub Actions workflow in `.github/workflows/ci-cd.yml`, signing in with Workload Identity Federation
+- Hosting config in `firebase.json` (the `/` → `/nl/` redirect, the `/api` rewrite and security headers)
 - Security headers: CSP, X-Frame-Options, X-XSS-Protection, Permissions-Policy
-- Infrastructure-as-code in `infra/main.bicep`
+- `api/index.js` routes requests to the handlers in `api/handlers/`, which take a Web-standard `Request` and return `{ status, jsonBody }`
+- One-time project setup in `infra/gcp-setup.sh`; see README § Deployment
 
 ## Adding Content
 

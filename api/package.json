@@ -1,15 +1,16 @@
 {
   "name": "dutch-school-api",
   "version": "1.0.0",
-  "description": "API functions for Dutch School Nairobi website",
-  "main": "src/functions/*.js",
+  "description": "API for the Dutch School Nairobi website — one Cloud Run function behind Firebase Hosting",
+  "main": "index.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
+    "start": "functions-framework --target=api",
     "test": "echo \"No tests specified\""
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0"
+    "@google-cloud/functions-framework": "^3.4.0"
   }
 }

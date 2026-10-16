@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://brave-meadow-005dea503.4.azurestaticapps.net">View Live Site</a> •
+  <a href="https://dutchschool.ke">View Live Site</a> •
   <a href="#features">Features</a> •
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#development">Development</a>
@@ -38,7 +38,7 @@ The official website for Dutch School Nairobi (Netherlands School Society), offe
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
 - **i18n:** [next-intl](https://next-intl-docs.vercel.app/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Hosting:** [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static)
+- **Hosting:** [Firebase Hosting](https://firebase.google.com/docs/hosting) + a [Cloud Run function](https://cloud.google.com/run/docs/functions) for `/api` (GCP project `dutchschoolke`)
 
 ## Development
 
@@ -69,13 +69,38 @@ Open [http://localhost:3000](http://localhost:3000) to view the site locally.
 │   ├── components/     # React components
 │   │   └── ui/         # Reusable UI components (PageHero, PageCTA, etc.)
 │   └── i18n/           # Internationalization config
-├── infra/              # Azure Bicep templates
+├── api/                # The /api Cloud Run function (contact form, change requests)
+├── infra/              # One-time GCP project setup (gcp-setup.sh)
 └── .github/workflows/  # CI/CD pipeline
 ```
 
 ## Deployment
 
-The site automatically deploys to Azure Static Web Apps on push to `main` via GitHub Actions.
+Every push to `main` deploys via GitHub Actions (`.github/workflows/ci-cd.yml`):
+the static export in `out/` goes to Firebase Hosting, and `api/` goes to the
+Cloud Run function `dutch-school-api` in `us-central1`. Firebase Hosting
+forwards `/api/**` to that function (`firebase.json`), so the site calls its API
+on the same origin. Everything stays inside GCP's free tier at this traffic.
+
+GitHub Actions signs in to GCP with Workload Identity Federation, so there are
+no service-account keys. The API's tokens (`MAILERSEND_API_TOKEN`,
+`GH_ISSUES_PAT`) stay GitHub secrets; the workflow copies them into Secret
+Manager when they change.
+
+### First-time setup
+
+1. Run `./infra/gcp-setup.sh` as a project Owner, signed in to `gcloud` and `gh`.
+   It enables the APIs, creates the service accounts and Workload Identity
+   Federation, and sets the `GCP_WIF_PROVIDER` and `GCP_DEPLOY_SA` repo secrets.
+2. Run the CI/CD workflow once, then let Firebase Hosting call the API by
+   making it publicly invocable. It is the site's public contact-form endpoint,
+   as it was on Azure:
+   `gcloud run services add-iam-policy-binding dutch-school-api --region us-central1 --project dutchschoolke --member allUsers --role roles/run.invoker`
+3. Add `dutchschool.ke` and `www.dutchschool.ke` as custom domains in the
+   Firebase console (Hosting → Add custom domain) and update DNS as it shows.
+
+To run the API locally: `npm install --prefix api && npm start --prefix api`
+(port 8080; set `MAILERSEND_API_TOKEN` and `GITHUB_TOKEN` to exercise it fully).
 
 ## License
 
