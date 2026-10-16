@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // The Cloud Run function is plain CommonJS Node, not part of the Next app.
+    "api/**",
   ]),
 ]);
 
