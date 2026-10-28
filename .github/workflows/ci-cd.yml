@@ -11,6 +11,12 @@ on:
     branches:
       - main
 
+# A newer run for the same branch or PR cancels the one still in progress,
+# so only the latest commit gets built and deployed.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   NODE_VERSION: '20'
   GCP_PROJECT: 'dutchschoolke'
