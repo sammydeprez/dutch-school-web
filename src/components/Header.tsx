@@ -72,6 +72,7 @@ export default function Header() {
         items: [
           { href: '/education/ntc/schedule', label: t('ntcSchedule') },
           { href: '/education/ntc/fees', label: t('ntcFees') },
+          { href: '/education/ntc/online', label: t('ntcOnline') },
         ],
       },
       {
