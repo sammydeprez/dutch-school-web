@@ -182,7 +182,7 @@ export default async function LocaleLayout({
                   itemOffered: {
                     '@type': 'EducationalOccupationalProgram',
                     name: 'NTC Lessons',
-                    description: 'Dutch language and culture lessons for ages 3.5-18',
+                    description: 'Dutch language and culture lessons for ages 2.5-16, in Nairobi and online',
                     url: `https://www.dutchschool.ke/${locale}/education/ntc/`,
                   },
                 },

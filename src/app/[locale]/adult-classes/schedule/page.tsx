@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Clock } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { PageHero, PageCTA, InfoTable } from '@/components/ui';
 import { getAlternates } from '@/lib/seo';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -28,6 +28,7 @@ export default async function AdultClassesSchedulePage({ params }: { params: Pro
       <BreadcrumbSchema locale={locale} path="/adult-classes/schedule" />
       <HeroSection />
       <IntroSection />
+      <TableSection />
       <CTASection />
     </>
   );
@@ -43,7 +44,7 @@ function IntroSection() {
   const t = useTranslations('adultClassesSchedulePage.intro');
 
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="pt-20 lg:pt-28 pb-10 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex w-16 h-16 mx-auto rounded-2xl bg-primary/10 items-center justify-center mb-6">
           <Clock className="w-8 h-8 text-primary" />
@@ -53,6 +54,24 @@ function IntroSection() {
         </h2>
         <p className="text-lg text-muted leading-relaxed">
           {t('content')}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function TableSection() {
+  const t = useTranslations('adultClassesSchedulePage');
+
+  return (
+    <section className="pb-20 lg:pb-28 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <InfoTable
+          headers={t.raw('table.headers') as string[]}
+          rows={t.raw('table.rows') as string[][]}
+        />
+        <p className="text-muted mt-6 text-center">
+          {t.rich('intakeNote', { b: (chunks) => <strong className="text-foreground">{chunks}</strong> })}
         </p>
       </div>
     </section>

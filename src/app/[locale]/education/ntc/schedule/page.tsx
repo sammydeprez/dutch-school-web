@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Clock } from 'lucide-react';
-import { PageHero, PageCTA } from '@/components/ui';
+import { PageHero, PageCTA, InfoTable } from '@/components/ui';
 import { getAlternates } from '@/lib/seo';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -26,6 +26,7 @@ export default async function NTCSchedulePage({ params }: { params: Promise<{ lo
       <BreadcrumbSchema locale={locale} path="/education/ntc/schedule" />
       <HeroSection />
       <IntroSection />
+      <TableSection />
       <CTASection />
     </>
   );
@@ -41,7 +42,7 @@ function IntroSection() {
   const t = useTranslations('ntcSchedulePage.intro');
 
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="pt-20 lg:pt-28 pb-10 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex w-16 h-16 mx-auto rounded-2xl bg-primary/10 items-center justify-center mb-6">
           <Clock className="w-8 h-8 text-primary" />
@@ -57,6 +58,22 @@ function IntroSection() {
   );
 }
 
+function TableSection() {
+  const t = useTranslations('ntcSchedulePage.table');
+
+  return (
+    <section className="pb-20 lg:pb-28 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <InfoTable
+          headers={t.raw('headers') as string[]}
+          rows={t.raw('rows') as string[][]}
+        />
+        <p className="text-sm text-muted mt-4">{t('legend')}</p>
+      </div>
+    </section>
+  );
+}
+
 function CTASection() {
   const t = useTranslations('ntcSchedulePage.cta');
 
@@ -64,7 +81,10 @@ function CTASection() {
     <PageCTA
       title={t('title')}
       subtitle={t('subtitle')}
-      buttons={[{ label: t('button'), href: '/contact' }]}
+      buttons={[
+        { label: t('onlineButton'), href: '/education/ntc/online' },
+        { label: t('button'), href: '/contact', variant: 'secondary' },
+      ]}
     />
   );
 }

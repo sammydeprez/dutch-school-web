@@ -20,10 +20,11 @@
     "ntcOverview": "Overzicht",
     "ntcSchedule": "Lestijden en locaties",
     "ntcFees": "Schoolgeld",
+    "ntcOnline": "Online NTC-lessen",
     "adultClasses": "Dutch Adult Classes",
     "adultClassesOverview": "Overzicht",
     "adultClassesSchedule": "Lestijden en locaties",
-    "adultClassesFees": "Schoolgeld",
+    "adultClassesFees": "Cursusgeld",
     "practical": "Praktisch",
     "practicalOverview": "Overzicht",
     "schedule": "Schooltijden",
@@ -717,28 +718,194 @@
       "subtitle": "Wanneer en waar onze NTC lessen plaatsvinden"
     },
     "intro": {
-      "title": "Inhoud volgt binnenkort",
-      "content": "Op deze pagina komt binnenkort meer informatie over de lestijden, dagen en locaties van ons NTC programma. Heeft u nu al een vraag? Neem gerust contact met ons op."
+      "title": "NTC-leslocaties en lestijden",
+      "content": "Onze NTC-lessen worden na schooltijd gegeven op verschillende scholen in Nairobi. Hieronder vind je per locatie de lesdagen, lestijden en leerkrachten."
+    },
+    "table": {
+      "headers": [
+        "Locatie",
+        "Lesdag(en)",
+        "Tijd",
+        "Leerkracht"
+      ],
+      "rows": [
+        [
+          "Braeburn Garden Estate VO",
+          "maandag",
+          "15.45 – 18.00",
+          "Joke Neuskens"
+        ],
+        [
+          "Braeburn Garden Estate PO",
+          "woensdag",
+          "15.45 – 18.00",
+          "Joke Neuskens\nArianne Ponte"
+        ],
+        [
+          "Durham Rosslyn PO",
+          "maandag, dinsdag",
+          "15.30 – 18.00",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Durham Thigiri Kleuters",
+          "donderdag",
+          "15.30 – 17.30",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School – Kleuters",
+          "woensdag",
+          "15.30 – 17.30",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School – PO",
+          "woensdag",
+          "15.30 – 18.00",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School VO",
+          "woensdag",
+          "15.30 – 18.00",
+          "Liesbeth Boot"
+        ],
+        [
+          "Dutch School (dagschool)",
+          "maandag",
+          "15.45 – 17.45",
+          "Arianne Ponte"
+        ],
+        [
+          "International School of Kenya (ISK) – PO en VO",
+          "dinsdag en donderdag",
+          "15.30 – 18.00",
+          "Joke Neuskens"
+        ]
+      ],
+      "legend": "PO = primair onderwijs, VO = voortgezet onderwijs"
     },
     "cta": {
-      "title": "Vragen over de lestijden?",
-      "subtitle": "We helpen u graag verder.",
-      "button": "Neem Contact Op"
+      "title": "Woon je buiten Nairobi?",
+      "subtitle": "Bekijk onze online NTC-lessen of neem contact op met vragen over de lestijden.",
+      "button": "Neem Contact Op",
+      "onlineButton": "Online NTC-lessen"
     }
   },
   "ntcFeesPage": {
     "hero": {
       "title": "NTC Schoolgeld",
-      "subtitle": "Tarieven en betalingsinformatie voor het NTC programma"
+      "subtitle": "Tarieven voor de NTC-lessen op locatie en online"
     },
     "intro": {
-      "title": "Inhoud volgt binnenkort",
-      "content": "Op deze pagina komt binnenkort meer informatie over het schoolgeld voor het NTC programma. Voor de actuele tarieven kunt u contact opnemen met ons kantoor."
+      "title": "Schoolgeld NTC",
+      "content": "Ontdek hieronder de tarieven voor onze fysieke NTC-lessen en ons online NTC-onderwijs."
+    },
+    "onLocation": {
+      "title": "NTC-lessen op locatie",
+      "rows": [
+        [
+          "Kleuters",
+          "€ 700"
+        ],
+        [
+          "Primair onderwijs (PO)",
+          "€ 830"
+        ],
+        [
+          "Voortgezet onderwijs (VO)",
+          "€ 930"
+        ]
+      ]
+    },
+    "online": {
+      "title": "Online NTC-lessen",
+      "rows": [
+        [
+          "Tariff 1 – met werkgeversbijdrage",
+          "€ 1.198"
+        ],
+        [
+          "Tariff 2 – zonder werkgeversbijdrage",
+          "€ 749"
+        ],
+        [
+          "Privélessen",
+          "€ 2.000"
+        ]
+      ]
+    },
+    "perYear": "Alle bedragen zijn per leerling per schooljaar.",
+    "onlineExplanation": {
+      "title": "Toelichting online tarieven",
+      "paragraphs": [
+        "Tariff 1 is van toepassing wanneer de werkgever van één of beide ouders geheel of gedeeltelijk bijdraagt aan het schoolgeld.",
+        "Tariff 2 geldt wanneer de ouders het schoolgeld volledig zelf betalen, zonder tussenkomst van een werkgever.",
+        "Privélessen zijn mogelijk op aanvraag en afhankelijk van de beschikbaarheid van onze leerkrachten."
+      ]
+    },
+    "important": {
+      "title": "Belangrijke informatie",
+      "content": "Het schoolgeld wordt jaarlijks vastgesteld en goedgekeurd tijdens de Algemene Ledenvergadering (Annual General Meeting – AGM) van de Dutch School Nairobi. De vermelde tarieven kunnen daarom van schooljaar tot schooljaar wijzigen."
     },
     "cta": {
-      "title": "Tarieven opvragen",
-      "subtitle": "Neem contact op voor de actuele NTC tarieven.",
+      "title": "Vragen over het schoolgeld?",
+      "subtitle": "Neem gerust contact met ons op, we helpen je graag verder.",
       "button": "Neem Contact Op"
+    }
+  },
+  "ntcOnlinePage": {
+    "hero": {
+      "title": "Online NTC-lessen",
+      "subtitle": "Online Nederlands onderwijs – Waar je ook woont in Afrika!"
+    },
+    "intro": {
+      "title": "Nederlands blijven leren, ook op afstand",
+      "paragraphs": [
+        "<b>Woon je met je gezin in Afrika en wil je graag dat je kind de Nederlandse taal blijft ontwikkelen?</b> Ook wanneer er geen Nederlandstalige school in de buurt is, kan je kind bij ons terecht!",
+        "Met onze <b>online NTC-lessen (Nederlandse Taal en Cultuur)</b> brengen we de Dutch School Nairobi tot bij jullie thuis. Zo blijven Nederlandse en Vlaamse kinderen verbonden met hun taal, cultuur en roots, waar ze ook wonen."
+      ]
+    },
+    "personal": {
+      "title": "Persoonlijk, interactief en op maat",
+      "paragraphs": [
+        "Onze online lessen zijn veel meer dan een uurtje Nederlands achter een scherm. We creëren een warme en stimulerende leeromgeving waarin kinderen actief Nederlands spreken, lezen, schrijven en luisteren.",
+        "We werken bewust met <b>kleine groepjes van 2 tot maximaal 5 leerlingen</b>. Zo krijgt ieder kind voldoende persoonlijke aandacht en is er volop ruimte voor interactie, spelenderwijs leren en samenwerking. Privélessen zijn op aanvraag mogelijk.",
+        "Onze ervaren leerkrachten stemmen de lessen af op het taalniveau, de leeftijd en de onderwijsbehoeften van de leerlingen."
+      ]
+    },
+    "howItWorks": {
+      "title": "Hoe werken onze online lessen?",
+      "items": [
+        "<b>Wekelijks één interactieve online les</b> van 60 minuten, met minstens 33 lessen per schooljaar.",
+        "<b>Kleine lesgroepen</b>, zodat elke leerling actief kan deelnemen.",
+        "<b>Zelfstandig werk tussen de lessen</b>, afgestemd op het niveau van het kind en met ondersteuning van de ouders.",
+        "<b>Google Classroom</b> als digitaal leerplatform voor lesmateriaal, opdrachten en communicatie.",
+        "<b>Gericht onderwijs volgens de NOB-leerlijnen</b>, met aandacht voor alle Nederlandse taalvaardigheden.",
+        "<b>Opvolging van de taalontwikkeling</b>, onder andere met een methodeonafhankelijke Diataal-toets aan het einde van het schooljaar."
+      ],
+      "materials": "We gebruiken gevarieerd en activerend lesmateriaal, waaronder Tis Taal, Junior Einstein en Nieuwsbegrip. Ook de Nederlandse en Vlaamse cultuur krijgt een plek in onze lessen."
+    },
+    "together": {
+      "title": "Samen werken aan taalontwikkeling",
+      "paragraphs": [
+        "Goed online onderwijs vraagt om samenwerking. Onze leerkrachten begeleiden de leerlingen tijdens de lessen en volgen hun ontwikkeling op. Ouders spelen daarnaast een belangrijke rol bij het stimuleren van het Nederlands thuis en het begeleiden van zelfstandig werk.",
+        "Zo zorgen we er samen voor dat kinderen hun Nederlandse taalvaardigheid blijven ontwikkelen, ook wanneer ze dagelijks onderwijs volgen in een andere taal."
+      ]
+    },
+    "forWhom": {
+      "title": "Voor wie?",
+      "paragraphs": [
+        "Onze online NTC-lessen zijn bedoeld voor <b>Nederlandse en Vlaamse kinderen die buiten Nairobi wonen, in Afrikaanse landen waar geen fysieke NTC-school in de buurt is</b>.",
+        "Of je nu al jaren in het buitenland woont of pas recent bent verhuisd: we bekijken graag welke mogelijkheden aansluiten bij het taalniveau en de behoeften van je kind."
+      ]
+    },
+    "cta": {
+      "title": "Interesse in onze online lessen?",
+      "subtitle": "Wil je graag meer weten over ons online aanbod of ontdekken welke lesgroep bij je kind past? Neem gerust contact met ons op! We vertellen je graag meer over onze werkwijze, de beschikbare lesgroepen en de inschrijfmogelijkheden.",
+      "button": "Neem Contact Op",
+      "feesButton": "Bekijk het schoolgeld"
     }
   },
   "adultClassesPage": {
@@ -748,8 +915,39 @@
     },
     "intro": {
       "title": "Nederlandse Les voor Volwassenen",
-      "content": "Onze Dutch Adult Classes bieden Nederlandse taalcursussen voor volwassenen op alle niveaus. Perfect voor ouders, partners, of iedereen die Nederlands wil leren of zijn taalvaardigheid wil verbeteren.",
-      "comingSoon": "We werken aan een uitgebreide pagina met alle informatie over onze cursussen, niveaus en aanpak. Inhoud volgt binnenkort. Heeft u nu al een vraag? Neem gerust contact met ons op."
+      "paragraphs": [
+        "Wil je Nederlands leren of je bestaande taalvaardigheid verder ontwikkelen? De Dutch School biedt Nederlandse taalcursussen voor volwassenen op verschillende niveaus. Onze lessen zijn praktisch en communicatief: spreken, luisteren, lezen en schrijven komen allemaal aan bod, met veel ruimte om de taal actief te gebruiken.",
+        "De lessen worden gegeven op school in Karen, met mogelijkheden om online aan te sluiten."
+      ]
+    },
+    "a1": {
+      "title": "A1 – Beginners",
+      "content": "Voor beginners bieden we twee verschillende routes naar A1-niveau, zodat je kunt kiezen wat het beste bij jouw tempo en agenda past.",
+      "yearly": {
+        "title": "Jaartraject A1",
+        "description": "Van september tot juni volg je één keer per week twee uur les, op dinsdagmiddag van 16.00–18.00. In de loop van het schooljaar werk je stap voor stap van beginnersniveau naar A1-niveau, samen met andere cursisten en aangevuld met zelfstandig online oefenen."
+      },
+      "intensive": {
+        "title": "Intensief A1-traject",
+        "description": "Wil je sneller Nederlands leren? Dan kun je kiezen voor ons intensieve A1-programma, waarmee je het volledige A1-niveau in 10 weken doorloopt. Dit traject wordt meerdere keren per jaar aangeboden, met nieuwe intakes in september, januari en april. De lessen vinden plaats op dinsdag, woensdag en donderdag van 11.30–13.30."
+      }
+    },
+    "a2b1": {
+      "title": "A2 en B1",
+      "content": "Voor cursisten die al Nederlands spreken, bieden we vervolgtrajecten op A2- en B1-niveau. De lessen bouwen voort op eerder opgedane kennis en helpen deelnemers steeds zelfstandiger en zelfverzekerder Nederlands te gebruiken in alledaagse, sociale en professionele situaties."
+    },
+    "together": {
+      "title": "Leren met én van elkaar",
+      "content": "Onze Adult Classes combineren lessen met zelfstandig online oefenen. Je leert samen met andere cursisten en werkt gericht aan spreken, luisteren, lezen en schrijven. Zo krijg je niet alleen een stevige basis in de Nederlandse taal, maar vooral het vertrouwen om Nederlands daadwerkelijk te gebruiken."
+    },
+    "exams": {
+      "title": "Examens en certificaten",
+      "paragraphs": [
+        "Onze reguliere taalcursussen zijn gericht op het ontwikkelen van de Nederlandse taalvaardigheid en zijn geen specifieke examentraining. Heb je een bepaald examen voor ogen? Dan denken we graag met je mee over de voorbereiding. Indien gewenst kunnen we tegen aanvullende kosten één of twee privélessen gericht op examenvoorbereiding inplannen.",
+        "De Dutch School is geen examenlocatie voor examens die nodig zijn voor visa of inburgering. Voor actuele informatie over deze examens en de bijbehorende vereisten adviseren we contact op te nemen met de Nederlandse ambassade of de betreffende officiële instantie.",
+        "Cursisten op B1-niveau kunnen via de Dutch School deelnemen aan het CNaVT-examen, dat in mei en november wordt aangeboden. Hieraan zijn aanvullende examenkosten verbonden.",
+        "Onze reguliere cursussen worden niet afgesloten met een examen. Op verzoek ontvangen deelnemers na afloop graag een certificaat van deelname."
+      ]
     },
     "cta": {
       "title": "Interesse in Nederlandse les?",
@@ -763,9 +961,44 @@
       "subtitle": "Wanneer en waar onze Dutch Adult Classes plaatsvinden"
     },
     "intro": {
-      "title": "Inhoud volgt binnenkort",
-      "content": "Op deze pagina komt binnenkort meer informatie over de lestijden, dagen en locaties van de Dutch Adult Classes. Heeft u nu al een vraag? Neem gerust contact met ons op."
+      "title": "Lestijden & locatie",
+      "content": "Voor schooljaar 2026-2027"
     },
+    "table": {
+      "headers": [
+        "Traject",
+        "Periode",
+        "Lestijden",
+        "Locatie"
+      ],
+      "rows": [
+        [
+          "A1 – Jaartraject",
+          "september – juni",
+          "dinsdag, 16.00–18.00",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "A1 – Intensief",
+          "10 weken",
+          "dinsdag, woensdag & donderdag, 11.30–13.30",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "A2 – Jaartraject",
+          "september – juni",
+          "dinsdag, 16.30–18.30",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "B1 – Jaartraject",
+          "september – juni",
+          "dinsdag, 16.30–18.30",
+          "Dutch School, Karen / online"
+        ]
+      ]
+    },
+    "intakeNote": "Voor het <b>intensieve A1-traject</b> zijn er drie instroommomenten per jaar: <b>september, januari en april</b>.",
     "cta": {
       "title": "Vragen over de lestijden?",
       "subtitle": "We helpen u graag verder.",
@@ -778,67 +1011,104 @@
       "subtitle": "Tarieven en betalingsinformatie voor de Dutch Adult Classes"
     },
     "intro": {
-      "title": "Inhoud volgt binnenkort",
-      "content": "Op deze pagina komt binnenkort meer informatie over het cursusgeld voor de Dutch Adult Classes. Voor de actuele tarieven kunt u contact opnemen met ons kantoor."
+      "title": "Kosten en inschrijving",
+      "content": "Al onze A1-, A2- en B1-cursussen bestaan uit 30 lessen van twee uur en kosten €750 per niveau (€25 per les)."
+    },
+    "courses": {
+      "title": "Cursussen",
+      "headers": [
+        "Traject",
+        "Opzet",
+        "Prijs"
+      ],
+      "rows": [
+        [
+          "A1 – Jaartraject",
+          "30 lessen verspreid van september tot juni",
+          "€750"
+        ],
+        [
+          "A1 – Intensief",
+          "Dezelfde 30 lessen verspreid over 10 weken, met drie lessen per week",
+          "€750"
+        ],
+        [
+          "A2 – Jaartraject",
+          "30 lessen van september tot juni",
+          "€750"
+        ],
+        [
+          "B1 – Jaartraject",
+          "30 lessen van september tot juni",
+          "€750"
+        ]
+      ]
+    },
+    "payment": {
+      "title": "Inschrijving en betaling",
+      "content": "Bij inschrijving committeer je je aan het volledige cursusprogramma van 30 lessen. Het volledige cursusbedrag van €750 wordt bij aanvang van de cursus gefactureerd. Betaling in termijnen of per maand is mogelijk, op basis van een betalingsregeling die vooraf met de school wordt afgesproken."
+    },
+    "materials": {
+      "title": "Lesmateriaal",
+      "content": "Voor de cursus wordt aanvullend lesmateriaal aangeschaft:",
+      "headers": [
+        "Niveau",
+        "Inhoud",
+        "Prijs"
+      ],
+      "rows": [
+        [
+          "A1 en A2",
+          "Boek en twee jaar toegang tot het online lesmateriaal",
+          "€75 per niveau"
+        ],
+        [
+          "B1",
+          "Twee delen, inclusief twee jaar toegang tot het online lesmateriaal",
+          "€55 per deel"
+        ]
+      ]
     },
     "cta": {
-      "title": "Tarieven opvragen",
-      "subtitle": "Neem contact op voor de actuele tarieven.",
+      "title": "Meer weten?",
+      "subtitle": "Neem gerust contact met ons op voor meer informatie over inschrijving of om samen te bespreken welk niveau en traject het beste bij je past.",
       "button": "Neem Contact Op"
     }
   },
   "ntcPage": {
     "hero": {
-      "title": "NTC - Nederlands Taal en Cultuur",
-      "subtitle": "Voor Nederlandstalige kinderen op andere internationale scholen"
+      "title": "NTC - Nederlandse Taal en Cultuur",
+      "subtitle": "Naschoolse Nederlandse lessen voor kinderen van 2,5 tot 16 jaar"
     },
     "intro": {
-      "title": "Behoud en Ontwikkel het Nederlands",
-      "content": "Het NTC-programma is speciaal ontworpen voor kinderen die naar een andere internationale school gaan, maar wel hun Nederlandse taal en cultuur willen onderhouden en ontwikkelen. Perfect voor expat-gezinnen die later terugkeren naar Nederland of Vlaanderen."
-    },
-    "forWhom": {
-      "title": "Voor Wie?",
-      "content": "Het NTC-programma is bedoeld voor kinderen van Nederlandse of Vlaamse families die:",
-      "items": [
-        "Naar een andere internationale school in Nairobi gaan",
-        "Hun Nederlands willen behouden of verbeteren",
-        "Zich willen voorbereiden op terugkeer naar Nederland/België",
-        "Verbonden willen blijven met Nederlandse cultuur en tradities"
+      "title": "Nederlands leren, spreken en beleven in Nairobi!",
+      "paragraphs": [
+        "De Dutch School Nairobi bevindt zich in een bijzondere positie: binnen één schoolorganisatie bieden we zowel een Nederlandstalige dagschool als NTC-onderwijs aan. Zo kunnen we Nederlandse en Vlaamse kinderen met verschillende onderwijsachtergronden ondersteunen.",
+        "Binnen onze NTC-afdeling bieden we naschoolse Nederlandse Taal- en Cultuurlessen aan voor kinderen van 2,5 tot 16 jaar die overdag naar een internationale of lokale school gaan. In kleine groepen van 6 tot 12 leerlingen werken onze ervaren en enthousiaste leerkrachten aan de leerdoelen van NOB, met aandacht voor het niveau, de achtergrond en de doelen van ieder kind."
       ]
     },
-    "program": {
-      "title": "Het Programma",
-      "language": {
-        "title": "Nederlandse Taal",
-        "description": "Lessen gericht op lezen, schrijven, spreken en luisteren op niveau."
-      },
-      "culture": {
-        "title": "Nederlandse Cultuur",
-        "description": "Aandacht voor Nederlandse tradities, feestdagen en actualiteit."
-      },
-      "levels": {
-        "title": "Niveaugroepen",
-        "description": "Onderwijs afgestemd op het niveau en de leeftijd van het kind."
-      },
-      "schedule": {
-        "title": "Flexibel Rooster",
-        "description": "Lessen na schooltijd of op woensdagmiddag."
-      }
-    },
-    "benefits": {
-      "title": "Voordelen NTC",
+    "goals": {
+      "title": "Ieder kind zijn eigen doel",
+      "content": "Die doelen kunnen heel verschillend zijn:",
       "items": [
-        "Behoud van Nederlandse taalvaardigheid",
-        "Soepele terugkeer naar Nederlands onderwijs",
-        "Verbinding met Nederlandse gemeenschap",
-        "Officiële erkenning door NOB",
-        "Gekwalificeerde Nederlandse docenten"
+        "Voorbereid blijven op een toekomstige terugkeer naar Nederland of België",
+        "De band met de Nederlandse taal en cultuur behouden",
+        "Andere Nederlandstalige kinderen ontmoeten",
+        "Toewerken naar een CNaVT-certificaat met het oog op een studie in Nederland of België"
+      ]
+    },
+    "approach": {
+      "title": "Onze aanpak",
+      "paragraphs": [
+        "We werken met actuele en interactieve methodes en besteden aandacht aan spreken, luisteren, lezen, schrijven, woordenschat en cultuur. Samenwerking met ouders en met de internationale scholen waar onze lessen plaatsvinden, is daarbij een belangrijk onderdeel van onze werking.",
+        "Onze NTC-lessen vinden plaats op verschillende locaties in Nairobi én online. Ondanks die verschillende lesplekken vormen we samen één betrokken NTC-gemeenschap, met gedeelde leerlijnen, doelen en een gezamenlijke visie op goed Nederlandstalig onderwijs."
       ]
     },
     "cta": {
       "title": "Interesse in NTC?",
       "subtitle": "Neem contact op voor meer informatie over ons NTC-programma.",
-      "button": "Neem Contact Op"
+      "button": "Neem Contact Op",
+      "scheduleButton": "Lestijden en locaties"
     }
   },
   "curriculumPage": {

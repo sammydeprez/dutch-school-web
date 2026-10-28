@@ -7,3 +7,4 @@ export { default as NavigationDropdown } from './NavigationDropdown';
 export type { NavItem, NavDropdown } from './NavigationDropdown';
 export { default as AnimatedSection } from './AnimatedSection';
 export { default as AnimatedButton } from './AnimatedButton';
+export { default as InfoTable } from './InfoTable';

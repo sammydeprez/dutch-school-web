@@ -20,10 +20,11 @@
     "ntcOverview": "Overview",
     "ntcSchedule": "Hours & Locations",
     "ntcFees": "School Fees",
+    "ntcOnline": "Online NTC Classes",
     "adultClasses": "Dutch Adult Classes",
     "adultClassesOverview": "Overview",
     "adultClassesSchedule": "Hours & Locations",
-    "adultClassesFees": "School Fees",
+    "adultClassesFees": "Course Fees",
     "practical": "Practical",
     "practicalOverview": "Overview",
     "schedule": "School Hours",
@@ -717,28 +718,194 @@
       "subtitle": "When and where our NTC lessons take place"
     },
     "intro": {
-      "title": "Content coming soon",
-      "content": "More information about the times, days, and locations of our NTC program will appear on this page soon. Do you have a question now? Feel free to contact us."
+      "title": "NTC locations and lesson times",
+      "content": "Our NTC lessons are held after school at several schools in Nairobi. Below you will find the lesson days, times and teachers for each location."
+    },
+    "table": {
+      "headers": [
+        "Location",
+        "Day(s)",
+        "Time",
+        "Teacher"
+      ],
+      "rows": [
+        [
+          "Braeburn Garden Estate – Secondary",
+          "Monday",
+          "15:45 – 18:00",
+          "Joke Neuskens"
+        ],
+        [
+          "Braeburn Garden Estate – Primary",
+          "Wednesday",
+          "15:45 – 18:00",
+          "Joke Neuskens\nArianne Ponte"
+        ],
+        [
+          "Durham Rosslyn – Primary",
+          "Monday, Tuesday",
+          "15:30 – 18:00",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Durham Thigiri – Kindergarten",
+          "Thursday",
+          "15:30 – 17:30",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School – Kindergarten",
+          "Wednesday",
+          "15:30 – 17:30",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School – Primary",
+          "Wednesday",
+          "15:30 – 18:00",
+          "Caroline Slot\nBo Duinmeijer\nElsie Mukanzi"
+        ],
+        [
+          "Hillcrest Secondary School – Secondary",
+          "Wednesday",
+          "15:30 – 18:00",
+          "Liesbeth Boot"
+        ],
+        [
+          "Dutch School (day school)",
+          "Monday",
+          "15:45 – 17:45",
+          "Arianne Ponte"
+        ],
+        [
+          "International School of Kenya (ISK) – Primary and Secondary",
+          "Tuesday and Thursday",
+          "15:30 – 18:00",
+          "Joke Neuskens"
+        ]
+      ],
+      "legend": "Primary = primary education (PO), Secondary = secondary education (VO)"
     },
     "cta": {
-      "title": "Questions about hours?",
-      "subtitle": "We'd be happy to help.",
-      "button": "Contact Us"
+      "title": "Living outside Nairobi?",
+      "subtitle": "Take a look at our online NTC classes, or contact us with questions about lesson times.",
+      "button": "Contact Us",
+      "onlineButton": "Online NTC classes"
     }
   },
   "ntcFeesPage": {
     "hero": {
       "title": "NTC School Fees",
-      "subtitle": "Rates and payment information for the NTC program"
+      "subtitle": "Rates for NTC lessons on location and online"
     },
     "intro": {
-      "title": "Content coming soon",
-      "content": "More information about the fees for the NTC program will appear on this page soon. For current rates, please contact our office."
+      "title": "NTC School Fees",
+      "content": "Below you will find the rates for our in-person NTC lessons and our online NTC education."
+    },
+    "onLocation": {
+      "title": "NTC lessons on location",
+      "rows": [
+        [
+          "Kindergarten",
+          "€700"
+        ],
+        [
+          "Primary education (PO)",
+          "€830"
+        ],
+        [
+          "Secondary education (VO)",
+          "€930"
+        ]
+      ]
+    },
+    "online": {
+      "title": "Online NTC lessons",
+      "rows": [
+        [
+          "Tariff 1 – with employer contribution",
+          "€1,198"
+        ],
+        [
+          "Tariff 2 – without employer contribution",
+          "€749"
+        ],
+        [
+          "Private lessons",
+          "€2,000"
+        ]
+      ]
+    },
+    "perYear": "All amounts are per pupil per school year.",
+    "onlineExplanation": {
+      "title": "About the online rates",
+      "paragraphs": [
+        "Tariff 1 applies when the employer of one or both parents contributes fully or partly to the school fees.",
+        "Tariff 2 applies when the parents pay the school fees entirely themselves, without an employer contribution.",
+        "Private lessons are available on request, subject to the availability of our teachers."
+      ]
+    },
+    "important": {
+      "title": "Important information",
+      "content": "School fees are set and approved each year at the Annual General Meeting (AGM) of Dutch School Nairobi. The rates listed may therefore change from one school year to the next."
     },
     "cta": {
-      "title": "Request rates",
-      "subtitle": "Contact us for current NTC rates.",
+      "title": "Questions about the fees?",
+      "subtitle": "Feel free to contact us, we're happy to help.",
       "button": "Contact Us"
+    }
+  },
+  "ntcOnlinePage": {
+    "hero": {
+      "title": "Online NTC Classes",
+      "subtitle": "Online Dutch education – Wherever you live in Africa!"
+    },
+    "intro": {
+      "title": "Keep learning Dutch, even from a distance",
+      "paragraphs": [
+        "<b>Does your family live in Africa and would you like your child to keep developing their Dutch?</b> Even when there is no Dutch-language school nearby, your child is welcome with us!",
+        "With our <b>online NTC classes (Dutch Language and Culture)</b> we bring Dutch School Nairobi into your home. This way Dutch and Flemish children stay connected to their language, culture and roots, wherever they live."
+      ]
+    },
+    "personal": {
+      "title": "Personal, interactive and tailored",
+      "paragraphs": [
+        "Our online lessons are much more than an hour of Dutch behind a screen. We create a warm and stimulating learning environment in which children actively speak, read, write and listen to Dutch.",
+        "We deliberately work with <b>small groups of 2 to a maximum of 5 pupils</b>. This gives every child plenty of personal attention and lots of room for interaction, playful learning and collaboration. Private lessons are available on request.",
+        "Our experienced teachers tailor the lessons to the language level, age and educational needs of the pupils."
+      ]
+    },
+    "howItWorks": {
+      "title": "How do our online lessons work?",
+      "items": [
+        "<b>One interactive online lesson per week</b> of 60 minutes, with at least 33 lessons per school year.",
+        "<b>Small groups</b>, so every pupil can take an active part.",
+        "<b>Independent work between lessons</b>, matched to the child's level and supported by the parents.",
+        "<b>Google Classroom</b> as the digital learning platform for materials, assignments and communication.",
+        "<b>Targeted teaching following the NOB learning pathways</b>, covering all Dutch language skills.",
+        "<b>Monitoring of language development</b>, including a method-independent Diataal test at the end of the school year."
+      ],
+      "materials": "We use varied and engaging materials, including Tis Taal, Junior Einstein and Nieuwsbegrip. Dutch and Flemish culture also has a place in our lessons."
+    },
+    "together": {
+      "title": "Working together on language development",
+      "paragraphs": [
+        "Good online education requires collaboration. Our teachers guide the pupils during lessons and follow their development. Parents also play an important role in encouraging Dutch at home and supporting independent work.",
+        "Together we make sure children keep developing their Dutch language skills, even when their daily education is in another language."
+      ]
+    },
+    "forWhom": {
+      "title": "Who is it for?",
+      "paragraphs": [
+        "Our online NTC classes are intended for <b>Dutch and Flemish children living outside Nairobi, in African countries where there is no in-person NTC school nearby</b>.",
+        "Whether you have lived abroad for years or have only recently moved: we are happy to look at which options suit your child's language level and needs."
+      ]
+    },
+    "cta": {
+      "title": "Interested in our online classes?",
+      "subtitle": "Would you like to know more about our online programme or find out which group suits your child? Feel free to contact us! We're happy to tell you more about how we work, the available groups and how to enrol.",
+      "button": "Contact Us",
+      "feesButton": "View the fees"
     }
   },
   "adultClassesPage": {
@@ -748,8 +915,39 @@
     },
     "intro": {
       "title": "Dutch Lessons for Adults",
-      "content": "Our Dutch Adult Classes offer Dutch language courses for adults at all proficiency levels. Perfect for parents, partners, or anyone who wants to learn Dutch or improve their language skills.",
-      "comingSoon": "We are working on a comprehensive page with all the information about our courses, levels, and approach. Content coming soon. Do you have a question now? Feel free to contact us."
+      "paragraphs": [
+        "Would you like to learn Dutch or further develop your existing language skills? Dutch School offers Dutch language courses for adults at different levels. Our lessons are practical and communicative: speaking, listening, reading and writing are all covered, with plenty of room to actively use the language.",
+        "Lessons are taught at the school in Karen, with the option to join online."
+      ]
+    },
+    "a1": {
+      "title": "A1 – Beginners",
+      "content": "For beginners we offer two different routes to A1 level, so you can choose what best suits your pace and schedule.",
+      "yearly": {
+        "title": "A1 year course",
+        "description": "From September to June you attend a two-hour lesson once a week, on Tuesday afternoons from 16:00–18:00. Over the school year you progress step by step from beginner to A1 level, together with other learners and supplemented by independent online practice."
+      },
+      "intensive": {
+        "title": "Intensive A1 course",
+        "description": "Want to learn Dutch faster? Then choose our intensive A1 programme, which takes you through the full A1 level in 10 weeks. This course runs several times a year, with new intakes in September, January and April. Lessons take place on Tuesday, Wednesday and Thursday from 11:30–13:30."
+      }
+    },
+    "a2b1": {
+      "title": "A2 and B1",
+      "content": "For learners who already speak some Dutch, we offer follow-up courses at A2 and B1 level. The lessons build on what you already know and help participants use Dutch with growing independence and confidence in everyday, social and professional situations."
+    },
+    "together": {
+      "title": "Learning with and from each other",
+      "content": "Our Adult Classes combine lessons with independent online practice. You learn together with other learners and work purposefully on speaking, listening, reading and writing. This gives you not only a solid foundation in Dutch, but above all the confidence to actually use it."
+    },
+    "exams": {
+      "title": "Exams and certificates",
+      "paragraphs": [
+        "Our regular language courses focus on developing Dutch language skills and are not specific exam training. Do you have a particular exam in mind? We're happy to think along with you about preparing for it. If desired, we can schedule one or two private exam-preparation lessons at an additional cost.",
+        "Dutch School is not an exam centre for exams required for visas or civic integration. For up-to-date information about these exams and their requirements, we advise contacting the Dutch embassy or the relevant official authority.",
+        "Learners at B1 level can take the CNaVT exam through Dutch School, offered in May and November. Additional exam fees apply.",
+        "Our regular courses do not end with an exam. On request, participants receive a certificate of participation at the end of the course."
+      ]
     },
     "cta": {
       "title": "Interested in Dutch lessons?",
@@ -763,9 +961,44 @@
       "subtitle": "When and where our Dutch Adult Classes take place"
     },
     "intro": {
-      "title": "Content coming soon",
-      "content": "More information about the times, days, and locations of the Dutch Adult Classes will appear on this page soon. Do you have a question now? Feel free to contact us."
+      "title": "Lesson times & location",
+      "content": "For the 2026-2027 school year"
     },
+    "table": {
+      "headers": [
+        "Course",
+        "Period",
+        "Lesson times",
+        "Location"
+      ],
+      "rows": [
+        [
+          "A1 – Year course",
+          "September – June",
+          "Tuesday, 16:00–18:00",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "A1 – Intensive",
+          "10 weeks",
+          "Tuesday, Wednesday & Thursday, 11:30–13:30",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "A2 – Year course",
+          "September – June",
+          "Tuesday, 16:30–18:30",
+          "Dutch School, Karen / online"
+        ],
+        [
+          "B1 – Year course",
+          "September – June",
+          "Tuesday, 16:30–18:30",
+          "Dutch School, Karen / online"
+        ]
+      ]
+    },
+    "intakeNote": "The <b>intensive A1 course</b> has three intake moments per year: <b>September, January and April</b>.",
     "cta": {
       "title": "Questions about hours?",
       "subtitle": "We'd be happy to help.",
@@ -778,67 +1011,104 @@
       "subtitle": "Rates and payment information for the Dutch Adult Classes"
     },
     "intro": {
-      "title": "Content coming soon",
-      "content": "More information about the course fees for the Dutch Adult Classes will appear on this page soon. For current rates, please contact our office."
+      "title": "Costs and enrolment",
+      "content": "All our A1, A2 and B1 courses consist of 30 two-hour lessons and cost €750 per level (€25 per lesson)."
+    },
+    "courses": {
+      "title": "Courses",
+      "headers": [
+        "Course",
+        "Format",
+        "Price"
+      ],
+      "rows": [
+        [
+          "A1 – Year course",
+          "30 lessons spread from September to June",
+          "€750"
+        ],
+        [
+          "A1 – Intensive",
+          "The same 30 lessons spread over 10 weeks, three lessons per week",
+          "€750"
+        ],
+        [
+          "A2 – Year course",
+          "30 lessons from September to June",
+          "€750"
+        ],
+        [
+          "B1 – Year course",
+          "30 lessons from September to June",
+          "€750"
+        ]
+      ]
+    },
+    "payment": {
+      "title": "Enrolment and payment",
+      "content": "When you enrol, you commit to the full course programme of 30 lessons. The full course fee of €750 is invoiced at the start of the course. Payment in instalments or monthly is possible, based on a payment plan agreed with the school in advance."
+    },
+    "materials": {
+      "title": "Course materials",
+      "content": "Additional course materials are purchased for the course:",
+      "headers": [
+        "Level",
+        "Includes",
+        "Price"
+      ],
+      "rows": [
+        [
+          "A1 and A2",
+          "Book and two years' access to the online course materials",
+          "€75 per level"
+        ],
+        [
+          "B1",
+          "Two parts, including two years' access to the online course materials",
+          "€55 per part"
+        ]
+      ]
     },
     "cta": {
-      "title": "Request rates",
-      "subtitle": "Contact us for current rates.",
+      "title": "Want to know more?",
+      "subtitle": "Feel free to contact us for more information about enrolment, or to discuss together which level and course suits you best.",
       "button": "Contact Us"
     }
   },
   "ntcPage": {
     "hero": {
       "title": "NTC - Dutch Language and Culture",
-      "subtitle": "For Dutch-speaking children at other international schools"
+      "subtitle": "After-school Dutch lessons for children aged 2.5 to 16"
     },
     "intro": {
-      "title": "Maintain and Develop Dutch",
-      "content": "The NTC program is specially designed for children who attend another international school but want to maintain and develop their Dutch language and culture. Perfect for expat families who will later return to the Netherlands or Belgium."
-    },
-    "forWhom": {
-      "title": "For Whom?",
-      "content": "The NTC program is intended for children of Dutch or Belgian families who:",
-      "items": [
-        "Attend another international school in Nairobi",
-        "Want to maintain or improve their Dutch",
-        "Want to prepare for return to the Netherlands/Belgium",
-        "Want to stay connected to Dutch culture and traditions"
+      "title": "Learning, speaking and experiencing Dutch in Nairobi!",
+      "paragraphs": [
+        "Dutch School Nairobi is in a unique position: within one school organisation we offer both a Dutch-language day school and NTC education. This allows us to support Dutch and Flemish children from a range of educational backgrounds.",
+        "Our NTC department offers after-school Dutch Language and Culture lessons for children aged 2.5 to 16 who attend an international or local school during the day. In small groups of 6 to 12 pupils, our experienced and enthusiastic teachers work towards the NOB learning objectives, paying attention to the level, background and goals of each child."
       ]
     },
-    "program": {
-      "title": "The Program",
-      "language": {
-        "title": "Dutch Language",
-        "description": "Lessons focused on reading, writing, speaking, and listening at level."
-      },
-      "culture": {
-        "title": "Dutch Culture",
-        "description": "Attention to Dutch traditions, holidays, and current events."
-      },
-      "levels": {
-        "title": "Level Groups",
-        "description": "Education tailored to the child's level and age."
-      },
-      "schedule": {
-        "title": "Flexible Schedule",
-        "description": "Lessons after school or on Wednesday afternoon."
-      }
-    },
-    "benefits": {
-      "title": "NTC Benefits",
+    "goals": {
+      "title": "Every child has their own goal",
+      "content": "Those goals can be very different:",
       "items": [
-        "Maintain Dutch language proficiency",
-        "Smooth return to Dutch education",
-        "Connection with Dutch community",
-        "Official recognition by NOB",
-        "Qualified Dutch teachers"
+        "Staying prepared for a future return to the Netherlands or Belgium",
+        "Keeping the connection with the Dutch language and culture",
+        "Meeting other Dutch-speaking children",
+        "Working towards a CNaVT certificate with a view to studying in the Netherlands or Belgium"
+      ]
+    },
+    "approach": {
+      "title": "Our approach",
+      "paragraphs": [
+        "We work with up-to-date, interactive methods and pay attention to speaking, listening, reading, writing, vocabulary and culture. Working together with parents and with the international schools where our lessons take place is an important part of how we work.",
+        "Our NTC lessons take place at several locations in Nairobi and online. Despite these different venues, together we form one engaged NTC community, with shared learning pathways, goals and a common vision of good Dutch-language education."
       ]
     },
     "cta": {
       "title": "Interested in NTC?",
       "subtitle": "Contact us for more information about our NTC program.",
-      "button": "Contact Us"
+      "button": "Contact Us",
+      "scheduleButton": "Hours & locations"
     }
   },
   "curriculumPage": {
