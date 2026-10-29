@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useEffect, useRef, useState, createElement } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
 type AnimationType =
   | 'fade-in-up'
@@ -81,13 +81,11 @@ export default function AnimatedSection({
 
   const style = delay > 0 && !delayClass ? { animationDelay: `${delay}ms` } : undefined;
 
-  return createElement(
-    as,
-    {
-      ref,
-      className: combinedClassName,
-      style,
-    },
-    children
+  const Tag = as;
+
+  return (
+    <Tag ref={ref} className={combinedClassName} style={style}>
+      {children}
+    </Tag>
   );
 }
