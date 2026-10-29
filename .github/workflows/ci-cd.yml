@@ -118,6 +118,7 @@ jobs:
             --function api \
             --base-image nodejs22 \
             --service-account "website-api@$GCP_PROJECT.iam.gserviceaccount.com" \
+            --set-env-vars NODE_ENV=production \
             --set-secrets "MAILERSEND_API_TOKEN=MAILERSEND_API_TOKEN:latest,GITHUB_TOKEN=GITHUB_TOKEN:latest" \
             --memory 256Mi \
             --cpu 1 \
