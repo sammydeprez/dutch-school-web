@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Rubik, Archivo } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const rubik = Rubik({
+// Self-hosted so the build does not depend on Google Fonts being reachable.
+const rubik = localFont({
+  src: "./fonts/rubik-latin-variable.woff2",
   variable: "--font-rubik",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "300 700",
 });
 
-const archivo = Archivo({
+const archivo = localFont({
+  src: "./fonts/archivo-latin-variable.woff2",
   variable: "--font-archivo",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "300 700",
 });
 
 export const metadata: Metadata = {
